@@ -2,40 +2,62 @@
 // nav button control
 let numPages = document.getElementsByClassName("page").length;
 let pageIndex = 0;  
-let backButton = document.getElementById("back-btn");
-let nextButton = document.getElementById("next-btn");
-backButton.addEventListener("click", e => {
+let backButtonInactive = document.getElementById("back-btn-inactive");
+let nextButtonInactive = document.getElementById("next-btn-inactive");
+let backButtonActive = document.getElementById("back-btn-active");
+let nextButtonActive = document.getElementById("next-btn-active");
+
+// handle mouse over
+backButtonInactive.addEventListener("mouseover", e => {
+    document.getElementById("back-btn-active").style.display = "block";
+});
+nextButtonInactive.addEventListener("mouseover", e => {
+    document.getElementById("next-btn-active").style.display = "block";
+});
+backButtonActive.addEventListener("mouseout", e => {
+    document.getElementById("back-btn-active").style.display = "none";
+});
+nextButtonActive.addEventListener("mouseout", e => {
+    document.getElementById("next-btn-active").style.display = "none";
+});
+
+// manage clicks
+backButtonActive.addEventListener("click", e => {
     pageIndex--;
     if (pageIndex == 0) {
-        backButton.style.display = "none";
+        backButtonInactive.style.display = "none";
+        backButtonActive.style.display = "none";
     }
     else {
-        backButton.style.display = "block";
+        backButtonInactive.style.display = "block";
     }
     if (pageIndex == numPages - 1) {
-        nextButton.style.display = "none";
+        nextButtonInactive.style.display = "none";
+        nextButtonActive.style.display = "none";
     }
     else {
-        nextButton.style.display = "block";
+        nextButtonInactive.style.display = "block";
     }
-    document.getElementById("page" + (pageIndex + 1)).style.display = "none";
-    document.getElementById("page" + pageIndex).style.display = "block";
+    document.getElementById("page" + (pageIndex + 2)).style.display = "none";
+    document.getElementById("page" + (pageIndex+1)).style.display = "block";
 });
-nextButton.addEventListener("click", e => {
+nextButtonActive.addEventListener("click", e => {
     pageIndex++;
     if (pageIndex == 0) {
-        backButton.style.display = "none";
+        backButtonInactive.style.display = "none";
+        backButtonActive.style.display = "none";
     }
     else {
-        backButton.style.display = "block";
+        backButtonInactive.style.display = "block";
     }
     if (pageIndex == numPages - 1) {
-        nextButton.style.display = "none";
+        nextButtonInactive.style.display = "none";
+        nextButtonActive.style.display = "none";
     }
     else {
-        nextButton.style.display = "block";
+        nextButtonInactive.style.display = "block";
     }
-    console.log(pageIndex);
-    document.getElementById("page" + (pageIndex-1)).style.display = "none";
-    document.getElementById("page"+pageIndex).style.display = "block";
+    console.log(pageIndex+1);
+    document.getElementById("page" + pageIndex).style.display = "none";
+    document.getElementById("page"+(pageIndex+1)).style.display = "block";
 });
