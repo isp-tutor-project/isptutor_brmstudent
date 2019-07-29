@@ -47,7 +47,7 @@ button {
 }
 
 .header-btn-container {
-  width: 750px;
+  width: 760px;
   margin: 0 auto;
   position: relative;
   bottom: 10px;
@@ -56,15 +56,18 @@ button {
 
 .header-btn {
   background-color: #2555AB;
+  border-color: #2555AB;
   color: white;
   padding: 5px 5px;
   margin: 0px 1px;
   font-size: 20px;
   font-family: 'Boogaloo', cursive;
+  -webkit-appearance: none;
 }
 
 .header-btn:hover {
-  background-color: #244785
+  background-color: #244785;
+  border-color: #244785;
 }
 
 .nav-btn-container {
@@ -78,12 +81,6 @@ button {
   display: block;
   top: 0px;
   margin-bottom: 20px;
-  /*background-color: #3769C2;
-  color: white;
-  padding: 14px 30px;
-  border: none;
-  border-radius: 10px;
-  font-size: 28px;*/
 }
 
 #back-btn-inactive {
