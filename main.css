@@ -120,6 +120,22 @@ button {
   display: block;
 }
 
+.area-column {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 50px;
+}
+
+.area-column a {
+  display: block;
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+}
+
 
 
 
