@@ -1,11 +1,17 @@
 
 // nav button control
 let numPages = document.getElementsByClassName("page").length;
+
 let pageIndex = 0;  
 let backButtonInactive = document.getElementById("back-btn-inactive");
 let nextButtonInactive = document.getElementById("next-btn-inactive");
 let backButtonActive = document.getElementById("back-btn-active");
 let nextButtonActive = document.getElementById("next-btn-active");
+
+// handle only one page event
+if (numPages == 1) {
+    nextButtonInactive.style.display = "none";
+}
 
 // handle mouse over
 backButtonInactive.addEventListener("mouseover", e => {
@@ -40,6 +46,7 @@ backButtonActive.addEventListener("click", e => {
     }
     document.getElementById("page" + (pageIndex + 2)).style.display = "none";
     document.getElementById("page" + (pageIndex+1)).style.display = "block";
+    scrollTo(0, 0);
 });
 nextButtonActive.addEventListener("click", e => {
     pageIndex++;
@@ -57,7 +64,7 @@ nextButtonActive.addEventListener("click", e => {
     else {
         nextButtonInactive.style.display = "block";
     }
-    console.log(pageIndex+1);
     document.getElementById("page" + pageIndex).style.display = "none";
     document.getElementById("page"+(pageIndex+1)).style.display = "block";
+    scrollTo(0, 0);
 });

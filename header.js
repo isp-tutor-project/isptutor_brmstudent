@@ -19,3 +19,22 @@ document.getElementById("chemical-btn").addEventListener("click", e => {
 document.getElementById("heat-btn").addEventListener("click", e => {
     location.href = "../area_heattemp";
 });
+
+// quiz control
+let quizzes = document.getElementsByClassName("quiz");
+for (let quiz of quizzes) {
+    quiz.addEventListener("submit", e => {
+        e.preventDefault();
+        let formData = new FormData(quiz);
+        let feedbackCorrect = quiz.querySelector(".feedback-correct");
+        let feedbackIncorrect = quiz.querySelector(".feedback-incorrect");
+        feedbackCorrect.style.display = "none";
+        feedbackIncorrect.style.display = "none";
+        if (formData.get("question") == "correct") {
+            feedbackCorrect.style.display = "block";
+        }
+        else if (formData.get("question") == "incorrect") {
+            feedbackIncorrect.style.display = "block";
+        }
+    })
+}
