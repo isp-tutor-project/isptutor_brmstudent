@@ -7,6 +7,9 @@
   <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../main.css">
+  <!-- Google Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -38,8 +41,7 @@
       <div><span style='background-color:transparent'><div style='display:block;text-align:left'><img width='400'
               style='display:block;margin:4px auto 0px;text-align:center' src='https://sites.google.com/site/isptutorbrmstudent/_/rsrc/1560954662165/crystals/gems-1400682_1920.jpg'
               height='320' border='0' /></div></span></div>
-      <div style='text-align:center'>
-      </div>
+      <br>
       <div><span style='background-color:transparent'>Other examples of crystals include table salt
           (NaCl), ice (H</span><font style='background-color:transparent' size='1'>2</font><span style='background-color:transparent'>O
           in its solid form), and sugar (C</span><font style='background-color:transparent' size='1'>12</font><span
@@ -50,8 +52,7 @@
           are substances whose <a target='_blank' href='../molecules/index.html'><b><font color='#0000ff'>molecules</font></b></a>
           are arranged in a repeating pattern. It is this repeated molecule arrangement that gives
           crystals qualities like shininess and colors that makes them look pretty to us.</span></div>
-      <div
-        dir='ltr'>
+      
         <div>
           <ul>
             <li>For example, table salt is a crystal, made of a repeating pattern of NaCl molecules. The
@@ -67,27 +68,35 @@
                 height='303' border='0' alt='Table salt crystal molecules arranged in cube ' /></div>
           </div>
         </div>
-        <div style='text-align:center'><br/>
-        </div>
-        <b style='color:rgb(106,168,79);text-align:center'>
-          <div style='text-align:center'>
-            <div class='sites-embed-align-center-wrapping-off'>
-              <div style='width:700px;' class='sites-embed-border-on sites-embed'>
-                <h4 class='sites-embed-title'>Q1:Crystals</h4>
-                <div style='display:none;' class='sites-embed-object-title'>Q1:Crystals</div>
-                <div class='sites-embed-content sites-embed-type-spreadsheet-form'><iframe id='80535364' marginwidth='0' marginheight='0' frameborder='0' allowtransparency='true'
-                    title='Q1:Crystals' height='250' width='100%' src='http://docs.google.com/forms/viewform?bc=transparent&amp;embedded=true&amp;f=%2527Boogaloo%2527%252Ccursive&amp;hl=en&amp;htc=%2523666666&amp;id=15BVOUjyAMd_2V4fNV_LAc8DuXFsU_o57zg4BIuZ1sq0&amp;lc=%2523336699&amp;pli=1&amp;tc=%2523333333&amp;ttl=0'>
-                  </iframe></div>
-              </div>
-            </div>
+        <br/>
+
+        <!-- Quiz: Checkbox -->
+        <form class="quiz_checkbox quiz">
+          <b>Q1 (basic understanding): Why do NaCl molecules form this pattern in salt crystals?
+          (There may be more than one correct answer.)</b>
+          <input type="checkbox" name="question" value="correct">
+          <div class="label">(a) The Na sides of the NaCl molecules and the Cl sides of other NaCl molecules attract each other.</div><br>
+          <input type="checkbox" name="question" value="incorrect">
+          <div class="label">(b) The Na sides of the NaCl molecules and the Cl sides of other NaCl molecules repel each other.</div><br>
+          <input type="checkbox" name="question" value="correct">
+          <div class="label">(c) The Na sides of the NaCl molecules and the Na sides of other NaCl molecules repel each other.</div><br>
+          <input type="checkbox" name="question" value="correct">
+          <div class="label">(d) The Cl sides of the NaCl molecules and the Cl sides of other NaCl molecules repel each other.</div><br>
+          <button type="submit" class="submit-btn">Submit</button>
+          <div class="feedback-correct feedback">
+            Right! Both attractive forces from oppositely-charged sides of the NaCl crystal (Na-Cl and Cl-Na) and repelling forces
+            from same-charged sides of the crystal (Na-Na and Cl-Cl) cause the alternating pattern found in salt crystals. So, (a),
+            (c), and (d) are the correct responses.
           </div>
-        </b></div>
-      <div style='text-align:center'><br/>
-      </div>
-      <div style='text-align:center'><br/>
-      </div>
-      <div style='text-align:center'><br/>
-      </div>
+          <div class="feedback-incorrect feedback">
+            Actually, both attractive forces from oppositely-charged sides of the NaCl crystal (Na-Cl and Cl-Na) and repelling
+            forces from same-charged sides of the crystal (Na-Na and Cl-Cl) cause the alternating pattern found in salt crystals.
+            So, (a), (c), and (d) are the correct responses.
+          </div>
+        </form>
+
+        <br>
+      
       <div>
         <ul>
           <li>Ice (the solid form of water, or H
@@ -160,11 +169,21 @@
             </div>
             <div style='color:rgb(106,168,79)'><br/>
             </div>
+
+            <!-- Quiz: Open -->
+            <form class="quiz_open quiz">
+              <b>Q2: Why do you think oxygen atoms tend to be closer to hydrogen atoms than to other oxygen atoms in ice crystals? (For
+              help answering this question, please see H2O in Molecules unit.)</b>
+              <textarea></textarea><br>
+              <button type="submit" class="submit-btn">Submit</button>
+              <div class="feedback-correct feedback">
+                This is due to the electric force. Oxygen atoms are closer to hydrogen than other oxygen atoms in ice crystals because
+                the oxygen sides of the H2O molecules, which are negatively charged, are attracted to hydrogen sides of other molecules,
+                which are positively charged.
+              </div>
+            </form>
     
-                  <div style='display:none;' class='sites-embed-object-title'>Q2:Crystals</div>
-                  <div class='sites-embed-content sites-embed-type-spreadsheet-form'><iframe id='1240871144' marginwidth='0' marginheight='0' frameborder='0' allowtransparency='true'
-                      title='Q2:Crystals' height='250' width='100%' src='http://docs.google.com/forms/viewform?bc=transparent&amp;embedded=true&amp;f=%2527Boogaloo%2527%252Ccursive&amp;hl=en&amp;htc=%2523666666&amp;id=1UJO0j64t3ddj8mq3VeHVsHrt3vqYyq8n5WHHy8gB8_s&amp;lc=%2523336699&amp;pli=1&amp;tc=%2523333333&amp;ttl=0'>
-                    </iframe></div>
+                  
       </p>
 
     </div>
