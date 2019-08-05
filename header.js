@@ -41,6 +41,24 @@ let firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 let db = firebase.firestore();
 // https://firestore.googleapis.com/v1beta1/projects/isptutor/databases/(default)/documents/STUDY1/RICHARDGU_JAN_1
+/*
+let xhr = new XMLHttpRequest();
+xhr.open("PATCH", 'https://firestore.googleapis.com/v1beta1/', true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+let data = {
+    updateMask: {
+            'fieldPaths': [
+            "{'brm': 'meh'}"
+        ]
+    }
+}
+let doc = {
+    'name': 'projects/isptutor/databases/(default)/documents/STUDY1/RICHARDGU_JAN_1',
+    'fields': {
+        'brm': 'meh'
+    }
+}
+xhr.send(doc);*/
 
 // logging functions
 function logLink(link) {
@@ -229,3 +247,4 @@ window.addEventListener("unload", function (e) {
     });  
 });
 */
+
