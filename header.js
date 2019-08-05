@@ -1,6 +1,12 @@
 
 let userID = localStorage.getItem("isptutor_userID");
 let collectionID = localStorage.getItem("isptutor_collectionID");
+if (userID == null) {
+    userID = "dummy_ignoreme";
+}
+if (collectionID == null) {
+    collectionID = "STUDY1"
+}
 
 
 // controls research question text
