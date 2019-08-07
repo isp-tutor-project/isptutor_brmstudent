@@ -69,7 +69,6 @@ xhr.send(doc);*/
 // logging functions
 function logLink(link) {
     db.collection(collectionID).doc(userID).get().then(doc => {
-        console.log(doc.data().brm);
         let brmStr = doc.data().brm;
         let brmData;
         if (brmStr == undefined) {
@@ -81,6 +80,7 @@ function logLink(link) {
             brmData = JSON.parse(brmStr);
         }
         brmData.linkHistory.push(link);
+        console.log(brmData);
         return brmData;
     }).then(brmData => {
         db.collection(collectionID).doc(userID).update({
@@ -105,6 +105,7 @@ function logQuizEntry(quizEntry) {
             brmData = JSON.parse(brmStr);
         }
         brmData.quizHistory.push(quizEntry);
+        console.log(brmData);
         return brmData;
     }).then(brmData => {
         db.collection(collectionID).doc(userID).update({
