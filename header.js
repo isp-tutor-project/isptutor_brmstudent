@@ -63,12 +63,14 @@ xhr.send(doc);*/
 
 // logging functions
 function logEntry(entry) {
-    let brmHistory = localStorage.getItem("isptutor_brmHistory");
-    if (brmHistory == null) {
-        brmHistory = [];
+    let brmStr = localStorage.getItem("isptutor_brmHistory");
+    if (brmStr == null) {
+        brmStr = "[]";
     }
+    
+    let brmHistory = JSON.parse(brmStr);
     brmHistory.push(entry);
-    localStorage.setItem("isptutor_brmHistory", brmHistory);
+    localStorage.setItem("isptutor_brmHistory", JSON.stringify(brmHistory));
 }
 
 
