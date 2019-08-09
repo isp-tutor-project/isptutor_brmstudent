@@ -191,5 +191,27 @@ button {
 .quiz .feedback-incorrect {  
   background-color: #FF6666;
 }
-
+.quiz table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.quiz table input {
+  display: block;
+  margin: 0 auto;
+}
+.quiz table tr:nth-child(even) {
+  background-color: #eee;
+}
+.quiz table tr:nth-child(odd) {
+  background-color: #fff;
+}
+.quiz table th {
+  font-weight: normal;
+  background-color: white;
+}
+.quiz table td {
+  padding: 10px 20px;
+}
 

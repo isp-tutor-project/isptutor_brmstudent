@@ -1,17 +1,5 @@
-/*
-let userID = localStorage.getItem("isptutor_userID");
-let collectionID = localStorage.getItem("isptutor_collectionID");
-if (userID == null) {
-    userID = "dummy_ignoreme";
-}
-if (collectionID == null) {
-    collectionID = "STUDY1"
-}*/
-
-
 
 // controls research question text
-// TODO: use sessionStorage to set the research question
 let rq = "Your Research Question:\nDoes the water temperature affect the weight of crystal growth on a string in water after two weeks?";
 document.getElementById("research-question").innerHTML = rq;
 
@@ -31,7 +19,7 @@ document.getElementById("chemical-btn").addEventListener("click", e => {
 document.getElementById("heat-btn").addEventListener("click", e => {
     location.href = "../area_heattemp";
 });
-
+/*
 // Your web app's Firebase configuration
 let firebaseConfig = {
     apiKey: "AIzaSyD7zIk-8V20QqJNSs0cAV0uNL3qjeqLMdM",
@@ -40,7 +28,7 @@ let firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-let db = firebase.firestore();
+let db = firebase.firestore();*/
 // https://firestore.googleapis.com/v1beta1/projects/isptutor/databases/(default)/documents/STUDY1/RICHARDGU_JAN_1
 /*
 let xhr = new XMLHttpRequest();
@@ -73,7 +61,7 @@ function logEntry(entry) {
     localStorage.setItem("isptutor_brmHistory", JSON.stringify(brmHistory));
 }
 
-
+/*
 function logLink(link) {
     let brmHistory = localStorage.getItem("isptutor_brmHistory");
     if (brmHistory == null) {
@@ -105,14 +93,14 @@ function logLink(link) {
         });
     }).catch((error) => {
         console.error("Error writing document: ", error);
-    });*/
-}
+    });
+}*/
 //logLink(location.href);
 logEntry({
     type: "LINK",
     link: location.href
 });
-
+/*
 function logQuizEntry(quizEntry) {
     let brmHistory = localStorage.getItem("isptutor_brmHistory");
     if (brmHistory == null) {
@@ -121,7 +109,7 @@ function logQuizEntry(quizEntry) {
     quizEntry.type = "QUIZ";
     brmHistory.push(quizEntry);
     localStorage.setItem("isptutor_brmHistory", brmHistory);
-    /*
+    
     db.collection(collectionID).doc(userID).get().then(doc => {
         let brmStr = doc.data().brm;
         let brmData;
@@ -142,10 +130,10 @@ function logQuizEntry(quizEntry) {
         });
     }).catch((error) => {
         console.error("Error writing document: ", error);
-    });*/
-}
+    });
+}*/
 
-// quiz control
+// quiz choice control
 let quizChoices = document.getElementsByClassName("quiz_choice");
 for (let quiz of quizChoices) {
     quiz.addEventListener("submit", e => {
@@ -157,11 +145,9 @@ for (let quiz of quizChoices) {
         feedbackIncorrect.style.display = "none";
         if (formData.get("question") == "correct") {
             feedbackCorrect.style.display = "block";
-            
         }
         else if (formData.get("question") == "incorrect") {
             feedbackIncorrect.style.display = "block";
-            
         }
         // else no choice selected, so ignore everything
         else {
@@ -192,6 +178,7 @@ for (let quiz of quizChoices) {
 
     });
 }
+// quiz checkbox control
 let quizCheckboxes = document.getElementsByClassName("quiz_checkbox");
 for (let quiz of quizCheckboxes) {
     quiz.addEventListener("submit", e => {
@@ -235,6 +222,7 @@ for (let quiz of quizCheckboxes) {
         logEntry(quizEntry);
     });
 }
+// quiz open control
 let quizOpens = document.getElementsByClassName("quiz_open");
 for (let quiz of quizOpens) {
     quiz.addEventListener("submit", e => {
@@ -251,41 +239,35 @@ for (let quiz of quizOpens) {
         logEntry(quizEntry);
     });
 }
-
-
-// to make sure beforeunload event doesn't trigger on link
-
-/*let links = document.querySelectorAll("a");
-for (let link of links) {
-    link.addEventListener("click", e => {
-        linkOrButton = true;
-    })
-}*/
-
-/*
-window.addEventListener("beforeunload", function (e) {
-    if (!linkOrButton) {
+// quiz grid control
+let quizGrids = document.getElementsByClassName("quiz_grid");
+for (let quiz of quizGrids) {
+    quiz.addEventListener("submit", e => {
         e.preventDefault();
-        console.log("hi");
-        db.collection("STUDY1").doc("testinguserboy4").set({
-            brmtest: "cool",
-            brmcode: 1
-        })
-        .catch(function (error) {
-            console.error("Error writing document: ", error);
-        });
-
-        e.returnValue = "";
-    }
-});
-window.addEventListener("unload", function (e) {
-    db.collection("STUDY1").doc("testinguserboy4").set({
-        brmtest: "done",
-        brmcode: 2
-    })
-    .catch(function (error) {
-        console.error("Error writing document: ", error);
-    });  
-});
-*/
-
+        let formData = new FormData(quiz);
+        let feedbackCorrect = quiz.querySelector(".feedback-correct");
+        let feedbackIncorrect = quiz.querySelector(".feedback-incorrect");
+        feedbackCorrect.style.display = "none";
+        feedbackIncorrect.style.display = "none";
+        let selected = "";
+        let isCorrect = true;
+        for (let pair of formData.entries()) {
+            selected += pair[0]+":"+pair[1]+";";
+            if (pair[1] == "incorrect") isCorrect = false;
+        }
+        if (isCorrect) {
+            feedbackCorrect.style.display = "block";
+        }
+        else {
+            feedbackIncorrect.style.display = "block";
+        }
+        let quizEntry = {
+            type: "QUIZ",
+            title: quiz.querySelector("b").innerHTML,
+            selected: selected,
+            isCorrect: isCorrect
+        }
+        console.log(quizEntry);
+        logEntry(quizEntry);
+    });
+}
