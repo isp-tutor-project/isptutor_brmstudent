@@ -272,11 +272,37 @@ for (let quiz of quizGrids) {
     });
 }
 
-// this is for brm reminder image, numSecondsDelay = number of seconds until teacher pops up
-let numSecondsDelay = 10;
-if (localStorage.getItem("isptutor_brmStartTime") != null && Date.now() - localStorage.getItem("isptutor_brmStartTime") >= numSecondsDelay*1000) {
-    let image = new Image(150, 100);
-    image.id = "brm-reminder-img"
-    image.src = "../_assets/TeacherBrmReminder.png";
-    document.body.appendChild(image);
+
+//this is for brm reminder image, 
+let overlay = document.createElement("div");
+overlay.id = "brm-reminder-overlay";
+let box = document.createElement("div");
+box.id = "brm-reminder-box";
+let image = document.createElement("img");
+image.id = "brm-reminder-img"
+image.src = "../_assets/brmReminder1.png";
+let button = document.createElement("button");
+button.innerHTML = "Okay";
+button.id = "brm-reminder-btn";
+let imgIndex = 1;
+button.addEventListener("click", e => {
+    imgIndex++;
+    if (imgIndex == 4) {
+        overlay.style.display = "none";
+        box.style.display = "none";
+        imgIndex = 1;
+    } 
+    image.src = "../_assets/brmReminder" + imgIndex + ".png";
+})
+box.appendChild(image);
+box.appendChild(button);
+document.body.appendChild(overlay);
+document.body.appendChild(box);
+
+//numSecondsDelay = number of seconds until teacher pops up
+let numSecondsDelay = 30*60;
+if (localStorage.getItem("isptutor_brmStartTime") != null && Date.now() - localStorage.getItem("isptutor_brmStartTime") >= numSecondsDelay * 1000) {
+    localStorage.removeItem("isptutor_brmStartTime");
+    overlay.style.display = "block";
+    box.style.display = "block";
 }
