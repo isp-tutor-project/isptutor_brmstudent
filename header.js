@@ -1,4 +1,4 @@
-
+/*
 let userID = localStorage.getItem("isptutor_userID");
 let collectionID = localStorage.getItem("isptutor_collectionID");
 if (userID == null) {
@@ -6,7 +6,8 @@ if (userID == null) {
 }
 if (collectionID == null) {
     collectionID = "STUDY1"
-}
+}*/
+
 
 
 // controls research question text
@@ -14,26 +15,20 @@ if (collectionID == null) {
 let rq = "Your Research Question:\nDoes the water temperature affect the weight of crystal growth on a string in water after two weeks?";
 document.getElementById("research-question").innerHTML = rq;
 
-let linkOrButton = false;
 // header button control
 document.getElementById("home-btn").addEventListener("click", e => {
-    linkOrButton = true;
     location.href = "../home";
 });
 document.getElementById("forces-btn").addEventListener("click", e => {
-    linkOrButton = true;
     location.href = "../area_forcesmotion";
 });
 document.getElementById("plant-btn").addEventListener("click", e => {
-    linkOrButton = true;
     location.href = "../Area_PlantReproduction";
 });
 document.getElementById("chemical-btn").addEventListener("click", e => {
-    linkOrButton = true;
     location.href = "../areachemphys";
 });
 document.getElementById("heat-btn").addEventListener("click", e => {
-    linkOrButton = true;
     location.href = "../area_heattemp";
 });
 
@@ -67,9 +62,30 @@ let doc = {
 xhr.send(doc);*/
 
 // logging functions
+function logEntry(entry) {
+    let brmStr = localStorage.getItem("isptutor_brmHistory");
+    if (brmStr == null) {
+        brmStr = "[]";
+    }
+    
+    let brmHistory = JSON.parse(brmStr);
+    brmHistory.push(entry);
+    localStorage.setItem("isptutor_brmHistory", JSON.stringify(brmHistory));
+}
+
+
 function logLink(link) {
+    let brmHistory = localStorage.getItem("isptutor_brmHistory");
+    if (brmHistory == null) {
+        brmHistory = [];
+    }
+    brmHistory.push({
+        type: "LINK",
+        link: link
+    });
+    localStorage.setItem("isptutor_brmHistory", brmHistory);
+    /*
     db.collection(collectionID).doc(userID).get().then(doc => {
-        console.log(doc.data().brm);
         let brmStr = doc.data().brm;
         let brmData;
         if (brmStr == undefined) {
@@ -81,6 +97,7 @@ function logLink(link) {
             brmData = JSON.parse(brmStr);
         }
         brmData.linkHistory.push(link);
+        console.log(brmData);
         return brmData;
     }).then(brmData => {
         db.collection(collectionID).doc(userID).update({
@@ -88,11 +105,23 @@ function logLink(link) {
         });
     }).catch((error) => {
         console.error("Error writing document: ", error);
-    });
+    });*/
 }
-logLink(location.href);
+//logLink(location.href);
+logEntry({
+    type: "LINK",
+    link: location.href
+});
 
 function logQuizEntry(quizEntry) {
+    let brmHistory = localStorage.getItem("isptutor_brmHistory");
+    if (brmHistory == null) {
+        brmHistory = [];
+    }
+    quizEntry.type = "QUIZ";
+    brmHistory.push(quizEntry);
+    localStorage.setItem("isptutor_brmHistory", brmHistory);
+    /*
     db.collection(collectionID).doc(userID).get().then(doc => {
         let brmStr = doc.data().brm;
         let brmData;
@@ -105,6 +134,7 @@ function logQuizEntry(quizEntry) {
             brmData = JSON.parse(brmStr);
         }
         brmData.quizHistory.push(quizEntry);
+        console.log(brmData);
         return brmData;
     }).then(brmData => {
         db.collection(collectionID).doc(userID).update({
@@ -112,7 +142,7 @@ function logQuizEntry(quizEntry) {
         });
     }).catch((error) => {
         console.error("Error writing document: ", error);
-    });
+    });*/
 }
 
 // quiz control
@@ -151,12 +181,14 @@ for (let quiz of quizChoices) {
             }
         }
         let quizEntry = {
+            type: "QUIZ",
             title: quiz.querySelector("b").innerHTML,
             selected: selected,
             isCorrect: (formData.get("question") == "correct")
         }
         console.log(quizEntry);
-        logQuizEntry(quizEntry);
+        //logQuizEntry(quizEntry);
+        logEntry(quizEntry);
 
     });
 }
@@ -194,12 +226,13 @@ for (let quiz of quizCheckboxes) {
             }
         }
         let quizEntry = {
+            type: "QUIZ",
             title: quiz.querySelector("b").innerHTML,
             selected: selected,
             isCorrect: correctness
         }
         console.log(quizEntry);
-        logQuizEntry(quizEntry);
+        logEntry(quizEntry);
     });
 }
 let quizOpens = document.getElementsByClassName("quiz_open");
@@ -209,23 +242,25 @@ for (let quiz of quizOpens) {
         let feedbackCorrect = quiz.querySelector(".feedback-correct");
         feedbackCorrect.style.display = "block";
         let quizEntry = {
+            type: "QUIZ",
             title: quiz.querySelector("b").innerHTML,
             selected: quiz.querySelector("textarea").value,
             isCorrect: true
         }
         console.log(quizEntry);
-        logQuizEntry(quizEntry);
+        logEntry(quizEntry);
     });
 }
 
 
 // to make sure beforeunload event doesn't trigger on link
-let links = document.querySelectorAll("a");
+
+/*let links = document.querySelectorAll("a");
 for (let link of links) {
     link.addEventListener("click", e => {
         linkOrButton = true;
     })
-}
+}*/
 
 /*
 window.addEventListener("beforeunload", function (e) {
