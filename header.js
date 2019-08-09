@@ -272,7 +272,8 @@ for (let quiz of quizGrids) {
     });
 }
 
-let numSecondsDelay = 0;
+// this is for brm reminder image, numSecondsDelay = number of seconds until teacher pops up
+let numSecondsDelay = 10;
 if (localStorage.getItem("isptutor_brmStartTime") != null && Date.now() - localStorage.getItem("isptutor_brmStartTime") >= numSecondsDelay) {
     let image = new Image(150, 100);
     image.id = "brm-reminder-img"
