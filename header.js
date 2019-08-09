@@ -274,7 +274,7 @@ for (let quiz of quizGrids) {
 
 // this is for brm reminder image, numSecondsDelay = number of seconds until teacher pops up
 let numSecondsDelay = 10;
-if (localStorage.getItem("isptutor_brmStartTime") != null && Date.now() - localStorage.getItem("isptutor_brmStartTime") >= numSecondsDelay) {
+if (localStorage.getItem("isptutor_brmStartTime") != null && Date.now() - localStorage.getItem("isptutor_brmStartTime") >= numSecondsDelay*1000) {
     let image = new Image(150, 100);
     image.id = "brm-reminder-img"
     image.src = "../_assets/TeacherBrmReminder.png";
