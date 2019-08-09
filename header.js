@@ -271,3 +271,11 @@ for (let quiz of quizGrids) {
         logEntry(quizEntry);
     });
 }
+
+let numSecondsDelay = 0;
+if (localStorage.getItem("isptutor_brmStartTime") != null && Date.now() - localStorage.getItem("isptutor_brmStartTime") >= numSecondsDelay) {
+    let image = new Image(150, 100);
+    image.id = "brm-reminder-img"
+    image.src = "../_assets/TeacherBrmReminder.png";
+    document.body.appendChild(image);
+}

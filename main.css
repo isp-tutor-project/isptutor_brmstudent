@@ -24,12 +24,12 @@ button {
 #research-question {
   position: absolute;
   left: 7.5%;
-  top: 7%;
+  top: 50px;
   width: 22%;
   text-align: center;
   font-family: 'Pangolin', cursive;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 1.3em;
   white-space: pre-line;
 }
 
@@ -69,6 +69,11 @@ button {
 .header-btn:hover {
   background-color: #244785;
   border-color: #244785;
+}
+#brm-reminder-img {
+  position: absolute;
+  top: 180px;
+  right: 10%;
 }
 
 /* Nav buttons */
