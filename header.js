@@ -300,7 +300,7 @@ document.body.appendChild(overlay);
 document.body.appendChild(box);
 
 //numSecondsDelay = number of seconds until teacher pops up
-let numSecondsDelay = 30*60;
+let numSecondsDelay = 15*60;
 if (localStorage.getItem("isptutor_brmStartTime") != null && Date.now() - localStorage.getItem("isptutor_brmStartTime") >= numSecondsDelay * 1000) {
     localStorage.removeItem("isptutor_brmStartTime");
     overlay.style.display = "block";
