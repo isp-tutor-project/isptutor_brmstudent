@@ -1,4 +1,4 @@
-
+/*
 let indexStart = location.href.indexOf("?");
 if (indexStart != -1) {
     let restOfString = location.href.substring(indexStart+1);
@@ -22,3 +22,4 @@ if (indexStart != -1) {
     }
 
 }
+*/

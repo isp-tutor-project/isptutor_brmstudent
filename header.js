@@ -5,7 +5,7 @@ document.getElementById("research-question").innerHTML = rq;
 
 // header button control
 document.getElementById("home-btn").addEventListener("click", e => {
-    location.href = "../home";
+    //location.href = "../home";
 });
 document.getElementById("forces-btn").addEventListener("click", e => {
     location.href = "../area_forcesmotion";
