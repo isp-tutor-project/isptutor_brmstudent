@@ -4,6 +4,7 @@ let rq = "Your Research Question:\nDoes the water temperature affect the weight 
 document.getElementById("research-question").innerHTML = rq;
 
 // header button control
+/*
 document.getElementById("home-btn").addEventListener("click", e => {
     //location.href = "../home";
 });
@@ -19,6 +20,7 @@ document.getElementById("chemical-btn").addEventListener("click", e => {
 document.getElementById("heat-btn").addEventListener("click", e => {
     location.href = "../area_heattemp";
 });
+*/
 /*
 // Your web app's Firebase configuration
 let firebaseConfig = {
