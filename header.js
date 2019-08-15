@@ -6,54 +6,6 @@ if (localStorage.getItem("isptutor_rq") != undefined) {
 }
 document.getElementById("research-question").innerHTML = rq;
 
-// header button control
-/*
-document.getElementById("home-btn").addEventListener("click", e => {
-    //location.href = "../home";
-});
-document.getElementById("forces-btn").addEventListener("click", e => {
-    location.href = "../area_forcesmotion";
-});
-document.getElementById("plant-btn").addEventListener("click", e => {
-    location.href = "../Area_PlantReproduction";
-});
-document.getElementById("chemical-btn").addEventListener("click", e => {
-    location.href = "../areachemphys";
-});
-document.getElementById("heat-btn").addEventListener("click", e => {
-    location.href = "../area_heattemp";
-});
-*/
-/*
-// Your web app's Firebase configuration
-let firebaseConfig = {
-    apiKey: "AIzaSyD7zIk-8V20QqJNSs0cAV0uNL3qjeqLMdM",
-    authDomain: "isptutor.firebaseapp.com",
-    projectId: "isptutor"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-let db = firebase.firestore();*/
-// https://firestore.googleapis.com/v1beta1/projects/isptutor/databases/(default)/documents/STUDY1/RICHARDGU_JAN_1
-/*
-let xhr = new XMLHttpRequest();
-xhr.open("PATCH", 'https://firestore.googleapis.com/v1beta1/', true);
-xhr.setRequestHeader('Content-Type', 'application/json');
-let data = {
-    updateMask: {
-            'fieldPaths': [
-            "{'brm': 'meh'}"
-        ]
-    }
-}
-let doc = {
-    'name': 'projects/isptutor/databases/(default)/documents/STUDY1/RICHARDGU_JAN_1',
-    'fields': {
-        'brm': 'meh'
-    }
-}
-xhr.send(doc);*/
-
 // logging functions
 function logEntry(entry) {
     let brmStr = localStorage.getItem("isptutor_brmHistory");
@@ -66,77 +18,10 @@ function logEntry(entry) {
     localStorage.setItem("isptutor_brmHistory", JSON.stringify(brmHistory));
 }
 
-/*
-function logLink(link) {
-    let brmHistory = localStorage.getItem("isptutor_brmHistory");
-    if (brmHistory == null) {
-        brmHistory = [];
-    }
-    brmHistory.push({
-        type: "LINK",
-        link: link
-    });
-    localStorage.setItem("isptutor_brmHistory", brmHistory);
-    /*
-    db.collection(collectionID).doc(userID).get().then(doc => {
-        let brmStr = doc.data().brm;
-        let brmData;
-        if (brmStr == undefined) {
-            brmData = {};
-            brmData.linkHistory = [];
-            brmData.quizHistory = [];
-        }
-        else {
-            brmData = JSON.parse(brmStr);
-        }
-        brmData.linkHistory.push(link);
-        console.log(brmData);
-        return brmData;
-    }).then(brmData => {
-        db.collection(collectionID).doc(userID).update({
-            brm: JSON.stringify(brmData)
-        });
-    }).catch((error) => {
-        console.error("Error writing document: ", error);
-    });
-}*/
-//logLink(location.href);
 logEntry({
     type: "LINK",
     link: location.href
 });
-/*
-function logQuizEntry(quizEntry) {
-    let brmHistory = localStorage.getItem("isptutor_brmHistory");
-    if (brmHistory == null) {
-        brmHistory = [];
-    }
-    quizEntry.type = "QUIZ";
-    brmHistory.push(quizEntry);
-    localStorage.setItem("isptutor_brmHistory", brmHistory);
-    
-    db.collection(collectionID).doc(userID).get().then(doc => {
-        let brmStr = doc.data().brm;
-        let brmData;
-        if (brmStr == undefined) {
-            brmData = {};
-            brmData.linkHistory = [];
-            brmData.quizHistory = [];
-        }
-        else {
-            brmData = JSON.parse(brmStr);
-        }
-        brmData.quizHistory.push(quizEntry);
-        console.log(brmData);
-        return brmData;
-    }).then(brmData => {
-        db.collection(collectionID).doc(userID).update({
-            brm: JSON.stringify(brmData)
-        });
-    }).catch((error) => {
-        console.error("Error writing document: ", error);
-    });
-}*/
 
 // quiz choice control
 let quizChoices = document.getElementsByClassName("quiz_choice");
