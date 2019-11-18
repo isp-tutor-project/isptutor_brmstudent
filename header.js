@@ -1,3 +1,8 @@
+/*global db */
+
+// these are set when you register/login so that other pages can access/manipulate student data in firebase
+let collectionID = localStorage.getItem("collectionID");
+let userID = localStorage.getItem("userID");
 
 // controls research question text
 let rq = "Your Research Question:\nDoes the water temperature affect the weight of crystal growth on a string in water after two weeks?";
@@ -6,16 +11,55 @@ if (localStorage.getItem("isptutor_rq") != undefined) {
 }
 document.getElementById("research-question").innerHTML = rq;
 
-// logging functions
-function logEntry(entry) {
-    let brmStr = localStorage.getItem("isptutor_brmHistory");
-    if (brmStr == null) {
-        brmStr = "[]";
-    }
+// // logging functions
+// function logEntry(entry) {
+//     let brmStr = localStorage.getItem("isptutor_brmHistory");
+//     if (brmStr == null) {
+//         brmStr = "[]";
+//     }
     
-    let brmHistory = JSON.parse(brmStr);
-    brmHistory.push(entry);
-    localStorage.setItem("isptutor_brmHistory", JSON.stringify(brmHistory));
+//     let brmHistory = JSON.parse(brmStr);
+//     brmHistory.push(entry);
+//     localStorage.setItem("isptutor_brmHistory", JSON.stringify(brmHistory));
+// }
+
+function dumpBrmHistory() {
+    db.collection(collectionID).doc(userID).get().then((doc) => {
+        let data = doc.data();
+        let brmStr = data.brm || "[]";
+        let brmHistory = JSON.parse(brmStr);
+        console.log(JSON.stringify(brmHistory, null, 4));
+    })
+    .catch(function(error) {
+        console.error(error);
+    });
+}
+
+function logEntry(entry) {
+    db.collection(collectionID).doc(userID).get()
+    .then((doc) => {
+        if (doc.exists) {
+            console.log("document exists.");
+            let data = doc.data();
+            let brmStr = data.brm || "[]";
+            let brmHistory = JSON.parse(brmStr);
+            brmHistory.push(entry);
+            db.collection(collectionID).doc(userID).update({
+                brm: JSON.stringify(brmHistory)
+            })
+            .then(() => {
+                console.log('brm history updated in firebase');
+            })
+            .catch(function(error) {
+                console.error(error);
+            });
+        } else {
+            console.log("document does not exist");
+        }
+    })
+    .catch(function(error) {
+        console.error(error);
+    });
 }
 
 logEntry({
