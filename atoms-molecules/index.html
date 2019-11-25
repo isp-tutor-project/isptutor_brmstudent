@@ -13,7 +13,7 @@
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
 <script src="../../firebase.js"></script>
-<script src="../../fibscript.js"></script>
+<script src="../js/fibscript.js"></script>
 </head>
 
 <body>
@@ -223,12 +223,12 @@
               charged, which is shown by the minus (-) signs on the balloon. The minus signs (-) mean that there are electrons 
               on the balloon (since electrons are negatively charged). Your hair is positively charged. 
               Your hair will be attracted to the balloon because of the 
-              <select id="FIB1" class="fib_select">
-                <option value="incorrect" onclick="fibUpdate('FIB1',0)">(Select one)</option>
-                <option value="incorrect" onclick="fibUpdate('FIB1',0)">gravitational</option>
-                <option value="correct" onclick="fibUpdate('FIB1',1)">electric</option>
-                <option value="incorrect" onclick="fibUpdate('FIB1',0)">magnetic</option>
-                <option value="incorrect" onclick="fibUpdate('FIB1',0)">strong</option>
+              <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
+                <option value="#ffffff">(Select one)</option>
+                <option value="#ed8587">gravitational</option>
+                <option value="#11bf7a">electric</option>
+                <option value="#ed8587">magnetic</option>
+                <option value="#ed8587">strong</option>
               </select>
 
               force. (This is shown in the picture below.)</li>
