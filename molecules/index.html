@@ -13,6 +13,7 @@
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
 <script src="../../firebase.js"></script>
+<script src="../js/fibscript.js"></script>
 </head>
 
 <body>
@@ -123,7 +124,17 @@
               <div style='text-align:center'><br/>
               </div>
             </div>
-            <div style='text-align: left'><span style='background-color:transparent'>In the picture above on the right, the electrons are shown this time as dots on the <b>Energy circles</b>. This picture shows how an electron (e-) from Na moves to the Cl atom. Because there is an extra electron (e-) on the Cl side of the NaCl molecule, the Cl side is negatively charged. Because the Na atom has lost an electron, it becomes positively charged.<br><br>(Note: Each Energy circle represents a different amount of energy that all electrons on that circle have. The Energy circles do not show how the electrons move or orbit the nucleus.)</span></div>
+            <div style='text-align: left'><span style='background-color:transparent'>In the picture above on the right, the electrons are shown this time as dots on the <b>Energy circles</b>. This picture shows how an electron (e-) from Na moves to the Cl atom. Because there is an extra electron (e-) on the Cl side of the NaCl molecule, the Cl side is negatively charged. 
+              Because the Na atom has lost an electron, it becomes
+
+              <select id="FIB2" class="fib_select" onchange="fibUpdate('FIB2')">
+                <option value="#ffffff">(Select one)</option>
+                <option value="#11bf7a">positively charged</option>
+                <option value="#ed8587">negatively charged</option>
+                <option value="#ed8587">neutral (no charge)</option>
+              </select>.
+              
+              <br><br>(Note: Each Energy circle represents a different amount of energy that all electrons on that circle have. The Energy circles do not show how the electrons move or orbit the nucleus.)</span></div>
       </div>
            
       <div id="page4" class="page">
