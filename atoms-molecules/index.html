@@ -13,6 +13,7 @@
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
 <script src="../../firebase.js"></script>
+<script src="../../fibscript.js"></script>
 </head>
 
 <body>
@@ -219,14 +220,15 @@
           <ul>
             <li>If you rub a balloon on your hair, your hair will "stick" to the balloon. This is because when the balloon
               material rubbed your hair, electrons (e-) from your hair moved to the balloon. Now the balloon is negatively
-              charged, which is shown by the minus (-) signs on the balloon. The minus signs (-) mean that there are electrons on the balloon (since electrons are negatively charged). Your hair is positively charged. 
+              charged, which is shown by the minus (-) signs on the balloon. The minus signs (-) mean that there are electrons 
+              on the balloon (since electrons are negatively charged). Your hair is positively charged. 
               Your hair will be attracted to the balloon because of the 
-              <select>
-                <option value="(blank))" value="incorrect">(Select one)</option>
-                <option value="gravitational" value="incorrect">gravitational</option>
-                <option value="electric" value="correct">electric</option>
-                <option value="magnetic" value="incorrect">magnetic</option>
-                <option value="strong" value="incorrect">strong</option>
+              <select id="FIB1" class="fib_select">
+                <option value="incorrect" onclick="fibUpdate('FIB1',0)">(Select one)</option>
+                <option value="incorrect" onclick="fibUpdate('FIB1',0)">gravitational</option>
+                <option value="correct" onclick="fibUpdate('FIB1',1)">electric</option>
+                <option value="incorrect" onclick="fibUpdate('FIB1',0)">magnetic</option>
+                <option value="incorrect" onclick="fibUpdate('FIB1',0)">strong</option>
               </select>
 
               force. (This is shown in the picture below.)</li>
