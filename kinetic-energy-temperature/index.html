@@ -86,25 +86,60 @@
             
           </div> <br>
               <form class="quiz_open quiz">
-                <b>Q1: What is the kinetic energy (KE) of an object that is not moving?</b>
-                <textarea></textarea><br>
+                <b>Q1 (check your basic understanding): What is the kinetic energy (KE) of an object that is not moving?</b>
+               
+                <input type="radio" name="question" value="incorrect">
+                <div class="label">a) It's impossible to tell.</div><br>
+                <input type="radio" name="question" value="incorrect">
+                <div class="label">b) It's equal to the mass of the object.</div><br>
+                <input type="radio" name="question" value="correct">
+                <div class="label">c) Zero.</div><br>
+                <input type="radio" name="question" value="incorrect">
+                <div class="label">d) None of the above.</div><br>
                 <button type="submit" class="submit-btn">Submit</button>
                 <div class="feedback-correct feedback">
-                  (zero) Because KE = 1/2mv<sup>2</sup>, if v is zero, the KE of the object would also be zero.
+                  Right! <br>
+                  KE = 1/2*mass*velocity^2. So, if the object is not moving (and its velocity is zero) the kinetic energy is also zero.
                 </div>
+                <div class="feedback-incorrect feedback">
+                  Well, actually..... <br>
+                  KE = 1/2*mass*velocity^2. So if the object is not moving (and its velocity is zero) the kinetic energy is also zero.
+                </div>
+
               </form>
           <br>
           <br>
             <form class="quiz_open quiz">
               <b>
                 Q2: Based on the formula for kinetic energy, does an object's mass or speed/velocity have a greater effect on an object's kinetic energy?</b>
-              <textarea></textarea><br>
+              
+                <input type="radio" name="question" value="incorrect">
+                <div class="label">a) Its mass.</div><br>
+                <input type="radio" name="question" value="correct">
+                <div class="label">b) Its speed/velocity.</div><br>
+                <input type="radio" name="question" value="incorrect">
+                <div class="label">c) Mass and speed/velocity have the same influence on kinetic energy.</div><br>
+                <input type="radio" name="question" value="incorrect">
+                <div class="label">d) None of the above.</div><br>
+                
               <button type="submit" class="submit-btn">Submit</button>
+
+
               <div class="feedback-correct feedback">
-                (The speed/velocity)	Because KE = 1/2mv<sup>2</sup>, changes in speed/velocity would have a greater effect on the object's KE than the object's mass. (BUT: only true above 1!)
+                Right! <br>
+                Because KE = 1/2mv<sup>2</sup>, changes in speed/velocity would have a greater effect on the object's KE than the object's mass.
+
+              </div>
+              <div class="feedback-incorrect feedback">
+                Well, actually..... <br>
+                Because KE = 1/2mv<sup>2</sup>, changes in speed/velocity would have a greater effect on the object's KE than the object's mass.
+              </div>
+              
               </div>
             </form>
             <br> <br>
+
+
               <form class="quiz_choice quiz">
                 <b>
                   Q3: A Hydrogen molecule (H<sub>2</sub>) has a mass of 2 amu. (amu stands for "atomic mass units", which is equal to the mass of one proton or neutron, which is 0.00000000000000000000000334 grams.) 
