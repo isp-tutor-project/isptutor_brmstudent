@@ -11,55 +11,50 @@ if (localStorage.getItem("isptutor_rq") != undefined) {
 }
 document.getElementById("research-question").innerHTML = rq;
 
-// // logging functions
-// function logEntry(entry) {
-//     let brmStr = localStorage.getItem("isptutor_brmHistory");
-//     if (brmStr == null) {
-//         brmStr = "[]";
-//     }
-    
-//     let brmHistory = JSON.parse(brmStr);
-//     brmHistory.push(entry);
-//     localStorage.setItem("isptutor_brmHistory", JSON.stringify(brmHistory));
-// }
-
 function dumpBrmHistory() {
-    db.collection(collectionID).doc(userID).get().then((doc) => {
-        let data = doc.data();
-        let brmStr = data.brm || "[]";
-        let brmHistory = JSON.parse(brmStr);
-        console.log(JSON.stringify(brmHistory, null, 4));
-    })
-    .catch(function(error) {
-        console.error(error);
-    });
-}
-
-function logEntry(entry) {
-    db.collection(collectionID).doc(userID).get()
-    .then((doc) => {
-        if (doc.exists) {
-            console.log("document exists.");
+    // now a no-op if collectionID and/or userID are unknown
+    if (collectionID !== null && userID !== null) {
+        db.collection(collectionID).doc(userID).get().then((doc) => {
             let data = doc.data();
             let brmStr = data.brm || "[]";
             let brmHistory = JSON.parse(brmStr);
-            brmHistory.push(entry);
-            db.collection(collectionID).doc(userID).update({
-                brm: JSON.stringify(brmHistory)
-            })
-            .then(() => {
-                console.log('brm history updated in firebase');
-            })
-            .catch(function(error) {
-                console.error(error);
-            });
-        } else {
-            console.log("document does not exist");
-        }
-    })
-    .catch(function(error) {
-        console.error(error);
-    });
+            console.log(JSON.stringify(brmHistory, null, 4));
+        })
+        .catch(function(error) {
+            console.error(error);
+        });
+    }
+}
+
+function logEntry(entry) {
+    // now a no-op if the collectionID and/or userID are unknown
+    // allows non-experiment users to browse the site
+    if(collectionID !== null && userID !== null) {
+        db.collection(collectionID).doc(userID).get()
+        .then((doc) => {
+            if (doc.exists) {
+                console.log("document exists.");
+                let data = doc.data();
+                let brmStr = data.brm || "[]";
+                let brmHistory = JSON.parse(brmStr);
+                brmHistory.push(entry);
+                db.collection(collectionID).doc(userID).update({
+                        brm: JSON.stringify(brmHistory)
+                    })
+                    .then(() => {
+                        console.log('brm history updated in firebase');
+                    })
+                    .catch(function (error) {
+                        console.error(error);
+                    });
+            } else {
+                console.log("document does not exist");
+            }
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
+    }
 }
 
 logEntry({
