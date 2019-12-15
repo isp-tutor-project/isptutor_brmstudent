@@ -30,20 +30,7 @@ nextButtonActive.addEventListener("mouseout", e => {
 // manage clicks
 backButtonActive.addEventListener("click", e => {
     pageIndex--;
-    if (pageIndex == 0) {
-        backButtonInactive.style.display = "none";
-        backButtonActive.style.display = "none";
-    }
-    else {
-        backButtonInactive.style.display = "block";
-    }
-    if (pageIndex == numPages - 1) {
-        nextButtonInactive.style.display = "none";
-        nextButtonActive.style.display = "none";
-    }
-    else {
-        nextButtonInactive.style.display = "block";
-    }
+    displayNavButtons();
     //document.getElementById("page" + (pageIndex + 2)).style.display = "none";
     clearPage();
     document.getElementById("page" + (pageIndex+1)).style.display = "block";
@@ -51,20 +38,7 @@ backButtonActive.addEventListener("click", e => {
 });
 nextButtonActive.addEventListener("click", e => {
     pageIndex++;
-    if (pageIndex == 0) {
-        backButtonInactive.style.display = "none";
-        backButtonActive.style.display = "none";
-    }
-    else {
-        backButtonInactive.style.display = "block";
-    }
-    if (pageIndex == numPages - 1) {
-        nextButtonInactive.style.display = "none";
-        nextButtonActive.style.display = "none";
-    }
-    else {
-        nextButtonInactive.style.display = "block";
-    }
+    displayNavButtons();
     //document.getElementById("page" + pageIndex).style.display = "none";
     clearPage();
     document.getElementById("page"+(pageIndex+1)).style.display = "block";
@@ -79,9 +53,28 @@ function clearPage () {
     }
 }
 
+function displayNavButtons () {
+    if (pageIndex == 0) {
+        backButtonInactive.style.display = "none";
+        backButtonActive.style.display = "none";
+    }
+    else {
+        backButtonInactive.style.display = "block";
+    }
+    if (pageIndex == numPages - 1) {
+        nextButtonInactive.style.display = "none";
+        nextButtonActive.style.display = "none";
+    }
+    else {
+        nextButtonInactive.style.display = "block";
+    }
+}
+
 function tocPageJump (mySelectId) {
     //displays the page of the passed ID for Table of contents - MAV
+    pageIndex = mySelectId-1;
+    displayNavButtons();
     clearPage(); 
     document.getElementById("page" + mySelectId).style.display = "block";
-    pageIndex = mySelectId;
+ 
 }
