@@ -83,4 +83,5 @@ function tocPageJump (mySelectId) {
     //displays the page of the passed ID for Table of contents - MAV
     clearPage(); 
     document.getElementById("page" + mySelectId).style.display = "block";
+    pageIndex = mySelectId;
 }
