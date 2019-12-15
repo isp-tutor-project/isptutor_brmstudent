@@ -44,7 +44,8 @@ backButtonActive.addEventListener("click", e => {
     else {
         nextButtonInactive.style.display = "block";
     }
-    document.getElementById("page" + (pageIndex + 2)).style.display = "none";
+    //document.getElementById("page" + (pageIndex + 2)).style.display = "none";
+    clearPage();
     document.getElementById("page" + (pageIndex+1)).style.display = "block";
     scrollTo(0, 0);
 });
@@ -64,7 +65,22 @@ nextButtonActive.addEventListener("click", e => {
     else {
         nextButtonInactive.style.display = "block";
     }
-    document.getElementById("page" + pageIndex).style.display = "none";
+    //document.getElementById("page" + pageIndex).style.display = "none";
+    clearPage();
     document.getElementById("page"+(pageIndex+1)).style.display = "block";
     scrollTo(0, 0);
 });
+
+function clearPage () {
+    var tmpPages = document.getElementsByClassName("page");
+    var i;
+    for (i = 0; i < tmpPages.length; i++) {
+        tmpPages[i].style.display = 'none';
+    }
+}
+
+function tocPageJump (mySelectId) {
+    //displays the page of the passed ID for Table of contents - MAV
+    clearPage(); 
+    document.getElementById("page" + mySelectId).style.display = "block";
+}
