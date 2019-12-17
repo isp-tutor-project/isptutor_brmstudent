@@ -13,6 +13,7 @@
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
 <script src="../../firebase.js"></script>
+<script src="../js/fibscript.js"></script>
 </head>
 
 <body>
@@ -84,7 +85,17 @@
             example, if you rub a balloon on your hair, your hair will "stick" to the balloon (see the picture below). This is because when the balloon
             material rubbed your hair, electrons from your hair moved to the balloon.  So, now the balloon is
             negatively charged (represented as red negative signs in the picture on the right). Your hair is positively charged (represented as positive signs). So your hair will be attracted to the balloon through the
-            electric force. </span></div>
+            
+            <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
+              <option value="#ffffff"><b>(Select one)</b></option>
+              <option value="#ed8587">gravitational</option>
+              <option value="#11bf7a">electric</option>
+              <option value="#ed8587">magnetic</option>
+              <option value="#ed8587">strong</option>
+            </select>
+
+            
+            force. </span></div>
         <div dir='ltr'><span style='background-color:transparent'><br/></span></div>
         <div dir='ltr'><span style='background-color:transparent'>
             <div style='display:block;text-align:left'><img style='display:block;margin-right:auto;margin-left:auto;text-align:center'
