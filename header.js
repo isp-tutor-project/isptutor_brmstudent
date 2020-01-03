@@ -5,9 +5,9 @@ let collectionID = localStorage.getItem("collectionID");
 let userID = localStorage.getItem("userID");
 
 // controls research question text
-let rq = "Your Research Question:\nDoes the water temperature affect the weight of crystal growth on a string in water after two weeks?";
+let rq = "Does the water temperature affect the weight of crystal growth on a string in water after two weeks?";
 if (localStorage.getItem("isptutor_rq") != undefined) {
-    rq = "Your Research Question:\n" + localStorage.getItem("isptutor_rq");
+    rq = localStorage.getItem("isptutor_rq");
 }
 document.getElementById("research-question").innerHTML = rq;
 
