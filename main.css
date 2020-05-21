@@ -254,3 +254,8 @@ button {
   font-size: 20px;
   border-radius: 5px;
 }
+
+/*Content pages*/
+p.content-item {
+  line-height: 1.5em;
+}
