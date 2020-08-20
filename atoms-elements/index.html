@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,7 +13,7 @@
   <!-- Google Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
+  <script src="../../firebase.js"></script>
 </head>
 
 <body>
@@ -36,115 +37,123 @@
     <h1>Atoms-Elements</h1>
 
     <div id="page1" class="page">
-      <p> <b>Elements.</b> There are many different types of atoms, called <i>elements. </i>Hydrogen, carbon, oxygen, sodium,
-        and chlorine are a few different elements. <span style='background-color:transparent'>An individual atom can be classified
-          as a specific element based on the number of protons the atom has. </span></p>
-      <p><span style='background-color:transparent'>The figure below is a drawing of two different elements: hydrogen and
-          carbon. Hydrogen is the simplest element, with just one proton (p+) and one electron (e-). Unlike every other element, hydrogen doesn't have any neutrons. Oxygen is more
-          complex (with 8 protons, 8 neutrons, and 8 electrons). Your body is made of a whole lot of atoms of these two elements! </span></p>
-      <div>
-        <div><b style='background-color:rgb(0,255,0)'><br/></b></div>
-        <div><b style='background-color:rgb(0,255,0)'><div style='display:block;text-align:left'><img src='oxyhydgraphicrev.jpg' alt='Graphic_of_Oxygen_Hydrogen'
-                border='0' /></div></b></div>
-        <div><br/>
+      <p>
+        <b>Elements.</b> There are many different types of atoms, called <i>elements. </i>Hydrogen, carbon, oxygen,
+        sodium, and chlorine are a few different elements. An individual atom can be classified as a specific element
+        based on the number of protons the atom has. 
+      </p>
+      <p>
+        The figure below is a drawing of two different elements: hydrogen and carbon. Hydrogen is the simplest element,
+        with just one proton (p+) and one electron (e-). Unlike every other element, hydrogen doesn't have any neutrons.
+        Oxygen is more complex (with 8 protons, 8 neutrons, and 8 electrons). Your body is made of a whole lot of atoms
+        of these two elements!
+      </p>
+
+      <br>
+      <img src="oxyhydgraphicrev.jpg" alt="Graphic_of_Oxygen_Hydrogen" />
+
+      <p>
+        Atoms in their basic "elemental" forms have no "net" charge. That is, they have the same number of (negatively
+        charged) electrons (e-) and (positively charged) protons (p+).
+      </p>
+      <p>
+        The elements we have discovered (so far!) are shown in 
+        <b><u><a target="_blank" href="../periodic-table/index.html">Periodic Tables like this one</a></u></b>
+        .  Elements in Periodic tables are ordered by "atomic number," which is the number of protons the element has.
+        The atomic number/number of protons is shown in the top right corner of each box for each element. For
+        example, as you can see in the Periodic Table, the element Sodium (Na) has 11 protons. 
+      </p>
+
+      <br>
+
+      <form class="quiz_choice quiz">
+        <b>Q0.5: How many protons does the element Chlorine (Cl) have? (Hint: look in the upper right corner of the box
+          with "Cl" in the Periodic Table.)</b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) 6</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">b) 12.01</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">c) 17</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) 35.45</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          You're right! The element Cl has an atomic number of 17. This is the number of protons that a Cl atom has.
         </div>
-      </div>
-      <div style='text-align:center'><span style='background-color:transparent'><div style='text-align:left'><span style='background-color:transparent'>Atoms
-              in their basic "elemental" forms have no "net" charge. That is, they have the same number of (negatively charged) electrons (e-) and
-              (positively charged) protons (p+).
-            </span></div></span></div>
-      <div style='text-align:left'><br/>
-      </div><span style='background-color:transparent'><div style='text-align:left'><span style='background-color:transparent'>The
-            elements we have discovered (so far!) are shown in </span><b style='background-color:transparent'><u><a target='_blank'
-                href='../periodic-table/index.html'><font color='#0000ff'>Periodic Tables like this one</font></a></u></b><span
-            style='background-color:transparent'>.</span><span style='background-color:transparent'> Elements in Periodic tables
-            are ordered by "atomic number," which is the number of protons the element has. The atomic number/number of protons
-            is shown in the top right corner of each box for each element. </span><span style='background-color:transparent'>For
-            example, as you can see in the Periodic Table, the element Sodium (Na) has 11 protons. </span></div>
-        <div style='text-align:left'><span style='background-color:transparent'><br/></span></div>
+        <div class="feedback-incorrect feedback">
+          Well, if you look carefully at the Periodic Table, you will see that the element Cl has an atomic number of
+          17. This is the number of protons that a Cl atom has.
+        </div>
+      </form>
 
-        <br>
+      <br>
+    </div>
 
-        <form class="quiz_choice quiz">
-            <b>Q0.5: How many protons does the element Chlorine (Cl) have? (Hint: look in the upper right corner of the box with "Cl" in the Periodic Table.)</b>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">a) 6</div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">b) 12.01</div><br>
-            <input type="radio" name="question" value="correct">
-            <div class="label">c) 17</div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">d) 35.45</div><br>
-            <button type="submit" class="submit-btn">Submit</button>
-            <div class="feedback-correct feedback">
-                You're right! The element Cl has an atomic number of 17. This is the number of protons that a Cl atom has.
-            </div>
-            <div class="feedback-incorrect feedback">
-                Well, if you look carefully at the Periodic Table, you will see that the element Cl has an atomic number of 17. This is the number of protons that a Cl atom has.
-            </div>
-          </form>
-        <div style='text-align:left'><span style='background-color:transparent'></span></div>
-        <span style='background-color:transparent'><div style='text-align:left'><span style='background-color:transparent'><b><i><br/></i></b></span></div>
-          
-        </div> 
-        
-        <div id="page2" class="page">
-        
-        <div style='text-align:left'><span style='background-color:transparent'><b>Ions of elements</b>: Sometimes elements
-              gain or lose one or more electrons. Because the atoms no longer have the same number of protons (+) and electrons
-              (-), they have an electric charge. Atoms that have lost or gained electrons are called <b>ions</b>. </span></div>
-         
-          <div style='text-align:left'>
-            <ul>
-              <li>One example of an ion is a hydrogen (H) atom that has lost an electron. It now has one proton (p+)
-                but no electrons. So, the hydrogen ion has a positive charge. A hydrogen ion is written as H+. </li>
-            </ul>
-            <ul>
-              <li>The "+" sign means that it has a "net"
-                <font color='#0000ff'>positive</font> charge, or there are more (positively-charged) protons than (negatively-charged)
-                electrons.
-              </li>
-            </ul>
-            <ul>
-              <li>Another example of an ion is a Fluorine (F) atom that has gained an electron (e-). It now has one more electron
-                than protons (p+), so it has a negative charge. A Fluorine ion (called Fluoride) is written as Fl-.  </li>
-            </ul>
-            <ul>
-              <li>The "-" sign means that it has a "net"
-                <font color='#ff0000'>negative</font> charge, or there are more (negatively-charged) electrons than (positively-charged)
-                protons.
-              </li>
-            </ul><br/>   
+    <div id="page2" class="page">
 
-          </div>
-<br>
+      <p>
+        <b>Ions of elements</b>: Sometimes elements gain or lose one or more electrons. Because the atoms no longer
+        have the same number of protons (+) and electrons (-), they have an electric charge. Atoms that have lost or
+        gained electrons are called <b>ions</b>. 
+      </p>
 
-          <form class="quiz_choice quiz">
-              <b>Q1: An atom of the element Clorine (Cl) has a total of 18 electrons. How should this atom be represented in writing?</b>
-              <input type="radio" name="question" value="incorrect">
-              <div class="label">a) Cl</div><br>
-              <input type="radio" name="question" value="incorrect">
-              <div class="label">b) Cl+</div><br>
-              <input type="radio" name="question" value="correct">
-              <div class="label">c) Cl-</div><br>
-              <input type="radio" name="question" value="incorrect">
-              <div class="label">d) How should I know?</div><br>
-              <button type="submit" class="submit-btn">Submit</button>
-              <div class="feedback-correct feedback">
-                  You are correct! Looking at the Periodic Table, you can see that Chlorine's atomic number is 17. This means that it has 17 protons. 
-                  Since this Chlorine atom has 18 electrons, it has one more negatively-charged particle than positively-charged particle. So, we'd write it as Cl-.
-              </div>
-              <div class="feedback-incorrect feedback">
-                  Well, if you look at the Periodic Table, you can see that Chlorine's atomic number is 17. This means that it has 17 protons. 
-                  Since this Chlorine atom has 18 electrons, it has one more negatively-charged particle than positively-charged particle. So, we'd write it as Cl-.
-              </div>
-            </form>
+      <ul>
+        <li>
+          One example of an ion is a hydrogen (H) atom that has lost an electron. It now has one proton (p+)
+          but no electrons. So, the hydrogen ion has a positive charge. A hydrogen ion is written as H+. 
+        </li>
+      </ul>
+      <ul>
+        <li>
+          The "+" sign means that it has a "net" positive charge, or there are more (positively-charged) protons than
+          (negatively-charged) electrons.
+        </li>
+      </ul>
+      <ul>
+        <li>
+          Another example of an ion is a Fluorine (F) atom that has gained an electron (e-). It now has one more
+          electron than protons (p+), so it has a negative charge. A Fluorine ion (called Fluoride) is written as Fl-.  
+        </li>
+      </ul>
+      <ul>
+        <li>
+          The "-" sign means that it has a "net" <span style="color:#ff0000">negative</span> charge, or there are
+          more (negatively-charged) electrons than (positively-charged) protons.
+        </li>
+      </ul>
 
-          </p>
+      <br />
+      <br>
 
-You've reached the end of this unit. You can click on the "Chemical & Physical Reactions" button to see more units related to your research question.</b>
+      <form class="quiz_choice quiz">
+        <b>Q1: An atom of the element Clorine (Cl) has a total of 18 electrons. How should this atom be represented in
+          writing?</b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) Cl</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">b) Cl+</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">c) Cl-</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) How should I know?</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          You are correct! Looking at the Periodic Table, you can see that Chlorine's atomic number is 17. This means
+          that it has 17 protons. Since this Chlorine atom has 18 electrons, it has one more negatively-charged
+          particle than positively-charged particle. So, we'd write it as Cl-.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, if you look at the Periodic Table, you can see that Chlorine's atomic number is 17. This means that
+          it has 17 protons. Since this Chlorine atom has 18 electrons, it has one more negatively-charged particle
+          than positively-charged particle. So, we'd write it as Cl-.
+        </div>
+      </form>
 
-
+      <p>
+        <b>You've reached the end of this unit. You can click on the "Chemical & Physical Reactions" button to see
+          more units related to your research question.</b>
+      </p>
     </div>
 
     <!-- Nav Buttons -->
@@ -162,12 +171,15 @@ You've reached the end of this unit. You can click on the "Chemical & Physical R
     <img src="../_assets/klahrLabFooter.png"><br>
     <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
     <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
+      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
+      the
+      National Science Foundation, Grant SBE035442.
+      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
+      through
+      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+      represent
+      views of the Institute or the U.S. Department of Education.</p>
   </div>
 
   <!-- Enable header and nav button functionality -->
