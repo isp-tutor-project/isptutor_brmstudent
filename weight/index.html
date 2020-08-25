@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,7 +13,7 @@
   <!-- Google Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
+  <script src="../../firebase.js"></script>
 </head>
 
 <body>
@@ -36,41 +37,40 @@
     <h1>Weight on Earth and Other Planets</h1>
 
     <div id="page1" class="page">
-      <div style='text-align:left'><span style='background-color:transparent'><b>What is Weight?</b> We call the gravitational force
-        on an object caused by the Earth's mass the <i>weight</i> of the object (on Earth).
-      </font>
-      <font style='text-align:center;background-color:transparent' face='verdana, sans-serif'>
-        The weight of an object here on Earth is equal to the mass of the object times the acceleration due
-        to gravity on Earth: <b>g</b> (about 10 m/s<sup>2</sup>):</font>
-      <font style='text-align:center;background-color:transparent' face='verdana, sans-serif'>
-        </font>
-    </p>
-    <div style='display:block;text-align:left'>
-      <font size='3' face='verdana, sans-serif'></font>
+      <p>
+        <b>What is Weight?</b> We call the gravitational force on an object caused by the Earth's mass the
+        <i>weight</i> of the object (on Earth). <span style="font-family:verdana, sans-serif"> The weight of an
+        object here on Earth is equal to the mass of the object times the acceleration due to gravity on Earth:
+        <b>g</b> (about 10 m/s<sup>2</sup>): </span>
+      </p>
+      <p class="text-centered" style="font-family:veranda,sans-serif">
+        <b>Weight of object (on Earth) = mass of object * 10 m/s<sup>2</sup></b>
+      </p>
+      <p>
+        The more mass an object has, the stronger the earth pulls on that object (and, because gravity is a mutually
+        attractive force, the stronger the object pulls on the earth!). (See the 
+        <a class="brm-link" target="_blank" href="../mass-gravitationalforce/index.html">Gravitational Force</a>
+        unit for more information.) The force that the earth pulls on an object on the earth is the object's weight. 
+        And the direction of the force of weight is straight down (toward the center of the earth).
+      </p>
+      <p>
+        In general, the weight of an object on any planet or moon, etc., is equal to the object's mass times the
+        acceleration due to gravity caused by the planet, moon, etc.:
+      </p>
+      <p class="text-centered" style="font-family:veranda,sans-serif">
+        <b>Weight of object (on planet/moon/etc.) = mass of object * acceleration due to gravity of planet/moon/etc.</b>
+      </p>
+
+      <br>
+
+      <p>
+        The acceleration caused by gravity depends on the mass of the body (planet, moon, etc.). The more massive the
+        body, the larger the acceleration due to gravity will be. So, your weight on the biggest planet (Jupiter) would
+        be more than your weight on Earth. But you would weight less on Mercury or Mars than on Earth because these
+        planets are less massive than the Earth.
+      </p>
     </div>
-    <div style='display:block;text-align:center'>
-      <font size='3' face='verdana, sans-serif'><b>Weight of object (on Earth) = mass of object * 10 m/s<sup>2</sup></b></font>
-    </div>
-    <br>
-    <div style='text-align:left'>The more mass an object has, the stronger the earth pulls on
-      that object (and, because gravity is a mutually attractive force, the stronger the object
-      pulls on the earth!). <span style='background-color:transparent'>(See the </span><a target='_blank'
-        href='../mass-gravitationalforce/index.html'><b>
-          <font color='#0000ff'>Gravitational Force</font>
-        </b></a><span style='background-color:transparent'> unit for more
-        information.) </span><span style='background-color:transparent'>The force that the earth
-        pulls on an object on the earth is the object's weight. </span><span style='background-color:transparent'>And the
-        direction of the force of weight is
-        straight down (toward the center of the earth).
-        <br><br>
-In general, the weight of an object on any planet or moon, etc., is equal to the object's mass times the acceleration due to gravity caused by the planet, moon, etc.:
-<br><br>
-<div style='display:block;text-align:center'>
-    <font size='3' face='verdana, sans-serif'><b>Weight of object (on planet/moon/etc.) = mass of object * acceleration due to gravity of planet/moon/etc.</font>
-  </div> </b>   
-</div>
-  <br><br>
-The acceleration caused by gravity depends on the mass of the body (planet, moon, etc.). The more massive the body, the larger the acceleration due to gravity will be. So, your weight on the biggest planet (Jupiter) would be more than your weight on Earth. But you would weight less on Mercury or Mars than on Earth because these planets are less massive than the Earth.
+
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
       <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">

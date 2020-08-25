@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,7 +13,7 @@
   <!-- Google Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
+  <script src="../../firebase.js"></script>
 </head>
 
 <body>
@@ -36,143 +37,115 @@
     <h1>Speed, Velocity &amp; Acceleration</h1>
 
     <div id="page1" class="page">
-      <div><b>Speed, velocity, and acceleration are related to each other. </b>Each of these can
+      <p>
+        <b>Speed, velocity, and acceleration are related to each other.</b>Each of these can
         be measured at an instant (or a point in time) or as averages over a given time interval
-        (<span style='color:rgb(34,34,34);background-color:transparent'>for
-          example</span><span style='background-color:transparent'>, a few seconds or minutes).
-          We'll start with the simplest of these quantities, speed...</span></div>
-      <div><br />
-      </div>
-      <div><span style='background-color:transparent'><b>First, what is speed?</b> The </span><b
-          style='background-color:transparent'>Speed of an object </b><span
-          style='background-color:transparent'>is simply how fast the object is moving. </span>
-      </div>
-      <div><span style='background-color:transparent'><br />
-        </span></div>
-      <div><span style='background-color:transparent'>We can calculate (a) the speed of an object
+        (for example, a few seconds or minutes). We'll start with the simplest of these quantities, speed...
+      </p>
+      <p>
+        <b>First, what is speed?</b> The <b>Speed of an object</b>is simply how fast the object is moving. 
+      </p>
+      <p>
+        We can calculate (a) the speed of an object
           across some time, or the <b>average speed</b>, or (b) the speed of an object at a moment
-          in time: the <b>"instantaneous" speed</b>.</span></div>
+          in time: the <b>"instantaneous" speed</b>.
+      </p>
     </div>
 
     <div id="page2" class="page">
-      <div><span style='background-color:transparent'><b>Average speed.</b> The
-        <i><b>average</b></i> speed of an object is defined as the distance the object travels
-        divided by the time it takes to travel that distance:</span></div>
-        <ul>
-          <li>Speed (average) = distance traveled / time</li>
-        </ul>
-        <div><br />
+      <p>
+        <b>Average speed.</b> <i><b>The average</b></i> speed of an object is defined as the distance the object
+        travels divided by the time it takes to travel that distance:
+      </p>
+
+      <ul class="brm-list">
+        <li>Speed (average) = distance traveled / time</li>
+      </ul>
+
+      <p>
+        For example, a car drives a distance of 10,000 meters (6.21 miles) in 1,000 seconds
+        (16.67 minutes). The car's average speed can be calculated as:
+      </p>
+
+      <ul class="brm-list">
+        <li>Speed (average) = 10,000 m / 1,000 s = 10 m/s</li>
+      </ul>
+
+      <p>
+        We can also calculate the time it takes something to move a certain distance, if we know the distance it
+        travels and its average speed during that time:
+      </p>
+
+      <ul>
+        <li>time = distance / speed (average)</li>
+      </ul>
+
+      <div>
+        <div style="display:inline-block;width:550px">
+          <img style="margin:5px 10px 0px 0px"
+                src="FinalNeighborhoodGraphic.png" alt="grpahic of neighborhood" />
         </div>
-        <div>For example, a car drives a distance of 10,000 meters (6.21 miles) in 1,000 seconds
-          (16.67 minutes). The car's average speed can be calculated as:</div>
-        <div>
-          <ul>
-            <li>Speed (average) = 10,000 m / 1,000 s = 10 m/s</li>
-          </ul>
-        </div>
-        <div><br />
-        </div>
-        <div><span style='background-color:transparent'>We can also calculate the time it takes
-            something to move a certain distance, if we know the distance it travels and its
-            average speed during that time:</span></div>
-        <div>
-          <ul>
-            <li>time = distance / speed (average)</li>
-          </ul>
-        </div>
-        <div style='display:block;text-align:left' >
-        </div>
-        <div>
-          <div style='display:block;text-align:left'><img
-              style='display:inline;float:left;margin:5px 10px 0px 0px'
-              src='FinalNeighborhoodGraphic.png' alt='grpahic of neighborhood'
-              border='0' /></div>
-        </div>
-        <br>
-        <div>For example, a lost dog runs a distance of 3,000 meters looking for his home. His
-          path is shown in the picture to the left. The dog's high-tech collar shows that his
-          average speed during this time was 3 m/s. The (happy) owner calculated the time the dog
-          took to find his home using this equation:</div>
-        <div>
-          <ul>
+        <div style="display:inline-block;width:50%;vertical-align:top;text-align:left">
+          <p>
+            For example, a lost dog runs a distance of 3,000 meters looking for his home. His path is shown in the
+            picture to the left. The dog's high-tech collar shows that his average speed during this time was 3 m/s.
+            The (happy) owner calculated the time the dog took to find his home using this equation:
+          </p>
+
+          <ul class="brm-list">
             <li>time = distance / average speed </li>
-          </ul>
-          <ul>
             <li>time = 3,000 m / 3 m/s </li>
-          </ul>
-          <ul>
             <li>time= 1,000 s </li>
-          </ul>
-          <ul>
             <li>time = 1,000 s / (60 s / 1 minute)</li>
-          </ul>
-          <ul>
             <li>time = 16.67 minutes </li>
           </ul>
-          <br> 
-          <br> 
-          <br> 
-          <br>
-          <br>
-          <br>
-          <br> 
-         
-
-          <form class="quiz_choice quiz">
-              <b>Q1: If the dog had instead run an average speed of 4 m/s (instead of 3 m/s) for the same distance (3,000 m), 
-                which would be true about how long it would take the dog to get home?</b>
-              <input type="radio" name="question" value="incorrect">
-              <div class="label">a) It would take more than 1,000 s.</div><br>
-              <input type="radio" name="question" value="correct">
-              <div class="label">b) It would take less than 1,000 s.</div><br>
-              <input type="radio" name="question" value="incorrect">
-              <div class="label">c) It would take 1,000 s.</div><br>
-              <input type="radio" name="question" value="incorrect">
-              <div class="label">d) I don't really know.</div><br>
-              <button type="submit" class="submit-btn">Submit</button>
-              <div class="feedback-correct feedback">
-                  You are correct! The dog is moving faster over the same distance (3,000 m). So, it would take the dog less time to get home. (Yay!)
-                  The time for the dog to travel this distance is: <br>
-                  Time = Distance / Speed
-                  Time = 3,000 m / 4 m/s = 750 s (or 12.5 minutes)
-              </div>
-              <div class="feedback-incorrect feedback">
-                  Actually, the dog is moving faster over the same distance (3,000 m). So, it would take the dog less time to get home. (Yay!)
-                  The time for the dog to travel this distance is: <br>
-                  Time = Distance / Speed
-                  Time = 3,000 m / 4 m/s = 750 s (or 12.5 minutes)
-              </div>
-            </form>
         </div>
+      </div>
+
+      <form class="quiz_choice quiz">
+        <b>Q1: If the dog had instead run an average speed of 4 m/s (instead of 3 m/s) for the same distance (3,000 m),
+          which would be true about how long it would take the dog to get home?</b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) It would take more than 1,000 s.</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">b) It would take less than 1,000 s.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">c) It would take 1,000 s.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) I don't really know.</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+            You are correct! The dog is moving faster over the same distance (3,000 m). So, it would take the dog less time to get home. (Yay!)
+            The time for the dog to travel this distance is: <br>
+            Time = Distance / Speed
+            Time = 3,000 m / 4 m/s = 750 s (or 12.5 minutes)
+        </div>
+        <div class="feedback-incorrect feedback">
+            Actually, the dog is moving faster over the same distance (3,000 m). So, it would take the dog less time to get home. (Yay!)
+            The time for the dog to travel this distance is: <br>
+            Time = Distance / Speed
+            Time = 3,000 m / 4 m/s = 750 s (or 12.5 minutes)
+        </div>
+      </form>
     </div>
 
     <div id="page3" class="page">
-      <div><b>Instantaneous speed.</b> The <i><b>instantaneous</b></i> speed of an object is
-        its speed (<span
-          style='color:rgb(34,34,34);font-size:medium;background-color:transparent'>for
-          example</span><span style='background-color:transparent'>, in meters per second) at
-          a specific moment in time. The speedometer in a car measures the instantaneous speed
-          of the car (in miles per hour or kilometers per hour) at any moment. Because it is
-          measuring the instantaneous speed of the car, the speed can be continually
-          changing.</span></div>
-    <div><br />
-    </div>
-    <div>The speedometer in a car measures the instantaneous speed of the car (in miles or
-      kilometers per hour), or the speed of the car at any moment. <span
-        style='background-color:transparent'>The picture below shows a speedometer (in
-        kilometers per hour, or km/h). </span></div>
-    <div><br />
-    </div>
-    <div>
-      <div style='display:block;text-align:left'><a imageanchor='1'
-          href='../speed-acceleration/Speedometer.jpg?attredirects=0/index.html'><img
-            width='400'
-            src='Speedometer.jpg' alt='speedometer'
-            height='224' border='0' /></a></div>
-    </div>
-    <div><br />
-    </div>
-    <form class="quiz_checkbox quiz">
+      <p>
+        <b>Instantaneous speed.</b> The <i><b>instantaneous</b></i> speed of an object is its speed (for example,
+        in meters per second) at a specific moment in time. The speedometer in a car measures the instantaneous
+        speed of the car (in miles per hour or kilometers per hour) at any moment. Because it is measuring the
+        instantaneous speed of the car, the speed can be continually changing.
+      </p>
+      <p>
+        The speedometer in a car measures the instantaneous speed of the car (in miles or kilometers per hour), or
+        the speed of the car at any moment. The picture below shows a speedometer (in kilometers per hour, or km/h). 
+      </p>
+
+      <a href="../speed-acceleration/Speedometer.jpg?attredirects=0/index.html">
+        <img src="Speedometer.jpg" alt="speedometer" width="400" height="224" />
+      </a>
+
+      <form class="quiz_checkbox quiz">
         <b>Q1.5. Which of the following is true about what this car's speedometer shows? (Check all that are true.)</b>
         <input type="checkbox" name="question" value="incorrect">
         <div class="label">(a) The average speed is about 240 km/h.
@@ -195,403 +168,303 @@
         </div>
       </form>
 
-    <div><br />
-    </div>
-    </div>
-    <div id="page4" class="page">
-      <div style='text-align:left'><b><span
-        style='background-color:transparent;color:rgb(153,0,255)'>To simplify, in this unit,
-        the following definitions of velocity and acceleration will apply to </span><i
-        style='background-color:transparent;color:rgb(153,0,255)'>motion in a straight line
-        without changing direction</i><span
-        style='background-color:transparent;color:rgb(153,0,255)'>. </span><span
-        style='background-color:transparent;color:rgb(0,176,80)'> </span></b></div>
-        <div><b><br />
-        </b></div>
-      <div><b>What is Velocity?  </b></div>
-      <div><br />
-      </div>
-      <div>The velocity of an object includes both its speed <i>and</i> the direction it is
-        moving. Because it has both a numerical value and a direction, velocity is said to be a
-        "vector" quantity. (<span style='background-color:transparent'>See </span><a
-          target='_blank' style='background-color:transparent'
-          href='../vectors/index.html'>
-          <font color='#0000ff'><b>Vector vs. Scalar Quantities</b></font>
-        </a><span style='background-color:transparent'> for more information about
-          vectors</span><span style='background-color:transparent'>.) </span></div>
-      <div>
-        <ul>
-          <li>If the speed of an object is 100 m/s and the object is moving eastward, its
-            velocity is 100 m/s eastward.</li>
-        </ul>
-      </div>
-      <div><br />
-      </div>
-      <div>
-        <div>The <b><i>instantaneous</i></b> velocity of an object is its speed (<span
-            style='color:rgb(34,34,34);font-size:medium;background-color:transparent'>for
-            example</span><span style='background-color:transparent'>, meters per second)
-            <b>and</b> direction it is moving </span><i style='background-color:transparent'>at
-            a specific moment in time</i><span style='background-color:transparent'>. The
-            instantaneous speed in combination with the direction the object is moving at a
-            given time is equal to its instantaneous velocity (at that point in time).</span>
-        </div>
-        <div><span style='background-color:transparent'><br />
-          </span></div>
-        <div>
-          <ul>
-            <li><span style='background-color:transparent'>Instantaneous Velocity =
-                Instantaneous Speed + direction</span></li>
-          </ul>
-        </div>
-        <div><br />
-        </div>
-        <div>The picture below shows a speedometer (in kilometers per hour, or km/h). The car is
-          moving due east at the moment this picture was taken. So, we would say that the
-          instantaneous velocity of the car at this moment is 245 km/h due east.</div>
-        <div><br />
-        </div>
-      </div>
-      <div>
-        <div style='display:inline;float:center;margin:5px 10px 0px 0px'><a imageanchor='1'
-            href='../speed-acceleration/Speedometer.jpg?attredirects=0/index.html'><img
-              width='400'
-              src='Speedometer.jpg' alt='speedometer'
-              height='224' border='0' /></a></div>
-      </div>
     </div>
 
+    <div id="page4" class="page">
+      <p style="color:rgb(153,0,255)">
+        <b>To simplify, in this unit,the following definitions of velocity and acceleration will apply to 
+        <i>motion in a straight line without changing direction</i>.</b>
+      </p>
+      <p>
+        <b>What is Velocity?</b>
+      </p>
+      <p>
+        The velocity of an object includes both its speed <i>and</i> the direction it is moving. Because it has
+        both a numerical value and a direction, velocity is said to be a "vector" quantity. (See 
+        <a class="brm-link" target="_blank" href="../vectors/">Vector vs. Scalar Quantities</a> 
+        for more information about vectors.) 
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          If the speed of an object is 100 m/s and the object is moving eastward, its velocity is 100 m/s eastward.
+        </li>
+      </ul>
+
+      <p>
+        The <b><i>instantaneous</i></b> velocity of an object is its speed (for example, meters per second)
+        <b>and</b> direction it is moving <i>at a specific moment in time</i>. The instantaneous speed in
+        combination with the direction the object is moving at a given time is equal to its instantaneous
+        velocity (at that point in time).
+      </p>
+
+      <ul class="brm-list">
+        <li>Instantaneous Velocity = Instantaneous Speed + direction</li>
+      </ul>
+
+      <p>
+        The picture below shows a speedometer (in kilometers per hour, or km/h). The car is moving due east at the
+        moment this picture was taken. So, we would say that the instantaneous velocity of the car at this moment
+        is 245 km/h due east.
+      </p>
+
+      <br>
+      <a href="../speed-acceleration/Speedometer.jpg?attredirects=0/index.html">
+        <img src="Speedometer.jpg" alt="speedometer" width="400" height="224" />
+      </a>
+
+    </div>
 
     <div id="page5" class="page">
-      <div><b>What is acceleration?  </b><span style='background-color:transparent'>An object
-        is </span><b style='background-color:transparent'>accelerating</b><span
-        style='background-color:transparent'> if its </span><b
-        style='background-color:transparent'>velocity</b><span
-        style='background-color:transparent'> is changing. Remember: velocity is a </span><a
-        target='_blank' style='background-color:transparent'
-        href='../speed-acceleration/vectors/index.html'><b>
-          <font color='#0000ff'>vector quantity</font>
-        </b></a><span style='background-color:transparent'>, which has both a magnitude
-        (speed) and a direction (the direction it is moving).</span></div>
-      <div>So, <span style='background-color:transparent'>an object is accelerating if either
-          its SPEED is changing or if the DIRECTION the object is moving changes. Or
-          both!</span>
-      </div>
-      <div>
-        <ul>
-          <li>For example, if an object is moving in a straight line but its speed is
-            changing, this object is accelerating (or its acceleration is not equal to
-            zero). For example, the car below is accelerating. Its speed increases with each
-            second. (You can tell because it moves farther and farther with each second.) 
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'><a
-            imageanchor='1'
-            href='../acceleration/CarAccelerating.GIF?attredirects=0/index.html'><img
-              src='CarAccelerating.GIF' alt='car accelerating over 4 seconds'
-              border='0' /></a></div>
-        <br />
-      </div>
+      <p>
+        <b>What is acceleration?</b> An object is <b>accelerating</b> if its <b>velocity</b> is changing.
+        Remember: velocity is a
+        <a class="brm-link" target="_blank" href="../speed-acceleration/vectors/">vector quantity</a>,
+        which has both a magnitude (speed) and a direction (the direction it is moving).
+      </p>
+      <p>
+        So, an object is accelerating if either its SPEED is changing or if the DIRECTION the object is moving
+        changes. Or both!
+      </p>
+
+      <ul>
+        <li>
+          For example, if an object is moving in a straight line but its speed is
+          changing, this object is accelerating (or its acceleration is not equal to
+          zero). For example, the car below is accelerating. Its speed increases with each
+          second. (You can tell because it moves farther and farther with each second.) 
+        </li>
+      </ul>
+
+      <a href="../acceleration/CarAccelerating.GIF?attredirects=0/index.html">
+        <img class="img-centered" src="CarAccelerating.GIF" alt="car accelerating over 4 seconds"/>
+      </a>
+
       <ul>
         <li>If an object is moving at the same speed but changing directions, the object
           is accelerating. For example, the car below is moving on a circular track at a
           constant speed (moving the same distance every 10 seconds). But it is constantly
           changing directions. Because it is changing directions, it is accelerating (or
-          its acceleration is not equal to zero). </li>
+          its acceleration is not equal to zero). 
+        </li>
       </ul>
-      <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'><a
-        imageanchor='1'
-        href='../acceleration/CarInCircle.GIF?attredirects=0/index.html'><img
-          src='CarInCircle.GIF'
-          border='0' /></a></div>
-    <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'>
+
+      <a href="../acceleration/CarInCircle.GIF?attredirects=0/index.html">
+        <img class="img-centered" src="CarInCircle.GIF" />
+      </a>
       <br />
-    </div>
-    <div style='text-align:left;display:block;margin-right:auto;margin-left:auto'>
+
       <ul>
-        <li>If an object is changing in speed <i>and</i> direction, it is
+        <li>
+          If an object is changing in speed <i>and</i> direction, it is
           accelerating. In the example below, the speed of the car is increasing from
           0 seconds to 30 seconds. The car is also (constantly) changing its
           direction. So, this car is accelerating--and its acceleration is
           <i>greater</i> than the acceleration of the car above that changes direction
-          without changing speed.</li>
+          without changing speed.
+        </li>
       </ul>
-    </div>
-    <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'>
-      <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'>
-        <a imageanchor='1'
-          href='../acceleration/CarAcceleratingSpeedDir.GIF?attredirects=0/index.html'><img
-            src='CarAcceleratingSpeedDir.GIF' alt='Car accelerating'
-            border='0' /></a></div>
-      <br />
-    </div>
-    <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'>
-      <br />
-    </div>
-    <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'><b
-        style='background-color:rgb(0,255,0)'><br />
-      </b></div>
-    <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'>
-      <b>
-        <font style='background-color:rgb(255,255,255)' size='5' color='#0b5394'>
-          Accelerating or Not? Challenge </font>
-      </b></div>
-      <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'><b
-        style='background-color:rgb(0,255,0)'>
-        <div>
 
-            <div  style='display:block;text-align:center;margin-right:auto;margin-left:auto;width:810px;height:543px;'>
-                <iframe src="https://isp-tutor-project.github.io/demo/games/acceleration/" width=810 height=543></iframe>
-              </div>
-      </div>
-      </b></div>
-    <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'>
+      <a href="../acceleration/CarAcceleratingSpeedDir.GIF?attredirects=0/index.html">
+        <img class="img-centered" src="CarAcceleratingSpeedDir.GIF" alt="Car accelerating" />
+      </a>
       <br />
-    </div>
+
+      <p class="text-centered text-xl">
+        <b style="color:#0b5394">Accelerating or Not? Challenge</b>
+      </p>
+
+      <div class="text-centered">
+        <!-- style="background-color:rgb(0,255,0)" -->
+        <iframe src="https://isp-tutor-project.github.io/demo/games/acceleration/" width="810" height="543">
+        </iframe>
+      </div>
+
     </div>
 
     <div id="page6" class="page">
-      <div><b>Acceleration (average). </b>Just like speed and velocity, we can calculate either
+      <p>
+        <b>Acceleration (average). </b>Just like speed and velocity, we can calculate either
         average acceleration (over some time) or the instantaneous acceleration (at a moment in
-        time).<b> </b></div>
-      <div><span style='background-color:transparent'><br />
-        </span></div>
-      <div><span style='background-color:transparent'>The <b><i>average</i></b> acceleration of
-          an object is defined as the change in velocity of an object divided by the time it
-          took for the velocity to change:</span></div>
-    <div>
-      <ul>
-        <li>Acceleration (average) = (final velocity - initial velocity) / time (with direction)
-        </li>
+        time).
+      </p>
+      <p>
+        The <b><i>average</i></b> acceleration of an object is defined as the change in velocity of an
+        object divided by the time it took for the velocity to change:
+      </p>
+
+      <ul class="brm-list">
+        <li>Acceleration (average) = (final velocity - initial velocity) / time (with direction)</li>
       </ul>
-      <div><i>If an object is moving in a straight line in a given direction</i>, the magnitude
+
+      <p>
+        <i>If an object is moving in a straight line in a given direction</i>, the magnitude
         of the acceleration of the object is equal to the change in its speed over the time it
-        takes for that change in speed as well of the direction of its change in speed:</div>
-    </div>
-    <div>
-      <ul>
+        takes for that change in speed as well of the direction of its change in speed:
+      </p>
+
+      <ul class="brm-list">
         <li>Acceleration (average) = (final speed - initial speed) / time (with direction)</li>
       </ul>
-    </div>
-    
-    <div><span style='font-size:medium'>In general, when something is moving in a straight line
-        and its speed is increasing, its acceleration is in the <i>same</i>
-        direction </span><span style='font-size:medium'>of its motion or velocity.</span></div>
-    <div><br/>
-    </div>
+
+      <p>
+        In general, when something is moving in a straight line and its speed is increasing, its acceleration
+        is in the <i>same</i> direction of its motion or velocity.
+      </p>
     </div>
 
     <div id="page7" class="page">
-      <div><b>Example 1: Speeding up/Accelerating</b>: A car initially at a
+      <p>
+        <b>Example 1: Speeding up/Accelerating</b>: A car initially at a
         stop light accelerates in a straight line eastward and reaches a speed of 20 m/s (about 45
-        miles per hour) in 10 seconds. The car's acceleration can be calculated as:</div>
-      <div>
-        <ul>
-          <li>Acceleration (average) = (20 m/s - 0) / 10 s = 2 m/s<sup>2 </sup> (eastward)</li>
-        </ul>
-        </div>
-        <p>
-          <font size='3'>This means that each second, the speed of the car increases by 2 m/s. 
-          </font>
-        </p>
-        <p>
-          <font size='3'>So after one second, the car is travelling at 2 m/s. After two seconds,
-            the car is travelling at 4 m/s. After three seconds, the car is travelling at 6 m/s,
-            etc.  </font>
-        </p>
-        <p>
-          <font size='3'>This relationship between time and speed for a car accelerating at a
-            constant 2 m/s</font><span
-            style='font-size:15px;background-color:transparent'><sup>2</sup></span><span
-            style='font-size:medium;background-color:transparent'> is shown in the graph
-            below:</span>
-        </p>
-        <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'><a
-            imageanchor='1'
-            href='../speed-acceleration/SpeedTimeGraph.png?attredirects=0/index.html'><img
-              width='400'
-              src='SpeedTimeGraph.png' alt='Speed Time Graph'
-              height='320' border='0' /></a></div>
-        <br />
+        miles per hour) in 10 seconds. The car's acceleration can be calculated as:
+      </p>
+
+      <ul>
+        <li>Acceleration (average) = (20 m/s - 0) / 10 s = 2 m/s<sup>2 </sup> (eastward)</li>
+      </ul>
+
+      <p>
+        This means that each second, the speed of the car increases by 2 m/s. 
+      </p>
+      <p>
+        So after one second, the car is travelling at 2 m/s. After two seconds, the car is travelling at 4 m/s.
+        After three seconds, the car is travelling at 6 m/s, etc. 
+      </p>
+      <p>
+        This relationship between time and speed for a car accelerating at a constant 2 m/s<sup>2</sup> is
+        shown in the graph below:
+      </p>
+
+      <a href="../speed-acceleration/SpeedTimeGraph.png?attredirects=0/index.html">
+        <img class="img-centered" src="SpeedTimeGraph.png" alt="Speed Time Graph" width="400" height="320" />
+      </a>
+
     </div>
 
     <div id="page8" class="page">
-      <p style='text-align:left'><span
-        style='font-size:medium;background-color:transparent'><b>Example
-            2</b></span><span style='font-size:medium;background-color:transparent'><b>:
-            constant speed</b>. A child on a sled rides straight down a hill with a 15
+      <p>
+        <b>Example 2: constant speed</b>. A child on a sled rides straight down a hill with a 15
         degree slope. When the child gets a running start and falls on the sled at time-1, the
         child is moving at 5 m/s (about 11 mph). Ten seconds later (time-2), the child is
         still moving at 5 m/s sliding down the hill on the sled. What is the child's average
-        acceleration between time-1 and time-2?</span></p>
-    <p style='text-align:left'><span style='font-size:medium;background-color:transparent'>The
-        child's (average) acceleration can be calculated as:</span></p>
-    <ul>
-      <li>
-        <font size='3'>Acceleration (average) = (5 m/s - 5 m/s) / 10 s   =  0
-          m/s<sup>2 </sup> (at -15 degrees, or 15 degrees below the horizontal)</font>
-      </li>
-    </ul>
-    <div>
-      <font size='3'>The child's speed has not changed over this period of time, so the
-        child's (average) acceleration (over this time interval) is zero.</font>
-    </div>
-    <div>
-      <font size='3'><br />
-      </font>
-    </div>
+        acceleration between time-1 and time-2?
+      </p>
+      <p>
+        The child's (average) acceleration can be calculated as:
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          Acceleration (average) = (5 m/s - 5 m/s) / 10 s = 0 m/s<sup>2</sup> (at -15 degrees, or 15 degrees
+          below the horizontal)
+        </li>
+      </ul>
+
+      <p>
+        The child's speed has not changed over this period of time, so the
+          child's (average) acceleration (over this time interval) is zero.
+      </p>
+
     </div>
 
     <div id="page9" class="page">
-      <p style='text-align:left'>
-        <font size='3'><b>Example 3: Slowing down/decelerating</b>. A
-          baseball player is running from third base at 5 m/s when he slides into home base and
-          stops 1 second later.</font>
+      <p>
+        <b>Example 3: Slowing down/decelerating</b>. A baseball player is running from third base at 5 m/s when
+        he slides into home base and stops 1 second later.
       </p>
-      <p style='text-align:left'>
-        <font size='3'>The baseball player's average acceleration can be calculated as:</font>
+      <p>
+        The baseball player's average acceleration can be calculated as:
       </p>
-      <ul>
+
+      <ul class="brm-list">
         <li>
-          <font size='3'>Acceleration (average) = (0 - 5 m/s)/1 s = -5 m/s (from 3rd base toward
-            home plate)</font>
+          Acceleration (average) = (0 - 5 m/s)/1 s = -5 m/s (from 3rd base toward home plate)
         </li>
       </ul>
-      <div>
-        <font size='3'><br />
-        </font>
-      </div>
-      <div>
-        <font size='3'>This negative value of acceleration can also be expressed as: 5 m/s
-          (<i>from home plate toward 3rd base</i>). In other words, the direction of the
-          player's acceleration is <i>opposite</i> the direction of his motion!</font>
-      </div>
-      <div>
-        <font size='3'><br />
-        </font>
-      </div>
-      <div>
-        <font size='3'><b>In general</b>, when something is moving in a straight line and
-          slowing down, its acceleration is in the direction <i><b>opposite</b></i> of its
-          motion or velocity.</font>
-      </div>
-      <div>
-        <font size='3'><br />
-        </font>
-      </div>
+
+      <p>
+        This negative value of acceleration can also be expressed as: 5 m/s (<i>from home plate toward 3rd base</i>).
+        In other words, the direction of the player's acceleration is <i>opposite</i> the direction of his motion!
+      </p>
+      <p>
+        <b>In general</b>, when something is moving in a straight line and slowing down, its acceleration is in
+        the direction <i><b>opposite</b></i> of its motion or velocity.
+      </p>
+
     </div>
 
     <div id="page10" class="page">
-      <div><b style='background-color:transparent;font-size:medium'>Calculating final speed from
-        acceleration. </b><span style='background-color:transparent;font-size:medium'>We can
-        also calculate the final speed of an object if we know its initial speed and its
-        acceleration.</span></div>
-    <div>
-      <font size='3'><u><br />
-        </u></font>
-    </div>
-    <div>
-      <font size='3'><b>Example 4</b>:  After hockey practice, the team takes off their
-        helmets and puts them in a box in the middle of the hockey rink. When all the helmets
-        are in the box, the coach pushes on the box using his hockey stick, which accelerates
-        at a constant 2 m/s<sup>2</sup> from rest, for 2 seconds. What is the final speed of
-        the box after 2 seconds?</font>
-    </div>
-    <div>
-      <font size='3'><br />
-      </font>
-    </div>
-    <div>
-      <font size='3'>Using the definition of acceleration:</font>
-    </div>
-    <div>
-      <ul>
+      <p>
+        <b>Calculating final speed from acceleration.</b> We can also calculate the final speed of an object if
+        we know its initial speed and its acceleration.
+      </p>
+      <p>
+        <b>Example 4</b>:  After hockey practice, the team takes off their helmets and puts them in a box in the
+        middle of the hockey rink. When all the helmets are in the box, the coach pushes on the box using his
+        hockey stick, which accelerates at a constant 2 m/s<sup>2</sup> from rest, for 2 seconds. What is the
+        final speed of the box after 2 seconds?
+      </p>
+      <p>
+        Using the definition of acceleration:
+      </p>
+
+      <ul class="brm-list">
         <li>
-          <font size='3'>Acceleration = (final velocity - initial velocity)/time (for object
-            to go from the initial to final velocity)</font>
+          Acceleration = (final velocity - initial velocity)/time (for object to go from the initial to final velocity)
         </li>
       </ul>
-      <div>
-        <font size='3'><br />
-        </font>
-      </div>
-      <div>
-        <font size='3'>We can re-write this equation by multiplying each side by time:</font>
-      </div>
-    </div>
-    <div>
-      <ul>
+
+      <p>We can re-write this equation by multiplying each side by time:</p>
+
+      <ul class="brm-list">
         <li>
-          <font size='3'>Acceleration × time (for object to go from the initial to final
-            velocity) = (final velocity - initial velocity)</font>
+          Acceleration × time (for object to go from the initial to final velocity) =
+          (final velocity - initial velocity)
         </li>
       </ul>
-      <div>
-        <font size='3'><br />
-        </font>
-      </div>
-      <div>
-        <font size='3'>Then we add initial velocity to each side:</font>
-      </div>
-    </div>
-    <div>
-      <ul>
+
+      <p>Then we add initial velocity to each side:</p>
+
+      <ul class="brm-list">
         <li>
-          <font size='3'>Acceleration × time (for object to go from the initial to final
-            velocity) + initial velocity = final velocity</font>
+          Acceleration × time (for object to go from the initial to final velocity) + initial velocity = final velocity
         </li>
       </ul>
-      <div>
-        <font size='3'><br />
-        </font>
-      </div>
-    </div>
-    <div>
-      <font size='3'>Reversing the sides of the equation:</font>
-    </div>
-    <div>
-      <ul>
+
+      <p>Reversing the sides of the equation:</p>
+
+      <ul class="brm-list">
         <li>
-          <font size='3'>Final velocity = acceleration × time (for object to go from the
-            initial to final velocity) + initial velocity</font>
+          Final velocity = acceleration × time (for object to go from the initial to final velocity) + initial velocity
         </li>
       </ul>
-      <div>
-        <font size='3'><br />
-        </font>
-      </div>
-    </div>
-    <div>
-      <font size='3'>Solving for final velocity:</font>
-    </div>
-    <div>
-      <ul>
-        <li>
-          <font size='3'>Final velocity = 2 m/s<sup>2</sup> × 2 s + 0 m/s  = 4 m/s</font>
-        </li>
+
+      <p> Solving for final velocity:</p>
+
+      <ul class="brm-list">
+        <li> Final velocity = 2 m/s<sup>2</sup> × 2 s + 0 m/s  = 4 m/s</li>
       </ul>
-    </div>
-    <form class="quiz_open quiz">
-        <b>Q2: In the scenario given in Example 4, at practice the next day, the coach pushes on the box, which accelerates at 4 m/s<sup>2</sup> for the same amount of time (2 s). 
+
+      <form class="quiz_open quiz">
+        <b>Q2: In the scenario given in Example 4, at practice the next day, the coach pushes on the box, which accelerates at 4 m/s<sup>2</sup> for the same amount of time (2 s).
           What is the final speed of the box? Write your answer below.</b>
         <textarea></textarea><br>
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
-            The box accelerates from rest at 4 m/s<sup>2</sup> for 2 seconds. This means that the speed of the box increases by 4 m/s every second. So, after one second, the box would be moving at 4 m/s. 
+            The box accelerates from rest at 4 m/s<sup>2</sup> for 2 seconds. This means that the speed of the box increases by 4 m/s every second. So, after one second, the box would be moving at 4 m/s.
             After 2 seconds, the box would be moving at 8 m/s. <br>
             You could also use the equation: <br>
             V<sub>f</sub> = V<sub>i</sub> + a*t <br>
-            V<sub>f</sub> = 0 + 4*2 = 8 m/s 
+            V<sub>f</sub> = 0 + 4*2 = 8 m/s
         </div>
       </form>
-    <br>
-    <form class="quiz_choice quiz">
+
+      <form class="quiz_choice quiz">
         <b>
-            Q3: Two ice skating friends, Jordan and Taylor, decide to race each other (starting from rest). 
-            From the starting line, they agree to skate as fast as they can for 5 seconds then glide to the finish line. 
-            Jordan accelerates more than Taylor during those 5 seconds. 
+            Q3: Two ice skating friends, Jordan and Taylor, decide to race each other (starting from rest).
+            From the starting line, they agree to skate as fast as they can for 5 seconds then glide to the finish line.
+            Jordan accelerates more than Taylor during those 5 seconds.
             Which skater will have a greater speed after 5 seconds?</b>
         <input type="radio" name="question" value="correct">
         <div class="label">a) Jordan.</div><br>
@@ -609,24 +482,25 @@
             Well, actually, Jordan accelerates from rest at a higher rate than Taylor. So, Jordan will be moving faster than Taylor after 5 seconds.
         </div>
       </form>
+
       <form class="quiz_choice quiz">
-          <b>Q4: Who will win the race?</b>
-          <input type="radio" name="question" value="correct">
-          <div class="label">a) Jordan.</div><br>
-          <input type="radio" name="question" value="incorrect">
-          <div class="label">b) Taylor.</div><br>
-          <input type="radio" name="question" value="incorrect">
-          <div class="label">c) Neither; they will tie.</div><br>
-          <input type="radio" name="question" value="incorrect">
-          <div class="label">d) I don't know.</div><br>
-          <button type="submit" class="submit-btn">Submit</button>
-          <div class="feedback-correct feedback">
-              That's right! Jordan will be moving faster than Taylor after 5 seconds and continue to move faster than Taylor to the finish line.
-          </div>
-          <div class="feedback-incorrect feedback">
-              Actually, Jordan will be moving faster than Taylor after 5 seconds and continue to move faster than Taylor to the finish line.
-          </div>
-        </form>
+        <b>Q4: Who will win the race?</b>
+        <input type="radio" name="question" value="correct">
+        <div class="label">a) Jordan.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">b) Taylor.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">c) Neither; they will tie.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) I don't know.</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+            That's right! Jordan will be moving faster than Taylor after 5 seconds and continue to move faster than Taylor to the finish line.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Actually, Jordan will be moving faster than Taylor after 5 seconds and continue to move faster than Taylor to the finish line.
+        </div>
+      </form>
     </div>
 
     <!-- Nav Buttons -->

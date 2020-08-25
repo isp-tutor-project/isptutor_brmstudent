@@ -1,457 +1,434 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photosynthesis</title>
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../main.css">
+  <!-- Google Search Bar -->
+  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+  <!-- Google Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+  <script src="../../firebase.js"></script>
+</head>
 
-    <html>
+<body>
+  <!-- Header -->
+  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+  <div id="research-question"></div>
+  <div id="header-bg-extension"></div>
+  <div class="search-container">
+    <div class="gcse-search"></div>
+  </div>
+  <div class="header-btn-container">
+    <a href="../home"><button id="home-btn" class="header-btn">Home & HELP</button></a>
+    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces & Motion</button></a>
+    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button></a>
+    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat&Temperature</button></a>
+  </div>
 
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Photosynthesis</title>
-        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../main.css">
-        <!-- Google Search Bar -->
-        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-        <!-- Google Firebase -->
-        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
-      </head>
-      
-      <body>
-        <!-- Header -->
-        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-        <div id="research-question"></div>
-        <div id="header-bg-extension"></div>
-        <div class="search-container">
-          <div class="gcse-search"></div>
-        </div>
-        <div class="header-btn-container">
-          <a href="../home"><button id="home-btn" class="header-btn">Home & HELP</button></a>
-          <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces & Motion</button></a>
-          <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-          <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button></a>
-          <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat&Temperature</button></a>
-        </div>
-    
-      <!-- Main Page -->
-      <div class="page-container">
-        <h1>Photosynthesis</h1>
-    
-        <div id="page1" class="page">
-          <p
-            style='margin-bottom:0.0001pt;line-height:normal;background-image:initial;background-position:initial;background-repeat:initial'>
-            <p><span style='line-height:115%'><font size='3'><b>Photosynthesis is important! </b>As I'm sure
-              you know, people and other animals need oxygen to live. Without oxygen, we're all in trouble!
-              How do we get oxygen? A major source of oxygen comes from plants. Oxygen molecules (O</font><sub>2</sub><font size='3'>) are made during the process of photosynthesis, which occurs in plants.</font></span></p>
-        
-        <p><b style='background-color:transparent'><span style='line-height:115%'><font size='3'>But
-                what is Photosynthesis? </font></span></b><span style='background-color:transparent'>Unlike
-            animals, plants can make their own food (sugars). The process by which food (sugar) is made
-            in plants is called </span><b style='background-color:transparent'>photosynthesis</b><span
-            style='background-color:transparent'>. </span></p>
-        <p><span style='line-height:20.7px'><font size='3'>Let’s break the word down into its Latin roots: </font></span></p>
-        <ul>
-          <li><i style='background-color:transparent'>Photo</i><span style='background-color:transparent'> means
-              light (as in "photons" or "photography": making pictures with light).</span></li>
-        </ul>
-        <ul>
-          <li><i style='background-color:transparent'>Synthesis</i><span style='background-color:transparent'> means
-              to put together or combine (like when you "synthesize" information).</span></li>
-        </ul>
-        <div>So, photosynthesis means to "put together by light."</div>
-        <div><span style='font-size:large'><br/>
-          </span></div>
-        <p><span style='background-color:transparent'>Photosynthesis is a </span><b style='background-color:transparent'><font
-              style='background-color:transparent' color='#0000ff'><a target='_blank' style='background-color:transparent'
-                href='../chemicalvs-physicalreactions/index.html'><font color='#0000ff'>chemical process</font></a>.</font></b><span
-            style='background-color:transparent'> </span><span style='background-color:transparent'>During
-            photosynthesis, </span><span style='background-color:transparent'>sunlight
-            is one source of energy for the atoms in carbon dioxide </span><span style='background-color:transparent'>(CO</span><sub>2</sub><span style='background-color:transparent'>) </span><span
-            style='background-color:transparent'>and water </span><span style='background-color:transparent'>(H</span><sub>2</sub><span style='background-color:transparent'>O) </span><span
-            style='background-color:transparent'>molecules to combine (synthesize) to make
-            sugar molecules. Oxygen molecules (O</span><span style='background-color:transparent'><sub>2</sub></span><span style='background-color:transparent'>) are
-            also made during photosynthesis.</span></p>
+  <!-- Main Page -->
+  <div class="page-container">
+    <h1>Photosynthesis</h1>
 
-        <p>The sugars produced are used by plants as their food to help them grow and other things.</p>
-        <p>Photosynthesis is a very complicated process. In this unit, we will simplify it and
-          discuss the main steps involved. The chemical equation below shows a simplified summary of
-          the process of photosynthesis: CO<sub>2</sub> and H<sub>2</sub>O are eventually converted into glucose (and other sugars) and oxygen.
-        </p>
-
-<br>
-
-        <p style='text-align:center'><b>Simplified Summary of Photosynthesis:</b></p>
-        <div style='display:block;text-align:left'><img style='display:block;margin-right:auto;margin-left:auto;text-align:center'
-            src='Co2waterdiagram_chlorophyll.jpg'
-            border='0' /></div>
-        <div><br/>
-        </div>
-        <div>
-          <font size='3'><br/>
-          </font>
-        </div>
-        <form class="quiz_choice quiz">
-            <b>Q1: (Basic understanding) What provides the energy for the chemical reactions to happen in the process of photosynthesis?</b>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">a) Thermal energy from warm air.</div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">b) Kinetic energy from wind.</div><br>
-            <input type="radio" name="question" value="correct">
-            <div class="label">c) Light from the sun.</div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">d) All of the above.</div><br>
-            <button type="submit" class="submit-btn">Submit</button>
-            <div class="feedback-correct feedback">
-                Right! The primary source of energy for photosynthesis is light from the sun.
-            </div>
-            <div class="feedback-incorrect feedback">
-                Actually, the primary source of energy for photosynthesis is light from the sun.
-            </div>
-          </form>
-          </p>
-        </div>
-    
-        <div id="page2" class="page">
-        
-As a reminder, in photosynthesis, <font color='#9900ff'>carbon dioxide</font> and <font color='#0000ff'><b>water</b></font> are converted into glucose and oxygen: <br>
-
-          <div style='display:block;text-align:left'><img style='display:block;margin-right:auto;margin-left:auto;text-align:left'
-            src='Co2waterdiagram_chlorophyll.jpg'
-            border='0' /></div>
-
-<br><br>
-          <div style='text-align:left'><span style='text-align:start;line-height:10.7px'><font size='3'><b>Steps
-                  of Photosynthesis.</b> To make sugars, plants need sunlight, water and
-                carbon dioxide (and a bunch of other things we won't worry about now). </font></span><span
-              style='text-align:start;background-color:transparent'>Let’s learn some important
-              steps of photosynthesis:</span></div>
-          <img style='background-color:transparent;display:inline;margin:5px 10px;float:right' src='Photosynthesis3.png.jpg' width='500'
-            border='0' >
-        
-        <ul>
-          <li>(1)
-            <font color='#9900ff'>Carbon dioxide</font> passes from the air into small openings in the bottom of leaves called
-            stomata.
-          </li>
-        </ul>
-        <ul>
-          <li>(2) The roots absorb
-            <font color='#0000ff'><b>water</b></font>, which travels through vessels in the stem and to the leaves. Water is
-            necessary for photosynthesis.
-          </li>
-        </ul>
-        <ul>
-          <li>(3) Sunlight is absorbed by molecules in the leaves
-            <font size='3'> called <b><span style='line-height:107%;color:rgb(0,176,80)'>chlorophyll</span></b>. Chlorophyll
-              is what gives the leaves their green color. Chlorophyll is found within the special organelles
-              (little organs) of the plant cell called <b style='background-color:transparent'>chloroplasts,
-                </b><span style='background-color:transparent'>which are</span><b style='background-color:transparent'> </b><span
-                style='background-color:transparent'>in the leaves</span></font><span style='background-color:transparent'>
-            and other parts of the plant.</span></li>
-        </ul>
-        <ul>
-          <li>(4) The energy from light causes chlorophyll molecules to lose electrons. </li>
-        </ul>
-        <ul>
-          <li>(5) Chlorophyll molecules then become positively charged. Chlorophyll molecules are really
-            really good at pulling electrons from other molecules (due to both the <a target='_blank'
-              href='../electric-force/index.html'><b><font color='#0000ff'>electric force</font></b></a>
-            and atoms in chlorophyll molecules "<b><a target='_blank' href='../atoms-electron-organization/index.html'><font
-                  color='#0000ff'>wanting" complete energy circles</font></a></b>). So, chlorophyll molecules
-            end up pulling electrons from nearby <b><font color='#0000ff'>H<sub>2</sub>O
-              </font></b> (water) molecules.</li>
-        </ul>
-        <ul>
-          <li>(6) This causes the <font color='#0000ff'><b>H<sub>2</sub>O</b></font> molecules to split into
-            oxygen and hydrogen atoms (another chemical reaction). Free oxygen atoms from this process combine to make an oxygen
-            molecule, O<sub>2</sub>. Each hydrogen atom has lost an electron to the chlorophyll molecule, making it
-            positively charged (H<font size='1'><sup>+</sup></font>).
-          </li>
-        </ul>
-        <ul>
-          <li>(7) Oxygen (O<sub>2</sub>) is a "waste product" of this reaction and is not used by plants. O<sub>2</sub> is released from the small holes at the bottom of leaves (the stomata) into the
-            atmosphere. But this is good news for people and animals!
-          </li>
-        </ul>
-        <ul>
-          <li>(8) Hydrogen and
-            <font color='#9900ff'>carbon dioxide</font> are used in the process of making <b>glucose</b> and other sugars that are
-            food for the plant. Two different ways of representing a glucose molecule are shown below. The glucose that is produced also
-            goes into making the rigid cell walls of plants. Glucose is stored for future use in the
-            plant’s leaves, roots, or fruit (which we may like to eat because it is sweetened by glucose!).
-          </li>
-        </ul>
-        <ul>
-          <li>(9) Another molecule, called ATP, is also made during photosynthesis.
-            <font style='font-weight:bold'
-              color='#0000ff'><a target='_blank' href='../food/index.html'><font color='#0000ff'>ATP molecules</font></a> </font>are
-            one source of energy for the chemical reactions in photosynthesis. ATP molecules also provide
-            energy for the growth and development of plants.
-          </li>
-        </ul>
-        <div><br/>
-        </div>
-      
-        
-       
-          <div style='display:block;text-align:center'>Two different ways of representing a glucose molecule are shown below. <br><br></div>
-            
-              
-                <div style='display:block;text-align:center'>
-                  <div style='display:inline;margin:5px 0px 0px 10px;text-align:center'><a imageanchor='1'
-                      href='../photosynthesis/Glucose.png?attredirects=0/index.html'><img src='Glucose.png' width='300'
-                        border='0' /></a></div>
-                  <img width='350' style='background-color:transparent;display:inline;margin:5px 0px 0px 10px;text-align:center' img src='D-glucose-chain-3D-ballsnewlable.jpg' width='2000'
-                    height='262' border='0' /></div>
-                <div style='display:block;text-align:left'></div>
-                  <div>
-                    <div><br/>
-                    </div>
-                    <form class="quiz_open quiz">
-                        <b>Q2: What is the main product that plants need that is made during photosynthesis?</b>
-                        <textarea></textarea><br>
-                        <button type="submit" class="submit-btn">Submit</button>
-                        <div class="feedback-correct feedback">
-                            The primary molecule made during photosynthesis is glucose, which is a type of sugar.
-                        </div>
-                      </form>
-                    <br/>
-                  </div>
-                  <br> <br>
-                </div>
-                <div id="page3" class="page">
-                  <div style="text-align:center">
-                    <iframe src="https://isp-tutor-project.github.io/demo/games/photosynthesis/" width=900 height=600 </iframe>
-                    </iframe>
-                  </div>
-        </p>
-      </div>
-    
-        <div id="page4" class="page">
+    <div id="page1" class="page">
       <p>
-      <div style='display:block;text-align:left'>
-        <font size='3'><b style='background-color:transparent'><span style='line-height:180%;color:windowtext'>Variables
-              that affect the rate of photosynthesis: </span></b><span style='background-color:transparent'>There
-            are several factors that affect the rate of photosynthesis (or how fast photosynthesis
-            happens in plants). These include: (a) light intensity (brightness), (b) carbon dioxide concentration, (c)
-            temperature, and </span></font><span style='background-color:transparent'>(d) </span><a
-          target='_blank' style='background-color:transparent' href='../light/index.html'><font
-            color='#0000ff'><b>light wavelength</b></font></a><span style='background-color:transparent'>.
-          The first three of these relationships are shown in the graphs below. </span></div>
-      <div style='display:block;text-align:left'>
-        <font size='3'><span style='background-color:transparent'><br/>
-          </span></font>
+        <b>Photosynthesis is important!</b> As I'm sure you know, people and other animals need oxygen to live.
+        Without oxygen, we're all in trouble! How do we get oxygen? A major source of oxygen comes from plants.
+        Oxygen molecules (O<sub>2</sub>) are made during the process of photosynthesis, which occurs in plants.
+      </p>
+      <p>
+        <b>But what is Photosynthesis?</b> Unlike animals, plants can make their own food (sugars). The process by
+        which food (sugar) is made in plants is called <b>photosynthesis</b>. 
+      </p>
+      <p>Let’s break the word down into its Latin roots:</p>
+
+      <ul>
+        <li><i>Photo</i> means light (as in "photons" or "photography": making pictures with light).</li>
+      </ul>
+      <ul>
+        <li><i>Synthesis</i> means to put together or combine (like when you "synthesize" information).</li>
+      </ul>
+
+      <p>
+        So, photosynthesis means to "put together by light."
+      </p>
+      <p>
+        Photosynthesis is a 
+        <a target="_blank" href="../chemicalvs-physicalreactions/index.html"><b>chemical process</b></a>.
+        During photosynthesis, sunlight is one source of energy for the atoms in carbon dioxide (CO<sub>2</sub>) 
+        and water (H<sub>2</sub>O) molecules to combine (synthesize) to make sugar molecules. Oxygen molecules
+        (O<sub>2</sub>) are also made during photosynthesis.
+      </p>
+      <p>
+        The sugars produced are used by plants as their food to help them grow and other things.
+      </p>
+      <p>
+        Photosynthesis is a very complicated process. In this unit, we will simplify it and discuss the main steps
+        involved. The chemical equation below shows a simplified summary of the process of photosynthesis:
+        CO<sub>2</sub> and H<sub>2</sub>O are eventually converted into glucose (and other sugars) and oxygen.
+      </p>
+
+      <br>
+
+      <p style="text-align:center"><b>Simplified Summary of Photosynthesis:</b></p>
+
+      <img style="display:block;margin-right:auto;margin-left:auto;text-align:center"
+           src="Co2waterdiagram_chlorophyll.jpg" />
+
+      <br><br>
+
+      <form class="quiz_choice quiz">
+        <b>Q1: (Basic understanding) What provides the energy for the chemical reactions to happen in the process of photosynthesis?</b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) Thermal energy from warm air.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">b) Kinetic energy from wind.</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">c) Light from the sun.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) All of the above.</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+            Right! The primary source of energy for photosynthesis is light from the sun.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Actually, the primary source of energy for photosynthesis is light from the sun.
+        </div>
+      </form>
+    </div>
+
+    <div id="page2" class="page">
+      <p>
+        As a reminder, in photosynthesis, <span style="color:#9900ff">carbon dioxide</span> and
+        <span style="color:#0000ff"><b>water</b></span> are converted into glucose and oxygen:
+      </p>
+
+      <br>
+      <img style="display:block;margin-right:auto;margin-left:auto;text-align:left"
+            src="Co2waterdiagram_chlorophyll.jpg" />
+      <br><br>
+
+      <p>
+        <b>Steps of Photosynthesis.</b> To make sugars, plants need sunlight, water and carbon dioxide (and a bunch
+        of other things we won't worry about now). Let’s learn some important steps of photosynthesis:
+      </p>
+
+      <img style="display:inline;margin:5px 10px;float:right" src="Photosynthesis3.png.jpg" width="500">
+
+      <ol>
+        <li style="padding-bottom:10px">
+          <span style="color:#9900ff">Carbon dioxide</span> passes from the air into small openings in the bottom of
+          leaves called stomata.
+        </li>
+        <li style="padding-bottom:10px">
+          The roots absorb <span style="color:#0000ff"><b>water</b></span>, which travels through vessels in the
+          stem and to the leaves. Water is necessary for photosynthesis.
+        </li>
+        <li style="padding-bottom:10px">
+          Sunlight is absorbed by molecules in the leaves called 
+          <b><span style="color:rgb(0,176,80)">chlorophyll</span></b>. Chlorophyll is what gives the leaves their
+          green color. Chlorophyll is found within the special organelles (little organs) of the plant cell called
+          <b>chloroplasts,</b> which are in the leaves and other parts of the plant.
+        </li>
+        <li style="padding-bottom:10px">
+          The energy from light causes chlorophyll molecules to lose electrons. 
+        </li>
+        <li style="padding-bottom:10px">
+          Chlorophyll molecules then become positively charged. Chlorophyll molecules are really
+          really good at pulling electrons from other molecules (due to both the
+          <a target="_blank" href="../electric-force/index.html"><b>electric force</b></a>
+          and atoms in chlorophyll molecules
+          <a target="_blank" href="../atoms-electron-organization/index.html"> <b>"wanting" complete energy circles</b>
+          </a>). So, chlorophyll molecules end up pulling electrons from nearby
+          <span style="color:#0000ff"><b>H<sub>2</sub>O</b></span> (water) molecules.
+        </li>
+        <li style="padding-bottom:10px">
+          This causes the <span style="color:#0000ff"><b>H<sub>2</sub>O</b></span> molecules to split into
+          oxygen and hydrogen atoms (another chemical reaction). Free oxygen atoms from this process combine to make
+          an oxygen molecule, O<sub>2</sub>. Each hydrogen atom has lost an electron to the chlorophyll molecule,
+          making it positively charged (H<sup>+</sup>).
+        </li>
+        <li style="padding-bottom:10px">
+          Oxygen (O<sub>2</sub>) is a "waste product" of this reaction and is not used by plants. O<sub>2</sub> is
+          released from the small holes at the bottom of leaves (the stomata) into the
+          atmosphere. But this is good news for people and animals!
+        </li>
+        <li style="padding-bottom:10px">
+          Hydrogen and <span style="color:#9900ff">carbon dioxide</span> are used in the process of making
+          <b>glucose</b> and other sugars that are food for the plant. Two different ways of representing a glucose
+          molecule are shown below. The glucose that is produced also goes into making the rigid cell walls of plants.
+          Glucose is stored for future use in the plant’s leaves, roots, or fruit (which we may like to eat because
+          it is sweetened by glucose!).
+        </li>
+        <li style="padding-bottom:10px">
+          Another molecule, called ATP, is also made during photosynthesis.
+          <a target="_blank" href="../food/index.html"><b>ATP molecules</b></a> 
+          are one source of energy for the chemical reactions in photosynthesis. ATP molecules also provide
+          energy for the growth and development of plants.
+        </li>
+      </ol>
+      <br/>
+
+      <p style="text-align:center">Two different ways of representing a glucose molecule are shown below.</p>
+
+      <div style="text-align:center;">
+        <a href="../photosynthesis/Glucose.png?attredirects=0/index.html">
+          <img  src="Glucose.png" width="300" />
+        </a>
+        <img  style="background-color:transparent;display:inline;margin:5px 0px 0px 10px;text-align:center"
+              src="D-glucose-chain-3D-ballsnewlable.jpg"
+              height="262" />
       </div>
-      <div style='display:block;text-align:left'>
-        <font size='3'><span style='background-color:transparent'><br/>
-          </span></font>
+
+      <br>
+
+      <form class="quiz_open quiz">
+        <b>Q2: What is the main product that plants need that is made during photosynthesis?</b>
+        <textarea></textarea><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+            The primary molecule made during photosynthesis is glucose, which is a type of sugar.
+        </div>
+      </form>
+
+      <br><br><br>
+    </div>
+
+    <div id="page3" class="page">
+
+      <div style="text-align:center">
+        <iframe src="https://isp-tutor-project.github.io/demo/games/photosynthesis/" width="900" height="600">
+        </iframe>
       </div>
-      <div style='display:block;text-align:left'>
-        <div style='text-align:center;font-family:Arial,sans-serif;display:inline;float:left;margin:5px 10px 0px 0px'><a
-            imageanchor='1' href='../photosynthesis/LightIntensity_PhotosynthRateGraph.GIF?attredirects=0/index.html'><img
-              width='400' src='LightIntensity_PhotosynthRateGraph.GIF'
-              height='250' border='0' /></a></div>
-        <div style='font-family:Arial,sans-serif'><img width='400' style='display:inline;float:left;margin:5px 10px 0px 0px'
-            src='CO2_RatePhotoSynth_Graph.GIF'
-            height='251' border='0' /></div>
-        <div style='font-family:Arial,sans-serif'><b><a imageanchor='1' href='../photosynthesis/TempVphotosynthesisRate2.PNG?attredirects=0/index.html'><img
-                width='400' src='TempVphotosynthesisRate2.PNG'
-                height='255' border='0' /></a></b></div>
+
+      <br><br>
+    </div>
+
+    <div id="page4" class="page">
+      <p>
+        <b>Variables that affect the rate of photosynthesis:</b> There are several factors that affect the rate of
+        photosynthesis (or how fast photosynthesis happens in plants). These include: (a) light intensity (brightness),
+        (b) carbon dioxide concentration, (c) temperature, and (d) 
+        <a target="_blank" href="../light/index.html"><b>light wavelength</b></a>.
+        The first three of these relationships are shown in the graphs below. 
+      </p>
+
+      <br>
+
+      <div style="display:block;text-align:left">
+        <!-- <div style="text-align:center;font-family:Arial,sans-serif;display:inline;float:left;margin:5px 10px 0px 0px"> -->
+        <a href="../photosynthesis/LightIntensity_PhotosynthRateGraph.GIF?attredirects=0/index.html">
+          <img
+              src="LightIntensity_PhotosynthRateGraph.GIF" width="400" height="250" />
+        </a>
+
+        <img width="400" style="display:inline;float:left;margin:5px 10px 0px 0px"
+             src="CO2_RatePhotoSynth_Graph.GIF"
+             height="251" />
+        <a href="../photosynthesis/TempVphotosynthesisRate2.PNG?attredirects=0/index.html">
+          <img
+                src="TempVphotosynthesisRate2.PNG"
+                width="400" height="255" />
+        </a>
+
       </div>
-      <div style='display:block;text-align:left'>
-        <font size='3'><span style='background-color:transparent'><br/>
-          </span></font>
-      </div>
-      <div style='display:block;text-align:left'>
-        <font size='3'><span style='background-color:transparent'><br/>
-          </span></font>
-      </div>
-      <div style='display:block;text-align:left'>
-        <ul>
-          <li>
-            <font size='3'><b>Light intensity (amount of light).</b> When there is no light, no photosynthesis
-              takes place. As the <b>light intensity
-              </b> (or how bright the light is) increases from zero, the rate of photosynthesis
-              increases. <span style='background-color:transparent;color:windowtext'>After a certain
-                point, the rate of photosynthesis will not increase any more with increasing
-                light intensity. This happens because there is just </span></font>not enough
-            chlorophyll and other chemicals to increase the rate of photosynthesis any more.
-          </li>
-        </ul>
-        <ul>
-          <li><span style='background:transparent;color:windowtext;line-height:115%'><font size='3'><b>Carbon
-                  Dioxide concentration.</b> When there is no CO</font><sub>2</sub><font size='3'>, photosynthesis does not occur. Increasing the concentration of <b>Carbon Dioxide
-                </b> will increase the rate of photosynthesis. But after</font></span> a certain
-            point, the rate of photosynthesis will not increase any more with increasing CO<sub>2</sub> concentration. So, after a certain point, more carbon dioxide in the air will no longer help plants grow.
-          </li>
-        </ul>
-        <ul>
-          <ul>
-          </ul>
-        </ul>
-        <ul>
-          <li>
-            <font size='3'><b>Temperature. </b></font>The relationship between temperature and rate of photosynthesis
+      <br/>
+      <br/>
+
+      <ul>
+        <li>
+          <b>Light intensity (amount of light).</b> When there is no light, no photosynthesis takes place. As the
+          <b>light intensity </b> (or how bright the light is) increases from zero, the rate of photosynthesis
+          increases. After a certain point, the rate of photosynthesis will not increase any more with increasing
+          light intensity. This happens because there is just not enough chlorophyll and other chemicals to increase
+          the rate of photosynthesis any more.
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <b>Carbon Dioxide concentration.</b> When there is no CO<sub>2</sub>, photosynthesis does not occur.
+          Increasing the concentration of <b>Carbon Dioxide</b> will increase the rate of photosynthesis. But after
+          a certain point, the rate of photosynthesis will not increase any more with increasing CO<sub>2</sub>
+          concentration. So, after a certain point, more carbon dioxide in the air will no longer help plants grow.
+        </li>
+      </ul>
+      <ul>
+        <li>
+            <b>Temperature.</b> The relationship between temperature and rate of photosynthesis
             is different from the others. Again, when the temperature is very low, no photosynthesis
             occurs. The increase in photosynthesis rate is slow at first, but starts to increase
             more quickly at a certain point. The rate of photosynthesis is highest between 10
             and 20 degrees Celsius (or 50-68 degrees F). After this maximum, the photosynthesis
             rate drops off quickly as the temperature increases. At around 40 degrees C (or 104
             degrees F), photosynthesis stops.
-          </li>
-        </ul>
-        <ul>
-          <ul>
-            <li>Why does photosynthesis stop at high temperatures? 
-              <font style='background-color:transparent'>There are certain molecules called "enzymes" </font><span style='background-color:transparent'>made
-                by living organisms. Enzymes speed up </span><a target='_blank' style='background-color:transparent'
-                href='../chemicalvs-physicalreactions/index.html'><b><font color='#0000ff'>chemical
-                    reactions</font></b></a><span style='background-color:transparent'>.
-                Chlorophyll is one enzyme that helps cause photosynthesis. Another enzyme, called
-                RuBisCo, has the job of capturing </span><font style='background-color:transparent'>
-                <font size='3'>CO</font><sub>2</sub><font size='3'>. </font>
-              </font><span style='background-color:transparent'>W</span><span style='background-color:transparent'>hen
-                the temperature is too high, RuBisCo gets very bad at capturing CO</span><sub>2</sub><font style='background-color:transparent'
-                size='3'>. As a result, photosynthesis stops.</font>
-            </li>
-          </ul>
-        </ul>
+        </li>
+      </ul>
+      <ul>
         <ul>
           <li>
-            <font size='3'><b>Light wavelength.</b> Certain <b><a target='_blank' href='../light/index.html'><font
-                    color='#0000ff'>frequencies of visible light</font></a></b> speed up or slow
-              the rate of photosynthesis. Sunlight that has energy in the blue-violet and red
-              frequency ranges causes the highest rates of photosynthesis. Sunlight in the green
-              range causes lower rates of photosynthesis. </font>This is because chlorophyll
-            pigment molecules do not absorb green light well* (and do not convert this radiation
-            into energy that causes the chemical processes in photosynthesis).
+            Why does photosynthesis stop at high temperatures? There are certain molecules called "enzymes" made
+            by living organisms. Enzymes speed up
+            <a target="_blank" href="../chemicalvs-physicalreactions/index.html"><b>chemical reactions</b></a>.
+            Chlorophyll is one enzyme that helps cause photosynthesis. Another enzyme, called RuBisCo, has the job of
+            capturing CO<sub>2</sub>. When the temperature is too high, RuBisCo gets very bad at capturing
+            CO<sub>2</sub>. As a result, photosynthesis stops.
           </li>
         </ul>
+      </ul>
+      <ul>
+        <li>
+          <b>Light wavelength.</b> Certain 
+          <a target="_blank" href="../light/index.html"><b>frequencies of visible light</b></a> 
+          speed up or slow the rate of photosynthesis. Sunlight that has energy in the blue-violet and red frequency
+          ranges causes the highest rates of photosynthesis. Sunlight in the green range causes lower rates of
+          photosynthesis. This is because chlorophyll pigment molecules do not absorb green light well* (and do not
+          convert this radiation into energy that causes the chemical processes in photosynthesis).
+        </li>
+      </ul>
+      <ul>
         <ul>
-          <ul>
-            <li>*This is why plants' leaves look green to us: green light is not absorbed; instead,
-              it is reflected away by the molecules that make up the plants.</li>
-          </ul>
+          <li>*This is why plants' leaves look green to us: green light is not absorbed; instead,
+            it is reflected away by the molecules that make up the plants.
+          </li>
         </ul>
-      </div>
-      <br></br>
-  <form class="quiz_open quiz">
-      <b>
-          Q3: What is another factor (in addition to light intensity and frequency, CO<sub>2</sub>, and temperature) 
-          that affects the rate of photosynthesis?</b>
-      <textarea></textarea><br>
-      <button type="submit" class="submit-btn">Submit</button>
-      <div class="feedback-correct feedback">
-          Water is another factor, in addition to light and CO<sub>2</sub> levels, which affects the rate of photosynthesis.
-      </div>
-    </form>
-<br>
+      </ul>
 
-<form class="quiz_choice quiz">
-    <b>Q3.5: For low levels of light intensity, what is the relationship between light intensity and photosynthesis rate?</b>
-    <input type="radio" name="question" value="incorrect">
-    <div class="label">a) There is no relationship.</div><br>
-    <input type="radio" name="question" value="incorrect">
-    <div class="label">b) As light intensity increases, photosynthesis rate decreases.</div><br>
-    <input type="radio" name="question" value="correct">
-    <div class="label">c) As light intensity increases, photosynthesis rate increases.</div><br>
-    <input type="radio" name="question" value="incorrect">
-    <div class="label">d) I have no clue.</div><br>
-    <button type="submit" class="submit-btn">Submit</button>
-    <div class="feedback-correct feedback">
-        You are right. With low levels of light intensity (close to the origin of the graph), as light intensity increases, 
-        the rate of photosynthesis also increases. So, (c) is the correct response.
-    </div>
-    <div class="feedback-incorrect feedback">
-        Not quite. With low levels of light intensity (close to the origin of the graph), 
-        as light intensity increases, the rate of photosynthesis also increases. So, (c) is the correct response.
-    </div>
-  </form>
-<br>
-<div>
-  <form class="quiz_choice quiz">
-      <b>Q4: According to this graph, as the CO<sub>2</sub> levels increase, what happens to the rate of photosynthesis?</b>
-      <input type="radio" name="question" value="incorrect">
-      <div class="label">a) It keeps increasing.</div><br>
-      <input type="radio" name="question" value="correct">
-      <div class="label">b) It increases up to a certain point then remains the same.</div><br>
-      <input type="radio" name="question" value="incorrect">
-      <div class="label">c) It remains the same for all CO<sub>2</sub> levels.</div><br>
-      <input type="radio" name="question" value="incorrect">
-      <div class="label">d) This information cannot be determined from this graph.</div><br>
-      <button type="submit" class="submit-btn">Submit</button>
-      <div class="feedback-correct feedback">
-          Right! As the CO<sub>2</sub> level increases, the photosynthesis rate also increases. 
-          However, once it reaches a certain CO<sub>2</sub> level, the rate of photosynthesis does not increase (or decrease) any more.
-      </div>
-      <div class="feedback-incorrect feedback">
-          Actually, as the CO<sub>2</sub> level increases, the photosynthesis rate also increases. However, once it reaches a certain CO<sub>2</sub> level, 
-          the rate of photosynthesis does not increase (or decrease) any more. So, (b) is the correct answer.
-      </div>
-    </form>
-  <br>
-  <form class="quiz_choice quiz">
-      <b> Q4.5: What is the relationship between temperature and rate of photosynthesis between 21 degrees Celcius 
-          (70 degrees F) and 38 degrees C (100 degrees F)? Base your answer on the graph and other information in this unit.</b>
-      <input type="radio" name="question" value="incorrect">
-      <div class="label">a) The rate of photosynthesis increases from 21-38 degrees C.</div><br>
-      <input type="radio" name="question" value="correct">
-      <div class="label">b) The rate of photosynthesis decreases from 21-38 degrees C.</div><br>
-      <input type="radio" name="question" value="incorrect">
-      <div class="label">c) The rate of photosynthesis does not change from 21-38 degrees C.</div><br>
-      <input type="radio" name="question" value="incorrect">
-      <div class="label">d) How should I know?</div><br>
-      <button type="submit" class="submit-btn">Submit</button>
-      <div class="feedback-correct feedback">
-          That's right! The rate of photosynthesis is maximum a bit below room temperature (between 10 and 20 degrees C) 
-          but decreases at temperatures higher than about 20 degrees. So, (b) is the correct answer.
-      </div>
-      <div class="feedback-incorrect feedback">
-          Well, actually, the rate of photosynthesis is maximum a bit below room temperature (between 10 and 20 degrees C) 
-          but decreases at temperatures higher than about 20 degrees. So, (b) is the correct response.
-      </div>
-    </form>
-    <br/>
-    </div>
-    </p>
-        </div> 
+      <br><br>
 
-          <div id="page5" class="page">
-              <p><div style='text-align:left'><b>Relationship between light intensity (how bright the light is) and algae growth.</b> 
-                The graph below show the relationship between the number of diatomic algae cells in millions (for the species Chaetoceros muelleri) 
-                and time (up to 7 days). Each different line shows the relationship for a different light intensity, from 0 lux (no light) to 2,500 lux 
-                (a medium-bright day).</div>
-                <div style='text-align:left'><br/>
-                </div>
-                <div style='text-align:left'>
-                  <center><a imageanchor='1' href='../photosynthesis/oceanography-Average-cell-1-111-g001.png?attredirects=0/index.html'><img
-                        src='oceanography-Average-cell-1-111-g001.png'
-                        border='0' /></a></center></center>
-                  <br/>
-                </div>
-                
-                <div style='text-align:center'>
-                  <font size='3'>(<a target='_blank' href='../fig-1-citation/index.html'><b><font color='#0000ff'>Citation for
-                          Figure 1.</font></b></a>)</font>
-                </div>
-                <br>
-                <br>
-                <form class="quiz_open quiz">
-                    <b>
-                        Q5: Based on this graph, what is your best guess for the cell count (in millions) after 168 hours (one week) 
-                        when the light intensity is 250 lux (similar to the light intensity of a dim office)?</b>
-                    <textarea></textarea><br>
-                    <button type="submit" class="submit-btn">Submit</button>
-                    <div class="feedback-correct feedback">
-                        The cell count is likely to be somewhere between the cell counts for zero lux and 500 lux. 
-                        At zero lux, there are no cells. At 500 lux, there are about 2.5 million cells. 
-                        So, a good guess is about in the middle of this range, or about 1.25 (million) cells after one week.
-                    </div>
-                  </form>
-          </p>
+      <form class="quiz_open quiz">
+        <b>
+            Q3: What is another factor (in addition to light intensity and frequency, CO<sub>2</sub>, and temperature)
+            that affects the rate of photosynthesis?</b>
+        <textarea></textarea><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+            Water is another factor, in addition to light and CO<sub>2</sub> levels, which affects the rate of
+            photosynthesis.
         </div>
+      </form>
 
-        <!-- Nav Buttons -->
+      <br>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q3.5: For low levels of light intensity, what is the relationship between light intensity and
+          photosynthesis rate?</b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) There is no relationship.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">b) As light intensity increases, photosynthesis rate decreases.</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">c) As light intensity increases, photosynthesis rate increases.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) I have no clue.</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          You are right. With low levels of light intensity (close to the origin of the graph), as light intensity
+          increases, the rate of photosynthesis also increases. So, (c) is the correct response.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Not quite. With low levels of light intensity (close to the origin of the graph), as light intensity
+          increases, the rate of photosynthesis also increases. So, (c) is the correct response.
+        </div>
+      </form>
+
+      <br>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q4: According to this graph, as the CO<sub>2</sub> levels increase, what happens to the rate of
+          photosynthesis?
+        </b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) It keeps increasing.</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">b) It increases up to a certain point then remains the same.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">c) It remains the same for all CO<sub>2</sub> levels.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) This information cannot be determined from this graph.</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! As the CO<sub>2</sub> level increases, the photosynthesis rate also increases. However, once it
+          reaches a certain CO<sub>2</sub> level, the rate of photosynthesis does not increase (or decrease) any more.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, as the CO<sub>2</sub> level increases, the photosynthesis rate also increases. However, once it
+          reaches a certain CO<sub>2</sub> level, the rate of photosynthesis does not increase (or decrease) any more.
+          So, (b) is the correct answer.
+        </div>
+      </form>
+
+      <br>
+      <form class="quiz_choice quiz">
+        <b>
+          Q4.5: What is the relationship between temperature and rate of photosynthesis between 21 degrees Celcius
+          (70 degrees F) and 38 degrees C (100 degrees F)? Base your answer on the graph and other information in
+          this unit.
+        </b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) The rate of photosynthesis increases from 21-38 degrees C.</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">b) The rate of photosynthesis decreases from 21-38 degrees C.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">c) The rate of photosynthesis does not change from 21-38 degrees C.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) How should I know?</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          That's right! The rate of photosynthesis is maximum a bit below room temperature (between 10 and 20
+          degrees C) but decreases at temperatures higher than about 20 degrees. So, (b) is the correct answer.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually, the rate of photosynthesis is maximum a bit below room temperature (between 10 and 20
+          degrees C) but decreases at temperatures higher than about 20 degrees. So, (b) is the correct response.
+        </div>
+      </form>
+
+      <br>
+    </div>
+
+    <div id="page5" class="page">
+      <p>
+        <b>Relationship between light intensity (how bright the light is) and algae growth.</b> The graph below show
+        the relationship between the number of diatomic algae cells in millions (for the species Chaetoceros muelleri)
+        and time (up to 7 days). Each different line shows the relationship for a different light intensity, from 0
+        lux (no light) to 2,500 lux (a medium-bright day).
+      </p>
+
+      <a href="../photosynthesis/oceanography-Average-cell-1-111-g001.png?attredirects=0/index.html">
+        <img style="display:block;margin-left:auto;margin-right:auto"
+             src="oceanography-Average-cell-1-111-g001.png" />
+      </a>
+
+      <p style="text-align:center">
+        (<a target="_blank" href="../fig-1-citation/index.html"><b>Citation for Figure 1.</b></a>)
+      </p>
+
+      <br><br>
+
+      <form class="quiz_open quiz">
+        <b>
+            Q5: Based on this graph, what is your best guess for the cell count (in millions) after 168 hours (one week)
+            when the light intensity is 250 lux (similar to the light intensity of a dim office)?</b>
+        <textarea></textarea><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+            The cell count is likely to be somewhere between the cell counts for zero lux and 500 lux.
+            At zero lux, there are no cells. At 500 lux, there are about 2.5 million cells.
+            So, a good guess is about in the middle of this range, or about 1.25 (million) cells after one week.
+        </div>
+      </form>
+
+    </div>
+
+    <!-- Nav Buttons -->
     <div class="nav-btn-container">
       <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
       <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
@@ -461,7 +438,7 @@ As a reminder, in photosynthesis, <font color='#9900ff'>carbon dioxide</font> an
 
   </div>
 
-  
+
 
   <!-- Footer -->
   <div id="footer">
@@ -483,4 +460,3 @@ As a reminder, in photosynthesis, <font color='#9900ff'>carbon dioxide</font> an
 
 </html>
 
-                          
