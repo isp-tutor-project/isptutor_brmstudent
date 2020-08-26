@@ -302,6 +302,9 @@ ol.brm-list.nested-list > li:last-of-type {
 .text-centered {
   text-align: center;
 }
+.text-justify {
+  text-align: justify
+}
 .text-xxl {
   font-size: xx-large;
 }
@@ -326,13 +329,19 @@ ol.brm-list.nested-list > li:last-of-type {
 .font-calibri {
   font-family: Calibri, 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif
 }
-.font-veranda {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.font-pt-sans {
+  font-family: 'PT Sans', sans-serif;
+}
+.font-roboto {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 .font-times {
   font-family: 'Times New Roman', Times, serif;
 }
-.font-roboto {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+.font-trebuchet {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.font-veranda {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
