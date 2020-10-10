@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,7 +13,7 @@
   <!-- Google Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
+  <script src="../../firebase.js"></script>
 </head>
 
 <body>
@@ -36,93 +37,97 @@
     <h1>Kinetic and Potential Energy</h1>
 
     <div id="page1" class="page">
-      <p style='margin-bottom:0.0001pt;line-height:normal;background-image:initial;background-position:initial;background-repeat:initial'>
-        
-        <p style='text-align:left'><span style='background-color:transparent'><b>What is Energy?</b>
-          Energy in general is a measure of the </span><i style='background-color:transparent'><b>motion</b></i><span
-          style='background-color:transparent'> of objects. <br><br>There are two general categories of
-          energy that objects may have: </span><b style='background-color:transparent'>Kinetic energy</b><span
-          style='background-color:transparent'> and </span><b style='background-color:transparent'>Potential energy</b><span
-          style='background-color:transparent'>. <br>
-        <ul><li>Kinetic energy is the energy of an object due to its motion. The faster an object is moving, the more kinetic energy
-          it has. For example, an electron that is moving faster has more kinetic energy than a slower-moving electron.</li><br>  
-        <li>Potential energy is the amount of motion an object can have (in the future) because it is being acted on by some force. For example, electrons are pulled by protons toward the nucleus of atoms. Because of this, electrons have the "potential" to move even faster.</span></p>
-          </li></ul></div>
+      <p>
+        <b>What is Energy?</b> Energy in general is a measure of the <i><b>motion</b></i> of objects.
+      </p>
+      <p>
+        There are two general categories of energy that objects may have: <b>Kinetic energy</b> and
+        <b>Potential energy</b>.
+      </p>
 
-        <div id="page2" class="page">       
-      <ul>
-        <li><b>Kinetic energy </b>is the energy of an object (including atoms and molecules!) that is due
-          to the object’s motion. Because there are different types of motion, there are different types
-          of kinetic energy. When people use the term "kinetic energy," they are most likely referring to
-          the <i>translational</i> kinetic energy of an object. <font style='background-color:transparent'
-            face='verdana, sans-serif'>The translational kinetic energy of an object is the kinetic energy
-            of the object due to the object as a whole moving <i>across</i> some distance</font><span style='background-color:transparent'>. </span></li>
+      <ul class="brm-list">
+        <li>
+          Kinetic energy is the energy of an object due to its motion. The faster an object is moving, the more
+          kinetic energy it has. For example, an electron that is moving faster has more kinetic energy than a
+          slower-moving electron.
+        </li>
+        <li>
+          Potential energy is the amount of motion an object can have (in the future) because it is being acted on by
+          some force. For example, electrons are pulled by protons toward the nucleus of atoms. Because of this,
+          electrons have the "potential" to move even faster.
+        </li>
       </ul>
-      <ul>
-        <li>The (translational) <b style='text-align:center;background-color:transparent'>Kinetic energy</b><span
-            style='text-align:center;background-color:transparent'> </span><span style='text-align:center'>of
-            an object is equal to the product of its mass and the square of its speed (or velocity):
-            <span style='background-color:rgb(0,255,255)'><b>KE</b> = ½</span></span><span style='background-color:rgb(0,255,255)'><b
-              style='text-align:center'>m</b><span style='text-align:center'><font size='3'>*</font><b>v</b></span><sup
-              style='text-align:center'>2</sup></span><sup style='text-align:center;background-color:transparent'>
-          </sup></li>
-      </ul>
-      <ul>
-        <li>In these units, if we say "kinetic energy," we mean "translational kinetic energy." If we mean
-          another type of kinetic energy, we will say what that other kind of kinetic energy is (e.g., "rotational
-          kinetic energy").</li>
-      </ul>
-      <ul>
+
+      <br>
+    </div>
+
+    <div id="page2" class="page">
+      <ul class="brm-list">
+        <li>
+          <b>Kinetic energy</b> is the energy of an object (including atoms and molecules!) that is due to the object’s
+          motion. Because there are different types of motion, there are different types of kinetic energy. When
+          people use the term "kinetic energy," they are most likely referring to the <i>translational</i> kinetic
+          energy of an object. The translational kinetic energy of an object is the kinetic energy of the object
+          due to the object as a whole moving <i>across</i> some distance.
+        </li>
+        <li>
+          The (translational) <b>Kinetic energy</b> of an object is equal to the product of its mass and the square of
+          its speed (or velocity):
+          <span style="background-color:rgb(0,255,255)"><b>KE</b> = ½<b>m*v<sup>2</sup></b></span>
+        </li>
+        <li>
+          In these units, if we say "kinetic energy," we mean "translational kinetic energy." If we mean another type
+          of kinetic energy, we will say what that other kind of kinetic energy is (e.g., "rotational kinetic energy").
+        </li>
         <li>Below are some types of translational motion (and one other type of motion):</li>
       </ul>
-      <div style='text-align:center'><br/>
-      </div>
-      <div style='text-align:center'><b style='background-color:rgb(0,255,0)'><div style='display:block;text-align:left'><img
-              style='display:block;margin-right:auto;margin-left:auto;text-align:center' src='TranslationalMotion.png' width='800'
-              border='0' /></div><br/></b></div>
-     
-      <div style='text-align:left'><span style='background-color:rgb(255,255,255)'>A final type of non-translational
-          kinetic energy</span><span style='background-color:rgb(255,255,255)'> is </span><b style='background-color:rgb(255,255,255)'>vibrational
-          motion.
-        </b>For this type of kinetic energy, again the object as a <i>whole</i> does not move through space. Instead, it moves kind
-          of like an accordion. A person playing an accordion can stand still while playing it because it has no translational motion.</div>
-      <div style='text-align:center'><span style='background-color:rgb(255,255,255)'><br/></span></div>
-      <div style='text-align:center'><span style='background-color:rgb(255,255,255)'>An example of vibrational
-          motion is shown below. </span></div>
-      <div style='text-align:center'><span style='background-color:rgb(255,255,255)'><div style='display:block;text-align:center;margin-right:auto;margin-left:auto'><a
-              imageanchor='1' href='../kinetic-and-potential-energy/VibrationalMotion.GIF?attredirects=0/index.html'><img
-                width='400' src='VibrationalMotion.GIF'
-                height='148' border='0' /></a></div><br/></span></div>
-      <div style='text-align:center'><span style='background-color:rgb(255,255,255)'>In the example above,
-          the "object" is composed of two boxes and a spring between them. The boxes both move away from
-          each other, then back toward each other (like the accordion). But the middle of the spring (the
-          "center of mass") does not move in space. </span></div>
-      <div style='text-align:center'><span style='background-color:rgb(255,255,255)'><br/></span></div>
-      <div style='text-align:center'><span style='background-color:rgb(255,255,255)'>Carbon dioxide is one
-          molecule that absorbs energy from sunlight, which is converted into vibrational motion of the molecules. </span></div>
-      <div style='text-align:center'><b style='background-color:rgb(0,255,0)'><br/></b></div>
 
-      <font size='3'>
+      <br />
+      <img class="img-centered" src="TranslationalMotion.png" width="800"
+           alt="Image showing examples of translational motion" />
+      <br />
+
+      <p>
+        A final type of non-translational kinetic energy is <b>vibrational motion.</b> For this type of kinetic energy,
+        again the object as a <i>whole</i> does not move through space. Instead, it moves kind of like an accordion. A
+        person playing an accordion can stand still while playing it because it has no translational motion.
       </p>
+      <p class="text-centered">An example of vibrational motion is shown below.</p>
+
+      <a href="../kinetic-and-potential-energy/VibrationalMotion.GIF?attredirects=0/index.html">
+        <img class="img-centered" src="VibrationalMotion.GIF" width="400" height="148" />
+      </a>
+      <br />
+
+      <p class="text-centered">
+        In the example above, the "object" is composed of two boxes and a spring between them. The boxes both move
+        away from each other, then back toward each other (like the accordion). But the middle of the spring (the
+        "center of mass") does not move in space. 
+      </p>
+      <p class="text-centered">
+        Carbon dioxide is one molecule that absorbs energy from sunlight, which is converted into vibrational motion
+        of the molecules. 
+      </p>
+
+      <br/>
 
     </div>
 
     <div id="page3" class="page">
 
-<p><div style='display:block;text-align:left'><br/>
-</div>
-<div style='display:block;text-align:left'>
-  <div style='text-align:center'>
-    <div style='display:inline;margin:5px 10px 0px 0px;float:left'>                            
-                              <a imageanchor='1' href='../kinetic-and-potential-energy/box_spring.GIF?attredirects=0/index.html'><img
-          src='box_spring.GIF'
-          border='0' /></a></div>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br><br>
-    <div style='display:block;text-align:left'>
-    <form class="quiz_choice quiz">
+      <a href="../kinetic-and-potential-energy/box_spring.GIF?attredirects=0/index.html">
+        <img class="img-centered" src="box_spring.GIF" />
+      </a>
+
+      <br>
+      <!-- <br> -->
+      <!-- <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br><br> -->
+
+      <form class="quiz_choice quiz">
         <b>
-            Q1: In the picture above, a child attaches a weight to a spring hanging from the ceiling. Then, the child pulls down on the weight. 
-            The weight moves up and down without turning. Which is true of the weight's motion?</b>
+          Q1: In the picture above, a child attaches a weight to a spring hanging from the ceiling. Then, the
+          child pulls down on the weight.
+          The weight moves up and down without turning. Which is true of the weight's motion?</b>
         <input type="radio" name="question" value="incorrect">
         <div class="label">a) The weight has both translational and rotational motion.</div><br>
         <input type="radio" name="question" value="incorrect">
@@ -133,115 +138,114 @@
         <div class="label">d) The weight has neither translational nor rotational motion.</div><br>
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
-            Right! The weight as a whole moves up and down. Therefore, it has translational motion. The weight does not rotate. 
-            So, the weight only has translational motion. The answer is (c).
+          Right! The weight as a whole moves up and down. Therefore, it has translational motion. The weight does
+          not rotate.
+          So, the weight only has translational motion. The answer is (c).
         </div>
         <div class="feedback-incorrect feedback">
-            Well, let's think about this. The weight as a whole moves up and down. Therefore, it has translational motion. The weight does not rotate. 
-            So, the weight only has translational motion. The answer is (c).
+          Well, let's think about this. The weight as a whole moves up and down. Therefore, it has translational
+          motion. The weight does not rotate.
+          So, the weight only has translational motion. The answer is (c).
         </div>
       </form>
-    </div>
-  </div><span style='font-size:18px;background-color:transparent'><div style='text-align:center'><br/>
-    </div></span></div>
-<br> 
-<form class="quiz_choice quiz">
-    <b>
-        Q2: Two boys, Tom and Jerry, decide to go for a jog together. Tom has a mass of 68 kg (150 lbs). Jerry has a mass of 34 kg (75 lbs). They run at exactly the same speed. 
-        Which of the following is true of their (translational) kinetic energies while they are running?</b>
-    <input type="radio" name="question" value="correct">
-    <div class="label">a) Tom's kinetic energy is twice Jerry's.</div><br>
-    <input type="radio" name="question" value="incorrect">
-    <div class="label">b) Jerry's kinetic energy is twice Tom's.</div><br>
-    <input type="radio" name="question" value="incorrect">
-    <div class="label">c) Tom's kinetic energy is four times Jerry's.</div><br>
-    <input type="radio" name="question" value="incorrect">
-    <div class="label">d) It's impossible to know.</div><br>
-    <button type="submit" class="submit-btn">Submit</button>
-    <div class="feedback-correct feedback">
-        That's right! Kinetic energy is equal to mass times velocity squared (KE = 1/2*m*v^2.) Tom's mass is twice Jerry's mass. 
-        So, Tom's kinetic energy is twice Jerry's. (a) is the correct response.
-    </div>
-    <div class="feedback-incorrect feedback">
-        Actually, kinetic energy is equal to mass times velocity squared (KE = 1/2*m*v^2.) Tom's mass is twice Jerry's mass. 
-        So, Tom's kinetic energy is twice Jerry's. (a) is the correct response.
-    </div>
-  </form>
-  <div style='display:block;text-align:left'><br/>
-  </div>
-  <br/>
-  </font>
-  </p>
+
+      <br><br>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q2: Two boys, Tom and Jerry, decide to go for a jog together. Tom has a mass of 68 kg (150 lbs). Jerry has a
+          mass of 34 kg (75 lbs). They run at exactly the same speed.
+          Which of the following is true of their (translational) kinetic energies while they are running?</b>
+        <input type="radio" name="question" value="correct">
+        <div class="label">a) Tom's kinetic energy is twice Jerry's.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">b) Jerry's kinetic energy is twice Tom's.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">c) Tom's kinetic energy is four times Jerry's.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) It's impossible to know.</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          That's right! Kinetic energy is equal to mass times velocity squared (KE = 1/2*m*v^2.) Tom's mass is twice
+          Jerry's mass.
+          So, Tom's kinetic energy is twice Jerry's. (a) is the correct response.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, kinetic energy is equal to mass times velocity squared (KE = 1/2*m*v^2.) Tom's mass is twice Jerry's
+          mass.
+          So, Tom's kinetic energy is twice Jerry's. (a) is the correct response.
+        </div>
+      </form>
+
+      <br><br>
+
     </div>
 
     <div id="page4" class="page">
       <p>
-        <font style='background-color:transparent' face='verdana, sans-serif'><b>((Advanced: Due
-          to new (probably unfamiliar) terminology)) </b></font>
-    </li>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <li>
-      <font style='background-color:transparent' face='verdana, sans-serif'><b>Kinetic energy (KE)
-          due to rolling</b>:  An object can have other types of kinetic energy as well as translational
-        KE. One other type of kinetic energy </font><span style='background-color:transparent'>is
-        the energy due to the object spinning around an axis (including rolling on the ground). This
-        is called <b>rotational KE</b>. </span></li>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <span style='background-color:transparent'><div style='display:block;text-align:left'>
-          <div>
-            <div class='sites-embed-align-center-wrapping-off'>
-              <div style='width:600px;' class='sites-embed-border-off sites-embed'>
-                <div class='sites-embed-content sites-embed-type-docs-video'><iframe src='https://storage.googleapis.com/cmuintgames/Spinning%20-%2018015%20(1).mp4'
-                    allowfullscreen='false' frameborder='0' height='350' width='600'></iframe></div>
+        <b>((Advanced: Due to new (probably unfamiliar) terminology)) </b>
+      </p>
+
+      <ul>
+        <ul>
+          <li>
+            <b>Kinetic energy (KE)due to rolling</b>: An object can have other types of kinetic energy as well as
+            translational KE. One other type of kinetic energy is the energy due to the object spinning around an
+            axis (including rolling on the ground). This is called <b>rotational KE</b>. 
+          </li>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <span>
+            <div style="display:block;text-align:left">
+              <div>
+                <div class="sites-embed-align-center-wrapping-off">
+                  <div style="width:600px;" class="sites-embed-border-off sites-embed">
+                    <div class="sites-embed-content sites-embed-type-docs-video">
+                      <iframe src="https://storage.googleapis.com/cmuintgames/Spinning%20-%2018015%20(1).mp4"
+                              allowfullscreen="false" frameborder="0" height="350" width="600">
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+                <img style="background-color:transparent;display:inline;float:left;margin:5px 10px 0px 0px"
+                     src="256px-Axis_(PSF).png" alt="Earth Axis" />
+                <br />
               </div>
-            </div><img style='background-color:transparent;display:inline;float:left;margin:5px 10px 0px 0px'
-              src='256px-Axis_(PSF).png'
-              border='0' /><br/>
-          </div>
-        
-        </div>
-      </span></li>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
-      <ul>
-        <li>
-          <font style='background-color:transparent' face='verdana, sans-serif'>In general, rotational
-            <b>KE</b> = ½<b>I </b><font size='3'>• </font><b>ω</b><sup>2</sup>. (This looks similar
-            to <b>KE</b> = ½<b>m</b> <font size='3'>•</font><b> v</b><sup>2</sup>, right?)
-            <sup>
-            </sup>I is like the mass of the object, but it’s the resistance of the object’s mass to
-            <i>rotational</i> motion (rather than translational motion). And</font><span style='background-color:transparent'> ω
-            is the rotational speed of the object or how fast the object rotates on its axis (rather
-            than translational speed).</span></li>
+            </div>
+          </span>
+        </ul>
       </ul>
-    </ul>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
       <ul>
-        <li>If a solid ball is rolling across a surface, it will have BOTH translational KE <i style='background-color:transparent'>and</i><span
-            style='background-color:transparent'>
-            rotational KE. Again, the rotational KE is in general equal to:  </span>½<b style='background-color:transparent'>I
-          </b><span style='background-color:transparent'><font size='3'>•</font></span><b style='background-color:transparent'>
-            ω</b><sup style='background-color:transparent'>2</sup><span style='background-color:transparent'>.</span></li>
+        <ul>
+          <ul>
+            <ul>
+              <li>
+                In general, rotational
+                <b>KE</b> = ½<b>I </b> • <b>ω</b><sup>2</sup>
+                . (This looks similar to
+                <b>KE</b> = ½<b>m</b> • <b>v</b><sup>2</sup>
+                , right?) I is like the mass of the object, but it’s the resistance of the object’s mass to
+                <i>rotational</i> motion (rather than translational motion). And ω is the rotational speed of
+                the object or how fast the object rotates on its axis (rather than translational speed).
+              </li>
+            </ul>
+          </ul>
+        </ul>
       </ul>
-    </ul>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
+      <ul>
+        <ul>
+          <ul>
+            <ul>
+              <li>
+                If a solid ball is rolling across a surface, it will have BOTH translational KE <i>and</i>
+                rotational KE. Again, the rotational KE is in general equal to: ½ <b>I</b> • <b>ω</b><sup>2</sup>.
+              </li>
+            </ul>
+          </ul>
+        </ul>
+      </ul>
       <ul>
         <ul>
           <ul>
@@ -249,9 +253,16 @@
               <ul>
                 <ul>
                   <ul>
-                    <li>For a solid sphere, <b>I</b> = (2/5)<b>m</b> <font size='3'>•</font><b> r</b><sup
-                        style='background-color:transparent'>2   </sup><span style='background-color:transparent'>(you
-                        need to look up values of I for different shapes of objects)</span></li>
+                    <ul>
+                      <ul>
+                        <ul>
+                          <li>
+                            For a solid sphere, <b>I</b> = (2/5)<b>m</b> • <b>r</b><sup>2</sup> (you
+                            need to look up values of I for different shapes of objects)
+                          </li>
+                        </ul>
+                      </ul>
+                    </ul>
                   </ul>
                 </ul>
               </ul>
@@ -259,210 +270,203 @@
           </ul>
         </ul>
       </ul>
-    </ul>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
       <ul>
         <ul>
           <ul>
-            <li>
-              <font style='background-color:transparent' face='verdana, sans-serif'>This relationship
-                indicates that I, the resistance to spinning, increases with both the mass (m) of the
-                sphere and with the square of the radius of the sphere. (So, smaller spheres resist
-                spinning less than larger spheres, which is intuitive, right?)
-              </font>
-            </li>
+            <ul>
+              <ul>
+                <ul>
+                  <li>
+                    This relationship indicates that I, the resistance to spinning, increases with both the mass (m)
+                    of the sphere and with the square of the radius of the sphere. (So, smaller spheres resist
+                    spinning less than larger spheres, which is intuitive, right?)
+                  </li>
+                </ul>
+              </ul>
+            </ul>
           </ul>
         </ul>
       </ul>
-    </ul>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
+      <ul>
+        <ul>
+          <ul>
+            <ul>
+              <ul>
+                <li>
+                  <b>ω</b> is related to the translational speed of the sphere (if it is rolling without slipping on
+                    the surface at all) as follows: <b>ω</b> = <b>v/r</b>.
+                </li>
+              </ul>
+            </ul>
+          </ul>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <ul>
+            <ul>
+              <li>
+                This is because when an object rolls one revolution, or 360 degrees--which is equal to 2
+                <span class="font-times">π</span> radians (trust us for now)--it will
+                travel a distance equal to the circumference of the sphere, 2
+                <span class="font-times">π</span><b>r</b> (where <b>r</b> is the radius of the
+                sphere) or <span class="font-times">π</span><b>d</b>(where <b>d</b> is the
+                diameter of the sphere). 
+              </li>
+            </ul>
+          </ul>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <ul>
+            <ul>
+              <li>
+                So,
+                <b>KE<sub>R</sub></b> = (2/5) m • <b class="text-lg">r</b><sup>2</sup> × (<b>v/r</b>)<sup>2</sup>
+                <span class="text-xxl">→</span>
+                the r’s will cancel out, so we get for the rotational KE of a sphere: 
+                <span style="background-color:rgb(0,255,0)">
+                  KE<sub>R</sub> = 2/5 m • v<sup><b>2</b></sup>
+                </span>
+              </li>
+            </ul>
+          </ul>
+        </ul>
+      </ul>
+
+      <br />
+
+      <form class="quiz_choice quiz">
+        <b>Q2A: How does the translational Kinetic Energy compare to the rotational Kinetic Energy (KE) of the solid
+          sphere when it is rolling down an inclined plane?</b>
+        <input type="radio" name="question" value="correct">
+        <div class="label">a) The translational KE is greater than the rotational.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">b) The rotational KE is greater than the translational.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">c) They are the same.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) I have no idea</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          Yes! The translational KE of a sphere is 1/2mv<sup>2</sup> (or 5/10mv<sup>2</sup>). The rotational KE of a
+          sphere is 2/5mv<sup>2</sup> (or 4/10mv<sup>2</sup>). So, the translational KE is a bit (1/10) bigger. (a) is
+          the correct response.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Not quite. The translational KE of a sphere is 1/2mv<sup>2</sup> (or 5/10mv<sup>2</sup>). The rotational KE of
+          a sphere is 2/5mv<sup>2</sup> (or 4/10mv<sup>2</sup>).
+          So, the translational KE is a bit (1/10) bigger. (a) is the correct response.
+        </div>
+      </form>
+
+      <br />
+
+      <p style="margin-left:1in">
+        <b>((End of advanced section))</b>
+      </p>
+
+      <br />
+
+    </div>
+
+    <div id="page5" class="page">
+
+      <p>
+        <b>Potential energy </b>is the <i>potential</i> for an object to move because the object "feels" a force
+        (such as gravity, an electric force, a magnetic force, etc.). An object such as a rock at the top of a
+        cliff has potential energy because gravity can make it fall (and gain a lot of kinetic energy,
+        if it's high enough!). 
+      </p>
+
+      <ul>
+        <ul>
+          <li>The potential energy of an object due to gravity depends on three variables: </li>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <ul>
+            <li>the mass of the object (m)</li>
+          </ul>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <ul>
+            <li>the acceleration due to gravity (g) (on Earth, g is about 10 m/s<sup>2</sup>), </li>
+          </ul>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <ul>
+            <li>and its height above the ground (h).</li>
+          </ul>
+        </ul>
+      </ul>
+
+      <br />
+
       <ul>
         <ul>
           <li>
-            <font style='background-color:transparent' face='verdana, sans-serif'><b>ω</b>
-              is related to the translational speed of the sphere (if it is rolling without slipping on the surface at all) as follows:
-              <b>ω</b> = <b>v/r</b>. </font>
+            As each of these variables increases, the potential energy of the object increases. This is shown in the
+            equation below:
           </li>
         </ul>
       </ul>
-    </ul>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
       <ul>
-        <li><span style='background-color:transparent'>This is because when an object
-            rolls one revolution, or 360 degrees--which is equal to 2<font face='times new roman, serif'>π</font> radians
-            (trust us for now)--it will travel a distance equal to the circumference of the sphere,
-            2<font face='times new roman, serif'>π</font><b>r</b> (where <b>r</b> is the radius of the
-            sphere) or <font face='times new roman, serif'>π</font><b>d
-            </b>(where <b>d</b> is the diameter of the sphere). </span></li>
+        <ul>
+          <ul>
+            <li>The potential energy of an object (due to gravity) = <b>m</b> x <b>g</b> x <b>h</b></li>
+          </ul>
+        </ul>
       </ul>
-    </ul>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
-      <ul>
-        <li>So, <b>KE</b><sub style='background-color:transparent'><b>R</b> </sub><span style='background-color:transparent'><font
-              size='3'>= (2/5)</font>m</b><font size='3'> </font>
-            <font size='3'>•</font>
-            <font style='font-weight:bold' size='4'> r</font></span><sup style='background-color:transparent'>2 </sup><span
-            style='background-color:transparent'>×(<b>v</b>/<b>r</b>)</span><sup style='background-color:transparent'>2</sup><span
-            style='background-color:transparent'>
-          </span><span style='background-color:transparent'><font size='6'>→</font></span><span style='background-color:transparent'>
-          the r’s will cancel out, so we get for the rotational KE of a sphere: </span><span style='background-color:rgb(0,255,0)'>KE<sub>R </sub>=
-            </b><font size='3'>2/5 </font>m </b><font size='3'>• </font>v</b><sup style='font-weight:bold'>2</sup></span></li>
-      </ul>
-    </ul>
-  </ul>
-</ul>
-<div><span style='font-size:15px'><b><br/></b></span></div>
-      <form class="quiz_choice quiz">
-          <b>Q2A: How does the translational Kinetic Energy compare to the rotational Kinetic Energy (KE) of the solid sphere when it is rolling down an inclined plane?</b>
-          <input type="radio" name="question" value="correct">
-          <div class="label">a) The translational KE is greater than the rotational.</div><br>
-          <input type="radio" name="question" value="incorrect">
-          <div class="label">b) The rotational KE is greater than the translational.</div><br>
-          <input type="radio" name="question" value="incorrect">
-          <div class="label">c) They are the same.</div><br>
-          <input type="radio" name="question" value="incorrect">
-          <div class="label">d) I have no idea</div><br>
-          <button type="submit" class="submit-btn">Submit</button>
-          <div class="feedback-correct feedback">
-              Yes! The translational KE of a sphere is 1/2mv<sup>2</sup> (or 5/10mv<sup>2</sup>). The rotational KE of a sphere is 2/5mv<sup>2</sup> (or 4/10mv<sup>2</sup>). So, the translational KE is a bit (1/10) bigger. (a) is the correct response.
-          </div>
-          <div class="feedback-incorrect feedback">
-              Not quite. The translational KE of a sphere is 1/2mv<sup>2</sup> (or 5/10mv<sup>2</sup>). The rotational KE of a sphere is 2/5mv<sup>2</sup> (or 4/10mv<sup>2</sup>). 
-              So, the translational KE is a bit (1/10) bigger. (a) is the correct response.
-          </div>
-        </form>
+      <br />
 
-<br/>
-<p style='text-align:left;margin-left:1in'>
-  <font size='3' face='verdana, sans-serif'><span style='font-stretch:normal;line-height:normal'>  </span><b>((End
-      of advanced section))</b></font>
-</p>
-<p style='text-align:left;margin-left:1in'>
-  <font size='3' face='verdana, sans-serif'><b><br/>
-    </b></font>
-</p>
-
-</p>
-</div>
-
-
-
-<div id="page5" class="page">
-  <p style='margin-bottom:0.0001pt;line-height:normal;background-image:initial;background-position:initial;background-repeat:initial'>
-    
-    <font style='background-color:transparent' face='verdana, sans-serif'><b>Potential energy </b>is
-      the <i>potential</i> for an object to move because the object "feels"
-      <a></a>a force (such as gravity, an electric force, a magnetic force, etc.). </font><span style='background-color:transparent'>An
-      object such as a rock at the top of a cliff has potential energy because gravity can make it
-      fall (and gain a lot of kinetic energy, if it's high enough!). </span></li>
-</ul>
-<ul>
-  <ul>
-    <li>T<span style='background-color:transparent'>he potential energy of an object due to gravity
-        depends on three variables: </span></li>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
-      <li><span style='background-color:transparent'>the mass of the object (m)</span></li>
-    </ul>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
-      <li><span style='background-color:transparent'>the acceleration due to gravity (g) (on Earth,
-          g is about 10 m/s</span><sup style='background-color:transparent'>2</sup><span style='background-color:transparent'>), </span></li>
-    </ul>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
-      <li><span style='background-color:transparent'>and its height above the ground
-          (h).
-        </span></li>
-    </ul>
-  </ul>
-</ul>
-<div>
-  <font size='3'><br/>
-  </font>
-</div>
-<ul>
-  <ul>
-    <li><span style='background-color:transparent'>As each of these variables increases,
-        the potential energy of the object increases. This is shown in the equation below:</span></li>
-  </ul>
-</ul>
-<ul>
-  <ul>
-    <ul>
-      <li>The potential energy of an object (due to gravity) = <b>m</b> <font size='3'>x</font><b> g</b> <font
-          size='3'>x</font><b> h</b></li>
-    </ul>
-  </ul>
-</ul>
-<div><br/>
-</div>
-<form class="quiz_open quiz">
-    <b>Q3: What is the potential energy (due to gravity) of a 0.5 kg squirrel sitting in a tree 10 meters above the ground?</b>
-    <textarea></textarea><br>
-    <button type="submit" class="submit-btn">Submit</button>
-    <div class="feedback-correct feedback">
-        The potential energy of the squirrel due to gravity is equal to the product of the squirrel's mass (0.5 kg), acceleration due to gravity (about 10 m/s2), 
-        and the height of the squirrel above the ground (10 m): <br>
-        PE (gravity) = (.5 kg)*(10 m/s2) * (10 m) = 50 kg*m2/s2
-    </div>
-  </form>
-<div><span style='text-align:center'><font size='3' color='#00b050'><b><br/>
-      </b></font></span></div>
-    <form class="quiz_open quiz">
-        <b>Q4: The squirrel climbs halfway down the tree, so it is now 5 meters above the ground. What is its potential energy (due to gravity) now?</b>
+      <form class="quiz_open quiz">
+        <b>Q3: What is the potential energy (due to gravity) of a 0.5 kg squirrel sitting in a tree 10 meters above the
+          ground?</b>
         <textarea></textarea><br>
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
-            The potential energy of the squirrel due to gravity is: <br>
-            PE = mass*height*g (acceleration due to gravity, about 10 m/s^2)
-            <br>
-            So, PE = (0.5 kg)*(5 m)*(10 m/s^2) = 25 kg*m^2/s^2
-            <br>
-            This is half of the squirrel's PE when it was 10 meters up the tree.
+          The potential energy of the squirrel due to gravity is equal to the product of the squirrel's mass (0.5 kg),
+          acceleration due to gravity (about 10 m/s2),
+          and the height of the squirrel above the ground (10 m): <br>
+          PE (gravity) = (.5 kg)*(10 m/s2) * (10 m) = 50 kg*m2/s2
         </div>
       </form>
-<div><br/>
-</div>
-<div>
-  <ul>
-    <li>The relationship between potential and kinetic energy is discussed in more detail in the unit:
-      <a target='_blank' href='../energy-general/index.html'><b><font color='#0000ff'>Energy Can Change
-            Forms But Must Be Conserved</font></b></a>.</li>
-  </ul>
-</div>
-</p>
 
-</div>
+      <br />
+
+      <form class="quiz_open quiz">
+        <b>Q4: The squirrel climbs halfway down the tree, so it is now 5 meters above the ground. What is its potential
+          energy (due to gravity) now?</b>
+        <textarea></textarea><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          The potential energy of the squirrel due to gravity is: <br>
+          PE = mass*height*g (acceleration due to gravity, about 10 m/s^2)
+          <br>
+          So, PE = (0.5 kg)*(5 m)*(10 m/s^2) = 25 kg*m^2/s^2
+          <br>
+          This is half of the squirrel's PE when it was 10 meters up the tree.
+        </div>
+      </form>
 
 
+      <ul class="brm-list">
+        <li>
+          The relationship between potential and kinetic energy is discussed in more detail in the unit:
+          <a class="brm-link" target="_blank" href="../energy-general/">
+            Energy Can Change Forms But Must Be Conserved
+          </a>.
+        </li>
+      </ul>
 
-
+    </div>
 
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
@@ -477,14 +481,17 @@
   <!-- Footer -->
   <div id="footer">
     <img src="../_assets/klahrLabFooter.png"><br>
-    <p>©2019 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
     <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
+      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
+      the
+      National Science Foundation, Grant SBE035442.
+      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
+      through
+      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+      represent
+      views of the Institute or the U.S. Department of Education.</p>
   </div>
 
   <!-- Enable header and nav button functionality -->
@@ -493,30 +500,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

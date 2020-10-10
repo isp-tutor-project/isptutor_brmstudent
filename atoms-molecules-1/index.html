@@ -1,183 +1,90 @@
-
-
+<!DOCTYPE html>
 <html>
 
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Atoms and Molecules Unit</title>
-      <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="../main.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atoms and Molecules Unit</title>
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../main.css">
   <!-- Google Search Bar -->
   <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
   <!-- Google Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
-    </head>
-    
-    <body>
-      <!-- Header -->
-      <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-      <div id="research-question"></div>
-      <div id="header-bg-extension"></div>
-      <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-      <div class="search-container">
-        <div class="gcse-search"></div>
-      </div>
-      <div class="header-btn-container">
-        <button id="home-btn" class="header-btn">Home & HELP</button>
-        <button id="forces-btn" class="header-btn">Forces & Motion</button>
-        <button id="plant-btn" class="header-btn">Plant Reproduction</button>
-        <button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button>
-        <button id="heat-btn" class="header-btn">Heat&Temperature</button>
-      </div>
-    
-      <!-- Main Page -->
-      <div class="page-container">
-        <h1>Atoms and Molecules Unit</h1>
-    
-        <div id="page1" class="page">
-          <p
-            style='margin-bottom:0.0001pt;line-height:normal;background-image:initial;background-position:initial;background-repeat:initial'>
-            <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../atoms-molecules/index.html'><font color='#0000ff'><b>Atoms: The Basics</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../atoms-elements/index.html'><font color='#0000ff'><b>Atoms: Elements</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'><a style='font-size:large' href='../periodic-table/index.html'><font color='#0000ff'><b>Periodic
-                      Table</b></font></a></div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../atoms-electron-organization/index.html'><font color='#0000ff'><b>Atoms: Electron
-                        Organization</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../energylevel/index.html'><font color='#0000ff'><b>Energy Levels of electrons in
-                        Atoms</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../molecules/index.html'><font color='#0000ff'><b>Molecules</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../molecules/between-moleculeattractions/index.html'><font color='#0000ff'><b>Between-molecule
-                        attractions</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../crystals/index.html'><font color='#0000ff'><b>Crystals</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4'><a href='../chemicalvs-physicalreactions/index.html'><font color='#0000ff'><b>Chemical vs.
-                        Physical reactions</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4'><a href='../other/index.html'><b><font color='#0000ff'></font>
-                      <font style='color:rgb(0,0,255)'
-                        color='#0000ff'>Nucleation</font></b></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../statechange-evaporation-melting/index.html'><font color='#0000ff'><b>State Change:
-                        Evaporation &amp; Melting</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../dissolving/index.html'><font color='#0000ff'><b>Dissolving</b></font></a></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><b><br/></b></font>
-              </div>
-              <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                <font size='4' color='#0000ff'><a href='../absorption/index.html'><font color='#0000ff'><b>Absorption</b></font></a></font>
-              </div>
-          </p>
-    
-        </div>
-    
-        
-        <!-- Nav Buttons -->
-        <div class="nav-btn-container">
-          <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-          <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-          <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-          <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-        </div>
-    
-      </div>
-    
-<!-- Footer -->
-<div id="footer">
-  <img src="../_assets/klahrLabFooter.png"><br>
-  <p>***Note for Teachers: You can access more information about the BRM on the <a href="https://www.isptutor.org/background-research-module"> ISP Tutor website.</a></p>
-  <p>©2019 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-  <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-  The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-  National Science Foundation, Grant SBE035442.
-  The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-  <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-  Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-  views of the Institute or the U.S. Department of Education.</p>
-</div>
+  <script src="../../firebase.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+  <div id="research-question"></div>
+  <div id="header-bg-extension"></div>
+  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+  <div class="search-container">
+    <div class="gcse-search"></div>
+  </div>
+  <div class="header-btn-container">
+    <button id="home-btn" class="header-btn">Home & HELP</button>
+    <button id="forces-btn" class="header-btn">Forces & Motion</button>
+    <button id="plant-btn" class="header-btn">Plant Reproduction</button>
+    <button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button>
+    <button id="heat-btn" class="header-btn">Heat&Temperature</button>
+  </div>
+
+  <!-- Main Page -->
+  <div class="page-container">
+    <h1>Atoms and Molecules Unit</h1>
+
+    <div id="page1" class="page">
+      <ul class="brm-list list-no-bullets text-centered text-lg">
+        <li><a class="brm-link" href="../atoms-molecules/">Atoms: The Basics</a></li>
+        <li><a class="brm-link" href="../atoms-elements/">Atoms: Elements</a></li>
+        <li><a class="brm-link" href="../periodic-table/">Periodic Table</a></li>
+        <li><a class="brm-link" href="../atoms-electron-organization/">Atoms: ElectronOrganization</a></li>
+        <li><a class="brm-link" href="../energylevel/">Energy Levels of electrons in Atoms</a></li>
+        <li><a class="brm-link" href="../molecules/">Molecules</a></li>
+        <li><a class="brm-link" href="../molecules/between-moleculeattractions/">Between-molecule attractions</a></li>
+        <li><a class="brm-link" href="../crystals/">Crystals</a></li>
+        <li><a class="brm-link" href="../chemicalvs-physicalreactions/">Chemical vs. Physical reactions</a></li>
+        <li><a class="brm-link" href="../other/">Nucleation</a></li>
+        <li>
+          <a class="brm-link" href="../statechange-evaporation-melting/">State Change: Evaporation &amp; Melting</a>
+        </li>
+        <li><a class="brm-link" href="../dissolving/">Dissolving</a></li>
+        <li><a class="brm-link" href="../absorption/">Absorption</a></li>
+      </ul>
+    </div>
+
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <img src="../_assets/klahrLabFooter.png"><br>
+    <p>***Note for Teachers: You can access more information about the BRM on the <a href="https://www.isptutor.org/background-research-module"> ISP Tutor website.</a></p>
+    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
+    National Science Foundation, Grant SBE035442.
+    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
+    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
+    views of the Institute or the U.S. Department of Education.</p>
+  </div>
 
 
-      <!-- Enable header and nav button functionality -->
-      <script src="../header.js"></script>
-      <script src="../nav-buttons.js"></script>
-    </body>
-    
-    </html>
+  <!-- Enable header and nav button functionality -->
+  <script src="../header.js"></script>
+  <script src="../nav-buttons.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>

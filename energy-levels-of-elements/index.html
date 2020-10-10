@@ -1,324 +1,236 @@
-
+<!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Energy Levels of Electrons</title>
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../main.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Energy Levels of Electrons</title>
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../main.css">
   <!-- Google Search Bar -->
   <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
   <!-- Google Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
-  </head>
-  
-  <body>
-    <!-- Header -->
-    <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-    <div id="research-question"></div>
-    <div id="header-bg-extension"></div>
-    <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-    <div class="search-container">
-      <div class="gcse-search"></div>
-    </div>
-    <div class="header-btn-container">
-      <button id="home-btn" class="header-btn">Home & HELP</button>
-      <button id="forces-btn" class="header-btn">Forces & Motion</button>
-      <button id="plant-btn" class="header-btn">Plant Reproduction</button>
-      <button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button>
-      <button id="heat-btn" class="header-btn">Heat&Temperature</button>
-    </div>
-  
-    <!-- Main Page -->
-    <div class="page-container">
-      <h1>Energy Levels of Electrons</h1>
-  
-      <div id="page1" class="page">
-        <p
-          style='margin-bottom:0.0001pt;line-height:normal;background-image:initial;background-position:initial;background-repeat:initial'>
-          <div>There are only certain levels of energy that electrons in atoms can have. These are represented
-            in the Energy circles. Each Energy circle corresponds with a particular (very small) range
-            of energies of the electrons in that Energy circle. </div>
-   
-          <div><br/>
-          </div>
-          <div>Each Energy circle is associated with different shapes of orbitals that electrons move around
-            in. (Some of these orbital shapes are
-            <font color='#4c1130'>pretty crazy:</font>
-            <font style='font-weight:bold' color='#0000ff'> <a target='_blank' href='../orbitals/index.html'><font color='#0000ff'>click here to see some
-                  orbital shapes</font></a></font>!) The different orbitals within a particular Energy
-            circle have slightly different energies.
-          </div>
-          <div><br/>
-          </div>
-          <div>(I'm bailing here; take me back to the <b><a target='_blank' href='../atoms-electron-organization/index.html'><font
-                  color='#0000ff'>Atoms: Electron Organization unit</font></a></b>. Maybe I'll come back
-            later, after I have a more solid understanding of atoms...)</div>
-          <div><br/>
-          </div>
-          <div><br/>
-          </div>
-          <div>The <b>first Energy circle</b> (corresponding to the lowest energy levels of electrons) only
-            has one orbital shape, called "s" (these "s" orbitals happen to be spherical).</div>
-          <div>
-            <ul>
-              <li>The "s" orbital can hold up to 2 electrons. The s orbital is "full" with <b>2 electrons</b>.</li>
-            </ul>
-            <div><br/>
-            </div>
-            <div>The <b>second Energy circle</b> has 2 orbital shapes: the "s" (again) and the "p" orbital.</div>
-          </div>
-          <div>
-            <ul>
-              <li>The "s" orbital holds up to 2 electrons.</li>
-            </ul>
-            <ul>
-              <li>The "p" orbital can hold up to 6 electrons. The p orbital is "full" with 6 electrons.</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <ul>
-                <li>So, in total, the second Energy circle holds up to <b>8 electrons</b> (2 + 6).</li>
-              </ul>
-            </ul>
-            <div><br/>
-            </div>
-          </div>
-          <div>The <b>third Energy circle </b>has (maybe you guessed it?) 3 orbital shapes:</div>
-          <div>
-            <ul>
-              <li>The "s" orbital holds up to 2 electrons.</li>
-            </ul>
-            <ul>
-              <li>The "p" orbital can hold up to 6 electrons. The p orbital is "full" with 6 electrons.</li>
-            </ul>
-            <ul>
-              <li>And now a "d" orbital, which can hold up to 10 electrons.</li>
-            </ul>
-            <ul>
-              <ul>
-                <li>So, in total, the third Energy circle holds up to <b>18 electrons</b> (2 + 6 + 10).</li>
-              </ul>
-            </ul>
-            <div><br/>
-            </div>
-          </div>
-          <div>The <b>fourth </b><span style='background-color:transparent'><b>Energy</b> <b>circle</b> has
-              (you guessed it!) 4 orbital shapes:</span></div>
-          <div>
-            <ul>
-              <li>The "s" orbital holds up to 2 electrons.</li>
-            </ul>
-            <ul>
-              <li>The "p" orbital can hold up to 6 electrons. The p orbital is "full" with 6 electrons.</li>
-            </ul>
-            <ul>
-              <li>The "d" orbital, which can hold up to 10 electrons.</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>And now an "f" orbital, which can hold up to 14 electrons.</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <ul>
-                <li>So, in total, the fourth Energy circle holds up to <b>32 electrons</b> (2 + 6 + 10 + 14).</li>
-              </ul>
-            </ul>
-            <div><br/>
-            </div>
-            <div><b>(We'll stop with this fourth Energy circle.)</b></div>
-            <div><span style='background-color:transparent'><br/></span></div>
-            <div><span style='background-color:transparent'>The different orbitals correspond with slightly
-                differ energies. From lowest to highest energies: s, p, d, and f.</span></div>
-          </div>
-          <div><span style='background-color:transparent'><br/></span></div>
-          <div><span style='background-color:transparent'>The element with one complete (or "full") Energy circle
-              (the first one, #1) is helium (He), with 2 electrons (both in the "s" orbital).</span></div>
-          <div><br/>
-          </div>
-          <div>The element with two complete (or "full") Energy circles (#1 and #2) is neon (Ne), with 10 electrons
-            (2 in the first "s" orbital, 2 in the second "s" orbital, and 6 in the first "p" orbital).</div>
-          <div><br/>
-          </div>
-          <div><br/>
-          </div>
-          <div><b>Nickel. </b>We may <i>expect</i> that there would be an element that has three full Energy
-            circles, with 28 electrons (2 + 8 + 18). The element with 28 electrons is nickel (Ni). The
-            picture below shows how electrons are arranged in Energy circles in nickel. You may have noticed
-            that--instead of having 3 completed Energy circles--nickel has 4 Energy circles. Why is this??</div>
-          <div><br/>
-          </div>
-          <div>
-            <div style='display:block;text-align:left'><a imageanchor='1'><img
-                  width='400' src='nickel_atom.png'
-                  height='390' border='0' /></a></div><br/>
-          </div>
-          <div><b style='background-color:transparent'><i>It turns out that the energy of the s orbital of the
-                4th Energy circle is LOWER than the energy of the d orbital of Energy circle 3</i></b><span
-              style='background-color:transparent'>!! (Physics is crazy and complicated!) </span></div>
-          <div><br/>
-          </div>
-          <div>Because electrons will fill the lowest-energy orbital that is available, electrons fill the Energy
-            circle 4 "s" orbital before they start to fill the Energy circle 3 "d" orbital!</div>
-          <div><br/>
-          </div>
-          <div><span style='background-color:transparent'>The energy levels of different Energy circles and
-              orbitals are shown in the chart below. Each red circle is an electron at that given Energy
-              circle and orbital. Charts like this are</span><span style='background-color:transparent'> one
-              common way to represent the Energy circle and orbitals of electrons in atoms.</span><span
-              style='background-color:transparent'>  This chart shows that</span><span style='background-color:transparent'> the
-              energy of the "E4s" orbital is actually <i>lower</i> than the energy of the "E3d" orbital.</span></div>
-          <div><span style='background-color:transparent'><br/></span></div>
-          <div>Electron configuration chart for the element with 28 electrons (and protons), nickel (Ni). </div>
-          <div><br/>
-          </div>
-          <div><span style='background-color:transparent'><div style='display:block;text-align:left'><a imageanchor='1'
-                  href='../energy-levels-of-elements/ElectronConfigNi_noGroupings.GIF?attredirects=0/index.html'><img
-                    src='ElectronConfigNi_noGroupings.GIF'
-                    border='0' /></a></div>
-              <div style='display:block;text-align:left'><br/>
-              </div>
-              <div style='display:block;text-align:left'>Below is the electron configuration chart for nickel again, with the associated orbitals
-                for different Energy circles grouped. You can see that the E3d orbitals actually have more
-                energy than the E4s orbital. </div></span></div>
-          <div><br/>
-          </div>
-          <div>
-            <div style='display:inline;float:left;margin:5px 10px 0px 0px'><a imageanchor='1' href='../energy-levels-of-elements/ElectronConfigNi.GIF?attredirects=0/index.html'><img
-                  src='ElectronConfigNi.GIF'
-                  border='0' /></a></div><br/>
-          </div>
-         
-        
-          <div><span style='background-color:transparent'>So, for the element with 28 electrons, nickel, after
-              the "E3p" orbitals (the "p" orbitals in Energy circle 3) are filled, the next 2 electrons
-              will fill the "E4s" orbitals. So, the remaining 8</span><span style='background-color:transparent'> electrons
-              are in the "E3d" orbitals, or the "d" orbital of the third Energy circle. This means there
-              are a total of 16 rather than 18 electrons in the third Energy circle. The other 2 electrons
-              are in the "s" orbital of the next (fourth) Energy circle. </span></div>
-          <div><br/>
-          </div>
-         
-            <div style='display:block;text-align:center;margin-right:auto;margin-left:auto'></div>
-              <div style='text-align:start'>Nickel has two "extra" electrons in the fourth Energy circle (where it "wants" to have 32).
-                Because of this, nickel bonds with elements that "want" two more electrons to complete
-                an Energy circle. These elements include sulfur and oxygen. </div>
-              <div style='text-align:start'><i><span style='background-color:transparent'><br/></span></i></div>
-              <div style='text-align:start'><i><span style='background-color:transparent'>Reminder: Each Energy circle represents a certain
-                    (range of) energy of the electrons at that Energy circle. The electrons at each Energy
-                    circle move around the nucleus in different paths, or orbitals (</span><a target='_blank'
-                    style='background-color:transparent' href='../orbitals/index.html'><font color='#0000ff'><b>shown
-                        here</b></font></a><span style='background-color:transparent'>).  (They do not
-                    move around the nucleus in circles, as shown here. The circles represent the different
-                    energy levels--or approximate amounts of energy of electrons at that Energy circle.)</span></i></div>
-              <div
-                style='text-align:start'><br/>
-              </div>
-              <div style='text-align:start'><br/>
-              </div>
-              <div style='text-align:start'><br/>
-              </div>
-              <div style='text-align:start'><b style='background-color:transparent'>Zinc. </b><span style='background-color:transparent'>The
-                  element zinc (Zn) has 30 electrons, 2 more than Ni has. These two electrons fill up the
-                  "d" orbital of the third Energy circle, so that the third Energy circle is full (with
-                  18 electrons). </span></div>
-              <div style='text-align:start'><span style='background-color:transparent'><br/></span></div>
-              <div style='text-align:start'><span style='background-color:transparent'><br/></span></div>
-              <div style='text-align:start'><span style='background-color:transparent'><b>Iron. </b>The chart below shows the electron
-                  configuration for iron, Fe, which has 26 electrons. Each red circle represents an electron.
-                  The number represents the Energy circle and the letters "s", "p", and "d" represent that
-                  orbitals of the electrons. </span></div>
-              <div style='text-align:start'><span style='background-color:transparent'><br/></span></div>
-              <div style='text-align:start'><span style='background-color:transparent'><div style='display:block;text-align:left'><a
-                      imageanchor='1' href='../energy-levels-of-elements/ElectronCongifIron.GIF?attredirects=0/index.html'><img
-                        src='ElectronCongifIron.GIF'
-                        border='0' /></a></div></span></div>
-              <div style='text-align:start'><br/>
-              </div>
-              <div style='text-align:center'><b><font size='5' color='#073763'>Build An Element Mission!</font></b></div>
-              <div style='text-align:start'></div>
-                <div>
-                    <div style="text-align:center">
-                     <iframe src="https://isp-tutor-project.github.io/demo/games/BuildElementGame/index.html" width=900 height=560  </iframe>
-                      </div>
-            
-                </div><br/>
-              </div>
-              <div style='text-align:start'><br/>
-              </div>
-              <div style='text-align:start'><br/>
-              </div>
-        </p>
-  
+  <script src="../../firebase.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+  <div id="research-question"></div>
+  <div id="header-bg-extension"></div>
+  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+  <div class="search-container">
+    <div class="gcse-search"></div>
+  </div>
+  <div class="header-btn-container">
+    <button id="home-btn" class="header-btn">Home & HELP</button>
+    <button id="forces-btn" class="header-btn">Forces & Motion</button>
+    <button id="plant-btn" class="header-btn">Plant Reproduction</button>
+    <button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button>
+    <button id="heat-btn" class="header-btn">Heat&Temperature</button>
+  </div>
+
+  <!-- Main Page -->
+  <div class="page-container">
+    <h1>Energy Levels of Electrons</h1>
+
+    <div id="page1" class="page">
+      <p>
+        There are only certain levels of energy that electrons in atoms can have. These are represented
+        in the Energy circles. Each Energy circle corresponds with a particular (very small) range
+        of energies of the electrons in that Energy circle. 
+      </p>
+      <p>
+        Each Energy circle is associated with different shapes of orbitals that electrons move around
+        in. (Some of these orbital shapes are <span style="color:#4c1130">pretty crazy:</span>
+        <a class="brm-link" target="_blank" href="../orbitals/">click here to see some orbital shapes</a>!)
+        The different orbitals within a particular Energyvcircle have slightly different energies.
+      </p>
+      <p>
+        (I'm bailing here; take me back to the
+        <a class="brm-link" target="_blank" href="../atoms-electron-organization/">Atoms: Electron Organization</a>
+        unit. Maybe I'll come back later, after I have a more solid understanding of atoms...)
+      </p>
+      <p>
+        The <b>first Energy circle</b> (corresponding to the lowest energy levels of electrons) only
+        has one orbital shape, called "s" (these "s" orbitals happen to be spherical).
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          The "s" orbital can hold up to 2 electrons. The s orbital is "full" with <b>2 electrons</b>.
+        </li>
+      </ul>
+
+      <p>
+        The <b>second Energy circle</b> has 2 orbital shapes: the "s" (again) and the "p" orbital.
+      </p>
+
+      <ul class="brm-list">
+        <li>The "s" orbital holds up to 2 electrons.</li>
+        <li>
+          The "p" orbital can hold up to 6 electrons. The p orbital is "full" with 6 electrons.
+          <ul class="brm-list nested-list">
+            <li>So, in total, the second Energy circle holds up to <b>8 electrons</b> (2 + 6).</li>
+          </ul>
+        </li>
+      </ul>
+      <br />
+
+      <p>
+        The <b>third Energy circle</b> has (maybe you guessed it?) 3 orbital shapes:
+      </p>
+
+      <ul class="brm-list">
+        <li>The "s" orbital holds up to 2 electrons.</li>
+        <li>The "p" orbital can hold up to 6 electrons. The p orbital is "full" with 6 electrons.</li>
+        <li>
+          And now a "d" orbital, which can hold up to 10 electrons.
+          <ul class="brm-list nested-list">
+            <li>So, in total, the third Energy circle holds up to <b>18 electrons</b> (2 + 6 + 10).</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>
+        The <b>fourth Energy circle</b> has (you guessed it!) 4 orbital shapes:
+      </p>
+
+      <ul class="brm-list">
+        <li>The "s" orbital holds up to 2 electrons.</li>
+        <li>The "p" orbital can hold up to 6 electrons. The p orbital is "full" with 6 electrons.</li>
+        <li>The "d" orbital, which can hold up to 10 electrons.</li>
+        <li>
+          And now an "f" orbital, which can hold up to 14 electrons.
+          <ul class="brm-list nested-list">
+            <li>So, in total, the fourth Energy circle holds up to <b>32 electrons</b> (2 + 6 + 10 + 14).</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>
+        <b>(We'll stop with this fourth Energy circle.)</b>
+      </p>
+      <p>
+        The different orbitals correspond with slightly differ energies. From lowest to highest energies: s, p, d,
+        and f.
+      </p>
+      <p>
+        The element with one complete (or "full") Energy circle (the first one, #1) is helium (He), with 2 electrons
+        (both in the "s" orbital).
+      </p>
+      <p>
+        The element with two complete (or "full") Energy circles (#1 and #2) is neon (Ne), with 10 electrons
+        (2 in the first "s" orbital, 2 in the second "s" orbital, and 6 in the first "p" orbital).
+      </p>
+      <p>
+        <b>Nickel.</b> We may <i>expect</i> that there would be an element that has three full Energy
+        circles, with 28 electrons (2 + 8 + 18). The element with 28 electrons is nickel (Ni). The
+        picture below shows how electrons are arranged in Energy circles in nickel. You may have noticed
+        that--instead of having 3 completed Energy circles--nickel has 4 Energy circles. Why is this??
+      </p>
+
+      <img width="400" src="nickel_atom.png" alt="Nickel Atom" height="390" />
+      <br />
+
+      <p>
+        <b><i>It turns out that the energy of the s orbital of the 4th Energy circle is LOWER than the energy of the
+            d orbital of Energy circle 3</i></b>!! (Physics is crazy and complicated!)
+      </p>
+      <p>
+        Because electrons will fill the lowest-energy orbital that is available, electrons fill the Energy
+        circle 4 "s" orbital before they start to fill the Energy circle 3 "d" orbital!
+      </p>
+      <p>
+        The energy levels of different Energy circles and orbitals are shown in the chart below. Each red circle is
+        an electron at that given Energy circle and orbital. Charts like this are one common way to represent the
+        Energy circle and orbitals of electrons in atoms.  This chart shows that the energy of the "E4s" orbital is
+        actually <i>lower</i> than the energy of the "E3d" orbital.
+      </p>
+      <p>
+        Electron configuration chart for the element with 28 electrons (and protons), nickel (Ni). 
+      </p>
+
+      <a href="../energy-levels-of-elements/ElectronConfigNi_noGroupings.GIF?attredirects=0/index.html">
+        <img src="ElectronConfigNi_noGroupings.GIF" alt="electron configuration image" />
+      </a>
+
+      <p>
+        Below is the electron configuration chart for nickel again, with the associated orbitals for different Energy
+        circles grouped. You can see that the E3d orbitals actually have more energy than the E4s orbital. 
+      </p>
+
+      <a href="../energy-levels-of-elements/ElectronConfig_Ni.GIF?attredirects=0/index.html">
+        <img src="ElectronConfig_Ni.GIF" alt="electron configuration chart" />
+      </a>
+
+      <p>
+        So, for the element with 28 electrons, nickel, after the "E3p" orbitals (the "p" orbitals in Energy circle 3)
+        are filled, the next 2 electrons will fill the "E4s" orbitals.
+        So, the remaining 8 electrons are in the "E3d" orbitals, or the "d" orbital of the third Energy circle.
+        This means there are a total of 16 rather than 18 electrons in the third Energy circle.
+        The other 2 electrons are in the "s" orbital of the next (fourth) Energy circle. 
+      </p>
+
+      <p>
+        Nickel has two "extra" electrons in the fourth Energy circle (where it "wants" to have 32).
+        Because of this, nickel bonds with elements that "want" two more electrons to complete an Energy circle.
+        These elements include sulfur and oxygen. 
+      </p>
+      <p>
+        <i>Reminder: Each Energy circle represents a certain (range of) energy of the electrons at that Energy
+          circle. The electrons at each Energy circle move around the nucleus in different paths, or orbitals
+          (<a class="brm-link" target="_blank" href="../orbitals/index.html">shown here</a>). 
+          (They do not move around the nucleus in circles, as shown here. The circles represent the different energy
+          levels--or approximate amounts of energy of electrons at that Energy circle.)</i>
+      </p>
+
+      <br>
+      <p>
+        <b>Zinc.</b> The element zinc (Zn) has 30 electrons, 2 more than Ni has. These two electrons fill up the
+        "d" orbital of the third Energy circle, so that the third Energy circle is full (with 18 electrons). 
+      </p>
+
+      <br>
+      <p>
+        <b>Iron.</b> The chart below shows the electron configuration for iron, Fe, which has 26 electrons. Each
+        red circle represents an electron. The number represents the Energy circle and the letters "s", "p", and "d"
+        represent that orbitals of the electrons. 
+      </p>
+
+      <a href="../energy-levels-of-elements/ElectronCongifIron.GIF?attredirects=0/index.html">
+        <img src="ElectronCongifIron.GIF" />
+      </a>
+      <br />
+
+      <h2 class="text-centered" style="color:#073763">Build An Element Mission!</h2>
+
+      <div class="text-centered">
+        <iframe src="https://isp-tutor-project.github.io/demo/games/BuildElementGame/index.html"
+                width="900"
+                height="560">
+        </iframe>
       </div>
 
-  
-      <!-- Nav Buttons -->
-      <div class="nav-btn-container">
-        <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-        <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-        <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-        <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      </div>
-  
     </div>
-  
-    <!-- Enable header and nav button functionality -->
-    <script src="../header.js"></script>
-    <script src="../nav-buttons.js"></script>
-  </body>
-  
-  </html>
 
 
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    </div>
 
+  </div>
 
+  <!-- Enable header and nav button functionality -->
+  <script src="../header.js"></script>
+  <script src="../nav-buttons.js"></script>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>

@@ -106,7 +106,7 @@ button {
 .page {
   display: none;
   margin: 20px 100px;
-  min-height: 36%;
+  min-height: calc(100vh - 660px);
   font-size: 16px;
   font-family: Verdana, sans-serif;
 }
@@ -142,6 +142,8 @@ button {
   border-style: solid;
   border-width: 1px;
   padding: 15px 20px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .quiz b {
   display: block;
@@ -183,7 +185,7 @@ button {
 .quiz .feedback-correct {
   background-color: #66FF66;
 }
-.quiz .feedback-incorrect {  
+.quiz .feedback-incorrect {
   background-color: #FF6666;
 }
 .quiz table {
@@ -259,3 +261,87 @@ button {
 p.content-item {
   line-height: 1.5em;
 }
+
+/* brm links */
+a.brm-link {
+  font-weight: bold;
+}
+
+/* images */
+.img-centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* lists */
+ul.list-no-bullets {
+  list-style: none;
+}
+
+ul.brm-list,
+ol.brm-list {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+ul.brm-list.nested-list,
+ol.brm-list.nested-list {
+  margin-bottom: 0.1em;
+}
+
+ul.brm-list > li,
+ol.brm-list > li {
+  padding-bottom: 0.75em;
+}
+ul.brm-list.nested-list > li:last-of-type,
+ol.brm-list.nested-list > li:last-of-type {
+  padding-bottom: 0.25em;
+}
+
+/* text */
+.text-centered {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify
+}
+.text-xxl {
+  font-size: xx-large;
+}
+.text-xl {
+  font-size: x-large;
+}
+.text-lg {
+  font-size: large;
+}
+.text-md {
+  font-size: medium;
+}
+.text-sm {
+  font-size: small;
+}
+.text-xs {
+  font-size: x-small;
+}
+.text-xxs {
+  font-size: xx-small
+}
+.font-calibri {
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif
+}
+.font-pt-sans {
+  font-family: 'PT Sans', sans-serif;
+}
+.font-roboto {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.font-times {
+  font-family: 'Times New Roman', Times, serif;
+}
+.font-trebuchet {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.font-veranda {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

@@ -1,193 +1,80 @@
-
+<!DOCTYPE html>
 <html>
-
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Plant Reproduction Unit</title>
-      <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="../main.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plant Reproduction Unit</title>
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../main.css">
   <!-- Google Search Bar -->
   <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
   <!-- Google Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
-    </head>
-    
-    <body>
-      <!-- Header -->
-      <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-      <div id="research-question"></div>
-      <div id="header-bg-extension"></div>
-      <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-      <div class="search-container">
-        <div class="gcse-search"></div>
-      </div>
-      <div class="header-btn-container">
-        <a href="../home"><button id="home-btn" class="header-btn">Home & HELP</button></a>
-        <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces & Motion</button></a>
-        <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-        <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button></a>
-        <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat&Temperature</button></a>
-      </div>
-    
-      <!-- Main Page -->
-      <div class="page-container">
-        <h1>Plant Reproduction Unit</h1>
-    
-        <div id="page1" class="page">
-          <p
-            style='margin-bottom:0.0001pt;line-height:normal;background-image:initial;background-position:initial;background-repeat:initial'>
-            <div style='text-align:center'><b><font size='4'>Click the link below to go to the related instructional unit</font>
-              <font size='3'>.</font></b></div>
-          <div style='text-align:center'>
-            <hr/>
-          </div>
+  <script src="../../firebase.js"></script>
+</head>
 
-               
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'><br/>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'>
-                    <font color='#0000ff'><a href='../taxonomy/index.html'><font color='#0000ff'><b>Taxonomy of Living Things</b></font></a></font>
-                  </font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4'><a target='_blank' href='../plants/index.html'><font color='#0000ff'><b>Plants</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../photosynthesis/index.html'><font color='#0000ff'><b>Photosynthesis</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../non-vascular-plants/index.html'><font color='#0000ff'><b>Non-Vascular Plants</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../algae/index.html'><b><font color='#0000ff'>Algae</font></b></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../vascular-plants/index.html'><font color='#0000ff'><b>Vascular Plants</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../seed-bearing-plants/index.html'><font color='#0000ff'><b>Seed-bearing plants</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../angiosperm-types/index.html'><font color='#0000ff'><b>Angiosperm Types: Monocots
-                          &amp; Dicots</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../angiosperm-reproduction/index.html'><font color='#0000ff'><b>Angiosperm Reproduction</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../angiosperm-pollination/index.html'><font color='#0000ff'><b>Angiosperm Pollinators</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../gymnosperms/index.html'><font color='#0000ff'><b>Gymnosperms</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../greenhouses/index.html'><font color='#0000ff'><b>Greenhouses</b></font></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../greenhouse-effect/index.html'><b><font color='#0000ff'>Greenhouse</font>
-                        <font
-                          color='#0000ff'>Effect</font></b></a></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><b><br/></b></font>
-                </div>
-                <div style='text-align:center;margin-top:0px;margin-bottom:0px'>
-                  <font size='4' color='#0000ff'><a href='../food/index.html'><font color='#0000ff'><b>What Plants Need to Grow</b></font></a></font>
-                </div>
+<body>
+  <!-- Header -->
+  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+  <div id="research-question"></div>
+  <div id="header-bg-extension"></div>
+  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+  <div class="search-container">
+    <div class="gcse-search"></div>
+  </div>
+  <div class="header-btn-container">
+    <a href="../home"><button id="home-btn" class="header-btn">Home & HELP</button></a>
+    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces & Motion</button></a>
+    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button></a>
+    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat&Temperature</button></a>
+  </div>
 
-          </p>
-         
-        </div>
-      </div>
-       
-    
-        <!-- Nav Buttons -->
-        <div class="nav-btn-container">
-          <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-          <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-          <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-          <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-        </div>
-    
-      </div>
-    
-      <!-- Enable header and nav button functionality -->
-      <script src="../header.js"></script>
-      <script src="../nav-buttons.js"></script>
-    </body>
-    
-    </html>
+  <!-- Main Page -->
+  <div class="page-container">
+    <h1>Plant Reproduction Unit</h1>
 
+    <div id="page1" class="page">
 
+      <h3 class="text-centered">Click the link below to go to the related instructional unit.</h3>
+      <hr/>
 
+      <ul class="brm-list list-no-bullets text-centered text-xl">
+        <li><a class="brm-link" target="_blank" href="../taxonomy/">Taxonomy of Living Things</a></li>
+        <li><a class="brm-link" target="_blank" href="../plants/">Plants</a></li>
+        <li><a class="brm-link" target="_blank" href="../photosynthesis/">Photosynthesis</a></li>
+        <li><a class="brm-link" target="_blank" href="../non-vascular-plants/">Non-Vascular Plants</a></li>
+        <li><a class="brm-link" target="_blank" href="../algae/">Algae</a></li>
+        <li><a class="brm-link" target="_blank" href="../vascular-plants/">Vascular Plants</a></li>
+        <li><a class="brm-link" target="_blank" href="../seed-bearing-plants/">Seed-bearing plants</a></li>
+        <li>
+          <a class="brm-link" target="_blank" href="../angiosperm-types/">Angiosperm Types: Monocots &amp; Dicots</a>
+        </li>
+        <li><a class="brm-link" target="_blank" href="../angiosperm-reproduction/">Angiosperm Reproduction</a></li>
+        <li><a class="brm-link" target="_blank" href="../angiosperm-pollination/">Angiosperm Pollinators</a></li>
+        <li><a class="brm-link" target="_blank" href="../gymnosperms/">Gymnosperms</a></li>
+        <li><a class="brm-link" target="_blank" href="../greenhouses/">Greenhouses</a></li>
+        <li><a class="brm-link" target="_blank" href="../greenhouse-effect/">Greenhouse Effect</a></li>
+        <li><a class="brm-link" target="_blank" href="../food/">What Plants Need to Grow</a></li>
+      </ul>
 
+    </div>
 
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    </div>
 
+  </div>
 
+  <!-- Enable header and nav button functionality -->
+  <script src="../header.js"></script>
+  <script src="../nav-buttons.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>

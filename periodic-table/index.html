@@ -1,134 +1,93 @@
-
+<!DOCTYPE html>
 <html>
 
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Periodic Table</title>
-      <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="../main.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Periodic Table</title>
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../main.css">
   <!-- Google Search Bar -->
   <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
   <!-- Google Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
-    </head>
-    
-    <body>
-      <!-- Header -->
-      <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-      <div id="research-question"></div>
-      <div id="header-bg-extension"></div>
-      <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-      <div class="search-container">
-        <div class="gcse-search"></div>
+  <script src="../../firebase.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+  <div id="research-question"></div>
+  <div id="header-bg-extension"></div>
+  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+  <div class="search-container">
+    <div class="gcse-search"></div>
+  </div>
+
+  <div class="header-btn-container">
+    <a href="../home"><button id="home-btn" class="header-btn">Home & HELP</button></a>
+    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces & Motion</button></a>
+    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button></a>
+    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat&Temperature</button></a>
+  </div>
+
+  <!-- Main Page -->
+  <div class="page-container">
+    <h1>Periodic Table of Elements</h1>
+
+    <div id="page1" class="page">
+
+      <p>
+        This periodic table shows the different types of atoms, or elements, that we know about. All elements have
+        some mass (and so they also have some weight). Even the smallest element, hydrogen (H), has mass and weight.
+        The masses of each element (in "atomic mass units" or "amu") are shown in the upper left corner of each box. 
+        The atomic mass for each element is equal to the masses of the neutrons and protons for that element, where
+        each proton and neutron is one amu. (If you're wondering why the masses aren't whole numbers,
+        <a target="_blank" href="../atomic-masses-of-elements/"><b>click here</b></a>.)
+      </p>
+      <p>
+        The different elements are defined by the (different) numbers of PROTONS they have. The number of protons
+        for each element is shown in the upper RIGHT corner of each box. This is called the atomic number. For
+        example Hydrogen (H) only has one proton. Helium (He) has 2 protons, etc. The number in the upper right
+        corner of each box is also the number of ELECTRONS that element has (when the element has no net electric
+        charge--or has the same number of protons and electrons).
+      </p>
+
+      <hr/>
+
+      <img style="width:100%" src="PeriodicTableRevised2019.jpg" alt="Periodic Table" />
+<hr>
+<br>
+
+<p class="text-m text-centered" style="color:#0b5394">
+        <b>Learn more about element names and symbols by playing the Elements Memory Game below! </b>
+      </p>
+<div class="text-centered">
+        <iframe src="https://isp-tutor-project.github.io/demo/games/ElementsMemoryGame/" width="900" height="600">
+        </iframe>
       </div>
 
-      <div class="header-btn-container">
-          <a href="../home"><button id="home-btn" class="header-btn">Home & HELP</button></a>
-          <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces & Motion</button></a>
-          <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-          <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical&PhysicalReactions</button></a>
-          <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat&Temperature</button></a>
-        </div>
-    
-      <!-- Main Page -->
-      <div class="page-container">
-        <h1>Periodic Table of Elements</h1>
-    
-        <div id="page1" class="page">
-          <p
-            style='margin-bottom:0.0001pt;line-height:normal;background-image:initial;background-position:initial;background-repeat:initial'>
-           
-            <div style='display:block;text-align:left'>
-                <div style='display:block;text-align:left'>This periodic table shows the different types of atoms, or elements, that we know about. All
-                  elements have some mass (and so they also have some weight). Even the smallest element, hydrogen (H), has mass and weight. The masses
-                  of each element (in "atomic mass units" or "amu") are shown in the upper left corner of each box. The atomic mass for each element is equal to the 
-                  masses of the neutrons and protons for that element, where each proton and neutron is one amu. (If you're wondering why the masses aren't whole numbers, 
-                  
-                  <a target='_blank' href='../atomic-masses-of-elements/'><font
-                    color='#0000ff'><b>click here</b></font></a>.)
-                  
-                </div>
-                <div
-                  style='display:block;text-align:left'><br/>
-                </div>
-                <div style='display:block;text-align:left'>The different elements are defined by the (different) numbers of PROTONS they have. The number of protons for each
-                  element is shown in the upper RIGHT corner of each box. This is called the atomic number. For
-                  example Hydrogen (H) only has one proton. Helium (He) has 2 protons, etc. The number in the
-                  upper right corner of each box is also the number of ELECTRONS that element has (when the element
-                  has no net electric charge--or has the same number of protons and electrons).</div>
-                <div style='display:block;text-align:left'><br/>
-                </div>
-                <div style='display:block;text-align:left'>
-                  <hr/>
-                </div>
-                <div style='display:block;text-align:left'><img style='width:100%' src='PeriodicTableRevised2019.jpg'
-                    border='0' /></div>
-          </p>
-    
-        </div>
-    
-        
-        <!-- Nav Buttons -->
-        <div class="nav-btn-container">
-          <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-          <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-          <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-          <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-        </div>
-    
-      </div>
-    
-      <!-- Enable header and nav button functionality -->
-      <script src="../header.js"></script>
-      <script src="../nav-buttons.js"></script>
-    </body>
-    
-    </html>
+
+    </div>
 
 
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    </div>
 
+  </div>
 
+  <!-- Enable header and nav button functionality -->
+  <script src="../header.js"></script>
+  <script src="../nav-buttons.js"></script>
 
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                          
+</html>

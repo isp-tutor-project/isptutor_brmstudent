@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,7 +13,36 @@
   <!-- Google Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-<script src="../../firebase.js"></script>
+  <script src="../../firebase.js"></script>
+  <style>
+    #insulators_conductors {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #insulators_conductors th,
+    #insulators_conductors td {
+      vertical-align: top;
+      padding-top: 0.2em;
+      padding-bottom: 0.5em;
+    }
+    #insulators_conductors th.left-col,
+    #insulators_conductors td.left-col {
+      padding-right: 20px;
+    }
+    #insulators_conductors th.right-col,
+    #insulators_conductors td.right-col  {
+      padding-left: 20px;
+    }
+    #insulators_conductors th.left-col,
+    #insulators_conductors th.right-col {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+    #insulators_conductors td.last-row {
+      border-bottom: 1px solid black;
+    }
+  </style>
 </head>
 
 <body>
@@ -36,258 +66,202 @@
     <h1>Thermal Conductors & Insulators</h1>
 
     <div id="page1" class="page">
-      Some materials are better at transferring thermal energy than other materials. You may have noticed that when you touch different
-      things in the same room, some feel warmer and others feel cooler. Metals tend to feel cooler and other materials, like
-      wood or the carpet, feel warmer (or the same temperature as your hand).
-      <br>
-      <br>
-      <div style='display:block;text-align:left'><img style='display:block;margin-right:auto;margin-left:auto;text-align:center'
-          src='Conductors.jpg' width='500'
-          border='0' /></div><br />
-      
-      <br> Many people think that this is because they are at different temperatures. But they are actually the same temperatures:
-      the temperature of the room they are in, usually about 72 degrees F or 22 degrees C. <span style='background-color:transparent'>The
-        reason that some materials feel warmer and other materials feel cooler has to do with the type of materials they
-        are: whether they are thermal conductors or thermal insulators. </span>
-      <br>
-      
-      </div>
+      <p>
+        Some materials are better at transferring thermal energy than other materials. You may have noticed that when
+        you touch different things in the same room, some feel warmer and others feel cooler. Metals tend to feel
+        cooler and other materials, like wood or the carpet, feel warmer (or the same temperature as your hand).
+      </p>
 
-      <div id="page2" class="page">
-
-
-      <span style='background-color:transparent'><b>Thermal conductors.</b> Some materials, including metals, are "thermal
-        conductors." These materials are good at transferring thermal energy. When you touch thermal conductors that are
-        at room temperature (72 degrees F or 22 degrees C), <a target='_blank' href='../thermal-energy-heat-temp/index.html'><b>
-            <font color='#0000ff'>thermal energy</font>
-          </b></a> is transferred from your hand (which is at your body temperature, about 98 degrees Fahrenheit or 36.7
-        degrees Celsius) to the material. Because your hand loses thermal energy, it feels cooler. </span>
-<br><br>
-      <div><span style='background-color:transparent'>Thermal conductors such as metals are good at converting sunlight (solar
-          radiation) to thermal energy (molecular motion). This is why when you touch a metal object that has been sitting
-          outside in the sun, it feels very hot. It feels hotter than objects that are not thermal conductors (like the grass
-          or a picnic blanket).</span></div>
-      <div><br /></div>
       <br>
-      <div><b>Thermal insulators.</b> Other materials, like cotton, which is used to make many clothes, are "thermal insulators."
-        These materials are not good at transferring thermal energy. So, when you touch these materials, little or no thermal
-        energy is transferred from your hand to that material. Because your hand does not lose thermal energy, these insulators
-        feel like they are the same temperature as your hand. </div>
-      <div><br /></div>
-      <div>This is one reason why cotton and most clothing materials are thermal insulators. If they were not insulators,
-        you would probably feel very cold most of the time because your body would keep losing thermal energy!</div>
-      <div><br /></div>
+      <img class="img-centered" src="Conductors.jpg" width="500" alt="conductors, metal and wood" />
+      <br>
+
+      <p>
+        Many people think that this is because they are at different temperatures. But they are actually the same
+        temperatures: the temperature of the room they are in, usually about 72 degrees F or 22 degrees C. 
+        The reason that some materials feel warmer and other materials feel cooler has to do with the type of
+        materials they are: whether they are thermal conductors or thermal insulators.
+      </p>
+
+      <br>
+
+    </div>
+
+    <div id="page2" class="page">
+
+      <p>
+        <b>Thermal conductors.</b> Some materials, including metals, are "thermal conductors." These materials are
+        good at transferring thermal energy. When you touch thermal conductors that are at room temperature (72
+        degrees F or 22 degrees C),
+        <a class="brm-link" target="_blank" href="../thermal-energy-heat-temp/">thermal energy</a> is transferred
+        from your hand (which is at your body temperature, about 98 degrees Fahrenheit or 36.7
+        degrees Celsius) to the material. Because your hand loses thermal energy, it feels cooler. 
+      </p>
+      <p>
+        Thermal conductors such as metals are good at converting sunlight (solar radiation) to thermal energy
+        (molecular motion). This is why when you touch a metal object that has been sitting outside in the sun, it
+        feels very hot. It feels hotter than objects that are not thermal conductors (like the grass or a
+        picnic blanket).
+      </p>
+      <br>
+      <p>
+        <b>Thermal insulators.</b> Other materials, like cotton, which is used to make many clothes, are
+        "thermal insulators." These materials are not good at transferring thermal energy. So, when you touch
+        these materials, little or no thermal energy is transferred from your hand to that material. Because
+        your hand does not lose thermal energy, these insulators feel like they are the same temperature as your hand. 
+      </p>
+      <p>
+        This is one reason why cotton and most clothing materials are thermal insulators. If they were not insulators,
+        you would probably feel very cold most of the time because your body would keep losing thermal energy!
+      </p>
       <div>Insulating materials like glass, plastic, and Styrofoam are often used for drinking cups. This is because they
         keep cold drinks cold and hot drinks hot. </div>
       <div><br /></div>
-      <div style='text-align:left'><br /></div>
-      <div style='text-align:left'>The table below shows examples of materials that are better insulators and materials that
-        are better conductors of thermal energy:</div>
-      <div><br /></div>
+      <p>
+        The table below shows examples of materials that are better insulators and materials that
+        are better conductors of thermal energy:
+      </p>
+      <p class="text-centered">
+        <b>Examples of Thermal Insulators and Thermal Conductors</b>
+      </p>
 
-      <p style='text-align:center' align='center'><b><span style='font-size:13.0pt;line-height:107%'>Examples of Thermal
-            Insulators and Thermal Conductors</span></b></p>
+      <table id="insulators_conductors"
+             cellspacing="0"
+             cellpadding="0">
+        <thead>
+          <tr><th class="left-col">Insulators</th><th class="right-col">Conductors</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="left-col">Rubber/Latex</td><td class="right-col">Silver (Ag)</td></tr>
+          <tr><td class="left-col">Glass</td><td class="right-col">Copper (Cu)</td></tr>
+          <tr><td class="left-col">Wood</td><td class="right-col">Aluminum (Al) Foil</td></tr>
+          <tr><td class="left-col">Cotton</td><td class="right-col">Iron (Fe)</td></tr>
+          <tr><td class="left-col">Plastic</td><td class="right-col">Water (H<sub><sub>2</sub></sub>O)</td></tr>
+          <tr><td class="left-col last-row">Styrofoam</td><td class="right-col last-row">Gold (Au)</td></tr>
+        </tbody>
+      </table>
 
-      <div align='center'>
+      <br>
 
-        <table style='border-collapse:collapse;border:none' cellspacing='0' cellpadding='0' border='1'>
-          <tbody>
-            <tr>
-              <td valign='top' style='border-top:1pt solid windowtext;border-left:none;border-bottom:1pt solid windowtext;border-right:none;padding:0in 5.4pt;width:171.6px;height:40.3333px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'>
-                  <b><span style='font-size:13.0pt'>Insulators</span></b></p>
-              </td>
-              <td valign='top' style='border-top:1pt solid windowtext;border-left:none;border-bottom:1pt solid windowtext;border-right:none;padding:0in 5.4pt;width:230.6px;height:40.3333px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'>
-                  <b><span style='font-size:13.0pt'>Conductors</span></b></p>
-              </td>
-            </tr>
-            <tr>
-              <td valign='top' style='border:none;padding:0in 5.4pt;width:171.6px;height:51px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Rubber/Latex</span></p>
-              </td>
-              <td valign='top' style='border:none;padding:0in 5.4pt;width:230.6px;height:51px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Silver (Ag)</span></p>
-              </td>
-            </tr>
-            <tr>
-              <td valign='top' style='border:none;padding:0in 5.4pt;width:171.6px;height:45px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Glass</span></p>
-              </td>
-              <td valign='top' style='border:none;padding:0in 5.4pt;width:230.6px;height:45px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Copper (Cu)</span></p>
-              </td>
-            </tr>
-            <tr>
-              <td valign='top' style='border:none;padding:0in 5.4pt;width:171.6px;height:42px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Wood</span></p>
-              </td>
-              <td valign='top' style='border:none;padding:0in 5.4pt;width:230.6px;height:42px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Aluminum (Al)/Foil</span></p>
-              </td>
-            </tr>
-            <tr>
-              <td valign='top' style='border-top:none;border-right:none;border-left:none;border-bottom:1pt solid windowtext;padding:0in 5.4pt;width:171.6px;height:123.667px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Cotton</span></p>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Plastic</span></p>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Styrofoam</span></p>
-              </td>
-              <td valign='top' style='border-top:none;border-right:none;border-left:none;border-bottom:1pt solid windowtext;padding:0in 5.4pt;width:230.6px;height:123.667px'>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Iron (Fe)</span></p>
-                <p style='margin-bottom:0in;margin-bottom:.0001pt;text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Water (H</span><font size='1'>2</font><span style='font-size:14.0pt'>O)</span>
-                </p>
-                <p style='text-align:center;line-height:normal' align='center'><span
-                    style='font-size:12.0pt'>Gold (Au)</span></p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <p class="text-centered">
+        (<a class="brm-link" target="_blank" href="../periodic-table/">Click here for Periodic Table</a>.)
+      </p>
 
-      </div>
+    </div>
 
+    <div id="page3" class="page">
 
-      <div><br /></div>
-      
-      <div style='text-align:center'>(<b><a target='_blank' href='../periodic-table/index.html'>
-            <font color='#0000ff'>Click here for Periodic Table</font>
-          </a></b>.)</div>
-   
+      <p>Check your understanding...</p>
+
+      <p class="text-centered">
+        (<a class="brm-link" target="_blank" href="../periodic-table/">Click here for Periodic Table</a>.)
+      </p>
+
+      <br>
+
+      <!-- Quiz: Choice -->
+      <form class="quiz_choice quiz">
+        <b>Q1: From the Periodic Table, can you figure out whether the element Platinum (Pt) is more likely to be a thermal
+          conductor or insulator?</b>
+        <input type="radio" name="question" value="correct">
+        <div class="label">a) Conductor</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">b) Insulator</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">c) Neither </div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) I don't know.</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          That's correct! Platinum is in the same group as Silver (Ag), Aluminum (Al), Copper (Cu), and Iron (Fe). These are all "transition
+          metals" and share properties, including being thermal conductors.
         </div>
-
-          <div id="page3" class="page">
-
-    Check your understanding...      
-  <br><br>
-  <div>
-    <div style='text-align:center'>(<b><a target='_blank' href='../periodic-table/index.html'>
-      <font color='#0000ff'>Click here for Periodic Table</font>
-    </a></b>.)</div><br>
-    <div>
-      <div class='sites-embed-align-center-wrapping-off'></div>
-        <div style='width:700px;' class='sites-embed-border-on sites-embed'></div>
-     
-          <!-- Quiz: Choice -->
-          <form class="quiz_choice quiz">
-            <b>Q1: From the Periodic Table, can you figure out whether the element Platinum (Pt) is more likely to be a thermal
-              conductor or insulator?</b>
-            <input type="radio" name="question" value="correct">
-            <div class="label">a) Conductor</div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">b) Insulator</div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">c) Neither </div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">d) I don't know.</div><br>
-            <button type="submit" class="submit-btn">Submit</button>
-            <div class="feedback-correct feedback">
-              That's correct! Platinum is in the same group as Silver (Ag), Aluminum (Al), Copper (Cu), and Iron (Fe). These are all "transition
-              metals" and share properties, including being thermal conductors.
-            </div>
-            <div class="feedback-incorrect feedback">
-              Actually, Platinum is in the same group as Silver (Ag), Aluminum (Al), Copper (Cu), and Iron (Fe). These are all "transition
-              metals" and share properties, including being thermal conductors.
-            </div>
-          </form>
-
+        <div class="feedback-incorrect feedback">
+          Actually, Platinum is in the same group as Silver (Ag), Aluminum (Al), Copper (Cu), and Iron (Fe). These are all "transition
+          metals" and share properties, including being thermal conductors.
         </div>
-      </div>
-    <br />
-  
-  <div style='text-align:center'><br /></div>
-  <div style='text-align:center'></div>
-    <div>
-      <div class='sites-embed-align-center-wrapping-off'></div>
-        <div style='width:700px;' class='sites-embed-border-on sites-embed'></div>
+      </form>
 
-          <!-- Quiz: Choice -->
-          <form class="quiz_choice quiz">
-            <b>Q2: On a warm, sunny summer day, you see a statue made of wood and a statue made of gold in a garden. Your
-              friend promises to give you $5 if you can guess which statue will feel warmer. What would you guess?</b>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">a) The wood statue will feel warmer.</div><br>
-            <input type="radio" name="question" value="correct">
-            <div class="label">b) The gold statue will feel warmer.</div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">c) It's a trick question: They will feel the same temperature! </div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">d) How should I know?</div><br>
-            <input type="radio" name="question" value="incorrect">
-            <div class="label">e) Other</div><br>
-            <button type="submit" class="submit-btn">Submit</button>
-            <div class="feedback-correct feedback">
-              That's correct! The gold statue will actually feel warmer because it is a thermal conductor and wood is an insulator. So,
-              the gold statue would gain more thermal energy from the sunlight and feel hotter.
-            </div>
-            <div class="feedback-incorrect feedback">
-              Well, the gold statue will actually feel warmer because it is a thermal conductor and wood is an insulator. So, the gold
-              statue would gain more thermal energy from the sunlight and feel hotter.
-            </div>
-          </form>
-          <div style='text-align:center'></div>
- 
-          <div class='sites-embed-align-center-wrapping-off'></div>
-            <div style='width:850px;' class='sites-embed-border-on sites-embed'></div>
-              <!-- Quiz: Choice -->
-              <form class="quiz_choice quiz">
-                <b>Q3: You promised your friend that you would bring ice cream to her birthday party on a warm sunny day. You
-                  bought two one-pint containers of vanilla chocolate chip ice cream (her favorite). You wrap one container in
-                  aluminum foil, and the other in the same amount of plastic wrap. Your mom drives you to your friend's house
-                  (30 minutes away) while you hold both ice cream containers on your lap. Which of the following is most likely
-                  true:</b>
-                <input type="radio" name="question" value="correct">
-                <div class="label">a) More ice cream wrapped in aluminum foil will be melted.</div><br>
-                <input type="radio" name="question" value="incorrect">
-                <div class="label">b) More ice cream wrapped in plastic wrap will be melted.</div><br>
-                <input type="radio" name="question" value="incorrect">
-                <div class="label">c) The ice cream will be melted the same amount in both containers. </div><br>
-                <input type="radio" name="question" value="incorrect">
-                <div class="label">d) I really don't know.</div><br>
-                <input type="radio" name="question" value="incorrect">
-                <div class="label">e) Other.</div><br>
-                <button type="submit" class="submit-btn">Submit</button>
-                <div class="feedback-correct feedback">
-                  You're right! More of the ice cream that is wrapped in aluminum foil will have melted. Aluminum foil is a thermal conductor,
-                  which means it can "carry" thermal energy. It will "carry" thermal energy from your hand to the ice cream.
-                  This loss of thermal energy is what makes your hand feel cold! It also brings the thermal energy to the ice
-                  cream, melting it! (a) is the correct answer.
-                </div>
-                <div class="feedback-incorrect feedback">
-                  Well actually, more of the ice cream that is wrapped in aluminum foil will have melted. Aluminum foil is a thermal conductor,
-                  which means it can "carry" thermal energy. It will "carry" thermal energy from your hand to the ice cream.
-                  This loss of thermal energy is what makes your hand feel cold! It also brings the thermal energy to the ice
-                  cream, melting it! (a) is the correct answer.
-    
-                </div>
-              </form>
+      <br />
+
+
+      <!-- Quiz: Choice -->
+      <form class="quiz_choice quiz">
+        <b>Q2: On a warm, sunny summer day, you see a statue made of wood and a statue made of gold in a garden. Your
+          friend promises to give you $5 if you can guess which statue will feel warmer. What would you guess?</b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) The wood statue will feel warmer.</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">b) The gold statue will feel warmer.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">c) It's a trick question: They will feel the same temperature! </div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) How should I know?</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">e) Other</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          That's correct! The gold statue will actually feel warmer because it is a thermal conductor and wood is an insulator. So,
+          the gold statue would gain more thermal energy from the sunlight and feel hotter.
         </div>
-     
-  </div>
+        <div class="feedback-incorrect feedback">
+          Well, the gold statue will actually feel warmer because it is a thermal conductor and wood is an insulator. So, the gold
+          statue would gain more thermal energy from the sunlight and feel hotter.
+        </div>
+      </form>
 
-  <!-- Nav Buttons -->
-  <div class="nav-btn-container">
-    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-  </div>
+      <br>
+      <!-- Quiz: Choice -->
+        <form class="quiz_choice quiz">
+          <b>Q3: You promised your friend that you would bring ice cream to her birthday party on a warm sunny day. You
+            bought two one-pint containers of vanilla chocolate chip ice cream (her favorite). You wrap one container in
+            aluminum foil, and the other in the same amount of plastic wrap. Your mom drives you to your friend's house
+            (30 minutes away) while you hold both ice cream containers on your lap. Which of the following is most likely
+            true:</b>
+          <input type="radio" name="question" value="correct">
+          <div class="label">a) More ice cream wrapped in aluminum foil will be melted.</div><br>
+          <input type="radio" name="question" value="incorrect">
+          <div class="label">b) More ice cream wrapped in plastic wrap will be melted.</div><br>
+          <input type="radio" name="question" value="incorrect">
+          <div class="label">c) The ice cream will be melted the same amount in both containers. </div><br>
+          <input type="radio" name="question" value="incorrect">
+          <div class="label">d) I really don't know.</div><br>
+          <input type="radio" name="question" value="incorrect">
+          <div class="label">e) Other.</div><br>
+          <button type="submit" class="submit-btn">Submit</button>
+          <div class="feedback-correct feedback">
+            You're right! More of the ice cream that is wrapped in aluminum foil will have melted. Aluminum foil is a thermal conductor,
+            which means it can "carry" thermal energy. It will "carry" thermal energy from your hand to the ice cream.
+            This loss of thermal energy is what makes your hand feel cold! It also brings the thermal energy to the ice
+            cream, melting it! (a) is the correct answer.
+          </div>
+          <div class="feedback-incorrect feedback">
+            Well actually, more of the ice cream that is wrapped in aluminum foil will have melted. Aluminum foil is a thermal conductor,
+            which means it can "carry" thermal energy. It will "carry" thermal energy from your hand to the ice cream.
+            This loss of thermal energy is what makes your hand feel cold! It also brings the thermal energy to the ice
+            cream, melting it! (a) is the correct answer.
+
+          </div>
+        </form>
+
+        <br>
+
+    </div>
+
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    </div>
 
   </div>
 
   <!-- Footer -->
   <div id="footer">
     <img src="../_assets/klahrLabFooter.png"><br>
-    <p>©2019 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
     <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
     The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
     National Science Foundation, Grant SBE035442.
