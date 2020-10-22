@@ -11,3 +11,10 @@ function fibUpdate(mySelectId) {
     var answercolor = fibSel.options[fibSel.selectedIndex].value;
     fibSel.style.backgroundColor = answercolor;
 }
+
+function HideSeeText(myButtonID) {
+//do stuff
+var button = document.getElementById(myButtonID);
+button.onclick = function()
+  
+}
