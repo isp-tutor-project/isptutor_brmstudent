@@ -138,7 +138,29 @@
 
       <form class="quiz_choice quiz">
         <b>
-          Q3: A Hydrogen molecule (H<sub>2</sub>) has a mass of 2 amu. ("amu" stands for "atomic mass units", which is
+          Q3.1: A 60 kg (132 pound) middle school athlete can sprint at 10 m/s (about 20 mph). What is the kinetic energy of the kid?</b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) 300 kg × m/s</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">b) 600 kg × m/s</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">c) 3,000 kg × m<sup>2</sup>/s<sup>2</sup></div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) 6,000 kg x m<sup>2</sup>/s<sup>2</sup> </div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! <br>
+          KE = 1/2*mass*velocity^2 = 1/2*(60 kg)(10 m/s)^2 = 3,000 kg*m^2/s^2
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually..... <br>
+          KE = 1/2*mass*velocity^2 = 1/2*(60 kg)(10 m/s)^2 = 3,000 kg*m^2/s^2
+        </div>
+      </form>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q3.2: A Hydrogen molecule (H<sub>2</sub>) has a mass of 2 amu. ("amu" stands for "atomic mass units", which is
           equal to the mass of one proton or neutron, which is 0.00000000000000000000000334 grams.)
           This molecule is moving around in the Earth's atmosphere at a speed of 500 m/s. What is its kinetic
           energy?</b>
