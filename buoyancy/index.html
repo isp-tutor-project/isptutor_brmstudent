@@ -50,7 +50,7 @@
 
     <div id="page2" class="page">
       <p>
-        <b>Summary of buoyancy force: when objects float/sink</b>
+        <b>Summary of buoyancy force: when objects float versus sink</b>
       </p>
       <p>
         In a nutshell, the buoyancy force acting on an object in water is caused by the water molecules moving around
@@ -90,7 +90,7 @@
 
     <div id="page3" class="page">
       <p>
-        <b>Cause of the buoyancy force.</b> To understand the buoyancy force, we need to remember that water molecules
+        <b>Conceptual explanation of buoyancy force.</b> To understand the buoyancy force, we need to remember that water molecules
         in a liquid state are kind of like slippery marbles that slither around each other. But the water molecules
         can't get much closer to each other. So we can think of water as a solid to understand buoyancy.
       </p>
@@ -178,13 +178,15 @@
 
       <ul class="brm-list">
         <li>Objects that are more dense than water will sink.</li>
-        <li>Objects that are less dense than water will<span style="color:#9900ff">float</span>.</li>
+        <li>Objects that are less dense than water will <span style="color:#9900ff">float</span>.</li>
       </ul>
 
-      <p>
-        The densities of various materials (including water) are given
-        <a class="brm-link" target="_blank" href="../density/">here in the Density unit</a>.
-      </p>
+      
+
+</div>
+
+<div id="page4" class="page">
+      Check your understanding...
 
       <!-- Quiz: Grid -->
       <form class="quiz_grid quiz">
@@ -226,9 +228,137 @@
         </div>
       </form>
 
+<p>
+       <b> Hint:</b> The densities of various materials (including water) are given
+        <a class="brm-link" target="_blank" href="../density/">here in the Density unit</a>.
+      </p>
+
     </div>
 
-    <div id="page4" class="page">
+
+
+    <div id="page5" class="page">
+      <p>
+        <b>Mathematical summary of buoyancy force: When an object will rise vs. sink in water</b>
+      </p>
+      <p>
+        The equation for the <span style="color:#9900ff">initial</span> acceleration of an object
+        <span style="color:#9900ff">initially at rest</span> in water only depends on the <i>density</i> of
+        the object. This equation** is shown below, where "<b>g</b>" is the acceleration due to gravity
+        (about 10 m/s<sup>2</sup> downward on Earth). In this equation, a positive value for acceleration means
+        that the object is rising upward in the water, and a negative value means that the object is accelerating
+        downward in the water.
+      </p>
+
+      <br/>
+      <img class="img-centered" src="Eqn1_water_no8.JPG" alt="acceleration_equation" width="550" />
+
+      <p>
+        Once the object starts moving in the water, a drag force from the water also acts on the object (click 
+        <a class="brm-link" target="_blank" href="../forces-on-object-moving-in-fluid/">here</a>
+        for more information about drag forces, including the effect of an object's shape on the drag force). But we
+        will keep it simple in this unit and ignore that force.
+      </p>
+      <p>
+        Whether the object accelerates upward or downward depends on the ratio of the density of water to the density
+        of the object. If this ratio is greater than 1 (or the density of water is greater than the density of the
+        object), the acceleration will be upward (positive). If the ratio of the density of water to the density of
+        the object is less than one (or the density of the object is greater than the density of water), the
+        acceleration of the object will be downward (negative).
+      </p>
+      <br>
+      <p>
+        <b>To summarize Equation #1:</b>
+      </p>
+      <p>
+        If the object is <b>less dense</b> than water, it will have a positive acceleration. This means that is
+        will initially accelerate upward (and rise in the water):
+      </p>
+      <p class="text-centered">
+        If: <span style="color:#0070c0">the density of the object <i> &lt; the</i> density of water: </span>
+        the object will rise in water.
+      </p>
+      <br>
+      <p>
+        If the object is <b>more dense</b> than water, it will have a negative acceleration. This means that it
+        will initially accelerate downward (and sink):
+      </p>
+      <p class="text-centered">
+        If: <span style="color:rgb(0,112,192)">the</span><span style="color:#0070c0"> density of the object 
+          <i>&gt;</i> the density of water:</span> the object will sink in the water.
+      </p>
+
+      <br>
+      **To see how this equation was derived, see the last page of this unit.
+
+</div>
+
+      <div id="page6" class="page">
+
+      Check your understanding...
+
+      <form class="quiz_choice quiz">
+        <b>Q3.5: Based on Equation #1 (and your own intuition), what do you think happens to the downward acceleration of an object in water as the density of the object increases?</b>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">a) Nothing; it will stay the same.</div><br>
+        <input type="radio" name="question" value="correct">
+        <div class="label">b) It will increase.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">c) It will decrease.</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) I really don't know.</div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+            You are right! As the density of the object increases, the negative acceleration of the object becomes larger.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Well, as the density of the object increases, the negative acceleration of the object becomes larger. So, (b) it will increase, is the correct answer.
+        </div>
+      </form>
+    </div>
+
+        <div id="page7" class="page">
+      <p>
+        <b>Mathematical summary of buoyancy force: When an object will rise vs. sink in <i>any</i> fluid</b>
+      </p>
+      <p>
+        This equation is true for any fluid (not just water). The general form of this equation is shown below:
+      </p>
+
+      <img class="img-centered" src="Eqn1_general_no8.JPG" alt="aceleration_equation" width="550" />
+
+      <p>
+        For any object to initially accelerate upward (and float) in any fluid, it must be less dense than the
+        fluid:
+      </p>
+      <p class="text-centered">
+        If: <span style="color:#0070c0">the density of the object &lt; the density of the fluid:</span>
+        the object accelerates upward in the fluid
+      </p>
+
+      <br/>
+
+      <p>
+        And for any object to initially accelerate downward (and sink) in any fluid, it must be more dense
+        than the fluid:
+      </p>
+      <p class="text-centered">
+        If:  <span style="color:#3d85c6">the density of the object &gt; the density of the fluid:</span> the
+        object accelerates downward in the fluid
+      </p>
+      <br>
+      <p>
+        In general, the initial downward acceleration of an object in water increases as the object's density increases.
+      </p>
+      <br/>
+      <p>
+        Equation #1 also tells us that as the density of the water (or whatever fluid the object is in) increases,
+        the initial downward acceleration of the object <i>DEcreases</i>.
+      </p>
+
+    </div>
+
+        <div id="page8" class="page">
       <p class="text-centered">
         <b>((Advanced section due to math))</b>
       </p>
@@ -379,117 +509,7 @@
       <p class="text-centered"><b>((End of Advanced section))</b></p>
     </div>
 
-    <div id="page5" class="page">
-      <p>
-        <b>When an object will rise vs. sink in water</b>
-      </p>
-      <p>
-        The equation for the <span style="color:#9900ff">initial</span> acceleration of an object
-        <span style="color:#9900ff">initially at rest</span> in water only depends on the <i>density</i> of
-        the object. This equation is shown below, where "<b>g</b>" is the acceleration due to gravity
-        (about 10 m/s<sup>2</sup> downward on Earth). In this equation, a positive value for acceleration means
-        that the object is rising upward in the water, and a negative value means that the object is accelerating
-        downward in the water.
-      </p>
 
-      <br/>
-      <img class="img-centered" src="Eqn1_water_no8.JPG" alt="acceleration_equation" width="550" />
-
-      <p>
-        Once the object starts moving in the water, a drag force from the water also acts on the object (click 
-        <a class="brm-link" target="_blank" href="../forces-on-object-moving-in-fluid/">here</a>
-        for more information about drag forces, including the effect of an object's shape on the drag force). But we
-        will keep it simple in this unit and ignore that force.
-      </p>
-      <p>
-        Whether the object accelerates upward or downward depends on the ratio of the density of water to the density
-        of the object. If this ratio is greater than 1 (or the density of water is greater than the density of the
-        object), the acceleration will be upward (positive). If the ratio of the density of water to the density of
-        the object is less than one (or the density of the object is greater than the density of water), the
-        acceleration of the object will be downward (negative).
-      </p>
-      <br>
-      <p>
-        <b>To summarize Equation #1:</b>
-      </p>
-      <p>
-        If the object is <b>less dense</b> than water, it will have a positive acceleration. This means that is
-        will initially accelerate upward (and rise in the water):
-      </p>
-      <p class="text-centered">
-        If: <span style="color:#0070c0">the density of the object <i> &lt; the</i> density of water: </span>
-        the object will rise in water.
-      </p>
-      <br>
-      <p>
-        If the object is <b>more dense</b> than water, it will have a negative acceleration. This means that it
-        will initially accelerate downward (and sink):
-      </p>
-      <p class="text-centered">
-        If: <span style="color:rgb(0,112,192)">the</span><span style="color:#0070c0">density of the object 
-          <i>&gt;</i> the density of water:</span> the object will sink in the water.
-      </p>
-
-      <form class="quiz_choice quiz">
-        <b>Q3.5: Based on Equation #1 (and your own intuition), what do you think happens to the downward acceleration of an object in water as the density of the object increases?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) Nothing; it will stay the same.</div><br>
-        <input type="radio" name="question" value="correct">
-        <div class="label">b) It will increase.</div><br>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) It will decrease.</div><br>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) I really don't know.</div><br>
-        <button type="submit" class="submit-btn">Submit</button>
-        <div class="feedback-correct feedback">
-            You are right! As the density of the object increases, the negative acceleration of the object becomes larger.
-        </div>
-        <div class="feedback-incorrect feedback">
-            Well, as the density of the object increases, the negative acceleration of the object becomes larger. So, (b) it will increase, is the correct answer.
-        </div>
-      </form>
-    </div>
-
-    <div id="page6" class="page">
-      <p>
-        <b>When an object will rise vs. sink in <i>any</i> fluid</b>
-      </p>
-      <p>
-        This equation is true for any fluid (not just water). The general form of this equation is shown below:
-      </p>
-
-      <img class="img-centered" src="Eqn1_general_no8.JPG" alt="aceleration_equation" width="550" />
-
-      <p>
-        For any object to initially accelerate upward (and float) in any fluid, it must be less dense than the
-        fluid:
-      </p>
-      <p class="text-centered">
-        If: <span style="color:#0070c0">the density of the object &lt; the density of the fluid:</span>
-        the object accelerates upward in the fluid
-      </p>
-
-      <br/>
-
-      <p>
-        And for any object to initially accelerate downward (and sink) in any fluid, it must be more dense
-        than the fluid:
-      </p>
-      <p class="text-centered">
-        If:  <span style="color:#3d85c6">the density of the object &gt; the density of the fluid:</span> the
-        object accelerates downward in the fluid
-      </p>
-      <br>
-      <p>
-        In general, the initial downward acceleration of an object in water increases as the object's density increases.
-      </p>
-      <br/>
-      <p>
-        Equation #1 also tells us that as the density of the water (or whatever fluid the object is in) increases,
-        the initial downward acceleration of the object <i>DEcreases</i>.
-      </p>
-
-    </div>
 
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
@@ -498,6 +518,21 @@
       <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
       <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
     </div>
+
+    <div class="nav-toc-container">
+  <h3>Table of Contents: Buoyancy Force unit</h3>
+  <ul>
+    <li><a href="#top" onclick="tocPageJump(1)">What is buoyancy force?</a></li>
+    <li><a href="#top" onclick="tocPageJump(2)">Summary of buoyancy force</a></li>
+    <li><a href="#top" onclick="tocPageJump(3)">Conceptual explanation of buoyancy force</a></li>
+     <li><a href="#top" onclick="tocPageJump(4)">Check Your Understanding</a></li>
+    <li><a href="#top" onclick="tocPageJump(5)">Mathematical summary of buoyancy force: in water</a></li>
+    <li><a href="#top" onclick="tocPageJump(6)">Understanding Check</a></li>
+      <li><a href="#top" onclick="tocPageJump(7)">Mathematical summary of buoyancy force: in any fluid</a></li>
+    <li><a href="#top" onclick="tocPageJump(8)">Advanced mathematical explanation: When objects float versus sink</a></li>
+  </ul>
+</div>
+<br><br>
 
   </div>
 
