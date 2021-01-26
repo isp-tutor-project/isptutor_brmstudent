@@ -263,6 +263,18 @@ function HideSeeText(myButtonID) {
     var button = document.getElementById(myButtonID);
     button.onclick = function() {}
 }
+
+function toggleText() {
+    var text = document.getElementById("demo");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+
+
 // nav button control
 let numPages = document.getElementsByClassName("page").length;
 
