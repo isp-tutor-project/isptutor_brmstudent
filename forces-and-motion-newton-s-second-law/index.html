@@ -41,7 +41,7 @@
       
 
       <p class="text-justified">
-        <b>Forces and motion.</b> If we know all of the forces that are acting on an object, we can know how the object will
+        <b>What is Newton's Second Law?</b> If we know all of the forces that are acting on an object, we can know how the object will
           move. This is how NASA scientists are able to predict the motion of planets, comets, and
           other astronomical bodies.  
       </p>
@@ -158,12 +158,13 @@
       <p>
         This means that the sum of all forces acting on the meteor is equal to 0 N. 
         
-        <p id='demo' style='display: none'>("N" stands for "Newtons," which is a unit of force. It is named after the famous physicist
+        <p id='demo' style='display: none'>("N" stands for "Newtons," which is a unit of force. It is named after the famous 
+        physicist and mathematician
         <a class="brm-link" target="_blank" href="../isaacnewton/index.html">Isaac Newton</a>,
         whose second law of motion we are applying here! One Newton is equal to 1 kg*m/s<sup>2</sup>.
         In other words, one Newton (N) is equal to the amount of force needed to accelerate a 1 kg
         object at 1 m/s<sup>2</sup>.)</p>     
-<button type='button' onclick="toggleText()">Click for more info</button>
+<button type='button' onclick="toggleText()">Click for more/less info</button>
         
         
       </p>
@@ -479,7 +480,9 @@
         <input type="radio" name="question" value="incorrect">
         <div class="label">c) +20 N (positive: to the right)</div><br>
         <input type="radio" name="question" value="correct">
-        <div class="label">d) +30 N</div><br>
+        <div class="label">d) +30 N (positive: to the right)</div><br>
+        <input type="radio" name="question" value="incorrect">
+        <div class="label">d) 70 N</div><br>
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
             Right! The Net force acting on the Mom is equal to +50 N - 20 N = +30 N. (The + means that the force is in the positive x-direction.)
@@ -528,9 +531,10 @@ First, what is the net force acting on the object? Select your answer:
 <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
             <option value="#ffffff" selected disabled><b>(Select one)</b></option>
             <option value="#ed8587">0 N</option>
+            <option value="#ed8587">32 N </option>
             <option value="#ed8587">+2 N (to the right)</option>
             <option value="#11bf7a">-2 N (to the left)</option>
-            <option value="#ed8587">+5 N (to the right)</option>
+            
           </select>   
       <p>
         We can find the acceleration of the body by (you guessed it!) applying Newton's Second Law: 
@@ -548,10 +552,8 @@ First, what is the net force acting on the object? Select your answer:
     <div id="page15" class="page">
 
       <p>
-        <b>Net force causes acceleration.</b>
-      </p>
-      <p>
-        <b>If the Net force acting on an object in a given direction is NOT equal to zero, the object will
+        <b>Summary:</b> The Net force acting on an object determines its acceleration. If the Net force 
+        acting on an object in a given direction is NOT equal to zero, the object will
           accelerate in the direction of the net force. </b>
       </p>
       <p>
@@ -657,10 +659,35 @@ the acceleration of the larger (more massive) dad.
        <img class="img-centered" src="Screen Shot 2018-04-02 at 10.28.08 AM.png" width="700"/>
        <br/>
 
-       <p>
-         For more information about Isaac Newton, take a look at the
-         <a class="brm-link" target="_blank" href="../isaacnewton/">Isaac Newton</a> page.
-      </p>
+
+
+    <!-- Quiz: Checkbox -->
+      <form class="quiz_checkbox quiz">
+        <b>Q4: What two quantities determine the acceleration of an object in a given direction?</b>
+        <input type="checkbox" name="question" value="correct">
+        <div class="label">(a) the weight of the object
+        </div><br>
+        <input type="checkbox" name="question" value="incorrect">
+        <div class="label">(b) the mass of the object
+        </div><br>
+        <input type="checkbox" name="question" value="incorrect">
+        <div class="label">(c) the total amount of forces acting on the object
+        </div><br>
+        <input type="checkbox" name="question" value="incorrect">
+        <div class="label">(d) the amount of force the object has
+        </div><br>
+        <input type="checkbox" name="question" value="correct">
+        <div class="label">(e) the sum of forces acting on the object in that direction
+        </div><br>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="feedback-correct feedback">
+          Good job! The object's mass and the sum of forces acting on the object in that direction determine the object's acceleration in that direction.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, the object's mass and the sum of forces acting on the object in that direction determine the object's acceleration in that direction.
+        </div>
+      </form>    
+
     </div>
 
 
@@ -671,6 +698,23 @@ the acceleration of the larger (more massive) dad.
       <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
       <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
     </div>
+
+    <div class="nav-toc-container">
+    <h3>Table of Contents: Newton's Second Law unit</h3>
+    <ul>
+    <li><a href="#top" onclick="tocPageJump(1)">What is Newton's Second Law?</a></li>
+      <li><a href="#top" onclick="tocPageJump(2)">Forces in NSL are external to object</a></li>
+      <li><a href="#top" onclick="tocPageJump(4)">Forces on object cause its acceleration</a></li>
+      <li><a href="#top" onclick="tocPageJump(5)">NSL when no forces act on object</a></li>
+      <li><a href="#top" onclick="tocPageJump(7)">NSL when one force acts on object</a></li>
+      <li><a href="#top" onclick="tocPageJump(9)">NSL when more than one force acts on object</a></li>
+      <li><a href="#top" onclick="tocPageJump(15)">Summary</a></li>
+      <li><a href="#top" onclick="tocPageJump(16)">Mass & Acceleration</a></li>
+      <li><a href="#top" onclick="tocPageJump(17)">Example: Mass & Acceleration</a></li>
+      <li><a href="#top" onclick="tocPageJump(18)">Formal statement of Newton's Second Law</a></li>
+    </ul>
+  </div>
+<br><br>
 
   </div>
 
