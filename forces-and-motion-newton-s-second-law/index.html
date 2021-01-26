@@ -511,7 +511,7 @@
 <div id="page14" class="page">
 
       <p>
-        <i><b>Example 4 (Multiple forces):</b> Now, let's say we have a 10 kg object, which is acted on by four forces as described
+        <i><b>Example 4 (Multiple forces):</b> Now, let's say we have a 10 kg object, which is acted on by four forces as shown
           below. What is the acceleration of the object?</i>
       </p>
 
@@ -519,7 +519,15 @@
       <br/>
 
 <hr>
+First, what is the net force acting on the object? Select your answer: 
 
+<select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
+            <option value="#ffffff" selected disabled><b>(Select one)</b></option>
+            <option value="#ed8587">0 N</option>
+            <option value="#ed8587">+2 N (to the right)</option>
+            <option value="#11bf7a">-2 N (to the left)</option>
+            <option value="#ed8587">+5 N (to the right)</option>
+          </select>   
       <p>
         We can find the acceleration of the body by (you guessed it!) applying Newton's Second Law: 
         <b>a</b> = <b>F</b><b><sub>net</sub></b> / m
@@ -617,7 +625,17 @@
       <img class="img-centered" src="Example_Dad.png" />
   <hr>
       <br/>
-The acceleration of the smaller (less massive) dad on the left will be greater than the acceleration of the larger (more massive) dad.
+The acceleration of the smaller (less massive) dad on the left will be 
+
+<select id="FIB2" class="fib_select" onchange="fibUpdate('FIB2')">
+            <option value="#ffffff" selected disabled><b>(Select one)</b></option>
+            <option value="#11bf7a">greater than</option>
+            <option value="#ed8587">less than</option>
+            <option value="#ed8587">the same as</option>
+          </select>  
+
+
+the acceleration of the larger (more massive) dad.
     </div>
 
     <div id="page18" class="page">
