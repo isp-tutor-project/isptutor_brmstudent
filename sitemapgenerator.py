@@ -1,28 +1,23 @@
-from os import walk
+from datetime import date
+from glob import glob
 
-dirs = []
-for (dirpath, dirnames, filenames) in walk("."):
-    dirs.extend(dirnames)
-    break
+today = date.today().isoformat()
 
-dirs.remove("_assets")
-dirs.remove(".git")
-dirs.sort()
-print(dirs)
+index_files = glob("*/index.html")
 
-file = ""
-file += '<?xml version="1.0" encoding="UTF-8"?>'
-file += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-for dir in dirs:
-    file += "<url>"
-    file += "<loc>" + "https://go.isptutor.org/brm/" + dir + "/index.html" + "</loc>"
-    file += "<lastmod>2019-08-08</lastmod>"
-    file += "<changefreq>weekly</changefreq>"
-    file += "</url>"
-file += '</urlset>'
+txt = """<?xml version="1.0" encoding="UTF-8"?>'
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">"""
 
-'''
-f = open("sitemap.xml", "w")
-f.write(file)
-f.close()
-'''
+for file_name in sorted(index_files):
+    txt += """
+    <url>
+        <loc>https://go.isptutor.org/brm/%s</loc>
+        <lastmod>%s</lastmod>"
+        <changefreq>hourly</changefreq>"
+    </url>""" % (file_name, today)
+
+txt+= '\n</urlset>'
+
+with open("sitemap.xml", "w") as fh:
+    fh.write(txt)
+
