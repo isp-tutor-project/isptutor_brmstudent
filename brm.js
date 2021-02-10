@@ -275,6 +275,12 @@ function toggleText() {
 
 
 
+
+
+
+
+
+
 // nav button control
 let numPages = document.getElementsByClassName("page").length;
 
