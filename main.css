@@ -120,6 +120,14 @@ button {
   display: block;
 }
 
+/* Align images horizontally */
+.imgContainer{
+  float:left;
+  display: block;
+  display: inline;
+}
+
+
 /* Footer */
 #footer {
   font-size: 10px;
@@ -268,6 +276,14 @@ p.content-item {
   line-height: 1.5em;
 }
 
+
+.text1 {
+  position:relative;
+  left:100px;
+  top:400px: 
+}
+
+
 /* brm links */
 a.brm-link {
   font-weight: bold;
@@ -279,6 +295,23 @@ a.brm-link {
   margin-left: auto;
   margin-right: auto;
 }
+
+.imgClear {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img3Col {
+  display: flex;
+}
+
+.imgCol {
+  /*flex: 33.33%;*/
+  margin: auto;
+  padding: 5px;
+}
+
 
 /* lists */
 ul.list-no-bullets {
