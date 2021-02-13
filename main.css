@@ -110,7 +110,7 @@ button {
   min-height: calc(100vh - 660px);
   font-size: 16px;
   font-family: Verdana, sans-serif; 
-  line-height: 1.3 ;
+  line-height: 1.5 ;
 }
 .listlineheight {
   line-height: 3 ;
