@@ -108,7 +108,7 @@ button {
   min-width: 400px;
   max-width: 1200px;
   display: none;
-  margin: 20px 200px;
+  margin: 20px 20px;
   min-height: calc(100vh - 660px);
   font-size: 16px;
   font-family: Verdana, sans-serif; 
