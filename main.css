@@ -101,19 +101,19 @@ button {
 
 /* Pages */
 .page-container {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin: 20px;
  /* background-color: rgb(250, 249, 248) */
 }
 .page {
+  min-width: 400px;
+  max-width: 1200px;
   display: none;
-  margin: 20px 100px;
+  margin: 20px 200px;
   min-height: calc(100vh - 660px);
   font-size: 16px;
   font-family: Verdana, sans-serif; 
   line-height: 1.5 ;
-  min-width: 400px;
-  max-width: 800px;
+  
 }
 .listlineheight {
   line-height: 3 ;
