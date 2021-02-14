@@ -105,10 +105,10 @@ button {
  /* background-color: rgb(250, 249, 248) */
 }
 .page {
-  min-width: 400px;
-  max-width: 1200px;
+ /* min-width: 400px;*/
+ /* max-width: 1200px;*/
   display: none;
-  margin: 20px 20px;
+  margin: 20px 100px 100px;
   min-height: calc(100vh - 660px);
   font-size: 16px;
   font-family: Verdana, sans-serif; 
