@@ -14,15 +14,15 @@
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    gtag('config', 'UA-18104655-6');
+  </script>
 
 </head>
 
@@ -38,7 +38,8 @@
     <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
     <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
     <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical
+        Reactions</button></a>
     <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
   </div>
 
@@ -49,9 +50,10 @@
     <div id="page1" class="page">
       <p>
         <b>What are Plants?</b> Plants are living organisms composed of one or more cells. A cell is the
-smallest unit that can be said to be alive. Some plants &mdash;such as some types of algae&mdash; are a single cell. (Similarly, some animals, like amoebas, are a single cell.)
-        </p>
-        <p>Like animal cells,
+        smallest unit that can be said to be alive. Some plants &mdash;such as some types of algae&mdash; are a single
+        cell. (Similarly, some animals, like amoebas, are a single cell.)
+      </p>
+      <p>Like animal cells,
         each plant cell has a nucleus (see the picture of a plant cell below). Having a cell nucleus is a key
         characteristic of all living things.
       </p>
@@ -62,43 +64,45 @@ smallest unit that can be said to be alive. Some plants &mdash;such as some type
         or less shapeless blobs.
       </p>
       <p>
-        In the cell shown below, you can put the cursor on the red triangles to see a description of the tiny organs ("organelles") and
+        In the cell shown below, you can put the cursor on the red triangles to see a description of the tiny organs
+        ("organelles") and
         other substances inside the cell.
       </p>
 
-     <br/>
+      <br />
 
       <div class="text-centered">
         <iframe src="https://isp-tutor-project.github.io/demo/games/plantcell" width="600" height="525">
         </iframe>
       </div>
-<br/>
+      <br />
       One important function of the DNA in the cell's
 
       <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
         <option value="#ffffff">(Select one)</option>
-          <option value="#11bf7a">nucleus</option>
-          <option value="#ed8587">endoplasmic reticuli</option>
-          <option value="#ed8587">mitochondria</option>
-          <option value="#ed8587">chloroplasts</option>
-        </select>
+        <option value="#11bf7a">nucleus</option>
+        <option value="#ed8587">endoplasmic reticuli</option>
+        <option value="#ed8587">mitochondria</option>
+        <option value="#ed8587">chloroplasts</option>
+      </select>
 
 
-      is to make very important molecules called proteins. Proteins are made in cell organelles called ribosomes (not shown above).
-Proteins do most of the work in cells and are required for the structure,
-function, and regulation of the plant (or animal).
+      is to make very important molecules called proteins. Proteins are made in cell organelles called ribosomes (not
+      shown above).
+      Proteins do most of the work in cells and are required for the structure,
+      function, and regulation of the plant (or animal).
 
-<br/><br/>
+      <br /><br />
 
-Photosynthesis, another important process in which sugars are made, happens in the
+      Photosynthesis, another important process in which sugars are made, happens in the
 
-    <select id="FIB2" class="fib_select" onchange="fibUpdate('FIB2')">
+      <select id="FIB2" class="fib_select" onchange="fibUpdate('FIB2')">
         <option value="#ffffff">(Select one)</option>
-          <option value="#ed8587">nucleus</option>
-          <option value="#ed8587">endoplasmic reticuli</option>
-          <option value="#ed8587">mitochondria</option>
-          <option value="#11bf7a">chloroplasts</option>
-        </select>
+        <option value="#ed8587">nucleus</option>
+        <option value="#ed8587">endoplasmic reticuli</option>
+        <option value="#ed8587">mitochondria</option>
+        <option value="#11bf7a">chloroplasts</option>
+      </select>
 
 
       in plant cells.
@@ -108,7 +112,8 @@ Photosynthesis, another important process in which sugars are made, happens in t
     <div id="page2" class="page">
       <p>
         Plants usually grow in one location (rather than move around, like
-        most animals do). Because of this, plants must depend on their local environment &mdash;and themselves&mdash; for nourishment.
+        most animals do). Because of this, plants must depend on their local environment &mdash;and themselves&mdash;
+        for nourishment.
         Plants get some nutrients they need through the absorption of water and minerals through their roots.
       </p>
 
@@ -147,7 +152,7 @@ Photosynthesis, another important process in which sugars are made, happens in t
       <form class="quiz_open quiz">
         <b>
           Q1: Do you think that humans are more like vascular or nonvascular plants? Why?</b>
-        <textarea></textarea><br/>
+        <textarea></textarea><br />
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
           Humans are more like vascular plants because both humans and vasular plants have tubes that carry water
@@ -170,7 +175,7 @@ Photosynthesis, another important process in which sugars are made, happens in t
 
   <!-- Footer -->
   <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
+    <img src="../_assets/klahrLabFooter.png"><br />
     <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
     <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213 The TED project was
       funded
