@@ -14,15 +14,15 @@
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    gtag('config', 'UA-18104655-6');
+  </script>
 
 </head>
 
@@ -38,7 +38,8 @@
     <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
     <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
     <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical
+        Reactions</button></a>
     <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
   </div>
 
@@ -57,8 +58,8 @@
       </p>
       <p>
         We can calculate (a) the speed of an object
-          across some time, or the <b>average speed</b>, or (b) the speed of an object at a moment
-          in time: the <b>"instantaneous" speed</b>.
+        across some time, or the <b>average speed</b>, or (b) the speed of an object at a moment
+        in time: the <b>"instantaneous" speed</b>.
       </p>
     </div>
 
@@ -92,7 +93,7 @@
 
       <div>
 
-          <img class="img-centered" src="FinalNeighborhoodGraphic.png" alt="grpahic of neighborhood" />
+        <img class="img-centered" src="FinalNeighborhoodGraphic.png" alt="grpahic of neighborhood" />
 
         <div style="text-align:left">
           <p>
@@ -115,25 +116,27 @@
         <b>Q1: If the dog had instead run an average speed of 4 m/s (instead of 3 m/s) for the same distance (3,000 m),
           which would be true about how long it would take the dog to get home?</b>
         <input type="radio" name="question" value="incorrect">
-        <div class="label">a) It would take more than 1,000 s.</div><br/>
+        <div class="label">a) It would take more than 1,000 s.</div><br />
         <input type="radio" name="question" value="correct">
-        <div class="label">b) It would take less than 1,000 s.</div><br/>
+        <div class="label">b) It would take less than 1,000 s.</div><br />
         <input type="radio" name="question" value="incorrect">
-        <div class="label">c) It would take 1,000 s.</div><br/>
+        <div class="label">c) It would take 1,000 s.</div><br />
         <input type="radio" name="question" value="incorrect">
-        <div class="label">d) I don't really know.</div><br/>
+        <div class="label">d) I don't really know.</div><br />
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
-            You are correct! The dog is moving faster over the same distance (3,000 m). So, it would take the dog less time to get home. (Yay!)
-            The time for the dog to travel this distance is:<br/>
-            Time = Distance / Speed
-            Time = 3,000 m / 4 m/s = 750 s (or 12.5 minutes)
+          You are correct! The dog is moving faster over the same distance (3,000 m). So, it would take the dog less
+          time to get home. (Yay!)
+          The time for the dog to travel this distance is:<br />
+          Time = Distance / Speed
+          Time = 3,000 m / 4 m/s = 750 s (or 12.5 minutes)
         </div>
         <div class="feedback-incorrect feedback">
-            Actually, the dog is moving faster over the same distance (3,000 m). So, it would take the dog less time to get home. (Yay!)
-            The time for the dog to travel this distance is:<br/>
-            Time = Distance / Speed
-            Time = 3,000 m / 4 m/s = 750 s (or 12.5 minutes)
+          Actually, the dog is moving faster over the same distance (3,000 m). So, it would take the dog less time to
+          get home. (Yay!)
+          The time for the dog to travel this distance is:<br />
+          Time = Distance / Speed
+          Time = 3,000 m / 4 m/s = 750 s (or 12.5 minutes)
         </div>
       </form>
     </div>
@@ -149,32 +152,32 @@
         The speedometer in a car measures the instantaneous speed of the car (in miles or kilometers per hour), or
         the speed of the car at any moment. The picture below shows a speedometer (in kilometers per hour, or km/h). 
       </p>
-     <br/>
+      <br />
 
 
-        <img class="img-centered" src="Speedometer.jpg" alt="speedometer" width="400" height="224" />
+      <img class="img-centered" src="Speedometer.jpg" alt="speedometer" width="400" height="224" />
 
-<br/>
+      <br />
       <form class="quiz_checkbox quiz">
         <b>Q1.5. Which of the following is true about what this car's speedometer shows? (Check all that are true.)</b>
         <input type="checkbox" name="question" value="incorrect">
         <div class="label">(a) The average speed is about 240 km/h.
-        </div><br/>
+        </div><br />
         <input type="checkbox" name="question" value="correct">
         <div class="label">(b) The instantaneous speed is about 240 km/h.
-        </div><br/>
+        </div><br />
         <input type="checkbox" name="question" value="incorrect">
         <div class="label">(c) The acceleration is zero (its speed is constant).
-        </div><br/>
+        </div><br />
         <input type="checkbox" name="question" value="incorrect">
-        <div class="label">(d)  I don't really know.
-        </div><br/>
+        <div class="label">(d) I don't really know.
+        </div><br />
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
-            Right! Speedometers measure the instantaneous speed of cars, or their speed at a given moment (or instant).
+          Right! Speedometers measure the instantaneous speed of cars, or their speed at a given moment (or instant).
         </div>
         <div class="feedback-incorrect feedback">
-            Actually, speedometers measure the instantaneous speed of cars, or their speed at a given moment (or instant).
+          Actually, speedometers measure the instantaneous speed of cars, or their speed at a given moment (or instant).
         </div>
       </form>
 
@@ -183,7 +186,7 @@
     <div id="page4" class="page">
       <p style="color:rgb(153,0,255)">
         <b>To simplify, in this unit, the following definitions of velocity and acceleration will apply to
-        <i>motion in a straight line without changing direction</i>.</b>
+          <i>motion in a straight line without changing direction</i>.</b>
       </p>
       <p>
         <b>What is Velocity?</b>
@@ -218,9 +221,9 @@
         is 245 km/h due east.
       </p>
 
-     <br/>
+      <br />
 
-        <img class="img-centered" src="Speedometer.jpg" alt="speedometer" width="400" height="224" />
+      <img class="img-centered" src="Speedometer.jpg" alt="speedometer" width="400" height="224" />
 
 
     </div>
@@ -247,7 +250,7 @@
       </ul>
 
 
-        <img class="img-centered" src="CarAccelerating.GIF" alt="car accelerating over 4 seconds"/>
+      <img class="img-centered" src="CarAccelerating.GIF" alt="car accelerating over 4 seconds" />
 
 
       <ul>
@@ -260,7 +263,7 @@
       </ul>
 
 
-        <img class="img-centered" src="CarInCircle.GIF" />
+      <img class="img-centered" src="CarInCircle.GIF" />
 
       <br />
 
@@ -276,11 +279,11 @@
       </ul>
 
 
-        <img class="img-centered" src="CarAcceleratingSpeedDir.GIF" alt="Car accelerating" />
+      <img class="img-centered" src="CarAcceleratingSpeedDir.GIF" alt="Car accelerating" />
 
       <br />
 
-      </div>
+    </div>
 
     <div id="page6" class="page">
 
@@ -327,19 +330,17 @@
       </p>
     </div>
 
-   <br/>
-
     <div id="page8" class="page">
 
-     <hr>
+      <hr>
       <p>
         <i><b>Example 1: Speeding up/Accelerating</b>: A car initially at a
-        stop light accelerates in a straight line eastward and reaches a speed of 20 m/s (about 45
-        miles per hour) in 10 seconds. </i>
+          stop light accelerates in a straight line eastward and reaches a speed of 20 m/s (about 45
+          miles per hour) in 10 seconds. </i>
       </p>
       <hr>
-     <br/>
-The car's acceleration can be calculated as:
+      <br />
+      The car's acceleration can be calculated as:
       <ul>
         <li>Acceleration (average) = (20 m/s - 0) / 10 s = 2 m/s<sup>2 </sup> (eastward)</li>
       </ul>
@@ -357,7 +358,7 @@ The car's acceleration can be calculated as:
       </p>
 
 
-        <img class="img-centered" src="SpeedTimeGraph.png" alt="Speed Time Graph" width="400" height="320" />
+      <img class="img-centered" src="SpeedTimeGraph.png" alt="Speed Time Graph" width="400" height="320" />
 
 
     </div>
@@ -366,16 +367,16 @@ The car's acceleration can be calculated as:
 
       <hr>
       <p>
-       <i> <b>Example 2: constant speed</b>. A child on a sled rides straight down a hill with a 15
-        degree slope. When the child gets a running start and falls on the sled at time-1, the
-        child is moving at 5 m/s (about 11 mph). Ten seconds later (time-2), the child is
-        still moving at 5 m/s sliding down the hill on the sled. What is the child's average
-        acceleration between time-1 and time-2? </i>
+        <i> <b>Example 2: constant speed</b>. A child on a sled rides straight down a hill with a 15
+          degree slope. When the child gets a running start and falls on the sled at time-1, the
+          child is moving at 5 m/s (about 11 mph). Ten seconds later (time-2), the child is
+          still moving at 5 m/s sliding down the hill on the sled. What is the child's average
+          acceleration between time-1 and time-2? </i>
       </p>
 
-<hr>
+      <hr>
 
-<br/>
+      <br />
 
       <p>
         The child's (average) acceleration can be calculated as:
@@ -390,9 +391,9 @@ The car's acceleration can be calculated as:
 
       <p>
         The child's speed has not changed over this period of time, so the
-          child's (average) acceleration (over this time interval) is zero.
+        child's (average) acceleration (over this time interval) is zero.
       </p>
-     <br/>
+      <br />
 
     </div>
 
@@ -401,11 +402,11 @@ The car's acceleration can be calculated as:
       <hr>
       <p>
         <i><b>Example 3: Slowing down/decelerating</b>. A baseball player is running from third base at 5 m/s when
-        he slides into home base and stops 1 second later.</i>
+          he slides into home base and stops 1 second later.</i>
       </p>
 
       <hr>
-     <br/>
+      <br />
       <p>
         The baseball player's average acceleration can be calculated as:
       </p>
@@ -432,17 +433,17 @@ The car's acceleration can be calculated as:
         <b>Calculating final speed from acceleration.</b> We can also calculate the final speed of an object if
         we know its initial speed and its acceleration.
       </p>
-<hr>
+      <hr>
 
       <p>
         <i><b>Example 4</b>:  After hockey practice, the team takes off their helmets and puts them in a box in the
-        middle of the hockey rink. When all the helmets are in the box, the coach pushes on the box using his
-        hockey stick, which accelerates at a constant 2 m/s<sup>2</sup> from rest, for 2 seconds. What is the
-        final speed of the box after 2 seconds?</i>
+          middle of the hockey rink. When all the helmets are in the box, the coach pushes on the box using his
+          hockey stick, which accelerates at a constant 2 m/s<sup>2</sup> from rest, for 2 seconds. What is the
+          final speed of the box after 2 seconds?</i>
       </p>
 
-<hr>
-<br/>
+      <hr>
+      <br />
 
       <p>
         Using the definition of acceleration:
@@ -486,58 +487,64 @@ The car's acceleration can be calculated as:
       </ul>
 
       <form class="quiz_open quiz">
-        <b>Q2: In the scenario given in Example 4, at practice the next day, the coach pushes on the box, which accelerates at 4 m/s<sup>2</sup> for the same amount of time (2 s).
+        <b>Q2: In the scenario given in Example 4, at practice the next day, the coach pushes on the box, which
+          accelerates at 4 m/s<sup>2</sup> for the same amount of time (2 s).
           What is the final speed of the box? Write your answer below.</b>
-        <textarea></textarea><br/>
+        <textarea></textarea><br />
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
-            The box accelerates from rest at 4 m/s<sup>2</sup> for 2 seconds. This means that the speed of the box increases by 4 m/s every second. So, after one second, the box would be moving at 4 m/s.
-            After 2 seconds, the box would be moving at 8 m/s.<br/>
-            You could also use the equation:<br/>
-            V<sub>f</sub> = V<sub>i</sub> + a*t<br/>
-            V<sub>f</sub> = 0 + 4*2 = 8 m/s
+          The box accelerates from rest at 4 m/s<sup>2</sup> for 2 seconds. This means that the speed of the box
+          increases by 4 m/s every second. So, after one second, the box would be moving at 4 m/s.
+          After 2 seconds, the box would be moving at 8 m/s.<br />
+          You could also use the equation:<br />
+          V<sub>f</sub> = V<sub>i</sub> + a*t<br />
+          V<sub>f</sub> = 0 + 4*2 = 8 m/s
         </div>
       </form>
 
       <form class="quiz_choice quiz">
         <b>
-            Q3: Two ice skating friends, Jordan and Taylor, decide to race each other (starting from rest).
-            From the starting line, they agree to skate as fast as they can for 5 seconds then glide to the finish line.
-            Jordan accelerates more than Taylor during those 5 seconds.
-            Which skater will have a greater speed after 5 seconds?</b>
+          Q3: Two ice skating friends, Jordan and Taylor, decide to race each other (starting from rest).
+          From the starting line, they agree to skate as fast as they can for 5 seconds then glide to the finish line.
+          Jordan accelerates more than Taylor during those 5 seconds.
+          Which skater will have a greater speed after 5 seconds?</b>
         <input type="radio" name="question" value="correct">
-        <div class="label">a) Jordan.</div><br/>
+        <div class="label">a) Jordan.</div><br />
         <input type="radio" name="question" value="incorrect">
-        <div class="label">b) Taylor.</div><br/>
+        <div class="label">b) Taylor.</div><br />
         <input type="radio" name="question" value="incorrect">
-        <div class="label">c) Neither; they will have the same speeds.</div><br/>
+        <div class="label">c) Neither; they will have the same speeds.</div><br />
         <input type="radio" name="question" value="incorrect">
-        <div class="label">d) I have no idea.</div><br/>
+        <div class="label">d) I have no idea.</div><br />
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
-            You are correct! Jordan accelerates from rest at a higher rate than Taylor. So, Jordan will be moving faster than Taylor after 5 seconds.
+          You are correct! Jordan accelerates from rest at a higher rate than Taylor. So, Jordan will be moving faster
+          than Taylor after 5 seconds.
         </div>
         <div class="feedback-incorrect feedback">
-            Well, actually, Jordan accelerates from rest at a higher rate than Taylor. So, Jordan will be moving faster than Taylor after 5 seconds.
+          Well, actually, Jordan accelerates from rest at a higher rate than Taylor. So, Jordan will be moving faster
+          than Taylor after 5 seconds.
         </div>
       </form>
 
       <form class="quiz_choice quiz">
         <b>Q4: Who will win the race?</b>
         <input type="radio" name="question" value="correct">
-        <div class="label">a) Jordan.</div><br/>
+        <div class="label">a) Jordan.</div><br />
         <input type="radio" name="question" value="incorrect">
-        <div class="label">b) Taylor.</div><br/>
+        <div class="label">b) Taylor.</div><br />
         <input type="radio" name="question" value="incorrect">
-        <div class="label">c) Neither; they will tie.</div><br/>
+        <div class="label">c) Neither; they will tie.</div><br />
         <input type="radio" name="question" value="incorrect">
-        <div class="label">d) I don't know.</div><br/>
+        <div class="label">d) I don't know.</div><br />
         <button type="submit" class="submit-btn">Submit</button>
         <div class="feedback-correct feedback">
-            That's right! Jordan will be moving faster than Taylor after 5 seconds and continue to move faster than Taylor to the finish line.
+          That's right! Jordan will be moving faster than Taylor after 5 seconds and continue to move faster than Taylor
+          to the finish line.
         </div>
         <div class="feedback-incorrect feedback">
-            Actually, Jordan will be moving faster than Taylor after 5 seconds and continue to move faster than Taylor to the finish line.
+          Actually, Jordan will be moving faster than Taylor after 5 seconds and continue to move faster than Taylor to
+          the finish line.
         </div>
       </form>
     </div>
@@ -553,7 +560,7 @@ The car's acceleration can be calculated as:
     <div class="nav-toc-container">
       <h3>Table of Contents: Speed, Velocity, and Acceleration</h3>
       <ul>
-      <li><a href="#top" onclick="tocPageJump(1)">What is Speed?</a></li>
+        <li><a href="#top" onclick="tocPageJump(1)">What is Speed?</a></li>
         <li><a href="#top" onclick="tocPageJump(2)">Average Speed</a></li>
         <li><a href="#top" onclick="tocPageJump(3)">Instantaneous Speed</a></li>
         <li><a href="#top" onclick="tocPageJump(4)">What is Velocity?</a></li>
@@ -572,15 +579,18 @@ The car's acceleration can be calculated as:
 
   <!-- Footer -->
   <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
+    <img src="../_assets/klahrLabFooter.png"><br />
     <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
     <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
+      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
+      the
+      National Science Foundation, Grant SBE035442.
+      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
+      through
+      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+      represent
+      views of the Institute or the U.S. Department of Education.</p>
   </div>
 
   <!-- Enable header and nav button functionality -->
