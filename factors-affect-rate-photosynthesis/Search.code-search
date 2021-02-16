@@ -1,0 +1,41 @@
+# Query:  &deg;
+# ContextLines: 1
+
+16 results - 2 files
+
+factors-affect-rate-photosynthesis/index.html:
+  173            more quickly at a certain point. The rate of photosynthesis is highest between 10
+  174:           and 20 degrees Celsius (or 50-68&deg;F). After this maximum, the photosynthesis
+  175:           rate drops off quickly as the temperature increases. At around 40&deg;C (or 104&deg;F),
+  176:          photosynthesis stops. As a result, plants cannot grow anymore.
+  177          </li>
+
+  198          <b>
+  199:           Q4.5: What is the relationship between temperature and rate of photosynthesis between 21&deg;C
+  200:           (70&deg;F) and 38&deg;C (100&deg;F)? Base your answer on the graph and other information in
+  201            this unit.
+
+  203          <input type="radio" name="question" value="incorrect">
+  204:         <div class="label">a) The rate of photosynthesis increases from 21-38&deg;C.</div><br />
+  205          <input type="radio" name="question" value="correct">
+  206:         <div class="label">b) The rate of photosynthesis decreases from 21-38&deg;C.</div><br />
+  207          <input type="radio" name="question" value="incorrect">
+  208:         <div class="label">c) The rate of photosynthesis does not change from 21-38&deg;C.</div><br />
+  209          <input type="radio" name="question" value="incorrect">
+
+  213            That's right! The rate of photosynthesis is maximum a bit below room temperature (between 10 and 20&deg;C)
+  214:          but decreases at temperatures higher than about 20 degrees. So, (b) is the correct answer.
+  215          </div>
+
+  217            Well, actually, the rate of photosynthesis is maximum a bit below room temperature (between 10 and 20&deg;C)
+  218:           but decreases at temperatures higher than about 20 degrees. So, (b) is the correct response.
+  219          </div>
+
+thermal-conductors-vs-thermal-insulators/index.html:
+  249              You're right! More of the ice cream that is wrapped in aluminum foil will have melted. This is because more thermal energy from your hand 
+  250:             (which is at about 98&deg;F or 37&deg;C) will be transferred to the ice cream during the trip. As a result, the ice cream wrapped in aluminum foil will 
+  251              melt more. So, (a) is the correct answer.
+
+  254              Well actually, more of the ice cream that is wrapped in aluminum foil will have melted. This is because more thermal energy from your hand 
+  255:             (which is at about 98&deg;F or 37&deg;C) will be transferred to the ice cream during the trip. As a result, the ice cream wrapped in aluminum foil will 
+  256              melt more. So, (a) is the correct answer.
