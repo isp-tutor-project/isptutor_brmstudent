@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Color and Color Perception</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Color and Color Perception</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Color and Color Perception</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
+<div class="page" id="page1">
 
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Color and Color Perception</h1>
-
-    <div id="page1" class="page">
-
-      <img style="display:block;float:right;margin:5px 10px" src="cave-paintig-490205_1920.jpg" width="320" height="240"
-           alt="cave_painting" />
+      <img alt="cave_painting" height="240" src="cave-paintig-490205_1920.jpg" style="display:block;float:right;margin:5px 10px" width="320"/>
 
       <p class="text-justify">
         Pigments and dyes have been around for a very long time. Even since prehistoric times! Cavemen and
@@ -65,7 +64,7 @@
 
       <br/>
       <br/>
-      <img class="img-centered" src="Image.jpg" alt="light_filtering_graphic" />
+      <img alt="light_filtering_graphic" class="img-centered" src="Image.jpg"/>
       <br/>
 
       <p>
@@ -79,19 +78,17 @@
         molecules that make up each substance absorb and reflect specific wavelengths of light.
       </p>
 
-      <img class="img-centered" src="brush-3068340_1920.png" alt="paint_brushes_with_paint" width="400" height="250" />
+      <img alt="paint_brushes_with_paint" class="img-centered" height="250" src="brush-3068340_1920.png" width="400"/>
 
     </div>
 
-
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <p class="text-centered">
         <b>What about “mixing” colors? How does that work?</b>
       </p>
 
-      <img style="display:block;float:left;margin:5px 10px 0px 0px" src="painting-technique-384880_1920.jpg"
-           width="290" height="213" alt="paint_blending_together" />
+      <img alt="paint_blending_together" height="213" src="painting-technique-384880_1920.jpg" style="display:block;float:left;margin:5px 10px 0px 0px" width="290"/>
 
       <p class="text-justify">
         Let’s take a moment and imagine that we combine red and blue paint. This is a physical process, so each
@@ -110,7 +107,7 @@
 
       <br/>
 
-      <img class="img-centered" src="ink-2427263_1920.jpg" width="400" height="283" />
+      <img class="img-centered" height="283" src="ink-2427263_1920.jpg" width="400"/>
 
       <p>
         Now, let’s explore adding one substance, food coloring, to another substance, water. When you add food
@@ -128,7 +125,7 @@
       </p>
 
       <br/>
-      <img class="img-centered" src="ink2.jpg" width="400" height="283" alt="ink_mixed_in_water" />
+      <img alt="ink_mixed_in_water" class="img-centered" height="283" src="ink2.jpg" width="400"/>
       <br/>
 
       <p>
@@ -144,7 +141,7 @@
         of the jars below. 
       </p>
 
-      <img class="img-centered" src="Bottles2.jpg" />
+      <img class="img-centered" src="Bottles2.jpg"/>
 
       <p>
         Place a bottle of water that has yellow food coloring added to it—which means it is reflecting yellow
@@ -179,7 +176,7 @@
         </li>
       </ul>
 
-      <img style="display:block;margin-right:auto" src="Eye.png" />
+      <img src="Eye.png" style="display:block;margin-right:auto"/>
       <br/>
 
       <p class="text-justify">
@@ -210,32 +207,46 @@
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-  </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
-  </div>
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+            
+        </div>
 
-</body>
+        
 
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

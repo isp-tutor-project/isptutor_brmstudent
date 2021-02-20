@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Earth's Gravitational Force</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Earth&#39;s Gravitational Force</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Earth's Gravitational Force</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Earth's Gravitational Force</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
 
       <p class="content-item">
         <b>What is a Gravitational Force?</b> Gravitational forces are the forces between any two objects that have
@@ -55,10 +55,10 @@
         idea is represented in the picture below, where the force of gravity on an object due to the earth is the
         <i>same</i> as the force of gravity on the earth from that object. The forces are just in opposite directions.
         (Sounds crazy, right? But it's true!)  This idea is discussed in more detail in the
-        <a class="brm-link" target="_blank" href="../mass-gravitationalforce/index.html">Gravitational Force</a> unit. 
+        <a class="brm-link" href="../mass-gravitationalforce/index.html" target="_blank">Gravitational Force</a> unit. 
       </p>
 
-      <img class="img-centered" src="ObjectEarthGravity.png" alt="Earth Force of Gravity" width="400" height="156" />
+      <img alt="Earth Force of Gravity" class="img-centered" height="156" src="ObjectEarthGravity.png" width="400"/>
 
       <p class="content-item">
         The important point here is that the gravitational forces acting on the Earth and acting on any object
@@ -66,8 +66,7 @@
       </p>
     </div>
 
-
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p class="content-item">
         <b>Direction of Gravitational Force.</b> The direction of the force of gravity for all objects on earth is
         downward and toward the center of the earth (this idea is represented in the picture below). This is true
@@ -75,19 +74,19 @@
         the center of the planet or other body in outer space. 
       </p>
       <p class="text-centered">
-        <img src="EarthImage1.jpg" alt="Earth_force acting towards Earth" width="400" height="320" />
+        <img alt="Earth_force acting towards Earth" height="320" src="EarthImage1.jpg" width="400"/>
       </p>
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <p class="content-item">
         <b>Magnitude (strength or amount) of Earth's Gravitational Force.</b> In general, the acceleration of an
         object in a given direction is caused by the
-        <a class="brm-link" target="_blank" href="../net-force/">net force</a>
+        <a class="brm-link" href="../net-force/" target="_blank">net force</a>
         acting on that object in that direction. The exact value of the acceleration of an object in a given
         direction is equal to the net force acting in that direction divided by the mass of the object (see the
         introductory unit to 
-        <a class="brm-link" target="_blank" href="../forces-and-motion-newton-s-second-law/">Newton's Second Law</a> 
+        <a class="brm-link" href="../forces-and-motion-newton-s-second-law/" target="_blank">Newton's Second Law</a> 
         for more information).
       </p>
       <p class="text-centered">
@@ -127,17 +126,17 @@
         <b>g</b> (m/s<sup>2</sup>) = Gravitational force on object / mass of object (kg)
       </p>
 
-      <br />
+      <br/>
 
       <p class="text-centered">
         So, the magnitude of the earth’s gravitational force pulling down on an object is:
       </p>
 
-      <img class="img-centered" src="GravForceEqn.png" alt="gravitational force on object" width="600" />
+      <img alt="gravitational force on object" class="img-centered" src="GravForceEqn.png" width="600"/>
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p class="content-item">
         <b>Weight.</b> We call the gravitational force on an object caused by the Earth's mass the <i>weight</i> of
         the object (on Earth). 
@@ -151,19 +150,19 @@
       <p class="content-item">
         The more mass an object has, the stronger the earth pulls on that object (and, because gravity is a
         mutually attractive force, the stronger the object pulls on the earth!). (See the
-        <a class="brm-link" target="_blank" href="../mass-gravitationalforce/">Gravitational Force</a>
+        <a class="brm-link" href="../mass-gravitationalforce/" target="_blank">Gravitational Force</a>
         unit for more information.) The force that the earth pulls on an object on the earth is the object's
         weight. And the direction of the force of weight is straight down (toward the center of the earth).
       </p>
      <br/>
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
       <p class="content-item">
         <b>Difference between Mass and Weight.</b> As discussed in the 
-        <a class="brm-link" target="_blank" href="../mass/">Mass</a> 
+        <a class="brm-link" href="../mass/" target="_blank">Mass</a> 
         and
-        <a class="brm-link" target="_blank" href="../mass-gravitationalforce/index.html">Gravitational Force</a> 
+        <a class="brm-link" href="../mass-gravitationalforce/index.html" target="_blank">Gravitational Force</a> 
         units, the mass of an object is constant and does not depend on where the object is. In contrast, the
         weight of an object does depend on where the object is: the weight of an object on earth will be more
         than the weight of that object on the moon. But the object will weigh less on earth than it
@@ -174,15 +173,15 @@
 
       <form class="quiz_choice quiz">
         <b>Q1: The mass of an object is 10 kg. What is the force on the object due to the Earth's gravity?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) It's also 10 kg.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) It's equal to about 10 m/s<sup>2</sup>.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) It's equal to about 100 N.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I really don't know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The magnitude of the earth's gravitational force acting on the object is the object's mass times the
           acceleration due to gravity (about 10 m/s<sup>2</sup>).
@@ -199,15 +198,15 @@
       <form class="quiz_choice quiz">
         <b>Q2: Let's say that the earth pulls on you with a force of 500 N (kg × m/s<sup>2</sup>).
           What force do you think your body pulls on the earth with?</b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) 500 N.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Greater than 500 N.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) Less than 500 N.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I really don't know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! Because gravity is a mutually attractive force, your body will pull on the
           earth with the same force that the earth pulls on your body! This is 500 N.
@@ -225,15 +224,15 @@
           But one object weighs twice as much as the other object.
           If you drop them at the same time from the same height above the ground, what will happen?
           (In this problem, ignore the effects of air resistance. Only gravity acts on the objects.)</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) The heavier object will hit the ground first.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) The lighter object will hit the ground first.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) They will hit the ground at the same time.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I really don't know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! Since only gravity is acting on the objects (we are ignoring the effects of air resistance),
           the objects would fall with the same acceleration (or change in speed), g, which is about 10 m/s/s or 10
@@ -248,7 +247,7 @@
 
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
       <p class="content-item">
         <b>The Earth's gravity allows us to have an atmosphere.</b> Like all matter, the molecules that make up the
         air in the Earth's atmosphere have mass. So, they are also pulled down by the Earth's gravity. If they were
@@ -257,22 +256,28 @@
         plants on the Earth—would not be alive. 
       </p>
 
-      <img class="img-centered" src="sunriseearth-atmosphere.jpg" />
+      <img class="img-centered" src="sunriseearth-atmosphere.jpg"/>
      <br/>
       <p class="text-centered">The picture above shows the thin atmosphere surrounding the earth, held by the earth's
         gravity.</p>
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: The Earth's Gravitational Force</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">What is gravitational force</a></li>
@@ -284,27 +289,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

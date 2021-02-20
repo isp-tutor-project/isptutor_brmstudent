@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Food</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Food</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>What Plants Need to Grow</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>What Plants Need to Grow</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>Have you ever wondered how things grow?</b> Matter cannot be created out of nothing. So,
         for plants and animals (including people) to grow and to replace cells that have died,
         the plants/animals need to take in matter. Where does this matter come from?
       </p>
 
-      <img class="img-centered" src="BRMImages.png" alt="leaf_tree_penguinmotherandchick" />
-      <br />
+      <img alt="leaf_tree_penguinmotherandchick" class="img-centered" src="BRMImages.png"/>
+      <br/>
 
       <p>
         The number one MAJOR source of materials for plants to grow is carbon dioxide, which plants get from the air!
         <b>Most of the atoms that plants are made of come from carbon dioxide molecules in the air</b> that become
         different types of molecules during
-        <a class="brm-link" target="_blank" href="../chemicalvs-physicalreactions/">chemical reactions</a>
-        in <a class="brm-link" target="_blank" href="../photosynthesis/">photosynthesis</a>!
+        <a class="brm-link" href="../chemicalvs-physicalreactions/" target="_blank">chemical reactions</a>
+        in <a class="brm-link" href="../photosynthesis/" target="_blank">photosynthesis</a>!
       </p>
 
      <br/>
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
         <b>What else (besides CO<sub>2</sub> and water) do plants need to grow?</b> Another source of matter for plants
         is minerals (made of atoms/molecules) that plants get from the soil. These minerals that plants take in will
@@ -98,11 +98,11 @@
         </li>
       </ul>
 
-      <br />
-      <img src="Plantbrmminerals.png" alt="Plant_diagram" />
-      <br />
-      <br />
-      <br />
+      <br/>
+      <img alt="Plant_diagram" src="Plantbrmminerals.png"/>
+      <br/>
+      <br/>
+      <br/>
 
       <p>
         Nutrients in soil, including the elements Nitrogen (N), Phosphorus (P), and Potassium (K), dissolve in water
@@ -117,7 +117,7 @@
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <p><b>What do these minerals (N, P, and K) do?</b></p>
 
@@ -177,10 +177,10 @@
           <ul class="brm-list nested-list">
             <li>
               <b>Potassium</b> helps control the opening and closing of little holes called stomata (see
-              <a class="brm-link" target="_blank" href="../vascular-plants/">Vascular plants</a>
+              <a class="brm-link" href="../vascular-plants/" target="_blank">Vascular plants</a>
               unit for more information on stomata), and therefore controls how much CO<sub>2</sub> enters and leaves
               the plants. CO<sub>2</sub> is necessary for
-              <a class="brm-link" target="_blank" href="../photosynthesis/">photosynthesis</a>
+              <a class="brm-link" href="../photosynthesis/" target="_blank">photosynthesis</a>
               to occur.
             </li>
             <li>
@@ -191,11 +191,11 @@
         </li>
       </ul>
 
-      <br />
+      <br/>
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>Sources of Energy in Plant/Animal Cells</b>
       </p>
@@ -227,11 +227,11 @@
           <ul class="brm-list nested-list">
             <li>
               Some of this lone phosphate's electrons move to a lower
-              <a class="brm-link" target="_blank" href="../atoms-molecules/">energy level</a>
+              <a class="brm-link" href="../atoms-molecules/" target="_blank">energy level</a>
               as a result of the phosphate breaking its bond in ATP. Because
-              <a class="brm-link" target="_blank" href="../energy-general/">energy must be conserved</a>
+              <a class="brm-link" href="../energy-general/" target="_blank">energy must be conserved</a>
               , this phosphate gains kinetic energy, or moves around faster. This
-              <a class="brm-link" target="_blank" href="../kinetic-and-potential-energy/">kinetic energy</a>
+              <a class="brm-link" href="../kinetic-and-potential-energy/" target="_blank">kinetic energy</a>
               due to motion can cause chemical reactions in plants and animals that require energy for the reaction
               to take place.
             </li>
@@ -243,28 +243,28 @@
         </li>
       </ul>
 
-      <br />
-      <img src="ATP_abstract.png" width="400" height="167" />
-      <img src="ATP.GIF" alt="ATP" width="400" height="262" />
-      <img src="revisedphosphate2.png"  width="400" height="250" alt="phosphate" />
+      <br/>
+      <img height="167" src="ATP_abstract.png" width="400"/>
+      <img alt="ATP" height="262" src="ATP.GIF" width="400"/>
+      <img alt="phosphate" height="250" src="revisedphosphate2.png" width="400"/>
      <br/><br/>
       <!--<br/><br/><br/><br/><br/><br/><br/><br/> -->
 
 
       <form class="quiz_choice quiz">
         <b>Q1: Which of the following is the most accurate explanation for the role of glucose in plant growth?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Glucose makes parts of the plant (stems, leaves, roots, etc.)</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) ATP makes glucose molecules. Glucose molecules provide the energy (due to their motion) to
           make parts of the plant.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) Glucose and ATP react to form lots of ATP. ATP molecules break into a phosphate molecule
           and ADP molecule. The phosphate molecules provide energy (due to their motion) to make parts of the plant.
         </div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I really don't know. This is confusing!</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! Glucose is not the DIRECT source of energy for making parts of the plant. Glucose molecules are
           important because they react with ATP molecules to make even more ATP molecules. ATP molecules are the DIRECT
@@ -284,35 +284,44 @@
 
 
 
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-  </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+            
+        </div>
 
-</body>
+        
 
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

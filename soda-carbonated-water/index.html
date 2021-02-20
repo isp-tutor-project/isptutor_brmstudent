@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Carbonated Water and Sodas</title>
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../main.css">
-    <!-- Google Search Bar -->
-    <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-    <!-- Google Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Carbonated Water and Sodas</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-  </head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Carbonated Water and Sodas</h1>
 
-  <body>
-    <!-- Header -->
-    <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-    <div id="research-question"></div>
-    <div id="header-bg-extension"></div>
-    <div class="search-container">
-      <div class="gcse-search"></div>
-    </div>
-    <div class="header-btn-container">
-      <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-      <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-      <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-      <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-      <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-    </div>
-
-    <!-- Main Page -->
-    <div class="page-container">
-      <h1>Carbonated Water and Sodas</h1>
-
-      <div id="page1" class="page">
+<div class="page" id="page1">
         <p>
           Carbonated water is simply water (H<sub>2</sub>O) that has carbon dioxide dissolved throughout. Types
           of carbonated water include sparkling water and seltzer.
@@ -64,7 +64,7 @@
         <ul class="brm-list">
           <li>
             D = m / V (density is equal to mass divided by volume; see
-            <a class="brm-link" target="_blank" href="../density/">Density</a> 
+            <a class="brm-link" href="../density/" target="_blank">Density</a> 
             for more on density)
           </li>
           <li>
@@ -73,7 +73,7 @@
         </ul>
 
         <p>
-          At standard temperature (0&deg;C) and standard pressure (1 atmosphere, which is air
+          At standard temperature (0°C) and standard pressure (1 atmosphere, which is air
           pressure at sea level), the density of CO<sub>2</sub> is 0.002 grams/mL. 
         </p>
         <p>
@@ -93,13 +93,14 @@
        <br/>
 
 </div>
-         <div id="page2" class="page">
+
+<div class="page" id="page2">
 
         <p>
          <b>How to make carbonated water.</b> As you may know, if you fill a glass with pure water and set it on a table, the water does
           not get carbonated on its own.
           <span>
-            This is because at temperatures around room temperature (about 22&deg;C/71&deg;F),
+            This is because at temperatures around room temperature (about 22°C/71°F),
             CO<sub>2</sub> molecules that make up the air are moving around fast. Even though H<sub>2</sub>O molecules
             have positive and negative charges, CO<sub>2</sub> molecules are moving fast and have enough kinetic
             energy to not get "caught" by these electric charges. So, CO<sub>2</sub> molecules stay in the air.
@@ -119,7 +120,7 @@
 
         <ul class="brm-list">
           <li>
-            First, cool a bottle of water to just above freezing (0&deg;C).
+            First, cool a bottle of water to just above freezing (0°C).
           </li>
           <li>
             Then, with the cap off of the bottle, squeeze the bottle a bit until the water rises
@@ -148,7 +149,7 @@
           between H<sub>2</sub>O molecules and leave the liquid.
         </p>
 
-        <img src="brm_watercloseup.jpg" alt="water molecule close up" align="center" />
+        <img align="center" alt="water molecule close up" src="brm_watercloseup.jpg"/>
         <br/>
 
         <p>
@@ -182,7 +183,8 @@
        <br/>
 
 </div>
-         <div id="page3" class="page">
+
+<div class="page" id="page3">
 
 
         <p>
@@ -200,7 +202,7 @@
           <li>
             CO<sub>2</sub> is less dense than water. Because of this, CO<sub>2</sub> bubbles will be pushed
             upward by buoyancy force (see
-            <a class="brm-link" target="_blank" href="../buoyancy/index.html">Buoyancy force</a> 
+            <a class="brm-link" href="../buoyancy/index.html" target="_blank">Buoyancy force</a> 
             unit), causing it to escape from the water.
           </li>
           <li>
@@ -222,38 +224,53 @@
         <p>
           One cause of CO<sub>2</sub> exploding from a bottle of soda is "nucleation", where bubbles form on tiny
           bumps on surfaces (see
-          <a class="brm-link" target="_blank" href="../nucleation/index.html">Nucleation unit</a>
+          <a class="brm-link" href="../nucleation/index.html" target="_blank">Nucleation unit</a>
           for more information).
         </p>
        <br/>
 
       </div>
 
-      <!-- Nav Buttons -->
-      <div class="nav-btn-container">
-        <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-        <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-        <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-        <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      </div>
 
-    </div>
 
-   <!-- Footer -->
-   <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213 The TED project was funded
-      in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the National Science Foundation,
-      Grant SBE035442. The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <!-- Enable header and nav button functionality -->
-    <script src="../brm.js"></script>
 
-  </body>
 
-  </html>
+            
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>

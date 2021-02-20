@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Absorption</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Absorption</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Absorption</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Absorption</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>What is absorption?</b> You have almost certainly seen materials like paper towels and clothing (made
         of materials like cotton, wool, and denim) absorb water. This means that molecules of water move between
@@ -59,7 +59,7 @@
         materials, like metals (shown below) and wax-coated bird feathers, do not absorb water or other liquids.
       </p>
 
-      <img class="img-centered" src="absorption_BRM.jpg" alt="Water on metal" /> 
+      <img alt="Water on metal" class="img-centered" src="absorption_BRM.jpg"/> 
 
       <p>
         Why don't some materials (like the metals above) absorb liquids? The molecules that make up these non-absorbent
@@ -73,7 +73,7 @@
       </p>
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
         <b>Electric charges also help absorption.</b> To further understand why certain materials absorb and "hold" liquids, we have to remember that water molecules have ends
         with opposite electric charges. As shown below, the hydrogen (H) side of water molecules is positively
@@ -82,7 +82,7 @@
         These include salt molecules (such as NaCl) and sugar molecules (such as
         C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>).
       </p>
-      <img class="img-centered" src="InkedCombinedOxygenHydrogen_A1-T1_LI2_cropped.jpg" alt="Water molecule" />
+      <img alt="Water molecule" class="img-centered" src="InkedCombinedOxygenHydrogen_A1-T1_LI2_cropped.jpg"/>
      <br/>
       <p class="text-centered">
         Above are two ways to represent a water (H<sub>2</sub>O) molecule, which has positively and
@@ -90,7 +90,7 @@
       </p>
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <h4>Absorption of water by different materials.</h4>
 
@@ -98,12 +98,12 @@
         <b>Absorption of water by paper towels.</b>
         Water molecules also "stick" to the molecules that make up absorbent materials because of electric
         forces (see the 
-        <a class="brm-link" target="_blank" href="../atoms-molecules/">Atoms: Basics</a>
+        <a class="brm-link" href="../atoms-molecules/" target="_blank">Atoms: Basics</a>
         or
-        <a class="brm-link" target="_blank" href="../electric-force/">electric force</a>
+        <a class="brm-link" href="../electric-force/" target="_blank">electric force</a>
         unit for more information on electric forces). Paper towels are mostly made from trees. And guess what?
         Trees contain a lot of sugar molecules. (They produce sugars during
-        <a class="brm-link" target="_blank" href="../photosynthesis/">photosynthesis</a>.)
+        <a class="brm-link" href="../photosynthesis/" target="_blank">photosynthesis</a>.)
       </p>
       <p>
         We know that sugar molecules have charged areas, which attract oppositely-charged areas of water
@@ -114,7 +114,7 @@
         The paper towel below absorbs water because of the electric force.
       </p>
 
-      <img class="img-centered" width="400" src="PaperTowel_3805.jpg" alt="paper towel absorbing water" /> 
+      <img alt="paper towel absorbing water" class="img-centered" src="PaperTowel_3805.jpg" width="400"/> 
      <br/>
      <br/>
       <p>
@@ -127,7 +127,7 @@
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
 
       <p>
         <b>Water temperature and absorption.</b> As you might expect, there is a relationship between water
@@ -161,22 +161,22 @@
             In which glass will the section of the yarn that is ABOVE THE WATER LINE absorb more water?
           </b>
         </p>
-        <img src="Q1_pic.PNG" width="400">
+        <img src="Q1_pic.PNG" width="400"/>
        <br/>
 
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) Glass A</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Glass B</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) They would absorb the same amount.</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) There is just no way to tell.</div>
        <br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
 
         <div class="feedback-correct feedback">
           You're right! The yarn in Glass A with the hot water will absorb more water. You will see that the
@@ -198,26 +198,26 @@
       </p>
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
 
       <!-- Quiz: Choice -->
       <form class="quiz_choice quiz">
         <b>Q2: In the scenario for Q1, you use salt water rather than regular water. As salt water is
           absorbed by the yarn above the water level, what will happen to the Na+ and Cl- atoms in the yarn?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) They will evaporate with the water.</div>
        <br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) Some will remain in the yarn (above the water level).</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) They will all return to the water.</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) How should I know?</div>
        <br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
 
         <div class="feedback-correct feedback">
           You're right! At least some Na+ and Cl- atoms will remain in the yarn, attracted to each other and
@@ -237,19 +237,19 @@
         <b>Q3: In the scenario for Q2 above, would you expect NaCl crystals to build up faster above the water
           line in hot salt water or cooler salt water?
         </b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) The hot salt water</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) The cooler salt water</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) They will build up at the same rate.</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) How should I know?</div>
        <br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
 
         <div class="feedback-correct feedback">
           You're right! Because hot water is both absorbed and evaporates faster than cooler water, the Na+
@@ -262,8 +262,7 @@
       </form>
     </div>
 
-
-    <div id="page6" class="page">
+<div class="page" id="page6">
       <p>
         The photo below shows salt (NaCl) growth on a plain piece of yarn after a few weeks of sitting in salt
         water. Most of the water has evaporated during this time. You may notice that most of the growth is
@@ -272,16 +271,16 @@
         atoms. Na+ atoms attract Cl- atoms and Cl- atoms attract Na+ atoms due to the electric force. 
       </p>
       <p>
-        The <a class="brm-link" target="_blank" href="../electric-force/">electric forces</a>
+        The <a class="brm-link" href="../electric-force/" target="_blank">electric forces</a>
         between Na+ and Cl- atoms are stronger than the electric forces of the protein molecules that make up
         the yarn. This is why the Na+ and Cl- atoms build onto each other more than they build onto the yarn to form the salt crystals you can see below.
       </p>
 
       <a href="../absorption/SaltGrowthTop.jpg?attredirects=0/index.html">
-        <img class="img-centered" src="InkedSaltGrowthTop_waterline.jpg" width="400" height="300" alt="salt growing on string" />
+        <img alt="salt growing on string" class="img-centered" height="300" src="InkedSaltGrowthTop_waterline.jpg" width="400"/>
       </a>
 
-      <br />
+      <br/>
 
       <!-- Quiz: Choice -->
       <form class="quiz_choice quiz">
@@ -290,19 +289,19 @@
           in the water. Which, if either, do you think the Na+ and Cl- atoms in the water would be more
           attracted to?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Plain yarn</div>
        <br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) Yarn coated with salt crystals</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) They would be attracted to both the same amount.</div>
        <br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) There is no way to tell.</div>
        <br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
 
         <div class="feedback-correct feedback">
           You're right! The electric force between Na+ and Cl- atoms is stronger than the electric force
@@ -318,14 +317,20 @@
       </form>
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
+
+
+            
 <div class="nav-toc-container">
       <h3>Table of Contents: Absorption unit</h3>
       <ul>
@@ -339,30 +344,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in
-      part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
-      Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
-
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
-
-</body>
-
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

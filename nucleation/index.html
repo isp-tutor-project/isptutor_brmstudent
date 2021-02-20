@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nucleation</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nucleation</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-    gtag('config', 'UA-18104655-6');
-  </script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Nucleation</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical
-        Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Nucleation</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>What is nucleation?</b> Have you ever noticed that when you first fill a pot with water, you often see
         bubbles on the inside surface of the pot? These bubbles are air that was mixed in with the water when you
@@ -73,9 +72,9 @@
 
       <div>
 
-        <img class="img-centered" src="Nucleation_finger.jpg" width="400" alt="finger in water showing nucleation" />
+        <img alt="finger in water showing nucleation" class="img-centered" src="Nucleation_finger.jpg" width="400"/>
 
-        <br />
+        <br/>
 
         <p>
           Bubbles will form on your finger when you put it in a carbonated liquid (a liquid with dissolved carbon
@@ -85,13 +84,13 @@
           Notice that there are few bubbles on the inside of the glass. This is because glass is much smoother than your
           finger, so there are not as many little bumps and ridges where carbon dioxide bubbles can build up.
         </p>
-        <br />
+        <br/>
 
       </div>
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
         <b>Bumps on surfaces are one cause of nucleation.</b> Say you found a pot that had a very smooth surface. You
         wouldn’t see
@@ -113,7 +112,7 @@
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       Check your understanding...
 
@@ -121,15 +120,15 @@
         <b>Q1: Say you had two square plates made of different metals (both plates are 1 inch by 1 inch in area).
           One metal is smooth and the other is rough to the touch. Are there more nucleation sites (places for bubbles
           to form and freezing to begin) on the smooth or rough piece of metal?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) The smooth piece</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">b) The rough piece</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) There would be the same number of nucleation sites.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) I really don't know.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) The smooth piece</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) The rough piece</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) There would be the same number of nucleation sites.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I really don't know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           You're right! The rougher metal has more nucleation sites (or places where bubbles form and also where
           freezing starts) than the smooth metal.
@@ -139,27 +138,27 @@
           Well actually, the rougher metal has more nucleation sites (or places where bubbles form and also where
           freezing starts) than the smooth metal.
           Nucleation sites are where there are bumps and crevices on surfaces.
-          <br />
+          <br/>
           (Suggestion: You might want to re-read the previous section.)
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q2: Would you expect pure water to freeze into ice faster if it is put in (a) an ice tray with very smooth
           surfaces or
           (b) an ice tray with rough and scratched-up surfaces? (Everything else is the same between the two ice tray
           conditions.)</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) The smooth ice tray</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">b) The rough ice tray</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) It would make a differences</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) I really have no idea.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) The smooth ice tray</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) The rough ice tray</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It would make a differences</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I really have no idea.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           You're right! We would expect the water to turn to ice faster in the ice tray with rougher surfaces, because
           there are more places for H<sub>2</sub>O molecules to build up into ice.
@@ -176,7 +175,7 @@
       </p>
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>Nucleation in Carbonated Liquids (like Soda).</b> Carbonated liquids (such as a soda) contain both water
         (H<sub>2</sub>O) and lots of carbon dioxide
@@ -191,14 +190,13 @@
         candies and mints. 
       </p>
 
-      <img class="img-centered" src="CombinedImageNucleation.jpg" width="600" height="199"
-        alt="kiwi in water showing nucleation_nucleation close up image" />
+      <img alt="kiwi in water showing nucleation_nucleation close up image" class="img-centered" height="199" src="CombinedImageNucleation.jpg" width="600"/>
 
       <p>
         The bubbles forming are made of lots of little CO<sub>2</sub> molecules. When the bubbles become large
         enough, they will break away from the nucleation sites. These larger bubbles (shown as blue circles in
         both pictures above) will rise through the liquid due to the upward 
-        <a class="brm-link" target="_blank" href="../buoyancy/">buoyancy force</a>.   
+        <a class="brm-link" href="../buoyancy/" target="_blank">buoyancy force</a>.   
       </p>
       <p>
         The CO<sub>2</sub> bubbles that have risen from the nucleation sites are made of many many CO<sub>2</sub>
@@ -210,22 +208,22 @@
           process! (Not all cool-looking processes are chemical processes: Many are physical processes.)</span>
       </p>
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>
           Q3: Is nucleation, which happens when you put something with a rough or bumpy surface (like your finger)
           into a carbonated drink, a physical process or a chemical process?
         </b>
-        <input type="radio" name="question" value="correct">
-        <div class="label">a) A physical process</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) A chemical process</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) Both. </div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) Neither; it is what it is.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) A physical process</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) A chemical process</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Both. </div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) Neither; it is what it is.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! This is a physical process because molecules are NOT changing: CO2 molecules gather together to
           form bubbles made of CO2 molecules. These CO2 bubbles move up in the liquid and go into the air (where
@@ -240,7 +238,7 @@
 
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
 
       <p>
         <b>Nucleation in carbonated liquids (continued)</b>
@@ -258,9 +256,9 @@
       </p>
       <p>
         As discussed in the
-        <a class="brm-link" target="_blank" href="../statechange-evaporation-melting/">Evaporation unit</a>, 
+        <a class="brm-link" href="../statechange-evaporation-melting/" target="_blank">Evaporation unit</a>, 
         particles (in this case, the CO<sub>2</sub> gas bubbles) with more
-        <a class="brm-link" target="_blank" href="../kinetic-and-potential-energy/">kinetic energy</a>
+        <a class="brm-link" href="../kinetic-and-potential-energy/" target="_blank">kinetic energy</a>
         are better able to push through the surface tension of the water and "escape" into the air. This means
         that both (a) larger CO<sub>2</sub> bubbles, which have more mass, and (b) faster-moving bubbles are more
         likely to push through the surface of the liquid and move into the air above.
@@ -278,12 +276,12 @@
       </p>
       <p>
         For more information about carbonated water and soda, see the unit:
-        <a class="brm-link" target="_blank" href="../soda-carbonated-water/">Soda (Carbonated water)</a>. 
+        <a class="brm-link" href="../soda-carbonated-water/" target="_blank">Soda (Carbonated water)</a>. 
       </p>
 
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
 
       <form class="quiz_choice quiz">
         <b>Q4: (application) You have two bottles of soda. Bottle A has scratches on the inside surface of the bottle
@@ -291,15 +289,15 @@
           Bottle B also has scratches near the bottom of the bottle. But Bottle B only has about half as many scratches
           as Bottle A.
           Which bottle would you expect more soda to "explode" from when you open it?</b>
-        <input type="radio" name="question" value="correct">
-        <div class="label">a) Bottle A.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) Bottle B.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) They would both "explode" about the same amount.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) There is no way to tell.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) Bottle A.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Bottle B.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) They would both "explode" about the same amount.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) There is no way to tell.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           You're right! More soda would "explode" from Bottle A than Bottle B.
           Because there are more scratches on Bottle A, there are more nucleation sites (places for CO<sub>2</sub>
@@ -315,15 +313,21 @@
       </form>
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Nucleation unit</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">What is Nucleation?</a></li>
@@ -335,27 +339,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br />
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

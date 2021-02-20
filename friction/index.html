@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Friction</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Friction</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Friction</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Friction</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>What is Friction?</b> Friction is a force between a surface and an object moving on that surface that resists
           motion. In other words, the force of friction acts in the direction that is opposite the direction the object is
@@ -54,7 +54,7 @@
       </p>
 
       <a href="../friction/Box_Friction.GIF?attredirects=0/index.html">
-        <img class="img-centered" src="Box_Friction.GIF" />
+        <img class="img-centered" src="Box_Friction.GIF"/>
       </a>
      <br/>
       <p>
@@ -64,19 +64,19 @@
       </p>
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <form class="quiz_choice quiz">
         <b>Q1: Which is true about the force of friction acting on a book sitting at rest on a desk?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Friction acts downward on the book.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Friction pushes upward on the book.
         </div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) There is no friction acting on the book.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) It's impossible to know without more information.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's right! No friction acts on the book because it is at rest.
         </div>
@@ -86,7 +86,7 @@
       </form>
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
 <p>
         <i><b>Example 1.</b></i> Another example of friction is pushing a box across a floor.
@@ -95,15 +95,12 @@
           than on the smoother wooden floor.
       </p>
 
-      <img class="img-centered" src="NewFrictionImageBookends.jpg" width="600"
-            alt="Image of two figures each pushing a box on different surfaces: wooden floor and carpeted floor. There is more friction on the carpeted floor and less friction on the wooden floor. " />
+      <img alt="Image of two figures each pushing a box on different surfaces: wooden floor and carpeted floor. There is more friction on the carpeted floor and less friction on the wooden floor. " class="img-centered" src="NewFrictionImageBookends.jpg" width="600"/>
       <br/>
 
     </div>
 
-
-
-    <div id="page4" class="page">
+<div class="page" id="page4">
 
  <p>
         <b><i>Example 2</i></b>. For example, when you walk barefoot, you may feel the friction between the bottom
@@ -116,9 +113,7 @@
       </p>
 
 <div>
-      <img class="img-centered"
-           src="FrictionFeetGraphicA3-T1RevisedText.jpg" width="400" height="240"
-           alt="image of applied action and friction reaction" />
+      <img alt="image of applied action and friction reaction" class="img-centered" height="240" src="FrictionFeetGraphicA3-T1RevisedText.jpg" width="400"/>
 </div>
       <br/>
       <p>
@@ -136,7 +131,7 @@
       <br/>
       </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
       <p>
         <b><i>Example 3</i>.</b> For a round object to roll down an incline (such as a hill),
           there must be at least some friction between the object and surface of the incline. If
@@ -154,7 +149,7 @@
         For <b>sliding objects</b>, greater friction produces more resistance to the object's motion. 
       </p>
 
-      <img class="img-centered" src="friction2ball.jpg" alt="ball rolling uphill" />
+      <img alt="ball rolling uphill" class="img-centered" src="friction2ball.jpg"/>
       <br/>
 
       <p>
@@ -169,16 +164,16 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="NewFrictionBall.jpg" alt="ball rolling downhill" />
+      <img alt="ball rolling downhill" class="img-centered" src="NewFrictionBall.jpg"/>
      <br/>
 
 
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
       <p>
         <b>Friction and speed of ball on ramp.</b> As discussed more in 
-        <a class="brm-link" target="_blank" href="../kinetic-and-potential-energy/">Kinetic and Potential Energy</a> 
+        <a class="brm-link" href="../kinetic-and-potential-energy/" target="_blank">Kinetic and Potential Energy</a> 
         (advanced section), there are several types of kinetic energy (KE). One type is translational KE, which is
         the energy due to the movement of the object across a distance (for example, a ball sliding down a ramp).
         The faster an object moves, the greater its translational KE is.
@@ -194,7 +189,7 @@
       <div>
 
 
-        <img class="img-centered" width="600" src="Ball_AnimationRevised7.gif" />
+        <img class="img-centered" src="Ball_AnimationRevised7.gif" width="600"/>
 
 
           <p>
@@ -213,15 +208,15 @@
           be true about the speed of the ball right at the bottom of the ramps? (Hint: apply the law of conservation of
           energy.)
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) The ball on the high-friction ramp will have a higher speed.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) The ball on the no-friction ramp will have a higher speed.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) The speeds of the balls will be the same.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I really don't know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's right! If the ball slides rather than rolls, it will only have translational kinetic energy. So, based on the conservation
           of energy, it will have more translational kinetic energy than a ball that is rolling down the same ramp (which
@@ -237,7 +232,7 @@
       </form>
     </div>
 
-    <div id="page7" class="page">
+<div class="page" id="page7">
 
       <p>
         <b>Advanced!!:</b> The acceleration of a solid sphere rolling down an incline without slipping. <b>(This
@@ -246,7 +241,7 @@
      <br/>
       <div>
 
-      <img class="img-centered" width="600" src="Ball_AnimationRevised7.gif" />
+      <img class="img-centered" src="Ball_AnimationRevised7.gif" width="600"/>
         <div>
           <p>
             The animation above shows a ball
@@ -404,7 +399,7 @@
           a ramp would be less than the acceleration of a ball sliding down another ramp (identical to the first ramp,
           but with less friction). Explain why.</b>
         <textarea></textarea><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Thanks for your response!
         </div>
@@ -412,15 +407,21 @@
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
     <h3>Table of Contents: Friction unit</h3>
     <ul>
     <li><a href="#top" onclick="tocPageJump(1)">What is Friction?</a></li>
@@ -433,24 +434,32 @@
     </ul>
   </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

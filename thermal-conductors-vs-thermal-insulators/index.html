@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thermal Conductors &amp; Insulators</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
-
-
-
-  <style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Thermal Conductors &amp; Insulators</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+<style>
     #insulators_conductors {
       text-align: center;
       margin-left: auto;
@@ -46,40 +44,39 @@
     }
   </style>
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Thermal Conductors &amp; Insulators</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Thermal Conductors &amp; Insulators</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         You may have noticed that when
         you touch different objects in the same room, some feel warmer and others feel cooler. Metals tend to feel
@@ -87,12 +84,12 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="Conductors.jpg" width="800" alt="conductors, metal and wood" />
+      <img alt="conductors, metal and wood" class="img-centered" src="Conductors.jpg" width="800"/>
      <br/>
 
       <p>
         Many people think that this is because they are at different temperatures. But they are actually the same
-        temperatures: the temperature of the room they are in, usually about 72&deg;F or 22&deg;C. 
+        temperatures: the temperature of the room they are in, usually about 72°F or 22°C. 
         The reason that some materials feel warmer and other materials feel cooler has to do with the type of
         materials they are: whether they are thermal conductors or thermal insulators.
       </p>
@@ -105,13 +102,13 @@
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <p>
         <b>Thermal conductors.</b> Some materials, including metals, are "thermal conductors." These materials are
-        good at transferring thermal energy. When you touch thermal conductors that are at room temperature (72&deg;F or 22&deg;C),
-        <a class="brm-link" target="_blank" href="../thermal-energy-heat-temp/">thermal energy</a> is transferred
-        from your hand (which is at your body temperature, about 98&deg;F or 36.7&deg;C) to the material. Because your hand loses thermal energy (that is, the particles that make up the surface of your
+        good at transferring thermal energy. When you touch thermal conductors that are at room temperature (72°F or 22°C),
+        <a class="brm-link" href="../thermal-energy-heat-temp/" target="_blank">thermal energy</a> is transferred
+        from your hand (which is at your body temperature, about 98°F or 36.7°C) to the material. Because your hand loses thermal energy (that is, the particles that make up the surface of your
         hand lose some of their speed), it feels cooler. 
       </p>
       <p>
@@ -133,7 +130,7 @@
       </p>
       <div>Insulating materials like glass, plastic, and Styrofoam are often used for drinking cups. This is because they
         keep cold drinks cold and hot drinks hot. </div>
-      <div><br /></div>
+      <div><br/></div>
       <p>
         The table below shows examples of materials that are better insulators and materials that
         are better conductors of thermal energy:
@@ -142,9 +139,7 @@
         <b>Examples of Thermal Insulators and Thermal Conductors</b>
       </p>
 
-      <table id="insulators_conductors"
-             cellspacing="0"
-             cellpadding="0">
+      <table cellpadding="0" cellspacing="0" id="insulators_conductors">
         <thead>
           <tr><th class="left-col">Insulators</th><th class="right-col">Conductors</th></tr>
         </thead>
@@ -161,17 +156,17 @@
      <br/>
 
       <p class="text-centered">
-        (<a class="brm-link" target="_blank" href="../periodic-table/">Click here for Periodic Table</a>.)
+        (<a class="brm-link" href="../periodic-table/" target="_blank">Click here for Periodic Table</a>.)
       </p>
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <p>Check your understanding...</p>
 
       <p class="text-centered">
-        (<a class="brm-link" target="_blank" href="../periodic-table/">Click here for Periodic Table</a>.)
+        (<a class="brm-link" href="../periodic-table/" target="_blank">Click here for Periodic Table</a>.)
       </p>
 
      <br/>
@@ -179,14 +174,14 @@
       <!-- Quiz: Choice -->
       <form class="quiz_choice quiz">
         <b>Q1: What is the main reason that some materials are better thermal conductors than other materials?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) They have crystal-like structures.</div><br/>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) Their particles (atoms & molecules) absorb energy. </div><br/>
-        <input type="radio" name="question" value="correct">
-        <div class="label">c) Their particles (atoms & molecules) change speeds more easily. </div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Their particles (atoms &amp; molecules) absorb energy. </div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) Their particles (atoms &amp; molecules) change speeds more easily. </div><br/>
         
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! The particles of materials that are good thermal conductors more easily speed up (or slow down) when they come in contact 
           with hotter/cooler objects or other energy sources (like light). So, (c) is the correct answer.
@@ -197,7 +192,7 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
 
       <!-- Quiz: Choice -->
@@ -205,15 +200,15 @@
         <b>Q2: For your science experiment, you put a block made of aluminum and an identical-sized block of wood in the sun for 10 minutes. You then 
           measure their temperatures (using an infared thermometer). Which of the following will be true?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) The wood block will be warmer.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) The aluminum block will be warmer.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) They will be the same temperature! </div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I don't know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! Aluminum is a better thermal conductor than wood. This means that light from the sun will more easily cause aluminum 
           atoms to move around faster compared to atoms of wood. So the temperature of the aluminum block will increase faster than 
@@ -234,25 +229,25 @@
             aluminum foil, and the other in the same amount of plastic wrap. Your mom drives you to your friend's house
             (30 minutes away) while you hold both ice cream containers in your hands. Which of the following is most likely
             true:</b>
-          <input type="radio" name="question" value="correct">
+          <input name="question" type="radio" value="correct"/>
           <div class="label">a) More ice cream wrapped in aluminum foil will be melted.</div><br/>
-          <input type="radio" name="question" value="incorrect">
+          <input name="question" type="radio" value="incorrect"/>
           <div class="label">b) More ice cream wrapped in plastic wrap will be melted.</div><br/>
-          <input type="radio" name="question" value="incorrect">
+          <input name="question" type="radio" value="incorrect"/>
           <div class="label">c) The ice cream will be melted the same amount in both containers. </div><br/>
-          <input type="radio" name="question" value="incorrect">
+          <input name="question" type="radio" value="incorrect"/>
           <div class="label">d) I really don't know.</div><br/>
-          <input type="radio" name="question" value="incorrect">
+          <input name="question" type="radio" value="incorrect"/>
           <div class="label">e) Other.</div><br/>
-          <button type="submit" class="submit-btn">Submit</button>
+          <button class="submit-btn" type="submit">Submit</button>
           <div class="feedback-correct feedback">
             You're right! More of the ice cream that is wrapped in aluminum foil will have melted. This is because more thermal energy from your hand 
-            (which is at about 98&deg;F or 37&deg;C) will be transferred to the ice cream during the trip. As a result, the ice cream wrapped in aluminum foil will 
+            (which is at about 98°F or 37°C) will be transferred to the ice cream during the trip. As a result, the ice cream wrapped in aluminum foil will 
             melt more. So, (a) is the correct answer.
           </div>
           <div class="feedback-incorrect feedback">
             Well actually, more of the ice cream that is wrapped in aluminum foil will have melted. This is because more thermal energy from your hand 
-            (which is at about 98&deg;F or 37&deg;C) will be transferred to the ice cream during the trip. As a result, the ice cream wrapped in aluminum foil will 
+            (which is at about 98°F or 37°C) will be transferred to the ice cream during the trip. As a result, the ice cream wrapped in aluminum foil will 
             melt more. So, (a) is the correct answer.
 
           </div>
@@ -262,32 +257,46 @@
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-  </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
-  </div>
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+            
+        </div>
 
-</body>
+        
 
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

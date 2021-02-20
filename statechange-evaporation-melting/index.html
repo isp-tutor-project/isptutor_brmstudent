@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>State Change:Evaporation and Melting</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>State Change:Evaporation and Melting</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-    gtag('config', 'UA-18104655-6');
-  </script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>State Change: Evaporation and Melting</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical
-        Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>State Change: Evaporation and Melting</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
 
       <p>
         <b>What is Evaporation?</b> Say you are heating a pot of water on the stove (shown below).
@@ -61,12 +60,12 @@
         temperature is increasing.
       </p>
 
-      <img class="img-centered" src="pot-883036_1920.jpg" alt="pot of water" />
-      <br />
+      <img alt="pot of water" class="img-centered" src="pot-883036_1920.jpg"/>
+      <br/>
 
       <p>
         Soon, some water molecules move fast enough to overcome the pull from
-        <a class="brm-link" target="_blank" href="../electric-force/">electric forces</a>
+        <a class="brm-link" href="../electric-force/" target="_blank">electric forces</a>
         of other water molecules around them. They also have to overcome the electric forces of the water molecules
         at the surface. When they are moving fast enough, the H<sub>2</sub>O molecules leave the pot and move into the
         air.
@@ -74,8 +73,8 @@
 
 
 
-        <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
-          <option value="#ffffff" selected disabled>(Select one)</option>
+        <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+          <option disabled="" selected="" value="#ffffff">(Select one)</option>
           <option value="#ed8587">in a solid state</option>
           <option value="#ed8587">in a liquid state</option>
           <option value="#11bf7a">in a gas state</option>
@@ -87,27 +86,27 @@
         When a liquid like water evaporates, the molecules themselves do not change when they move from the pot into
         the air. They are still H<sub>2</sub>O molecules (two hydrogen atoms and one oxygen atom). Because the
         molecules don't change, this is a
-        <a class="brm-link" target="_blank" href="../chemicalvs-physicalreactions/">physical reaction</a>.
+        <a class="brm-link" href="../chemicalvs-physicalreactions/" target="_blank">physical reaction</a>.
       </p>
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       Check your understanding...
 
-      <br />
+      <br/>
       <form class="quiz_choice quiz">
         <b>Q1: Which of the following statements do you think is true?</b>
-        <input type="radio" name="question" value="correct">
-        <div class="label">a) Water evaporates faster when it is at a higher temperature.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) Water evaporates faster when it is at a lower temperature.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) Water evaporates equally fast at higher and lower temperatures.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) There is no way to predict this relationship.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) Water evaporates faster when it is at a higher temperature.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Water evaporates faster when it is at a lower temperature.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Water evaporates equally fast at higher and lower temperatures.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) There is no way to predict this relationship.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! If water is at a higher temperature, it will evaporate faster.
         </div>
@@ -116,18 +115,18 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q1.5: Why does water evaporate faster when it is at a higher temperature?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) It has more heat to make it lighter and move up into the atmosphere.</div><br />
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) It has more heat to make it lighter and move up into the atmosphere.</div><br/>
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) Its molecules move around faster and can escape the pull of other water molecules.</div>
-        <br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) The water molecules move so fast that they turn into pure energy.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) The water molecules move so fast that they turn into pure energy.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! If water is at a higher temperature, the molecules that make up the water are moving around faster. So,
           they have more energy
@@ -148,7 +147,7 @@
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <p>
         <b>Analogies for Evaporation.</b> Evaporation is similar to a rocket blasting off and escaping from the
@@ -159,8 +158,8 @@
         together).
       </p>
 
-      <img class="img-centered" src="spaceshuttletakingoff.jpg" alt="space shuttle taking off" />
-      <br />
+      <img alt="space shuttle taking off" class="img-centered" src="spaceshuttletakingoff.jpg"/>
+      <br/>
 
       <p>
         Another analogy for evaporation is rolling a magnetic steel ball on a table past a magnet. If you roll the
@@ -173,11 +172,11 @@
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
 
       <p>
         <b>Evaporation of salt water.</b> In the
-        <a class="brm-link" target="_blank" href="../dissolving/">unit on dissolving</a>,
+        <a class="brm-link" href="../dissolving/" target="_blank">unit on dissolving</a>,
         we talked about how salt (and also sugar) dissolve in water. But what happens when salt water evaporates?
         Let's say we have a glass of salt water sitting on a window sill. We forget about it and discover it several
         weeks later. What will we find?
@@ -194,33 +193,32 @@
       </p>
 
       <a href="../statechange-evaporation-melting/RemainingSaltInGlass.jpg?attredirects=0/index.html">
-        <img class="img-centered" src="RemainingSaltInGlass.jpg" width="320" height="240"
-          alt="glass showing remaining salt" />
+        <img alt="glass showing remaining salt" class="img-centered" height="240" src="RemainingSaltInGlass.jpg" width="320"/>
       </a>
-      <br />
+      <br/>
 
       <p>
         <b>Why does the salt stay behind?</b> One reason that the NaCl molecules will not evaporate even though
         H<sub>2</sub>O molecules do is because they are much heavier than H<sub>2</sub>O molecules. If we look at the
-        <a class="brm-link" target="_blank" href="../periodic-table/">Periodic Table of Elements</a>, we see that the
+        <a class="brm-link" href="../periodic-table/" target="_blank">Periodic Table of Elements</a>, we see that the
         atomic mass of Na is 23 "atomic mass units" or amu. And Cl is about 35 amu. 
       </p>
       <p>
-        <li>So, one molecules of NaCl is 23 amu + 35 amu = 58 amu.</li>
-      </p>
+        </p><li>So, one molecules of NaCl is 23 amu + 35 amu = 58 amu.</li>
+      <p></p>
       <p>
         In H<sub>2</sub>O, there are two H atoms. Each H atom is only 1 amu. There is one O atom, which is 16 amu.
       </p>
       <p>
-        <li>So, one H<sub>2</sub>O molecule is only 18 amu.</li>
-      </p>
+        </p><li>So, one H<sub>2</sub>O molecule is only 18 amu.</li>
+      <p></p>
       <p>
         Because NaCl molecules are heavier, they are pulled downward by the Earth's gravity more strongly than
         H<sub>2</sub>O molecules. So, they do not escape from the glass and evaporate into the air.
       </p>
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
       <p>
         <b>What is Melting?</b> When thermal energy is transferred to ice, the H<sub>2</sub>O molecules
         begin to vibrate faster and faster. Some of the molecules have enough energy to overcome their bonds with
@@ -230,14 +228,13 @@
         H<sub>2</sub>O molecules
         are now moving around independently, kind of "slithering" past each other. But there are still attractions
         between H<sub>2</sub>O molecules because of electric forces (see the
-        <a class="brm-link" target="_blank" href="../atoms-molecules/">Atoms Unit</a>
+        <a class="brm-link" href="../atoms-molecules/" target="_blank">Atoms Unit</a>
         for more information).
       </p>
 
-      <br />
-      <img class="img-centered" src="FinalWaterMoleculesGraphic.jpg" width="800"
-        alt="states of matter-solid, liquid, gas" />
-      <br />
+      <br/>
+      <img alt="states of matter-solid, liquid, gas" class="img-centered" src="FinalWaterMoleculesGraphic.jpg" width="800"/>
+      <br/>
 
       <p>
         This simulation below shows the motion of molecules and the distance between the molecules when they go from
@@ -245,18 +242,13 @@
         by a <u>lot</u> so we can see them in this simulation.
       </p>
 
-      <br />
+      <br/>
 
-      <div style="display:block;text-align:center;margin-right:auto;margin-left:auto;width:480px;height:320px"
-        data-scrollable="false">
+      <div data-scrollable="false" style="display:block;text-align:center;margin-right:auto;margin-left:auto;width:480px;height:320px">
         <div style="position: relative; width: 600px; height: 400px">
-          <a href="https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_en.html"
-            style="text-decoration: none">
-            <img
-              src="https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics-600.png"
-              alt="States of Matter: Basics" style="border: none;" width="400" height="300" />
-            <div
-              style="position: absolute; width: 200px; height: 80px; left: 50px; top: 60px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);">
+          <a href="https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_en.html" style="text-decoration: none">
+            <img alt="States of Matter: Basics" height="300" src="https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics-600.png" style="border: none;" width="400"/>
+            <div style="position: absolute; width: 200px; height: 80px; left: 50px; top: 60px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);">
             </div>
             <table style="position: absolute; width: 200px; height: 80px; left: 50px; top: 60px;">
               <tbody>
@@ -275,10 +267,10 @@
 
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
 
       <a href="../statechange-evaporation-melting/RemainingSaltInGlass.jpg?attredirects=0/index.html">
-        <img class="img-centered" src="HeadsUpCone.png" width="200">
+        <img class="img-centered" src="HeadsUpCone.png" width="200"/>
       </a>
 
       <p>
@@ -306,10 +298,10 @@
         </li>
       </ul>
 
-      <br />
+      <br/>
     </div>
 
-    <div id="page7" class="page">
+<div class="page" id="page7">
       <p><b>Check your final understanding...</b></p>
 
       <form class="quiz_open quiz">
@@ -317,8 +309,8 @@
           degree
           C room. (Hint: Think about what happens when molecules of air collide with H<sub>2</sub>O molecules of the ice
           cube.)</b>
-        <textarea></textarea><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <textarea></textarea><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           The ice will melt faster in the warmer room because the air molecules are moving around faster, on average, in
           the warmer
@@ -329,19 +321,19 @@
           crystal ice.
         </div>
       </form>
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q3: Which is true about melting and evaporation?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) They are both chemical processes.</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">b) They are both physical processes.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) Melting is chemical and evaporation is physical.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) Melting is physical and evaporation is chemical.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) They are both chemical processes.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) They are both physical processes.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Melting is chemical and evaporation is physical.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) Melting is physical and evaporation is chemical.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! Since the molecules stay the same when they evaporate or melt, both processes are physical.
         </div>
@@ -350,29 +342,29 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q4: What happens to H<sub>2</sub>O molecules of ice as the temperature of the ice increases from -20 degrees
           C to 0 degrees
           C.</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Nothing. The H<sub>2</sub>O molecules are in a solid state (ice) in this temperature
           range. They don't
-          move.</div><br />
-        <input type="radio" name="question" value="incorrect">
+          move.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Nothing. The H<sub>2</sub>O molecules move a little (and the same amount) in this
           temperature
-          range.</div><br />
-        <input type="radio" name="question" value="correct">
+          range.</div><br/>
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) The H<sub>2</sub>O molecules will move faster as the temperature increases from -20 to 0
           degrees
-          C.</div><br />
-        <input type="radio" name="question" value="incorrect">
+          C.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) The H<sub>2</sub>O molecules will move slower as the temperature increases from -20 to 0
           degrees
-          C.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+          C.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The H<sub>2</sub>O molecules will slow as the temperature increases from -20 to 0 degrees C. (c) is the
           correct answer.
@@ -383,7 +375,7 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_open quiz">
         <b>
@@ -391,8 +383,8 @@
           degree C) than
           an ice cube that is -10 degree C. Hint: Think about the collisions between air molecules and H<sub>2</sub>O
           molecules.</b>
-        <textarea></textarea><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <textarea></textarea><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           The H<sub>2</sub>O molecules in the higher-temperature ice cube will be vibrating faster in the crystal ice
           structure. So, they do not
@@ -401,19 +393,25 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: State Change: Evaporation &amp; Melting unit</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">What is Evaporation?</a></li>
@@ -426,27 +424,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br />
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

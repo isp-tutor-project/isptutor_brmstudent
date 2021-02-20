@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Electric Force</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Electric Force</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-    gtag('config', 'UA-18104655-6');
-  </script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Electric Force</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Electric Force</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>Electric force.</b> Oppositely-charged atomic particles (protons and electrons) attract each other.
         Similarly-charged particles repel (or push each other away). We call these forces between charged particles
@@ -60,8 +60,7 @@ to be attracted or repulsed by the electric force. They can be far from each oth
         In the pictures below, the arrows show the direction of the electric force on each particle caused by the other charged particle.
       </p>
 
-      <img class="img-centered" src="ElectricforceUnit.png" width="350" height="400"
-           alt="image showing attraction of charged particles" />
+      <img alt="image showing attraction of charged particles" class="img-centered" height="400" src="ElectricforceUnit.png" width="350"/>
       <br/>
 
       <p>
@@ -82,7 +81,7 @@ to be attracted or repulsed by the electric force. They can be far from each oth
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <p>
         <b>Electric forces also affect atoms.</b> Electric forces also cause oppositely-charged atoms to attract each
@@ -93,11 +92,11 @@ to be attracted or repulsed by the electric force. They can be far from each oth
         (table salt) molecule will form. This is shown in the picture below. 
       </p>
 
-      <img class="img-centered" src="NaCl_molecule2.png" width="350" alt="NaCl molecule"/>
+      <img alt="NaCl molecule" class="img-centered" src="NaCl_molecule2.png" width="350"/>
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <p>
         <i><b>Everyday example of electric force.</b></i> Aside from being made of atoms, you almost certainly have
@@ -107,7 +106,7 @@ to be attracted or repulsed by the electric force. They can be far from each oth
         signs in the picture on the right). Your hair is positively charged (represented as positive signs). So your
         hair will be attracted to the balloon through the
 
-        <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
+        <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
           <option value="#ffffff">(Select one)</option>
           <option value="#ed8587">gravitational</option>
           <option value="#11bf7a">electric</option>
@@ -118,12 +117,11 @@ to be attracted or repulsed by the electric force. They can be far from each oth
         force.
       </p>
 
-      <img class="img-centered" src="StaticElectricity_revisedimage2.jpg" height="400"
-           alt="hair sticking to balloon because of static electricity" />
+      <img alt="hair sticking to balloon because of static electricity" class="img-centered" height="400" src="StaticElectricity_revisedimage2.jpg"/>
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <strong>
         Test your knowledge about protons, electrons and neutrons: play the Subatomic Particle Game!
       </strong>
@@ -131,7 +129,7 @@ to be attracted or repulsed by the electric force. They can be far from each oth
      <br/><br/><br/>
 
       <div class="text-centered">
-        <iframe src="https://isp-tutor-project.github.io/demo/games/subatomicparticle/" width="890" height="605">
+        <iframe height="605" src="https://isp-tutor-project.github.io/demo/games/subatomicparticle/" width="890">
         </iframe>
       </div>
 
@@ -144,35 +142,46 @@ to be attracted or repulsed by the electric force. They can be far from each oth
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-  </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br />
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+            
+        </div>
 
-</body>
+        
 
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

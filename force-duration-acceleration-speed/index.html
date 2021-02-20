@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Force, Duration and Speed</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Force, Duration and Speed</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Force, Duration and Speed</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Force, Duration and Speed</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>Relationship between force, mass, and acceleration.</b> The acceleration of an object (in a given direction)
         is caused by (a) the net force acting on the object in that direction and (b) the mass of the object. This is
         Newton's second law. If the net force acting on an object in a direction is zero, then the object's
         acceleration in that direction would also be zero. You can easily check for yourself by plugging zero in for
         the net force into
-        <a class="brm-link" target="_blank" href="../forces-and-motion-newton-s-second-law/">Newton's Second Law</a>
+        <a class="brm-link" href="../forces-and-motion-newton-s-second-law/" target="_blank">Newton's Second Law</a>
         equation (below) to find the acceleration:
       </p>
 
       <br/>
-      <img class="img-centered" width="500" src="NSL_AccDef.png" />
+      <img class="img-centered" src="NSL_AccDef.png" width="500"/>
 
      <br/>
 
     </div>
 
-
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <b>Check your understanding...</b>
 
     <form class="quiz_choice quiz">
       <b>Q1: An object is moving horizontally at a speed of 10 m/s. The only forces acting on the object are gravity and the force of the ground pushing upward. The object's speed will:</b>
-      <input type="radio" name="question" value="incorrect">
+      <input name="question" type="radio" value="incorrect"/>
       <div class="label">a) Increase</div><br/>
-      <input type="radio" name="question" value="incorrect">
+      <input name="question" type="radio" value="incorrect"/>
       <div class="label">b) Decrease</div><br/>
-      <input type="radio" name="question" value="correct">
+      <input name="question" type="radio" value="correct"/>
       <div class="label">c) Stay the same</div><br/>
-      <input type="radio" name="question" value="incorrect">
+      <input name="question" type="radio" value="incorrect"/>
       <div class="label">d) More information is needed to answer.</div><br/>
-      <button type="submit" class="submit-btn">Submit</button>
+      <button class="submit-btn" type="submit">Submit</button>
       <div class="feedback-correct feedback">
           Right! The object is moving in the horizontal direction.
           The only forces acting on the object are in the vertical direction.
@@ -96,10 +95,7 @@
    <br/>
   </div>
 
-
-
-
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <p>
         If the net force acting on the object in a given direction is not equal to zero, the object's speed will
         change, or it will accelerate, in that direction <i>for as long as the force acts on the object</i>. 
@@ -114,8 +110,7 @@
       </p>
 
 
-      <img class="img-centered" src="ForceAtPoints.png" width="800"
-           alt="image showing speed of object over time"/>
+      <img alt="image showing speed of object over time" class="img-centered" src="ForceAtPoints.png" width="800"/>
 
       <p>
         Because the object was pushed by a constant force (10 N) all the way across the ice, the acceleration of the
@@ -128,15 +123,12 @@
      <br/>
 
       <a href="../force-duration-acceleration-speed/SpeedTimeGraph2.png?attredirects=0/index.html">
-        <img class="img-centered" src="SpeedTimeGraph2.png" width="400" height="320"
-             alt="graph showing constant acceleration" />
+        <img alt="graph showing constant acceleration" class="img-centered" height="320" src="SpeedTimeGraph2.png" width="400"/>
       </a>
 
     </div>
 
-
-
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>No force means there is no acceleration!</b>
       </p>
@@ -154,13 +146,13 @@
 
       <form class="quiz_choice quiz">
         <b>Q2: True or false: After you throw a ball (and you are no longer touching it), there will still be some "leftover" force from your throw acting on the ball.</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) True</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) False</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) I have no idea.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
             Right! While you are touching the ball, your hand is exerting a force on the ball (pushing the ball).
             But once you let the ball go, you are no longer pushing on the ball.
@@ -175,23 +167,22 @@
 
       <br/>
 
-      <img class="img-centered" src="ForceAtPoints.png" width="800"
-           alt="image showing speed of object over time"/>
+      <img alt="image showing speed of object over time" class="img-centered" src="ForceAtPoints.png" width="800"/>
 
       <form class="quiz_choice quiz">
         <b>
             Q3: In the scenario of Example 1, shown above, in Case A, the force acts on the object from the starting point to point A.
             In Case B, the same force acts on the object from the starting point to point B.
             In which case would the speed of the object be greater at point D?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Case A</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) Case B</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) The speeds would be the same in both Cases.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I don't know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
             You're right! The object would accelerate (only) while the force is acting on the object.
             So, the force acts on the object for a longer period of time in Case B than Case A.
@@ -207,7 +198,7 @@
       <br/>
 
 
-        <img src="SpeedVsPosition.GIF" class="img-centered" />
+        <img class="img-centered" src="SpeedVsPosition.GIF"/>
 
 
      <br/><br/>
@@ -216,15 +207,15 @@
         <b>Q4: In the scenario of Example 1 above, a constant force pushes on the object to the right from its starting position to point B.
           After point B, there is no horizontal force acting on the body.
           Which of the lines on the graph to the left best shows the speed of the object from its starting point to point D?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) L1</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) L2</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) L3</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) L4</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
             That's right! The object would accelerate (or increase in speed) while the force is acting on the object.
             So, the object's speed would increase from its starting point to point B. At point B, there are no forces acting on the object in the horizontal direction.
@@ -239,70 +230,46 @@
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-  </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
-  </div>
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+            
+        </div>
 
-</body>
+        
 
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

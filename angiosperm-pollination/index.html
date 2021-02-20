@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Angiosperm Pollinators</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Angiosperm Pollinators</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Angiosperm Pollinators</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Angiosperm Pollinators</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
 
       <b>Summary.</b> Pollination (in a nutshell) is the movement of pollen from the
-        anther of one flower to the stigma of (usually) a different flower. Plant pollination &mdash; and consequently, reproduction &mdash;
-        depends to some extent on animals (as well as humans, the wind, etc.). For angiosperms &mdash; plants with flowers that produce seeds &mdash;
+        anther of one flower to the stigma of (usually) a different flower. Plant pollination — and consequently, reproduction —
+        depends to some extent on animals (as well as humans, the wind, etc.). For angiosperms — plants with flowers that produce seeds —
         animals play a key role in pollination. Bees in particular are important pollinators.
 
 <br/>
-      <img class="img-centered" src="Bee_Pollen.jpg" width="320" height="269" alt="bee pollen" />
+      <img alt="bee pollen" class="img-centered" height="269" src="Bee_Pollen.jpg" width="320"/>
      <br/>
       <p>Bees need nectar from flowers to make honey. But when they go to flowers to get nectar, they end up getting pollen on their bodies (as shown above).
         They transfer this pollen to other flowers they visit (to get more nectar).
@@ -62,7 +62,7 @@
 
     </div>
 
-      <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
         <b>Bees get nectar from flowers.</b>
         Bees (as well as other insects and birds) are attracted to the colorful petals of flowers and the nectar
@@ -75,7 +75,7 @@
         by releasing nectar. Nectar attracts visitors such as bees and other insects, and birds.
       </p>
      <br/>
-      <img class="img-centered" src="Hellebore-Flowerrevised2.jpg" alt="Flower Diagram" width="600" />
+      <img alt="Flower Diagram" class="img-centered" src="Hellebore-Flowerrevised2.jpg" width="600"/>
      <br/>
       <p>
         As bees or other visitors push their bodies through the flowers to get the nectar, they
@@ -83,7 +83,7 @@
         body (as shown below). As they move to the next plant, they carry this pollen.
         Some pollen may be transferred to the stigma of the flower, where it may tunnel down
         the stigma to fertilize an egg cell inside the ovary. (See the 
-        <a class="brm-link" target="_blank" href="../angiosperm-reproduction/index.html">Angiosperm Reproduction</a> 
+        <a class="brm-link" href="../angiosperm-reproduction/index.html" target="_blank">Angiosperm Reproduction</a> 
         unit for more details.)
       </p>
       <p>
@@ -93,7 +93,7 @@
         This behavior helps the reproduction of this species by pollinating its flowers. 
       </p>
 
-      <img class="img-centered" src="BeeWPollen.jpg" width="320" height="269" alt="bee pollen" />
+      <img alt="bee pollen" class="img-centered" height="269" src="BeeWPollen.jpg" width="320"/>
 
       <p>
         The picture of the bee above shows how bees can collect quite a bit of pollen on their bodies while foraging
@@ -111,11 +111,11 @@
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <h4>How do honey bees reach the nectar inside flowers?</h4>
       <div style="float:left;margin-right:10px">
-        <img src="bee-2462136_1920.jpg" width="400" height="266" alt="bee pollinating" />
-        <br />
+        <img alt="bee pollinating" height="266" src="bee-2462136_1920.jpg" width="400"/>
+        <br/>
       </div>
       <p>
         In this picture, you can see part of the tongue (proboscis) of the bee as it feeds on the flower.
@@ -135,8 +135,7 @@
      <br/><br/>
     </div>
 
-
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>How honey is made from nectar.</b> After a honey bee sucks nectar into its honey "stomach", special enzymes break down the complex sugars in the
         nectar into smaller components. Two things can happen to these smaller sugars: they are either (a) digested as
@@ -146,7 +145,7 @@
       </p>
 
 
-      <img class="img-centered" src="bees-352206_1920.jpg" width="400" height="266" alt="bees_making_honey" />
+      <img alt="bees_making_honey" class="img-centered" height="266" src="bees-352206_1920.jpg" width="400"/>
       <p>
         Finished honey is a thick substance that has less water than the nectar and has smaller, less complex sugars
         than the nectar. When the honey is done, bees close the cells of the honeycombs with wax called beeswax. This
@@ -157,7 +156,7 @@
 
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
       <h4>How do honey bees know which flower to visit and which is empty of nectar?</h4>
 
       <p>
@@ -165,7 +164,7 @@
         shows that bees are able to detect which flower was already visited and thus may be empty
         of nectar. They tend to avoid those flowers. This all has to do with a process called “static
         electricity” caused by
-        <a class="brm-link" target="_blank" href="../electric-force/index.html">electric forces</a>.
+        <a class="brm-link" href="../electric-force/index.html" target="_blank">electric forces</a>.
       </p>
       <p>
         When you drag your feet on a carpet, electrons are transferred from the carpet to your
@@ -174,9 +173,8 @@
         similar thing happens to flowers and bees.
       </p>
 
-      <img class="img-centered" src="BeeDiagram.jpg" width="800"
-        alt="Diagram_of_electrical_charges_between_bees_and_flowers" />
-      <br />
+      <img alt="Diagram_of_electrical_charges_between_bees_and_flowers" class="img-centered" src="BeeDiagram.jpg" width="800"/>
+      <br/>
 
       <p>
         Bees and other things that fly through air lose electrons. As a result, they become positively
@@ -191,15 +189,15 @@
 
       <form class="quiz_choice quiz">
         <b>Q1: Which would be true of the electrical force between a bee’s body and a recently visited flower?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) The electrical force would be attractive.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) The electrical force would be repulsive.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) The electrical force would be neutral (or zero).</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) It is impossible to know from this information.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! When bees fly, they lose electrons and become slightly positively charged. A recently-visited flower
           also has a slightly positive charge. Because like charges repel each other, the flower and bee would repel
@@ -213,7 +211,7 @@
       </form>
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
       <h4>What type of food do honey bees collect during a foraging trip?</h4>
 
       <p>
@@ -224,18 +222,24 @@
         energy to produce and lay eggs.
       </p>
 
-      <img class="img-centered" src="BeeWPollen.jpg" width="320" height="269" alt="bee_covered_in_pollen" />
+      <img alt="bee_covered_in_pollen" class="img-centered" height="269" src="BeeWPollen.jpg" width="320"/>
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Angiosperm Pollination</h3>
       <ul>
       <li><a href="#top" onclick="tocPageJump(1)">Summary: How bees help pollination</a></li>
@@ -247,27 +251,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

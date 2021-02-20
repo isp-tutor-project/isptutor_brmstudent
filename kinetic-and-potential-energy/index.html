@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kinetic and Potential Energy</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kinetic and Potential Energy</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-    gtag('config', 'UA-18104655-6');
-  </script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Kinetic and Potential Energy</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical
-        Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Kinetic and Potential Energy</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>What is Energy?</b> Energy in general is a measure of the <i><b>motion</b></i> of objects.
       </p>
@@ -64,15 +63,14 @@
         </li>
         <li>
           Potential energy is the amount of motion an object can have (in the future) because it is being acted on by
-          a <b>net</b> force. (If you don't know what "net force" means, <a class="brm-link" target="_blank"
-            href="../net-force/">click here</a>.)
+          a <b>net</b> force. (If you don't know what "net force" means, <a class="brm-link" href="../net-force/" target="_blank">click here</a>.)
           For example, electrons are pulled by protons toward the nucleus of atoms. Because of this,
           electrons have the "potential" to move even faster.
         </li>
       </ul>
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <b>Types of Kinetic Energy</b><br/>
      <br/>
@@ -96,10 +94,9 @@
         <li>Below are some types of translational motion (and one other type of motion):</li>
       </ul>
 
-      <br />
-      <img class="img-centered" src="TranslationalMotion.png" width="800"
-        alt="Image showing examples of translational motion" />
-      <br />
+      <br/>
+      <img alt="Image showing examples of translational motion" class="img-centered" src="TranslationalMotion.png" width="800"/>
+      <br/>
 
       <p>
         A final type of non-translational kinetic energy is <b>vibrational motion.</b> For this type of kinetic energy,
@@ -109,9 +106,9 @@
       <p class="text-centered">An example of vibrational motion is shown below.</p>
 
       <a href="../kinetic-and-potential-energy/VibrationalMotion.GIF?attredirects=0/index.html">
-        <img class="img-centered" src="VibrationalMotion.GIF" width="400" height="148" />
+        <img class="img-centered" height="148" src="VibrationalMotion.GIF" width="400"/>
       </a>
-      <br />
+      <br/>
 
       <p class="text-left">
         In the example above, the "object" is composed of two boxes and a spring between them. The boxes both move
@@ -123,17 +120,17 @@
         of the molecules. 
       </p>
 
-      <br />
+      <br/>
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <b>Types of kinetic energy: Understanding Check...</b>
 
      <br/><br/>
 
-      <img class="img-centered" src="box_spring.GIF" />
+      <img class="img-centered" src="box_spring.GIF"/>
 
      <br/>
       <!--<br/> -->
@@ -144,15 +141,15 @@
           Q1: In the picture above, a child attaches a weight to a spring hanging from the ceiling. Then, the
           child pulls down on the weight.
           The weight moves up and down without turning. Which is true of the weight's motion?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) The weight has both translational and rotational motion.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) The weight only has rotational motion.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) The weight only has translational motion.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) The weight has neither translational nor rotational motion.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The weight as a whole moves up and down. Therefore, it has translational motion. The weight does
           not rotate.
@@ -172,15 +169,15 @@
           Q2: Two boys, Tom and Jerry, decide to go for a jog together. Tom has a mass of 68 kg (150 lbs). Jerry has a
           mass of 34 kg (75 lbs). They run at exactly the same speed.
           Which of the following is true of their (translational) kinetic energies while they are running?</b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) Tom's kinetic energy is twice Jerry's.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Jerry's kinetic energy is twice Tom's.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) Tom's kinetic energy is four times Jerry's.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) It's impossible to know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's right! Kinetic energy is equal to mass times velocity squared (KE = 1/2*m*v^2.) Tom's mass is twice
           Jerry's mass.
@@ -197,7 +194,7 @@
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>((Advanced: Due to new (probably unfamiliar) terminology)) </b>
       </p>
@@ -216,8 +213,8 @@
 
       <div style="text-align: center">
 
-        <img class="center" src="SpinningSphere.png" alt="Earth Axis" />
-        <br />
+        <img alt="Earth Axis" class="center" src="SpinningSphere.png"/>
+        <br/>
       </div>
 
 
@@ -275,8 +272,8 @@
 
       <ul>
         <li>
-          This is because when an object rolls one revolution, or 360 degrees &mdash; which is equal to 2
-          <span class="font-times">π</span> radians (trust us for now) &mdash; it will
+          This is because when an object rolls one revolution, or 360 degrees — which is equal to 2
+          <span class="font-times">π</span> radians (trust us for now) — it will
           travel a distance equal to the circumference of the sphere, 2
           <span class="font-times">π</span><b>r</b> (where <b>r</b> is the radius of the
           sphere) or <span class="font-times">π</span><b>d</b>(where <b>d</b> is the
@@ -298,20 +295,20 @@
       </ul>
 
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q2A: How does the translational Kinetic Energy compare to the rotational Kinetic Energy (KE) of the solid
           sphere when it is rolling down an inclined plane?</b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) The translational KE is greater than the rotational.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) The rotational KE is greater than the translational.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) They are the same.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I have no idea</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Yes! The translational KE of a sphere is 1/2mv<sup>2</sup> (or 5/10mv<sup>2</sup>). The rotational KE of a
           sphere is 2/5mv<sup>2</sup> (or 4/10mv<sup>2</sup>). So, the translational KE is a bit (1/10) bigger. (a) is
@@ -324,17 +321,17 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <p style="margin-left:1in">
         <b>((End of advanced section))</b>
       </p>
 
-      <br />
+      <br/>
 
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
 
       <p>
         <b>Potential energy </b>is the <i>potential</i> for an object to move faster (or accelerate) because a
@@ -366,7 +363,7 @@
       </ul>
 
 
-      <br />
+      <br/>
 
 
 
@@ -379,11 +376,11 @@
         <li>The potential energy of an object (due to gravity) = <b>m</b> x <b>g</b> x <b>h</b></li>
       </ul>
 
-      <br />
+      <br/>
       <form class="quiz_open quiz">
         <b>Q2.1: What is the potential energy (due to gravity) of a 0.5 kg squirrel sleeping on the ground?</b>
         <textarea></textarea><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           There is no net force acting on the squirrel (the force of gravity down is equal to the force of the ground
           pushing up on the squirrel). So, the potential
@@ -396,7 +393,7 @@
           branch 10 meters above the
           ground?</b>
         <textarea></textarea><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           The potential energy of the squirrel due to gravity is equal to the product of the squirrel's mass (0.5 kg),
           acceleration due to gravity (about 10 m/s2),
@@ -405,14 +402,14 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_open quiz">
         <b>Q4: The squirrel climbs halfway up the tree, to a branch that is 5 meters above the ground. It slips and
           falls off of the branch. What is its potential
           energy (due to gravity) right when it starts to fall?</b>
         <textarea></textarea><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           The potential energy of the squirrel due to gravity is:<br/>
           PE = mass*height*g (acceleration due to gravity, about 10 m/s^2)
@@ -427,18 +424,18 @@
       <ul class="brm-list">
         <li>
           The relationship between potential and kinetic energy is discussed in more detail in the unit:
-          <a class="brm-link" target="_blank" href="../energy-general/">
+          <a class="brm-link" href="../energy-general/" target="_blank">
             Energy Can Change Forms But Must Be Conserved</a>.
         </li>
       </ul>
 
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
 
       <b>Understanding Check: Potential vs. Kinetic Energy:</b>
      <br/><br/>
-      <img class="img-centered" src="Spring_3TimePoints.PNG" width="700" />
+      <img class="img-centered" src="Spring_3TimePoints.PNG" width="700"/>
 
      <br/>
 
@@ -447,13 +444,13 @@
           point.
           What type(s) of energy does it have at this point?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Only kinetic energy.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Both kinetic and potential energy.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) Only potential energy.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Yes! The block is not moving at Time 1, so it has no kinetic energy. But the block has both gravity and the
           force of the
@@ -476,13 +473,13 @@
           acting on the block in the vertical (or any other!) direction.
           What type(s) of energy does the block have at this point?
         </b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) Only kinetic energy.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Both kinetic and potential energy.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) Only potential energy.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Good job! The block is moving at Time 2, so it has kinetic energy. Because there is no net force acting on the
           block at this point,
@@ -504,13 +501,13 @@
           pulling on the block (the upward force from the spring is greater than the downward force of gravity).
           What type(s) of energy does it have at this point?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Only kinetic energy.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Both kinetic and potential energy.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) Only potential energy.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Yes! The block is not moving at Time 3, so it does not have kinetic energy. However, there is a net force
           acting on the block,
@@ -529,16 +526,20 @@
     </div>
 
 
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
 
-    <div class="nav-toc-container">
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Kinetic &amp; Potential Energy unit</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">What is Energy? KE vs. PE.</a></li>
@@ -552,27 +553,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

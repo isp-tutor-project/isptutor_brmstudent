@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vascular Plants</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vascular Plants</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Vascular Plants</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Vascular Plants</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>Two major Types of Plants.</b> Plants can be divided into Vascular and Non-Vascular Plants. This unit
         discusses some important properties of Vascular plants.
       </p>
 
-      <img class="img-centered" src="PlantCategories_vascular_cropped.jpg" alt="chart showing categories of vascular plants" />
+      <img alt="chart showing categories of vascular plants" class="img-centered" src="PlantCategories_vascular_cropped.jpg"/>
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
 
       </p>
@@ -73,16 +74,16 @@
       </p>
      <br/>
 
-      <img class="img-centered" width="400" src="Revisedroot.png" />
-      <br />
+      <img class="img-centered" src="Revisedroot.png" width="400"/>
+      <br/>
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <p>
         <b>Roots.</b> Plants are held in the ground by their roots. The roots also absorb minerals and water in the
         soil. Plants need water (along with carbon dioxide, CO<sub>2</sub>) to make sugars during the process of
-        <a class="brm-link" target="_blank" href="../photosynthesis/index.html">photosynthesis</a>.
+        <a class="brm-link" href="../photosynthesis/index.html" target="_blank">photosynthesis</a>.
         Plants also need water to hold their bodies upright (since, unlike many animals, they don't have skeletons).
         This is why plants go limp if they don't get enough water. 
       </p>
@@ -94,9 +95,9 @@
 
   
 
-      <img class="img-centered" src="VascPlant2.jpg" alt="fibrous root_taproot root" width="400" height="305" />
+      <img alt="fibrous root_taproot root" class="img-centered" height="305" src="VascPlant2.jpg" width="400"/>
 
-      <br />
+      <br/>
 
       <p>
         Other plants—like carrots, beets and (the very annoying!) dandelions—have one large root called a
@@ -107,7 +108,7 @@
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>Stems</b> carry substances like water and minerals from the roots to the leaves. Stems come in various
         sizes and shapes.
@@ -121,16 +122,16 @@
      <br/>
 
       
-        <img class="img-centered" src="RevisedStemCrosssection_final.jpg" alt="cross_section_of_leaf" width="400"/>
+        <img alt="cross_section_of_leaf" class="img-centered" src="RevisedStemCrosssection_final.jpg" width="400"/>
     
-      <br />
+      <br/>
 
       <p>
         The <b>Xylem </b>of the stem carries water and dissolved nutrients from the roots to other parts of the
         plant. This part of the stem also provides support for the plant, helping it stay upright. The <b>Phloem</b>
         is the inner bark of the tree. It is vascular—which means it has tubes. It carries sugar and other products
         from the leaves—where
-        <a class="brm-link" target="_blank" href="../photosynthesis/index.html">photosynthesis</a>
+        <a class="brm-link" href="../photosynthesis/index.html" target="_blank">photosynthesis</a>
         occurs—to other parts of the plants.
       </p>
 
@@ -138,10 +139,10 @@
 
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
       <p>
         <b>Leaves.</b> Leaves are a very important part of the plant. The
-        <a class="brm-link" target="_blank" href="../chemicalvs-physicalreactions/index.html">chemical process</a>
+        <a class="brm-link" href="../chemicalvs-physicalreactions/index.html" target="_blank">chemical process</a>
         of <b>photosynthesis,</b> in which the plant’s food (sugar) is made, happens in the plant’s leaves. Leaves
         come in different sizes and shapes like the ones you see below. Many people don't realize that pine needles
         are actually the leaves of evergreen trees.
@@ -152,13 +153,13 @@
 
       <div class="img3Col imgClear">
         <div class="imgCol">
-          <img src="VascPlant5.jpg" height="167" />
+          <img height="167" src="VascPlant5.jpg"/>
         </div>
         <div class="imgCol">
-          <img src="VascPlant6.jpg" height="167" />
+          <img height="167" src="VascPlant6.jpg"/>
         </div>
         <div class="imgCol">
-          <img src="VascPlant7.jpg" height="167" />
+          <img height="167" src="VascPlant7.jpg"/>
         </div>
       </div>
 
@@ -166,14 +167,14 @@
 
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
       <p>
         <b>Parts of Leaves and their Functions.....</b>
       </p>
 
 
      <br/>
-      <img class="img-centered" width="600" src="LeafStructurebrm_final3.jpg" alt="Leaf_Structure" />
+      <img alt="Leaf_Structure" class="img-centered" src="LeafStructurebrm_final3.jpg" width="600"/>
      <br/>
 
       <p>
@@ -212,7 +213,7 @@
 
     </div>
 
-    <div id="page7" class="page">
+<div class="page" id="page7">
 
       <p>
         <b>Stomata (more detail).</b> Stomata are shown below, from the bottom or underside view of a leaf. The stoma on
@@ -221,7 +222,7 @@
       </p>
 
 
-      <img class="img-centered" src="Stomatal_apparatus.jpg" alt="stomatal_apparatus" width="600" />
+      <img alt="stomatal_apparatus" class="img-centered" src="Stomatal_apparatus.jpg" width="600"/>
 
 
       <p>
@@ -230,30 +231,30 @@
         lose O<sub>2</sub> and water in its gas form (also called "water vapor"). The loss of water from a leaf is
         called <b>transpiration</b>. (Transpiration is a part of the
 
-        <a class="brm-link" target="_blank" href="../water-cycle/index.html">Water Cycle</a>.)
+        <a class="brm-link" href="../water-cycle/index.html" target="_blank">Water Cycle</a>.)
 
 
       </p>
 
     </div>
 
-    <div id="page8" class="page">
+<div class="page" id="page8">
 
       <b>Check your basic understanding...</b>
 
       <form class="quiz_choice quiz">
         <b>Q1: What is/are the difference(s) between vascular and non-vascular plants?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Only vascular plants have roots. </div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Only vascular plants have stems.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) Only vascular plants have leaves.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) Only vascular plants have veins.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">e) All of the above. </div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's right! Only vascular plants have roots, stems, leaves, and veins (that move water, glucose, and other nutrients
           throughout the plant). So, (e) is the correct answer.
@@ -269,14 +270,14 @@
 
       <form class="quiz_choice quiz">
         <b>Q2: In general, which type of plant do you think is larger?</b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) Vascular plants. </div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Non-vascular plants.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) There's no difference in size.</div><br/>
 
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's right! Vascular plants (by definition) have tubes that transport water, glucose, and other nutrients to
           cells throughout the plant. This allows them to grow larger than non-vascular plants (which don't have these tubes).
@@ -291,15 +292,20 @@
     </div>
 
 
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Vascular plants</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">Taxonomy of Plants</a></li>
@@ -313,27 +319,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

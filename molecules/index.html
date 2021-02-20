@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Molecules</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Molecules</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-    gtag('config', 'UA-18104655-6');
-  </script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Molecules</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical
-        Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Molecules</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
 
       <p>
         <b>What are Molecules?</b> Atoms can be attracted to other atoms. When this happens, they form groups of atoms
         called molecules. Molecules are two or more atoms that are bonded together through some attractive force (often,
-        the <a target="_blank" href="../electric-force/index.html"><b>electric force</b></a>).
+        the <a href="../electric-force/index.html" target="_blank"><b>electric force</b></a>).
       </p>
       <p>
         Molecules can be made of atoms of the same type. For example, an oxygen molecule, O<sub>2</sub>, is made of 2
@@ -69,10 +68,10 @@
           both compounds. O<sub>2</sub> is not a compound, since it's made of two of the same type of atom (oxygen).
         </li>
       </ul>
-      <br />
+      <br/>
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <b>Understanding how molecule names are abbreviated</b>
       <p>As you've probably noticed, the name of a molecule (such as CO<sub>2) is abbreviated by combining the symbols for elements 
@@ -81,7 +80,7 @@
         You can tell how many different elements are in a molecule by the number of capitalized letters there are (since element symbols
         are one or two letters beginning with a capital letter). 
         Since there are two capitalized letters in "H<sub>2</sub>O," we know there are two elements (H and O).  
-      </p>
+      </sub></p>
       <p>
         The number after each element shows the number of atoms of that element in the molecule. If there is no number
         after the element, that means there is just one atom of that element. For example, in H<sub>2</sub>O, the "2"
@@ -89,19 +88,19 @@
         which means there is just one oxygen atom.
       </p>
 
-      <br />
+      <br/>
       <form class="quiz_choice quiz">
         <b>
           Q0.5: Which of the following is true of one molecule of CO<sub>2</sub>?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) It has one carbon atom and one oxygen atom.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) It has two carbon atoms and one oxygen atom.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) It has two carbon atoms and two oxygen atoms.</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">d) It has one carbon atom and two oxygen atoms.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) It has one carbon atom and one oxygen atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It has two carbon atoms and one oxygen atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It has two carbon atoms and two oxygen atoms.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">d) It has one carbon atom and two oxygen atoms.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! In "CO<sub>2</sub>", there is no number after the "C." This means there is only one carbon atom. The
           "2" after "O" means that there are two oxygen atoms in one CO<sub>2</sub> molecule.
@@ -112,18 +111,18 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>
           Q0.6: Which of the following is true of one molecule of NaCl?</b>
-        <input type="radio" name="question" value="correct">
-        <div class="label">a) It has a total of two atoms.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) It has a total of three atoms.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) It has a total of four atoms.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) It has a total of two atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It has a total of three atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It has a total of four atoms.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! NaCl is made of one Na (sodium) atom and one Cl (chlorine) atom. So, it has a total of 2 atoms.
         </div>
@@ -132,20 +131,20 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>
           Q0.7: Which of the following is true of one molecule of CH<sub>4</sub>?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) It has a total of two atoms.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) It has a total of three atoms.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) It has a total of four atoms.</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">c) It has a total of five atoms.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) It has a total of two atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It has a total of three atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It has a total of four atoms.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) It has a total of five atoms.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! CH<sub>4</sub> is made of one C (carbon) atom and four H (hydrogen) atoms.
         </div>
@@ -154,12 +153,12 @@
         </div>
       </form>
 
-      <br />
+      <br/>
       Let's look at some different molecules now...
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <p>
         <b>Example 1: O<sub>2</sub>.</b> Two oxygen atoms may bond together to form an O<sub>2</sub> molecule (the "2"
         after the "O" means that there are two Oxygen atoms in this molecule). Below are two different ways of
@@ -167,8 +166,8 @@
         simple "ball" model of an oxygen molecule:
       </p>
 
-      <img class="img-centered" src="OxygenTwoReps2.png" alt="salt molecule NaCl" />
-      <br />
+      <img alt="salt molecule NaCl" class="img-centered" src="OxygenTwoReps2.png"/>
+      <br/>
 
       <p>
         The picture above on the right shows a more detailed model. Here, the "O"s (for "Oxygen") are shown in place
@@ -185,10 +184,10 @@
         of energy the electrons on that <b>Energy circle</b> have.) 
       </p>
 
-      <br /><br />
+      <br/><br/>
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
 
       <p>
         <b>Example 2: NaCl.</b> An atom of sodium (Na) and an atom of chlorine (Cl), bond to make a molecule of NaCl
@@ -199,14 +198,14 @@
         Below are two ways to represent an NaCl molecule.
       </p>
 
-      <img class="img-centered" src="NewNAClDiagram.jpg" width="750px" alt="salt, NaCl diagram" />
+      <img alt="salt, NaCl diagram" class="img-centered" src="NewNAClDiagram.jpg" width="750px"/>
 
       <p>
         In the picture above on the right, the electrons are shown this time as dots on the <b>Energy circles</b>.
         This picture shows how an electron (e-) from Na moves to the Cl atom. Because there is an extra electron (e-)
         on the Cl side of the NaCl molecule, the Cl side is negatively charged. Because the Na atom has lost an
         electron, it becomes
-        <select id="FIB2" class="fib_select" onchange="fibUpdate('FIB2')">
+        <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
           <option value="#ffffff">(Select one)</option>
           <option value="#11bf7a">positively charged</option>
           <option value="#ed8587">negatively charged</option>
@@ -218,18 +217,18 @@
         have. The Energy circles do not show how the electrons move or orbit the nucleus.)
       </p>
 
-      <br /><br />
+      <br/><br/>
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
       <p>
         <b>Example 3: H<sub>2</sub>O</b>. A water molecule (H<sub>2</sub>O) has two hydrogen (H) atoms (the "2" after
         the "H" means there are two hydrogen atoms) and one oxygen (O) atom. Some people think a water molecule looks
         like Mickey Mouse, where its "ears" are the H atoms. Maybe that can help you remember its shape? 
       </p>
 
-      <img class="img-centered" src="Example3_final_cropped.jpg" alt="Water Molecule" />
-      <br />
+      <img alt="Water Molecule" class="img-centered" src="Example3_final_cropped.jpg"/>
+      <br/>
 
       <p>
         In the picture on the right, there are four electrons (e-) that are shared by the oxygen and two hydrogen atoms.
@@ -240,7 +239,7 @@
       </p>
       <p>
         <b>Fill-in-the-blank:</b> H<sub>2</sub>O molecules have
-        <select id="FIB3" class="fib_select" onchange="fibUpdate('FIB3')">
+        <select class="fib_select" id="FIB3" onchange="fibUpdate('FIB3')">
           <option value="#ffffff">(Select one)</option>
           <option value="#11bf7a">no overall charge</option>
           <option value="#ed8587">a positive charge</option>
@@ -249,7 +248,7 @@
       </p>
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
 
       <p>
         <b>Example 4: CO<sub>2</sub></b>. A carbon dioxide molecule (CO<sub>2</sub>) has three atoms: one carbon (C)
@@ -258,24 +257,24 @@
         oxygen atoms.
       </p>
 
-      <img class="img-centered" width="800" src="CO2_TwoReps2.png" alt="carbon dioxide molecule" />
-      <br />
+      <img alt="carbon dioxide molecule" class="img-centered" src="CO2_TwoReps2.png" width="800"/>
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>
           Q1: Each oxygen atom has 8 protons in its nucleus. The carbon atom has 6 protons in its nucleus. Do you
           think the shared electrons would spend more time orbiting the oxygen or carbon atoms? (Hint: Think about
           the electric force.)</b>
-        <input type="radio" name="question" value="correct">
-        <div class="label">a) The oxygen atoms.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) The carbon atom.</div><br />
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) The oxygen atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) The carbon atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) The electrons will spend about the same amount of time orbiting the oxygen and
-          carbon atoms.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) I'm confused.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+          carbon atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I'm confused.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The electrons would be pulled more to the nucleus of the oxygen atoms, which have more protons to
           pull on electrons. So, the shared electrons would spend more time closer to the oxygen atoms. This would
@@ -291,7 +290,7 @@
 
     </div>
 
-    <div id="page7" class="page">
+<div class="page" id="page7">
 
       <p>
         <b>Example 5: C<sub>12</sub>H<sub>22</sub>O<sub>11</sub> (sucrose, or common table sugar)</b>.
@@ -299,7 +298,7 @@
         carbon atoms, 22 hydrogen atoms, and 11 oxygen atoms.
       </p>
 
-      <img class="img-centered" src="SugarMoleculeImage.jpg" alt="sugar molecule" width="800px" />
+      <img alt="sugar molecule" class="img-centered" src="SugarMoleculeImage.jpg" width="800px"/>
 
       <p>
         The picture above to the right represents a molecule of sucrose (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>)
@@ -316,16 +315,16 @@
         Energy is an abstract measurement of the motion of objects or radiation.) 
       </p>
 
-      <br /><br />
+      <br/><br/>
     </div>
 
-    <div id="page8" class="page">
+<div class="page" id="page8">
       <p><b>Why do atoms bond to form molecules?</b></p>
 
       <p>It
         may seem a bit strange, but atoms bond with each other because they "like" it when their
         outer Energy circle is full. (This is discussed more in the unit
-        <a target="_blank" href="../atoms-electron-organization/index.html"><b>Atoms: Electron Organization</b></a>.)
+        <a href="../atoms-electron-organization/index.html" target="_blank"><b>Atoms: Electron Organization</b></a>.)
         Energy circles are full when no more electrons can be in that Energy circle. Atoms are more stable when
         their outer Energy circle is full. 
       </p>
@@ -339,7 +338,7 @@
       <ul>
         <li>The third Energy circle (E3) is full when there are 18 electrons.</li>
       </ul>
-      <br />
+      <br/>
 
       <p>
         <b>Some bonding between atoms results from atoms having only one electron in the outer-most Energy circle.</b>
@@ -357,8 +356,7 @@
         </li>
       </ul>
 
-      <img class="img-centered" src="NaCl_PosNegSides_cropped.png" alt="NaCl molecule with positive and negative sides"
-        width="800" />
+      <img alt="NaCl molecule with positive and negative sides" class="img-centered" src="NaCl_PosNegSides_cropped.png" width="800"/>
 
       <ul>
         <li>
@@ -369,23 +367,23 @@
         </li>
       </ul>
 
-      <img class="img-centered" src="NaCl molecule2.png" alt="NaCl molecule" width="300px" />
-      <br />
+      <img alt="NaCl molecule" class="img-centered" src="NaCl molecule2.png" width="300px"/>
+      <br/>
 
       <!-- Quiz: Choice -->
       <form class="quiz_choice quiz">
         <b>Q2: Why is the Na (Sodium) side of an NaCl (salt) molecule positively charged?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">(a) Because an electron moves from the Cl atom to the Na atom.</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">(b) Because an electron moves from the Na to the Cl atom.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">(c) Because the Na and Cl atoms share one electron.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">(d) Because the Na atom loses a proton.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">(e) Because the Cl atom loses a proton.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">(a) Because an electron moves from the Cl atom to the Na atom.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">(b) Because an electron moves from the Na to the Cl atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">(c) Because the Na and Cl atoms share one electron.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">(d) Because the Na atom loses a proton.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">(e) Because the Cl atom loses a proton.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The Cl atom only needs one more electron to fill its outer energy circle. The Na atom only has one
           electron in its outer energy circle. Because atoms "like" to have full energy circles, the Na atom "gives"
@@ -400,22 +398,22 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q3: A group of NaCl molecules form a (straight line) chain.
           What is the most likely arrangement of the NaCl molecules in this chain? (choose all that apply)?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) Alternating, with every other molecule "flipped": NaClClNaNaClClNa</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">b) In a regular line: NaClNaClNaCl</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) The Na atoms would line up with each other: NaNaNaClClCl</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) Random, nonrepeating pattern: (for example) NaNaClNaClCl</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">e) It's really impossible to know.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Alternating, with every other molecule "flipped": NaClClNaNaClClNa</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) In a regular line: NaClNaClNaCl</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) The Na atoms would line up with each other: NaNaNaClClCl</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) Random, nonrepeating pattern: (for example) NaNaClNaClCl</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">e) It's really impossible to know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The Na and Cl atoms will alternate.
         </div>
@@ -424,21 +422,21 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q4: (Check your basic understanding of cause): What causes NaCl molecules to arrange in this way?</b>
 
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) Magnetic forces</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) The "strong" force</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) Gravity (gravitational force)</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">d) The electric force</div><br />
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Magnetic forces</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) The "strong" force</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Gravity (gravitational force)</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">d) The electric force</div><br/>
 
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Nice! This pattern is due to the electric force. Oppositely-charged sides of the NaCl molecules attract each
           other. (And like-charged sides of the NaCl molecules repel each other.)
@@ -449,14 +447,14 @@
         </div>
       </form>
 
-      <br /><br />
+      <br/><br/>
     </div>
 
-    <div id="page9" class="page">
+<div class="page" id="page9">
       <p>
         <b>Bonding Example 2: H<sub>2</sub>O</b> (water). 
       </p>
-      <br />
+      <br/>
       <blockquote style="margin:0 0 0 40px;border:none;padding:0px">
         <blockquote style="margin:0 0 0 40px;border:none;padding:0px">
           <div style="text-align:left">
@@ -491,14 +489,14 @@
           </ul>
         </ul>
       </ul>
-      <br />
+      <br/>
       <ul>
         <li>
           In an H<sub>2</sub>O molecule, Oxygen atoms have 6 electrons in their second (and outer) Energy circle.
           Oxygen "wants" 2 more electrons to complete that Energy circle. Each Hydrogen atom only has one electron,
           which is in the first Energy circle. So, the electron from each hydrogen atom is pulled into the outer
           Energy circle of the Oxygen atom to complete that Energy circle. 
-          <br /><br />
+          <br/><br/>
           The oxygen atom has eight protons and each hydrogen atom only has one proton. So, the oxygen nucleus pulls
           on the electrons more strongly than each hydrogen nucleus. As a result, the electrons are more often on the
           oxygen side of the molecule.
@@ -510,11 +508,10 @@
           water molecule.
         </li>
       </ul>
-      <br />
+      <br/>
 
-      <img class="img-centered" src="InkedCombinedOxygenHydrogen_A1-T1_LI2_cropped.jpg"
-        alt="Water Molecule, Hydrgen and Oxygen" width="600" />
-      <br />
+      <img alt="Water Molecule, Hydrgen and Oxygen" class="img-centered" src="InkedCombinedOxygenHydrogen_A1-T1_LI2_cropped.jpg" width="600"/>
+      <br/>
 
       <ul>
         <li>
@@ -524,19 +521,19 @@
           with charged areas, like salt and sugar, dissolve in water. 
         </li>
       </ul>
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b> Q5: Why are the Hydrogen sides of an H<sub>2</sub>O (water) molecule positively charged?</b>
-        <input type="radio" name="question" value="correct">
-        <div class="label">a) Because an electron moves from each Hydrogen atom to the Oxygen atom.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) Because electrons move from the Oxygen to the Hydrogen atoms.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) Because Hydrogen atoms have an additional proton.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) Because Oxygen atoms have an additional proton.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) Because an electron moves from each Hydrogen atom to the Oxygen atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Because electrons move from the Oxygen to the Hydrogen atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Because Hydrogen atoms have an additional proton.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) Because Oxygen atoms have an additional proton.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! This has to do with energy circles. Each hydrogen shares its electron with the oxygen atom. This
           completes the oxygen atom's outer energy circle. Because the electron spends more of its time in the
@@ -548,25 +545,25 @@
           circle, the hydrogen somewhat "loses" its electron and becomes positively charged.
         </div>
       </form>
-      <br />
+      <br/>
       <form class="quiz_choice quiz">
         <b>
           Q6: Based on the properties of H<sub>2</sub>O and NaCl molecules, would you expect salt (NaCl) crystals to
           dissolve in water?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) No. They are two very different types of molecules.</div><br />
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) No. They are two very different types of molecules.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) No. H<sub>2</sub>O and NaCl molecules wouldn't share electrons, so they would not bond.
-        </div><br />
-        <input type="radio" name="question" value="correct">
+        </div><br/>
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) Yes. The oppositely charged sides of H<sub>2</sub>O and NaCl molecules would attract each
-          other.</div><br />
-        <input type="radio" name="question" value="incorrect">
+          other.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) Yes. The H<sub>2</sub> and NaCl molecules would share electrons, causing them to bond.
-        </div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">e) Yes. The H<sub>2</sub>O molecules would be pulled apart into H and O atoms.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        </div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">e) Yes. The H<sub>2</sub>O molecules would be pulled apart into H and O atoms.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Yes. The oppositely charged sides of H<sub>2</sub>O and NaCl molecules would attract each other.
         </div>
@@ -577,7 +574,7 @@
 
     </div>
 
-    <div id="page10" class="page">
+<div class="page" id="page10">
       <p>
         <b>Bonding Example 3: CO<sub>2</sub>.</b> In CO<sub>2</sub>, different atoms "share" electrons. Two of each of
         the oxygen's electrons (represented as dots below) orbit both the oxygen atom and the carbon atom. Also,
@@ -586,9 +583,9 @@
         in the closest Energy circle, and also share 8 electrons in the second Energy circle.
       </p>
 
-      <br />
-      <img class="img-centered" src="CO2_EnergyLevels.png" alt="Water Molecule" width="600" />
-      <br />
+      <br/>
+      <img alt="Water Molecule" class="img-centered" src="CO2_EnergyLevels.png" width="600"/>
+      <br/>
       <p>
         The oxygen atoms only need two more electrons to complete their outer Energy circle. But the carbon atom needs
         four more electrons to do that. So, the oxygen atoms are closer to having their second Energy circles
@@ -597,7 +594,7 @@
       <p>
         Also, oxygen atoms have 8 protons (each with a positive charge). Carbon atoms have 6 protons. So, electrons
         (which are negatively charged and attracted to positively charged protons) tend to be pulled to
-        <select id="FIB4" class="fib_select" onchange="fibUpdate('FIB4')">
+        <select class="fib_select" id="FIB4" onchange="fibUpdate('FIB4')">
           <option value="#ffffff">(Select one)</option>
           <option value="#ed8587">the Carbon side (or center)</option>
           <option value="#11bf7a">the Oxygen ends</option>
@@ -616,19 +613,17 @@
         <b>Figure 1.</b> Charge distribution of Carbon dioxide molecule (red: negative charge; blue: positive charge)
       </p>
 
-      <img class="img-centered" src="Molecule_A1-T1revised.jpg"
-        alt="Charge distribution of Carbon dioxide molecule (red: negative charge; blue: positive charge)" width="400"
-        height="205" />
-      <br />
+      <img alt="Charge distribution of Carbon dioxide molecule (red: negative charge; blue: positive charge)" class="img-centered" height="205" src="Molecule_A1-T1revised.jpg" width="400"/>
+      <br/>
 
       <p>
         For more information about why atoms "take" or "share" electrons from/with other atoms, please see the unit:
-        <a target="_blank" href="../atoms-electron-organization/index.html"><b>How Electrons are organized</b></a>. 
+        <a href="../atoms-electron-organization/index.html" target="_blank"><b>How Electrons are organized</b></a>. 
       </p>
 
     </div>
 
-    <div id="page11" class="page">
+<div class="page" id="page11">
       <p>
         <b>(Slightly Advanced concept: Polarity)</b>
       </p>
@@ -644,46 +639,45 @@
         second molecule attract each other. These attractions allow water molecules to form droplets.
       </p>
 
-      <img class="img-centered" src="InkedWater_Molecules_Polar_LI_PosNeg.jpg"
-        alt="positive and negative water molecule" />
-      <br />
+      <img alt="positive and negative water molecule" class="img-centered" src="InkedWater_Molecules_Polar_LI_PosNeg.jpg"/>
+      <br/>
 
       <p>
         A carbon dioxide (CO<sub>2</sub>) molecule is represented below.
       </p>
 
-      <img class="img-centered" src="CO2_molecule2_clean2.png" alt="CO2 molecule" width="300" />
+      <img alt="CO2 molecule" class="img-centered" src="CO2_molecule2_clean2.png" width="300"/>
 
-      <br /><br />
+      <br/><br/>
       <form class="quiz_open quiz">
         <b>Q6: Do you think CO<sub>2</sub> is a polar molecule? Explain why you do or do not.</b>
-        <textarea></textarea><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <textarea></textarea><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           No, CO<sub>2</sub> is not a polar molecule because its charge is symmetrical. Its opposite ends (oxygen) are
           both negatively charged.
         </div>
       </form>
-      <br />
-      <br />
+      <br/>
+      <br/>
 
     </div>
 
-    <div id="page12" class="page">
+<div class="page" id="page12">
 
       <div class="text-centered">
         <p>
-        <h4>Now that you're more familiar with molecules and compounds, try the Match the Molecules Game below!</h4>
-        </p>
+        </p><h4>Now that you're more familiar with molecules and compounds, try the Match the Molecules Game below!</h4>
+        <p></p>
       </div>
-      <br />
+      <br/>
 
       <div class="text-centered">
-        <iframe src="https://isp-tutor-project.github.io/demo/games/CompoundMatchingGame/" width="900" height="600">
+        <iframe height="600" src="https://isp-tutor-project.github.io/demo/games/CompoundMatchingGame/" width="900">
         </iframe>
       </div>
 
-      <br />
+      <br/>
       <p>
         <b>You've reached the end of this unit. You can click on the Chemical and Physical Reactions button above for
           more units related to your research question.</b>
@@ -691,15 +685,21 @@
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Molecules unit</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">What are Molecules?</a></li>
@@ -716,27 +716,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br />
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

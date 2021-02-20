@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Atoms: The Basics</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Atoms: The Basics</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-    gtag('config', 'UA-18104655-6');
-  </script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Atoms: The Basics</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Atoms: The Basics</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <h4>Introduction</h4>
 
       <p>
@@ -59,7 +59,7 @@
         represented on the far right.
       </p>
 
-      <img class="img-centered" src="FinalMoleculeImageCombined126_rev.jpg" width="800" />
+      <img class="img-centered" src="FinalMoleculeImageCombined126_rev.jpg" width="800"/>
      <br/>
 
       <p>
@@ -82,23 +82,23 @@
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <form class="quiz_choice quiz">
         <b>Q1 (check your basic understanding): Which of the following is given in order from smallest (first) to
           largest (last)?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) DNA molecules; Cell; Atom.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Atom; Cell; DNA molecules.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) DNA molecules; Atom; Cell.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">d) Atom; DNA molecules; Cell.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">e) Cell; Atom; DNA molecules.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! Atoms are the smallest, then DNA molecules, and cells are the largest. So (d) is the correct
           answer.
@@ -114,8 +114,7 @@
 
     </div>
 
-
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <a name="PartsAtoms"></a>
 
       <p>
@@ -130,7 +129,7 @@
         protons, 8 electrons, and 8 neutrons.
       </p>
 
-      <img class="img-centered" src="Hydrogen_Oxygen_caption.PNG" width="600" />
+      <img class="img-centered" src="Hydrogen_Oxygen_caption.PNG" width="600"/>
 
 
       <p>
@@ -140,12 +139,12 @@
         atoms can be very complex.
       </p>
       <p>(For more information about Energy circles, you can
-        <a class="brm-link" target="_blank" href="../atoms-electron-organization/">click here</a>.)
+        <a class="brm-link" href="../atoms-electron-organization/" target="_blank">click here</a>.)
       </p>
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>Charges of protons, neutrons, and electrons.</b> A very important fact to remember is that these three
         different parts of atoms also have three different electric charges:
@@ -170,19 +169,18 @@
         </li>
       </ul>
 
-      <img class="img-centered" src="Hydrogen_Oxygen_caption.PNG" width="600" />
-      <br />
+      <img class="img-centered" src="Hydrogen_Oxygen_caption.PNG" width="600"/>
+      <br/>
     </div>
 
-
-    <div id="page5" class="page">
+<div class="page" id="page5">
 
       Before moving on, check your basic understanding of eletric charges. Fill in the blanks:
      <br/><br/>
       <li>
         The electric charge of neutrons is:
-        <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
-          <option value="#ffffff" selected disabled>(Select one)</option>
+        <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+          <option disabled="" selected="" value="#ffffff">(Select one)</option>
           <option value="#ed8587">positive (+)</option>
           <option value="#ed8587">negative (-)</option>
           <option value="#11bf7a">neutral (no charge)</option>
@@ -192,8 +190,8 @@
      <br/>
       <li>
         The electric charge of electrons is:
-        <select id="FIB2" class="fib_select" onchange="fibUpdate('FIB2')">
-          <option value="#ffffff" selected disabled>(Select one)</option>
+        <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
+          <option disabled="" selected="" value="#ffffff">(Select one)</option>
           <option value="#ed8587">positive (+)</option>
           <option value="#11bf7a">negative (-)</option>
           <option value="#ed8587">neutral (no charge)</option>
@@ -203,8 +201,8 @@
      <br/>
       <li>
         The electric charge of protons is:
-        <select id="FIB3" class="fib_select" onchange="fibUpdate('FIB3')">
-          <option value="#ffffff" selected disabled>(Select one)</option>
+        <select class="fib_select" id="FIB3" onchange="fibUpdate('FIB3')">
+          <option disabled="" selected="" value="#ffffff">(Select one)</option>
           <option value="#11bf7a">positive (+)</option>
           <option value="#ed8587">negative (-)</option>
           <option value="#ed8587">neutral (no charge)</option>
@@ -213,7 +211,7 @@
       </li>
     </div>
 
-      <div id="page6" class="page">
+<div class="page" id="page6">
 
 
       <p>
@@ -225,8 +223,8 @@
         We call the force between charged particles the "electric force." The electric force is named after electrons.  
       </p>
 
-      <img class="img-centered" src="ElectricforceUnit.png" width="350" alt="electric_force_digram" />
-      <br />
+      <img alt="electric_force_digram" class="img-centered" src="ElectricforceUnit.png" width="350"/>
+      <br/>
 
       <p>
         Because of the electric force, electrons and protons attract each other.
@@ -267,9 +265,7 @@
       </ul>
     </div>
 
-
-
-    <div id="page7" class="page">
+<div class="page" id="page7">
 
       <p>
         <b>Why the electric force is important.</b> The electric force is very important to understand because it
@@ -293,7 +289,7 @@
 
       </ul>
 
-      <img class="img-centered" src="StaticElectricity_revisedimage.jpg" width="700" />
+      <img class="img-centered" src="StaticElectricity_revisedimage.jpg" width="700"/>
 
       <ul class="brm-list">
         <li>
@@ -303,7 +299,7 @@
           charged, which is shown by the minus (-) signs on the balloon. Your hair is positively charged, since it lost
           electrons.
           Your hair will be attracted to the balloon because of the
-          <select id="FIB4" class="fib_select" onchange="fibUpdate('FIB4')">
+          <select class="fib_select" id="FIB4" onchange="fibUpdate('FIB4')">
             <option value="#ffffff">(Select one)</option>
             <option value="#ed8587">gravitational</option>
             <option value="#11bf7a">electric</option>
@@ -318,22 +314,22 @@
 
     </div>
 
-    <div id="page8" class="page">
+<div class="page" id="page8">
 
       <!-- Quiz: Choice -->
       <form class="quiz_choice quiz">
         <b>Q2: What will happen to a positively-charged Sodium atom (Na+) and negatively-charged Chlorine atom (Cl-)
           that are close to each other?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) They will repel each other and move away from each other.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) They will attract each other and move closer to each other.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) They will just keep moving around randomly, as if the other atom were not there.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) How should I know?</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! The Na+ and Cl- atoms have opposite electric charges. As a result, they will be attracted to
           each other and
@@ -348,7 +344,7 @@
 
     </div>
 
-    <div id="page9" class="page">
+<div class="page" id="page9">
 
       <p>
         <i><b>Strength of the Electric force.</b></i> Let's say you have two electrons, which both
@@ -358,7 +354,7 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="electron_distance_Fe.PNG" width="600px" alt="electron_distance_diagram" />
+      <img alt="electron_distance_diagram" class="img-centered" src="electron_distance_Fe.PNG" width="600px"/>
      <br/>
 
       <p>
@@ -367,7 +363,7 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="ProElec_Dist_Fe.PNG" width="600" alt="electric_diagram" />
+      <img alt="electric_diagram" class="img-centered" src="ProElec_Dist_Fe.PNG" width="600"/>
      <br/>
 
       <p>
@@ -381,18 +377,18 @@
           Based on distance from the Cl- atom, which Na+ atom is more likely to bond with the Cl- atom to form a
           molecule of NaCl?</b>
 
-        <img class="img-centered" src="Q3_imagNaClNa.PNG" width="600px" alt="Na_Cl" />
+        <img alt="Na_Cl" class="img-centered" src="Q3_imagNaClNa.PNG" width="600px"/>
        <br/>
 
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) Na+ #1.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Na+ #2.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) Both Na+ atoms will be equally likely to bond with the Cl- atom.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) How should I know?</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! The Na+ #1 atom is more likely to bond with the Cl- atom. This is because it is closer to the
           Cl- atom and will be pulled more strongly. So, (a) is the correct answer.
@@ -405,12 +401,12 @@
 
       <p>
         For more information about the strength of the electric force (Coulomb's Law), you can
-        <a class="brm-link" target="_blank" href="../coulombs-law/">click here</a>.
+        <a class="brm-link" href="../coulombs-law/" target="_blank">click here</a>.
         (This is a bit more advanced: high school level.)
       </p>
     </div>
 
-    <div id="page10" class="page">
+<div class="page" id="page10">
       <p>
         <b>Masses of protons, neutrons, and electrons.</b> Many people do not understand that all atoms—even the
         smallest ones that make up air—have some mass and weight! These masses are very small, and people might not be
@@ -444,7 +440,7 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="ProNeuElmasses.PNG" width="400" alt="electron_masses" />
+      <img alt="electron_masses" class="img-centered" src="ProNeuElmasses.PNG" width="400"/>
      <br/>
 
       <p>
@@ -454,12 +450,12 @@
       </p>
     </div>
 
-    <div id="page11" class="page">
+<div class="page" id="page11">
       <strong>Use this game to check and reinforce your knowledge about protons, neutrons, and electrons!</strong>
      <br/><br/><br/>
 
       <div class="text-centered">
-        <iframe src="https://isp-tutor-project.github.io/demo/games/subatomicparticle/" width="890" height="605">
+        <iframe height="605" src="https://isp-tutor-project.github.io/demo/games/subatomicparticle/" width="890">
         </iframe>
       </div>
 
@@ -469,7 +465,7 @@
       </p>
     </div>
 
-    <div id="page12" class="page">
+<div class="page" id="page12">
       <strong>An important thing to remember about atoms here on earth is that they are always moving! </strong>
       Whether atoms make up a solid, liquid, or gaseous substance, they are always moving. They only stop moving if it
       is EXTREMELY cold (absolute zero).
@@ -478,16 +474,21 @@
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
 
-    <div class="nav-toc-container">
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Atoms unit</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">What's an atom?</a></li>
@@ -505,27 +506,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

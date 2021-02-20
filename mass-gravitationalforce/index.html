@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gravitational Force</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gravitational Force</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Gravitational Force</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Gravitational Force</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>What is Gravitational force?</b> The force due to gravity, or the gravitational force, is an attractive
         force <i>between</i> any objects. This attractive force is caused by the
-        <a class="brm-link" target="_blank" href="../mass/index.html">masses</a>
+        <a class="brm-link" href="../mass/index.html" target="_blank">masses</a>
         of the objects. That is, all objects pull other objects that have mass to them. The more mass the objects have,
         the stronger the gravitational pull between them is! 
       </p>
@@ -65,11 +65,11 @@
       <p>
         Gravitational force, like all forces, is a vector quantity.
 
-        This means it has both a magnitude (amount) and a direction. (You can click <a class="brm-link" target="_blank" href="../vectors/">here</a> for more information about vectors.)
+        This means it has both a magnitude (amount) and a direction. (You can click <a class="brm-link" href="../vectors/" target="_blank">here</a> for more information about vectors.)
       </p>
       <p class="text-centered"><b>For example,</b></p>
 
-      <br />
+      <br/>
       <img class="img-centered" src="CasesLargeSmallBodyGravity.png" width="600"/>
 
       <p class="text-centered">
@@ -81,14 +81,14 @@
       <!-- Quiz: Choice -->
       <form class="quiz_choice quiz">
         <b>Q1: Which do you think is true of the gravitational force acting on Object A in Case #1 versus Case #2? Why?</b>
-        <input type="radio" name="question" value="incorrect"><div class="label">(a) The gravitational force acting on Object A is greater in Case #1.</div><br/>
-        <input type="radio" name="question" value="correct"><div class="label">(b) The gravitational force acting on Object A is greater in Case #2.</div><br/>
-        <input type="radio" name="question" value="incorrect"><div class="label">(c) The gravitational force acting on Object A is the same in Case #1 as in Case #2.</div><br/>
-        <input type="radio" name="question" value="incorrect"><div class="label">(d) It's impossible to tell.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/><div class="label">(a) The gravitational force acting on Object A is greater in Case #1.</div><br/>
+        <input name="question" type="radio" value="correct"/><div class="label">(b) The gravitational force acting on Object A is greater in Case #2.</div><br/>
+        <input name="question" type="radio" value="incorrect"/><div class="label">(c) The gravitational force acting on Object A is the same in Case #1 as in Case #2.</div><br/>
+        <input name="question" type="radio" value="incorrect"/><div class="label">(d) It's impossible to tell.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The gravitational force between two objects is
-          <a class="brm-link" target="_blank" href="../proportional-1/">proportional to</a>
+          <a class="brm-link" href="../proportional-1/" target="_blank">proportional to</a>
           the masses of the objects. Because Object C is more massive (or has more mass) than Object B, the
           gravitational force between Objects A and C (in Case #2) is greater.
         </div>
@@ -104,15 +104,15 @@
       <!-- Quiz: Choice -->
       <form class="quiz_choice quiz">
         <b>Q2: Which do you think is true of the gravitational force acting on Object B (in Case #1) versus Object C (in Case #2)? Why?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">(a) The gravitational force acting on Object B is greater.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">(b) The gravitational force acting on Object C is greater.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">(c) The gravitational forces acting on Objects B and C are the same.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">(d) It's really impossible to tell.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The gravitational force acting on Object C is actually greater than the the gravitational force acting on Object
           B. This is because the gravitational force acting on an object is due to both the other object's mass and its own mass.
@@ -126,13 +126,13 @@
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
         <b>Gravity is an <i>interaction between</i> objects.</b> Like we already said, the more mass the two objects
         have, the stronger the gravitational attraction force between the two objects is. Gravitational forces are
         very small except when one or both of the objects have a large mass (like the Earth or Sun). We can say that
         the force of gravity between two objects is
-        <a class="brm-link" target="_blank" href="../proportional-1/index.html">directly proportional to</a>
+        <a class="brm-link" href="../proportional-1/index.html" target="_blank">directly proportional to</a>
         the mass of each object:
       </p>
       <p class="text-centered">F<sub>g</sub>  
@@ -177,10 +177,9 @@
         shown in the picture below:
       </p>
 
-      <br />
+      <br/>
 
-        <img class="img-centered" src="MutualGravitationalForce.png" width="400" height="127"
-             alt="Force of Gravity between A and B" />
+        <img alt="Force of Gravity between A and B" class="img-centered" height="127" src="MutualGravitationalForce.png" width="400"/>
 
      <br/>
       <p class="text-left">
@@ -188,12 +187,12 @@
         objects collide, they exert the same force on each other.
        <br/><br/>
         So, you could say that
-        <a class="brm-link" target="_blank" href="../newton-s-third-law/">Newton's Third Law</a>
+        <a class="brm-link" href="../newton-s-third-law/" target="_blank">Newton's Third Law</a>
         applies to gravitational forces between two objects.
       </p>
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <p>
         <b>Acceleration due to gravity.</b> The acceleration of objects on a planet (or moon) due to gravitational
         force is proportional to the mass of the planet (or moon). Why? You may ask? Well, let's look again at the
@@ -207,7 +206,7 @@
      <br/>
       <p>
         If only the gravitational force acts on the object, then according to
-        <a class="brm-link" target="_blank" href="../forces-and-motion-newton-s-second-law/">Newton's Second Law</a>:
+        <a class="brm-link" href="../forces-and-motion-newton-s-second-law/" target="_blank">Newton's Second Law</a>:
       </p>
       <p class="text-centered">
         mass<sub>object</sub> x acceleration<sub>object</sub> = (mass<sub>object</sub> × mass<sub>planet</sub>)/(Distance)<sup>2</sup>
@@ -228,7 +227,7 @@
      <br/>
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p class="text-centered">
         <b>((Slightly more Advanced section (due to more math)))</b>
       </p>
@@ -241,14 +240,14 @@
           on their masses, and the distance between the objects:
       </p>
 
-      <br />
+      <br/>
       <a href="../mass-gravitationalforce/FgGMAMB.GIF?attredirects=0/index.html">
-        <img class="img-centered" src="FgGMAMB.GIF" />
+        <img class="img-centered" src="FgGMAMB.GIF"/>
       </a>
-      <br />
+      <br/>
 
       <p class="text-centered">
-        <b>G</b> is the “gravitational constant.” G = 6.67 × 10<sup >-11</sup> m<sup>3</sup>/kg × s<sup>2</sup>
+        <b>G</b> is the “gravitational constant.” G = 6.67 × 10<sup>-11</sup> m<sup>3</sup>/kg × s<sup>2</sup>
       </p>
       <p class="text-centered">
         <b>m<sub>A</sub></b> is the mass (in kilograms, or kg) of Object A.
@@ -268,7 +267,7 @@
       </p>
 
       <a href="../mass-gravitationalforce/Fg_GMeMobD2.GIF?attredirects=0/index.html">
-        <img class="img-centered" src="Fg_GMeMobD2.GIF" alt="Newtons Law of Universal Gravitation" />
+        <img alt="Newtons Law of Universal Gravitation" class="img-centered" src="Fg_GMeMobD2.GIF"/>
       </a>
      <br/>
 
@@ -288,7 +287,7 @@
       </p>
 
       <a href="../mass-gravitationalforce/Fgmath.GIF?attredirects=0/index.html">
-        <img class="img-centered" src="Fgmath.GIF" alt="Newtons Law of Universal Gravitation" />
+        <img alt="Newtons Law of Universal Gravitation" class="img-centered" src="Fgmath.GIF"/>
       </a>
      <br/>
 
@@ -296,7 +295,7 @@
         Doing the math…
       </p>
 
-        <img class="img-centered" src="F_9.8_m.GIF" />
+        <img class="img-centered" src="F_9.8_m.GIF"/>
 
      <br/>
 
@@ -315,32 +314,45 @@
     </div>
 
 
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-  </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
-  </div>
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+            
+        </div>
 
-</body>
+        
 
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

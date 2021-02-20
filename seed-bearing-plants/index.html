@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Seed-Bearing Plants</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Seed-Bearing Plants</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-    gtag('config', 'UA-18104655-6');
-  </script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Seed-Bearing Plants</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical
-        Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Seed-Bearing Plants</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>One Type of Vascular Plants: Plants with Seeds.</b> Vascular plants can be divided into two groups: plants
         that make seeds
         (spermatophytes: "sperm" means "seeds") and plants that do not. We’ll talk about plants that produce seeds here.
       </p>
 
-      <img class="img-centered" src="PlantCategoriesseedbearing_cropped.png" alt="Seed-bearing Plant Categories" />
+      <img alt="Seed-bearing Plant Categories" class="img-centered" src="PlantCategoriesseedbearing_cropped.png"/>
 
-      <br>
+      <br/>
       Seed plants can be divided into whether they have flowers or not. <b>Angiosperms</b> are
       plants that have flowers. <b>Gymnosperms</b> are plants that do not have flowers. First, we'll talk about
       angiosperms.
@@ -64,7 +63,7 @@
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
         <b>Angiosperms</b> (from Greek: angio means “vessel” and sperm means “seed”) are seed plants that
         produce flowers.
@@ -83,10 +82,10 @@
 
       <div class="img3Col imgClear">
         <div class="imgCol">
-          <img src="Seedbearing1.jpg" height="200" />
+          <img height="200" src="Seedbearing1.jpg"/>
         </div>
         <div class="imgCol">
-          <img src="Seedbearing2.jpg" height="200" />
+          <img height="200" src="Seedbearing2.jpg"/>
         </div>
       </div>
 
@@ -96,7 +95,7 @@
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <p>
         <b>Gymnosperms</b> (from Greek: gym means “naked” and sperm means “seed”) do not have flowers. Gymnosperms
         include pine trees conifers, cycads, Ginkgo and Maidenhair trees, to name a few. (See the picture below
@@ -105,7 +104,7 @@
       </p>
 
 
-      <img class="img-centered" width="800" src="Gymnosperm3.jpg" />
+      <img class="img-centered" src="Gymnosperm3.jpg" width="800"/>
 
 
       <ul class="brm-list">
@@ -116,15 +115,15 @@
         </li>
       </ul>
 
-      <img class="img-centered" src="tap-3813_1920.jpg" width="400" height="300" />
-      <br /><br />
+      <img class="img-centered" height="300" src="tap-3813_1920.jpg" width="400"/>
+      <br/><br/>
 
 
-      (See <a class="brm-link" target="_blank" href="../gymnosperms/">Gymnosperms unit</a> for more information.)
+      (See <a class="brm-link" href="../gymnosperms/" target="_blank">Gymnosperms unit</a> for more information.)
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
 
       <p>
         <b>Parts of Seeds</b>
@@ -139,8 +138,8 @@
         The seeds develop from the ovule in the ovary of the flower of the plant. A drawing of a seed is shown below.
       </p>
 
-      <br />
-      <img class="img-centered" src="crosssectionofseed_BRM_2.11.21.jpg" width="500" />
+      <br/>
+      <img class="img-centered" src="crosssectionofseed_BRM_2.11.21.jpg" width="500"/>
 
       <p>
         Seeds contain the <b>plant embryo</b> (fertilized egg) surrounded by a protective <b>seed coat</b>. 
@@ -170,7 +169,7 @@
 
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
       <p>
         <b>How are seeds spread around?</b>
       </p>
@@ -180,7 +179,7 @@
       </p>
       <p>
         <b>Germination</b> is when the embryo in a seed grows into a small plant. Germination starts when the seed
-        absorbs water &mdash; and begins to use the stored food to grow the embryo &mdash; to when the embryo becomes a
+        absorbs water — and begins to use the stored food to grow the embryo — to when the embryo becomes a
         small plant
         (or a <u>seedling)</u>. This process is shown in the picture below. Germination may begin as soon as the seed
         is planted or may take years. This depends on factors like (a) the amount of water the seed is exposed to, and
@@ -190,7 +189,7 @@
         <b>Germination process</b>
       </p>
 
-      <img class="img-centered" src="PlantGrowth-Beans.jpg" alt="Plant Growth" width="800" />
+      <img alt="Plant Growth" class="img-centered" src="PlantGrowth-Beans.jpg" width="800"/>
 
       <p>
         The seed needs some water but not enough to drown it. Seeds need some sort of material (e.g., soil) to grow
@@ -212,15 +211,21 @@
       </p>
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Seed Bearing Plants</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">One type of Vascular Plants: Seeded Plants</a></li>
@@ -231,26 +236,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br />
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213 The TED project was
-      funded
-      in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the National Science
-      Foundation,
-      Grant SBE035442. The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        
 
-</body>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

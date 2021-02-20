@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Force Direction and Motion</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Force Direction and Motion</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Force Direction and Motion</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Force Direction and Motion</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>Acceleration from one force.</b> An object will speed up (or "accelerate") in the direction of the 
-        <a class="brm-link" target="_blank" href="../net-force/">Net Force</a> 
+        <a class="brm-link" href="../net-force/" target="_blank">Net Force</a> 
         acting on the object. (This idea is one part of 
-        <a class="brm-link" target="_blank" href="../forces-and-motion-newton-s-second-law/">Newton's Second Law</a>.)
+        <a class="brm-link" href="../forces-and-motion-newton-s-second-law/" target="_blank">Newton's Second Law</a>.)
       </p>
       <p>
         <b><i>Example 1</i></b>. For example, say there is only one force (gravity) acting on an object. This force
@@ -59,7 +59,7 @@
         downward direction. 
       </p>
 
-      <img class="img-centered" src="ForceGravity_Down.png" alt="diagram_of_gravity" />
+      <img alt="diagram_of_gravity" class="img-centered" src="ForceGravity_Down.png"/>
 
       <p>
         Because gravity pulls downward, no part of the force of gravity pulls in the horizontal direction (which is
@@ -71,19 +71,18 @@
      <br/>
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
         <b>Acceleration from more than one force.</b> Now, let's say an object is sitting on flat ground (rather than
         freely falling). There are two forces acting on the object. Gravity still pulls down on the object. However,
         the ground will push up on the object with the same force. (When any two objects are in contact, they push on
         each other with the same amount of force, but in opposite directions: See
-        <a class="brm-link" target="_blank" href="../newton-s-third-law/index.html">Newton's Third Law</a> 
+        <a class="brm-link" href="../newton-s-third-law/index.html" target="_blank">Newton's Third Law</a> 
         Unit.) Because the vertical forces are "<i>balanced"</i>, the net force on the object in the up/down direction
         is zero and the object will not move in this direction. 
       </p>
 
-      <img class="img-centered" src="ForceDirMotionFig1_2.PNG" width="500"
-           alt="Two forces that are equal in strength act on object" />
+      <img alt="Two forces that are equal in strength act on object" class="img-centered" src="ForceDirMotionFig1_2.PNG" width="500"/>
      <br/>
 
       <p>
@@ -96,9 +95,7 @@
      <br/>
     </div>
 
-
-
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <p>
         <b>Acceleration of an object on a ramp.</b> Now, let's say that the object was on a hill instead of on flat
         ground (as shown below). Gravity still pulls straight downward on the object, like it always does! The ground
@@ -106,7 +103,7 @@
         the object and surface of the hill to make things simpler!</i>
       </p>
 
-      <img class="img-centered" src="newdiagram2.png" width="500" alt="gravity_diagram" />
+      <img alt="gravity_diagram" class="img-centered" src="newdiagram2.png" width="500"/>
 
       <p>
         We want to see how "much" of each force is in the direction of the hill. This will determine the acceleration
@@ -137,7 +134,7 @@
         (the orange arrow). This "component" of the force of gravity does not affect the acceleration of the object. 
       </p>
 
-      <img class="img-centered" src="newdiagram5_cropped.png" width="800" alt="force_gravity_diagram" />
+      <img alt="force_gravity_diagram" class="img-centered" src="newdiagram5_cropped.png" width="800"/>
       <br/>
 
       <p>
@@ -151,20 +148,20 @@
       </p>
 
       <br/>
-      <img class="img-centered" src="SteepSlopeNew.GIF" width="350" alt="steel_slope_graphic" />
+      <img alt="steel_slope_graphic" class="img-centered" src="SteepSlopeNew.GIF" width="350"/>
       <br/>
 
       <form class="quiz_choice quiz">
         <b>Q1: What happens to the amount of the force of gravity that pulls the object down the hill (in the direction of its motion) as the hill becomes steeper?</b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) It increases.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) It decreases.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) It stays the same. The force of gravity on the object is constant.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I don't know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
             You're right! As the hill gets steeper, the amount of gravity that acts in the direction of the object's motion down the hill increases.
         </div>
@@ -182,20 +179,20 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="ForceDirMotionDown.png" width="500" />
+      <img class="img-centered" src="ForceDirMotionDown.png" width="500"/>
      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q2: What happens to the acceleration of the object down the hill (in the direction of its motion) as the hill becomes steeper?</b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) It increases.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) It decreases.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) It stays the same. The force of gravity on the object is constant.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I don't know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
             You're right! As the hill gets steeper, the force of gravity in the direction of the object's motion increases.
             As a result, the acceleration of the object in the direction of its motion increases.
@@ -219,85 +216,44 @@
 
 
 
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-  </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
-  </div>
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+            
+        </div>
 
-</body>
+        
 
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

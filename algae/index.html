@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Algae</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Algae</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Algae</h1>
 
-</head>
-
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Algae</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         Did you know that there is so much algae on Earth that algae produce most of the oxygen in the Earth’s
         atmosphere?
@@ -60,7 +58,7 @@
         algae that have many cells (such
         as seaweeds) and other types of algae that are only made of one single cell (like "diatoms").
         Algae contain chlorophyll and make their own food using light in the process of
-        <a target="_blank" href="../photosynthesis/index.html">photosynthesis</a>. They produce oxygen during
+        <a href="../photosynthesis/index.html" target="_blank">photosynthesis</a>. They produce oxygen during
         photosynthesis.
       </p>
       <p>
@@ -68,7 +66,7 @@
         they don't have tubes to transport water throughout the plant.
       </p>
 
-      <img class="img-centered" width="350" src="algae.jpg" alt="algae" />
+      <img alt="algae" class="img-centered" src="algae.jpg" width="350"/>
 
       <p>
         The picture above is an example of a multi-cellular (many-celled) form of algae called brown algae.
@@ -119,7 +117,7 @@
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <h4>Types of Algae </h4>
 
@@ -134,9 +132,8 @@
           (many-celled) algae</b>. Let's take a closer look at each category.
       </p>
       <p>
-        <b>Microscopic unicellular algae.</b> Diatoms are one <b><a target="_blank"
-            href="../taxonomy/index.html">Class</a> </b>of uni-cellular (single-celled) algae.
-        There are over 8,000 known <a target="_blank" href="../taxonomy/index.html"><b>species</b></a> of diatoms, the
+        <b>Microscopic unicellular algae.</b> Diatoms are one <b><a href="../taxonomy/index.html" target="_blank">Class</a> </b>of uni-cellular (single-celled) algae.
+        There are over 8,000 known <a href="../taxonomy/index.html" target="_blank"><b>species</b></a> of diatoms, the
         most of any Class of algae.
         One species of diatoms is Chaetoceros muelleri. 
       </p>
@@ -152,9 +149,9 @@
         products.
       </p>
 
-      <br />
-      <img class="img-centered" src="Diatoms.jpg" width="299" height="400" alt="Diatoms" />
-      <br />
+      <br/>
+      <img alt="Diatoms" class="img-centered" height="400" src="Diatoms.jpg" width="299"/>
+      <br/>
 
       <p class="text-centered">
         The picture above shows various species of diatoms, one Class of algae.
@@ -170,7 +167,7 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="seaweed-1614647_1920.jpg" width="400" height="265" alt="seaweed" />
+      <img alt="seaweed" class="img-centered" height="265" src="seaweed-1614647_1920.jpg" width="400"/>
 
       <p>
         Brown algae—like that shown in the picture above—lives and thrives in cool, rocky waters, like off North
@@ -194,7 +191,7 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="algae-1578953_1920.jpg" width="400" height="300" />
+      <img class="img-centered" height="300" src="algae-1578953_1920.jpg" width="400"/>
      <br/>
       <!--
      <br/>
@@ -214,11 +211,11 @@
         (such as ice cream) to hair conditioners.
       </p>
 
-      <img class="img-centered" src="multi_celled_red_algae.jpg" width="400" height="300" alt="aquarium" />
+      <img alt="aquarium" class="img-centered" height="300" src="multi_celled_red_algae.jpg" width="400"/>
      <br/>
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <p>
         <b>Problems with algae overgrowth</b>
@@ -239,8 +236,8 @@
         The photo below shows an algae bloom in Lake Erie in the summer of 2019:
       </p>
 
-      <img class="img-centered" src="erie_algaebloom.jpg" width="600" alt="algae bloom" />
-      <br />
+      <img alt="algae bloom" class="img-centered" src="erie_algaebloom.jpg" width="600"/>
+      <br/>
 
       <p>
         Humans are more likely to cause blooms in lakes and other freshwater bodies. This happens when farmers and
@@ -257,7 +254,7 @@
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>Effects of temperature on algae growth.</b> The rate that algae reproduces depends on the temperature
         of the water it's in. But, since different species of algae grow at different rates, we need to look at the
@@ -265,16 +262,15 @@
       </p>
       <p>
         The graph below shows the growth rate of two species of "Chlorella" algae, Chlorella vulgaris and Chlorella
-        NJ18, at different temperatures. As the temperature increases from 5&deg;C (41&deg;F), the
-        growth rate increases up to 25-30&deg;C. But when the temperature gets above 25-30&deg;C (77-86&deg;F), the
+        NJ18, at different temperatures. As the temperature increases from 5°C (41°F), the
+        growth rate increases up to 25-30°C. But when the temperature gets above 25-30°C (77-86°F), the
         growth
         rates actually start decreasing. In other words, when it's too hot, these algae don't grow as well. When it
-        gets to 35&deg;C (95&deg;F), these algae completely stop growing.
+        gets to 35°C (95°F), these algae completely stop growing.
       </p>
 
      <br/>
-      <img class="img-centered" src="ChlorellaVulgaris_GrowthByTemp3.png" height="350"
-        alt="ChlorellaVulgaris_Chart_GrowthByTemp" />
+      <img alt="ChlorellaVulgaris_Chart_GrowthByTemp" class="img-centered" height="350" src="ChlorellaVulgaris_GrowthByTemp3.png"/>
      <br/>
 
       <p>
@@ -285,31 +281,30 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="AlgaeSorokianaTempGrowth2.png" height="350"
-        alt="AlgaeSorokiana_Chart_GrowthByTemp" />
+      <img alt="AlgaeSorokiana_Chart_GrowthByTemp" class="img-centered" height="350" src="AlgaeSorokianaTempGrowth2.png"/>
      <br/>
 
       <p>
-        But what all 4 species of algae have in common is that they stop growing when it gets too hot (around 45&deg;C
+        But what all 4 species of algae have in common is that they stop growing when it gets too hot (around 45°C
         or
-        113&deg;F). This is because photosynthesis stops when it gets too hot.
+        113°F). This is because photosynthesis stops when it gets too hot.
       </p>
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
 
       <form class="quiz_choice quiz">
         <b>Q0.5: When it gets too hot, photosynthesis cannot take place in plants in general (not just algae). When
           photosynthesis stops in plant cells, what happens
           to the plants?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) They stop growing any more (they won't get any larger).</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) They only grow a little bit.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) They will die.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! Plants get their food (sugars) from photosynthesis. Like people and other animals, plants will
           die if they don't get
@@ -325,14 +320,13 @@
 
     </div>
 
-
-    <div id="page6" class="page">
+<div class="page" id="page6">
       <p>
         <b>Effects of light intensity on algae growth.</b> The relationship between light intensity and the growth rate
         of another species of Chlorella algae, Chlorella sorokiniana algae, is curved.
-        At 36&deg;C (97&deg;F), the growth rate is highest at around
+        At 36°C (97°F), the growth rate is highest at around
 
-        <select id="FIB2" class="fib_select" onchange="fibUpdate('FIB2')">
+        <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
           <option value="#ffffff">(Select one)</option>
           <option value="#ed8587">100 photon flux.</option>
           <option value="#ed8587">200 photon flux.</option>
@@ -345,8 +339,7 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="GrowthByLightIntenAndTemp.png" height="400"
-        alt="Chart_showing_algaegrowth_by_light_temp" />
+      <img alt="Chart_showing_algaegrowth_by_light_temp" class="img-centered" height="400" src="GrowthByLightIntenAndTemp.png"/>
      <br/>
 
       <p>
@@ -356,12 +349,10 @@
         of the sun.
       </p>
 
-      <img class="img-centered" src="LightScalePics.JPG" height="300" alt="Light_scales" />
+      <img alt="Light_scales" class="img-centered" height="300" src="LightScalePics.JPG"/>
     </div>
 
-
-
-    <div id="page7" class="page">
+<div class="page" id="page7">
       <p>
         <b>Relationship between light intensity (how bright the light is) and algae growth.</b> The graph below show
         the relationship between the number of diatomic algae cells in millions (for the species Chaetoceros muelleri)
@@ -369,7 +360,7 @@
         lux (no light) to 2,500 lux (a medium-bright day).
       </p>
 
-      <img class="img-centered" src="oceanography-Average-cell-1-111-g001.png" />
+      <img class="img-centered" src="oceanography-Average-cell-1-111-g001.png"/>
 
       <p class="text-centered">
         <script type="text/javascript">
@@ -391,15 +382,15 @@
           when the light intensity is 250 lux (similar to the light intensity of a dim office)?</b>
 
 
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Zero.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) 1.25 million.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) 2.5 million.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) 4 million</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's right! The cell count is likely to be somewhere between the cell counts for zero lux and 500 lux.
           At zero lux, there are no cells. At 500 lux, there are about 2.5 million cells.
@@ -416,31 +407,26 @@
 
     </div>
 
-
-
-
-
-    <div id="page8" class="page">
+<div class="page" id="page8">
       <p>
         <b>Effects of carbon dioxide on algae growth.</b> As shown in the graph below, algae of the species Chlorella
         vulgaris grows more at higher than lower levels of CO<sub>2</sub> dissolved in water. This is true both when the
         light intensity is at 39 photon flux and 176 photon flux.
       </p>
 
-      <img class="img-centered" src="AlgaeGrowth_LightIntensityCO2_NoTitle2.jpg" height="350"
-        alt="AlgaeGrowth_LightIntensityCO2" />
+      <img alt="AlgaeGrowth_LightIntensityCO2" class="img-centered" height="350" src="AlgaeGrowth_LightIntensityCO2_NoTitle2.jpg"/>
      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q1: Why do you think that algae grows more when there is more carbon dioxide dissolved in the water?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Carbon dioxide is an important nutrient for algae.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Algae breathe in carbon dioxide.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) Carbon dioxide is used in photosynthesis to make food for the algae.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! Like all plants, algae's food (sugars) is made during photosynthesis from carbon dioxide and
           water. So (c) is the correct answer.
@@ -453,7 +439,7 @@
 
     </div>
 
-    <div id="page9" class="page">
+<div class="page" id="page9">
       <h4>Summary</h4>
 
       <ul class="brm-list">
@@ -480,15 +466,20 @@
     </div>
 
 
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Algae unit</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">What is Algae?</a></li>
@@ -503,27 +494,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

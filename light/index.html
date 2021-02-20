@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Light/Electromagnetic Radiation</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Light/Electromagnetic Radiation</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Light/Electromagnetic Radiation</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Light/Electromagnetic Radiation</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
 
       <p>
         <b>What is electromagnetic radiation?</b> Electromagnetic radiation includes light and other "rays" from the
@@ -61,8 +61,7 @@
       </p>
 
       <br/>
-      <img class="img-centered" src="EM_Spectrum3-new-A2-T1revised.jpg" width="800"
-           alt="The Electromagnetic Spectrum" />
+      <img alt="The Electromagnetic Spectrum" class="img-centered" src="EM_Spectrum3-new-A2-T1revised.jpg" width="800"/>
 
       <p>
         The middle-energy radiation from the sun that we are able to see is what we call visible light. And the sun
@@ -78,7 +77,7 @@
       </p>
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <p>
         <b>Waves and Wavelengths.</b> All radiation travels in a wave-like pattern, like shown below. The
@@ -87,7 +86,7 @@
         distance between two adjacent peaks (shown below). 
       </p>
 
-      <img class="img-centered" src="Wavelength.png" alt="light wave" />
+      <img alt="light wave" class="img-centered" src="Wavelength.png"/>
 
       <p>
         Different types of radiation have different wavelengths. Radio waves have longer wavelengths than microwaves;
@@ -107,21 +106,21 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="LightWavesColors.png" width="500" alt="Light wavelengths" />
+      <img alt="Light wavelengths" class="img-centered" src="LightWavesColors.png" width="500"/>
      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q1: Looking at the chart above, which color of visible light just LOOKS like it has the most
           energy? (Hint: remember that energy is a measure of motion.)</b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) Violet</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Green</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) Red </div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I don't know!</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! Violet light has the most energy of all the colors of visible light. You may notice that the violet light
           moves up and down more than the other colors of light over the same distance. This is what gives the
@@ -163,18 +162,18 @@
 
       <br/><br/>
       <a href="../light/penny_centimeters.jpg?attredirects=0/index.html">
-        <img src="penny_centimeters.jpg" alt="A penny being measured" width="400" height="174" />
+        <img alt="A penny being measured" height="174" src="penny_centimeters.jpg" width="400"/>
       </a>
 
 </p>
-<button type="button" onclick="toggleText()">How small is 405 nanometers? <b>Click for more/less info</b></button>
+<button onclick="toggleText()" type="button">How small is 405 nanometers? <b>Click for more/less info</b></button>
 
      <br/>
      <br/>
 
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <p>
         <b>Frequency:</b> The frequency of a particular type of light is the number of wavelengths the light travels
@@ -206,7 +205,7 @@
       </p>
 
      <br/>
-      <img class="img-centered" src="PeriodDefWavelength.JPG" width="800" alt="Light wave" />
+      <img alt="Light wave" class="img-centered" src="PeriodDefWavelength.JPG" width="800"/>
       <br/>
 
       <p>
@@ -219,19 +218,19 @@
 
  </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
 
       <form class="quiz_choice quiz">
         <b>Q2: Which do you think is true about forms of electromagnetic radiation with longer wavelengths (compared to radiation with shorter wavelengths)?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) They move faster.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) They move slower. </div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) They move at the same speeds. </div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I have no clue.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The correct answer is c. All forms of electromagnetic radiation (visible light, infrared radiation, ultraviolet radiation,
           x-rays, and gamma rays), regardless of wavelength, travel at the same speed (the speed
@@ -247,11 +246,11 @@
 
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
       <p>
         <b>((A bit more Advanced due to Math with exponents. If you need help on math with exponents,
           <!-- <a href="goog_935874875"></a> -->
-          <a class="brm-link" target="_blank" href="../exponent-math/">click here</a>.))
+          <a class="brm-link" href="../exponent-math/" target="_blank">click here</a>.))
         </b>
       </p>
       <p><b>Speed of light.</b> We can figure out the speed of light using the basic definition of speed: the distance
@@ -321,17 +320,17 @@
       <form class="quiz_choice quiz">
         <b>Q3: Which do you think is most likely true about the energy of electromagnetic radiation? Select your answer
           choice below.</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Radiation with longer wavelengths has more energy.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Radiation with lower frequencies has more energy. </div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">c) Radiation with higher frequencies has more energy. </div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) There is no relationship between wavelength/frequency and energy.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">e) I have no clue.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! You may recall that energy has to do with the motion of things. Things with more motion have more energy. Higher-frequency
           radiation has more motion than lower-frequency radiation (because it is cycling through wavelengths more times
@@ -350,7 +349,7 @@
       <form class="quiz_open quiz">
         <b>Q4: What is the frequency of violet light?</b>
         <textarea></textarea><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
             The frequency of radiation can be calculated as the speed of light divided by the wavelength of the radiation. So, for violet light, which has a wavelength of 405 nm = 405*10<sup>-9</sup> m:
             frequency = (3*108 m/s)/(405*10<sup>-9</sup> m)
@@ -370,32 +369,46 @@
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-  </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
-  </div>
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+            
+        </div>
 
-</body>
+        
 
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

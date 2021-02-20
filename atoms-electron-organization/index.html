@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Atoms: Electron Organization</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Atoms: Electron Organization</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Atoms: Electron Organization</h1>
 
-</head>
-
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Atoms: Electron Organization</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <h4>How Electrons are organized in atoms/elements.</h4>
 
       <p>
@@ -57,16 +56,16 @@
       <p>
         In atoms, electrons move around in specific paths or "orbitals". These orbitals can be very, very complex and
         weird-looking
-        (<a class="brm-link" target="_blank" href="../orbitals/">click here to see what some orbitals look like</a>).
+        (<a class="brm-link" href="../orbitals/" target="_blank">click here to see what some orbitals look like</a>).
         In drawings of atoms in these units (and generally on the internet), electrons are often shown along circles
         (around the atom's nucleus), like the picture below. These circles are *not* the pathways of the electrons (or
         how and where the electrons move!). Instead, they represent how much
-        <a class="brm-link" target="_blank" href="../kinetic-and-potential-energy/index.html">energy</a>
+        <a class="brm-link" href="../kinetic-and-potential-energy/index.html" target="_blank">energy</a>
         the electrons have.
       </p>
 <br/>
-      <img class="img-centered" src="FirstEnergyCircle.PNG" width="500" alt="energy_circle" />
-      <br />
+      <img alt="energy_circle" class="img-centered" src="FirstEnergyCircle.PNG" width="500"/>
+      <br/>
 
       <p>
         The circle that each electron is associated with represents the (small range of) energies of the electron(s)
@@ -86,8 +85,7 @@
       </p>
     </div>
 
-
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
         <b>First (lowest-energy) energy circle.</b> This first Energy circle can have up to TWO electrons in it. This
         first Energy circle can't have any more than 2 electrons. If you look closely at the drawing of the (carbon)
@@ -100,11 +98,11 @@
           two electrons in this first Energy circle.</i>
       </p>
 <br/>
-      <img class="img-centered" src="FirstSecondEnergyCircles.PNG" width="500" alt="First_Second_Energy_Circles" />
+      <img alt="First_Second_Energy_Circles" class="img-centered" src="FirstSecondEnergyCircles.PNG" width="500"/>
 <br/>
       <p>
         <i><b>Helium.</b></i> The element helium (He) has two electrons (see 
-        <a class="brm-link" target="_blank" href="../periodic-table/">Periodic Table</a>). So, its
+        <a class="brm-link" href="../periodic-table/" target="_blank">Periodic Table</a>). So, its
         first Energy circle is complete. This makes Helium a stable element, meaning it does not easily
         react or bond with other elements. It tends to stay on its own.
       </p>
@@ -118,7 +116,7 @@
       </p>
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
       <p>
         <b>Second energy circle.</b> The second Energy circle (E2) can have up to EIGHT electrons in it. In E2, all
         types of atoms or elements "like" to have 8 electrons. For example, in the sodium (Na) atom below, there are 8
@@ -126,14 +124,14 @@
         electrons in the first energy circle!)
       </p>
 
-      <img class="img-centered" src="CloestOrbital_BRMAtomsUnit131.jpg" alt="Orbital_Atom" />
-      <br />
+      <img alt="Orbital_Atom" class="img-centered" src="CloestOrbital_BRMAtomsUnit131.jpg"/>
+      <br/>
 
       <p>
         <b><i>Neon. </i></b>The element neon (Ne) has full first and second Energy circles (E1 and E2). Since the first
         Energy circle is full with 2 electrons, and the second Energy circle is full with 8 electrons, Ne has 10
         electrons (you can double-check this on the 
-        <a class="brm-link" target="_blank" href="../periodic-table/index.html">Periodic Table</a>
+        <a class="brm-link" href="../periodic-table/index.html" target="_blank">Periodic Table</a>
         ). This makes Ne less reactive than other elements with Energy circles that are not "full."
       </p>
       <p>
@@ -161,17 +159,15 @@
       </p>
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
      <br/>
       <div class="text-centered">
-        <iframe src="https://isp-tutor-project.github.io/demo/games/BuildElementGame/index.html"
-                width="800"
-                height="533">
+        <iframe height="533" src="https://isp-tutor-project.github.io/demo/games/BuildElementGame/index.html" width="800">
         </iframe>
       </div>
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
 
       <h4 class="text-centered">Summary</h4>
 
@@ -185,7 +181,7 @@
       </p>
       <p>
         After the second Energy circle, things get more complicated. (If you dare,
-        <a class="brm-link" target="_blank" href="../energy-levels-of-elements/index.html">Click here</a>
+        <a class="brm-link" href="../energy-levels-of-elements/index.html" target="_blank">Click here</a>
         to see what happens after the second Energy circle...)
       </p>
       <p>
@@ -212,16 +208,21 @@
       </p>
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
 
-    <div class="nav-toc-container">
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Elements unit</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">How electrons are organized in atoms</a></li>
@@ -232,27 +233,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213 The TED project was
-      funded
-      in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the National Science
-      Foundation,
-      Grant SBE035442. The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

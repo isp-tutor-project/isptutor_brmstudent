@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Photosynthesis</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Photosynthesis</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-    gtag('config', 'UA-18104655-6');
-  </script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Factors Affecting Photosynthesis</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical
-        Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Factors Affecting Photosynthesis</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>Variables that affect the rate of photosynthesis:</b> There are several factors that affect the rate of
         photosynthesis (or how fast sugars are produced in plants). These include: (a) light intensity (brightness),
         (b) carbon dioxide concentration, (c) temperature, and (d)
-        <a class="brm-link" target="_blank" href="../light/index.html">light wavelength</a>.
+        <a class="brm-link" href="../light/index.html" target="_blank">light wavelength</a>.
         The relationship between light intensity and photosynthesis is shown in the graph below. 
       </p>
 
-      <br />
+      <br/>
 
       <div style="text-align:left">
 
-        <img class="img-centered" src="LightIntensity_PhotosynthRateGraph.GIF" width="400" height="250" />
+        <img class="img-centered" height="250" src="LightIntensity_PhotosynthRateGraph.GIF" width="400"/>
 
       </div>
-      <br />
+      <br/>
 
       <ul class="brm-list">
         <li>
@@ -81,27 +80,27 @@
             molecules needed for photosynthesis)
             in plant cells to increase the rate of photosynthesis any more.</p>
 
-          <button type="button" onclick="toggleText()">Click to find out why</button>
+          <button onclick="toggleText()" type="button">Click to find out why</button>
         </li>
 
       </ul>
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <form class="quiz_choice quiz">
         <b>
           Q3.5: For low levels of light intensity, what is the relationship between light intensity and
           photosynthesis rate?</b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) There is no relationship.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) As light intensity increases, photosynthesis rate decreases.</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">c) As light intensity increases, photosynthesis rate increases.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) I have no clue.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) There is no relationship.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) As light intensity increases, photosynthesis rate decreases.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) As light intensity increases, photosynthesis rate increases.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I have no clue.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           You are right. With low levels of light intensity (close to the origin of the graph), as light intensity
           increases, the rate of photosynthesis also increases. So, (c) is the correct response.
@@ -112,10 +111,10 @@
         </div>
       </form>
 
-      <br />
+      <br/>
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <ul class="brm-list">
         <li>
@@ -126,28 +125,28 @@
         </li>
       </ul>
 
-      <img class="img-centered" src="CO2_RatePhotoSynth_Graph.GIF" width="400" height="251" />
+      <img class="img-centered" height="251" src="CO2_RatePhotoSynth_Graph.GIF" width="400"/>
 
-      <br />So, after a certain point, more carbon dioxide in the air will no longer help plants grow.
+      <br/>So, after a certain point, more carbon dioxide in the air will no longer help plants grow.
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
 
       <form class="quiz_choice quiz">
         <b>
           Q4: According to the graph, as the CO<sub>2</sub> levels increase, what happens to the rate of
           photosynthesis?
         </b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) It keeps increasing.</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">b) It increases up to a certain point then remains the same.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) It remains the same for all CO<sub>2</sub> levels.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) This information cannot be determined from this graph.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) It keeps increasing.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) It increases up to a certain point then remains the same.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It remains the same for all CO<sub>2</sub> levels.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) This information cannot be determined from this graph.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! As the CO<sub>2</sub> level increases, the photosynthesis rate also increases. However, once it
           reaches a certain CO<sub>2</sub> level, the rate of photosynthesis does not increase (or decrease) any more.
@@ -159,11 +158,11 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
 
       <ul class="brm-list">
         <li>
@@ -171,70 +170,70 @@
           is different from the others. Again, when the temperature is very low, no photosynthesis
           occurs. The increase in photosynthesis rate is slow at first, but starts to increase
           more quickly at a certain point. The rate of photosynthesis is highest between 10
-          and 20&deg;C (or 50-68&deg;F). After this maximum, the photosynthesis
-          rate drops off quickly as the temperature increases. At around 40&deg;C (or 104&deg;F), 
+          and 20°C (or 50-68°F). After this maximum, the photosynthesis
+          rate drops off quickly as the temperature increases. At around 40°C (or 104°F), 
           photosynthesis stops. As a result, plants cannot grow anymore.
         </li>
 
-        <br />
+        <br/>
 
-        <img class="img-centered" src="TempVphotosynthesisRate3.PNG" width="400" />
+        <img class="img-centered" src="TempVphotosynthesisRate3.PNG" width="400"/>
 
-        <br />
+        <br/>
 
         <ul class="brm-list nested-list">
           <li>
             Why does photosynthesis stop at high temperatures? There are certain molecules called "enzymes" made
             by living organisms. Enzymes speed up
-            <a class="brm-link" target="_blank" href="../chemicalvs-physicalreactions/">chemical reactions</a>.
+            <a class="brm-link" href="../chemicalvs-physicalreactions/" target="_blank">chemical reactions</a>.
             Chlorophyll is one enzyme that helps cause photosynthesis. Another enzyme, called RuBisCo, has the job of
             capturing CO<sub>2</sub>. When the temperature is too high, RuBisCo gets very bad at capturing
             CO<sub>2</sub>, which is needed for photosynthesis. As a result, photosynthesis stops.
           </li>
         </ul>
       </ul>
-      <br />
+      <br/>
       <form class="quiz_choice quiz">
         <b>
-          Q4.5: What is the relationship between temperature and rate of photosynthesis between 21&deg;C
-          (70&deg;F) and 38&deg;C (100&deg;F)? Base your answer on the graph and other information in
+          Q4.5: What is the relationship between temperature and rate of photosynthesis between 21°C
+          (70°F) and 38°C (100°F)? Base your answer on the graph and other information in
           this unit.
         </b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) The rate of photosynthesis increases from 21-38&deg;C.</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">b) The rate of photosynthesis decreases from 21-38&deg;C.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) The rate of photosynthesis does not change from 21-38&deg;C.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">d) How should I know?</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) The rate of photosynthesis increases from 21-38°C.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) The rate of photosynthesis decreases from 21-38°C.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) The rate of photosynthesis does not change from 21-38°C.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) How should I know?</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
-          That's right! The rate of photosynthesis is maximum a bit below room temperature (between 10 and 20&deg;C) 
+          That's right! The rate of photosynthesis is maximum a bit below room temperature (between 10 and 20°C) 
           but decreases at temperatures higher than about 20 degrees. So, (b) is the correct answer.
         </div>
         <div class="feedback-incorrect feedback">
-          Well, actually, the rate of photosynthesis is maximum a bit below room temperature (between 10 and 20&deg;C) 
+          Well, actually, the rate of photosynthesis is maximum a bit below room temperature (between 10 and 20°C) 
           but decreases at temperatures higher than about 20 degrees. So, (b) is the correct response.
         </div>
       </form>
 
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
 
       <form class="quiz_choice quiz">
         <b>Q0.5: When it gets too hot, photosynthesis cannot take place in plants. When photosynthesis stops in plant
           cells, what happens
           to the plants?
         </b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) They stop growing any more (they won't get any larger).</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">b) They only grow a little bit.</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">c) They will die.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) They stop growing any more (they won't get any larger).</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) They only grow a little bit.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) They will die.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! Plants get their food (sugars) from photosynthesis. Like people and other animals, plants will
           die if they don't get
@@ -249,15 +248,15 @@
 
     </div>
 
-    <div id="page7" class="page">
+<div class="page" id="page7">
       <ul class="brm-list">
         <b>Light wavelength.</b> Certain
-        <a class="brm-link" target="_blank" href="../light/">frequencies of visible light</a> 
+        <a class="brm-link" href="../light/" target="_blank">frequencies of visible light</a> 
         speed up or slow the rate of photosynthesis. Sunlight that has energy in the blue-violet and red frequency
         ranges causes the highest rates of photosynthesis. Sunlight in the green range causes lower rates of
         photosynthesis. This is because chlorophyll pigment molecules do not absorb green light well* (and do not
         convert this radiation into energy that causes the chemical processes in photosynthesis).
-        <br /><br />
+        <br/><br/>
         <ul class="brm-list nested-list">
           *This is why plants' leaves look green to us: green light is not absorbed; instead,
           it is reflected by the molecules that make up the plants to our eyes.
@@ -266,18 +265,18 @@
       </ul>
     </div>
 
-    <div id="page8" class="page">
+<div class="page" id="page8">
 
       <form class="quiz_choice quiz">
         <b>Q3: Why do most plants look green to us?
         </b>
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">a) They absorb green light.</div><br />
-        <input type="radio" name="question" value="correct">
-        <div class="label">b) They reflect green light.</div><br />
-        <input type="radio" name="question" value="incorrect">
-        <div class="label">c) They absorb blue and yellow light.</div><br />
-        <button type="submit" class="submit-btn">Submit</button>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) They absorb green light.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) They reflect green light.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) They absorb blue and yellow light.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's correct! Plants look green to us because green light is reflected off of the plants to our eyes. So (b)
           is the correct answer.
@@ -288,18 +287,24 @@
         </div>
       </form>
 
-      <br />
+      <br/>
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Factors that Affect Photosynthesis</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">Relationship between light intensity and photosynthesis</a></li>
@@ -312,27 +317,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br />
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

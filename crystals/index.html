@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crystals</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Crystals</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Crystals</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Crystals</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>What are Crystals? </b>When you think of crystals, you may think of pretty gems that are used in jewelry,
         like diamonds (April birthstone), amethysts (February birthstone), and peridot (August birthstone). Some
         different types of crystals are shown below. Crystals like the ones shown here are defined as solid substances whose
-        <a class="brm-link" target="_blank" href="../molecules/index.html">molecules</a>
+        <a class="brm-link" href="../molecules/index.html" target="_blank">molecules</a>
         are arranged in a repeating pattern.
       </p>
 
-      <img class="img-centered" src="gems-1400682_1920.jpg"  width="400" height="320" alt="gemstones"/>
+      <img alt="gemstones" class="img-centered" height="320" src="gems-1400682_1920.jpg" width="400"/>
      <br/>
 
       <p>
@@ -69,11 +69,11 @@
 
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
 
       <p>
         <b>Table salt is one type of crystal.</b> Crystals are defined as solid substances whose
-        <a class="brm-link" target="_blank" href="../molecules/index.html">molecules</a>
+        <a class="brm-link" href="../molecules/index.html" target="_blank">molecules</a>
         are arranged in a repeating pattern. It is this repeated molecule arrangement that gives crystals qualities
         like shininess and colors that makes them look pretty to us.
       </p>
@@ -85,9 +85,9 @@
         </li>
       </ul>
 
-      <img class="img-centered" src="NaCl_molecule2.png" width="270" alt="salt_molecule" />
+      <img alt="salt_molecule" class="img-centered" src="NaCl_molecule2.png" width="270"/>
 
-<br>
+<br/>
       <ul class="brm-list">
         <li>
           The molecules are arranged like in the picture below on the right. As you can see, the repeated pattern of salt crystals
@@ -95,8 +95,7 @@
         </li>
       </ul>
 
-      <img class="img-centered" src="CombinedSaltImage.jpg" width="600"
-           alt="Table salt crystal molecules arranged in cube" />
+      <img alt="Table salt crystal molecules arranged in cube" class="img-centered" src="CombinedSaltImage.jpg" width="600"/>
 
           <br/>
 <ul class="brm-list">
@@ -113,7 +112,7 @@
 
 </div>
 
-<div id="page3" class="page">
+<div class="page" id="page3">
 
 Check your understanding...
 
@@ -121,15 +120,15 @@ Check your understanding...
       <form class="quiz_checkbox quiz">
         <b>Q1 (check your basic understanding): Why do NaCl molecules form this pattern in salt crystals?
         (There is more than one correct answer!)</b>
-        <input type="checkbox" name="question" value="correct">
+        <input name="question" type="checkbox" value="correct"/>
         <div class="label">(a) The Na+ sides and Cl- sides of different NaCl molecules attract each other.</div><br/>
-        <input type="checkbox" name="question" value="incorrect">
+        <input name="question" type="checkbox" value="incorrect"/>
         <div class="label">(b) The Na+ sides and Cl- sides of different NaCl molecules repel each other.</div><br/>
-        <input type="checkbox" name="question" value="correct">
+        <input name="question" type="checkbox" value="correct"/>
         <div class="label">(c) The Na+ sides different NaCl molecules repel each other.</div><br/>
-        <input type="checkbox" name="question" value="correct">
+        <input name="question" type="checkbox" value="correct"/>
         <div class="label">(d) The Cl- sides of different NaCl molecules repel each other.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! Both attractive forces from oppositely-charged sides of the NaCl crystal (Na-Cl and Cl-Na) and repelling forces
           from same-charged sides of the crystal (Na-Na and Cl-Cl) cause the alternating pattern found in salt crystals. So, (a),
@@ -147,15 +146,15 @@ Check your understanding...
        <form class="quiz_choice quiz">
         <b>Q1.5 (check your basic understanding): What do you think causes NaCl crystals to form?
         </b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">(a) Particles that have the same charges attract due to the magnetic force.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">(b) Particles that have different charges attract due to the magnetic force.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">(c) Particles that have the same charges attract due to the electric force.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">(d) Particles that have different charges attract due to the electric force.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! The attractive electric force caused by oppositely charged particles causes NaCl crystals to grow. The positively charged Na+ (sodium) atoms and negatively charged Cl- (chlorine) atoms are attracted to each other.
         </div>
@@ -167,13 +166,12 @@ Check your understanding...
      <br/>
     </div>
 
-
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>Ice (the solid form of water, or H<sub>2</sub>O) is another example of a crystal.</b> This means that
 
-  <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
-            <option value="#ffffff" selected disabled>(Select one)</option>
+  <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
             <option value="#ed8587">ice has mystical properties.</option>
             <option value="#ed8587">ice can be used as jewelry.</option>
             <option value="#11bf7a">water molecules form a repeating pattern in ice.</option>
@@ -185,8 +183,7 @@ Check your understanding...
         A water molecule is shown below.
       </p>
 
-      <img class="img-centered" src="H2O_molecule_PlusMinusGood.png" width="200"
-           alt="Table salt crystal molecules arranged in cube" />
+      <img alt="Table salt crystal molecules arranged in cube" class="img-centered" src="H2O_molecule_PlusMinusGood.png" width="200"/>
      <br/>
 
       <p>
@@ -200,8 +197,7 @@ Check your understanding...
 
 <br/>
 
-      <img class="img-centered" src="IceCrystalsBST.jpg" width="800"
-           alt="Table salt crystal molecules arranged in cube" />
+      <img alt="Table salt crystal molecules arranged in cube" class="img-centered" src="IceCrystalsBST.jpg" width="800"/>
      <br/>
 
       <p>
@@ -215,7 +211,7 @@ Check your understanding...
 
       </div>
 
-      <div id="page5" class="page">
+<div class="page" id="page5">
 
       Check your understanding...
 
@@ -223,15 +219,15 @@ Check your understanding...
       <form class="quiz_checkbox quiz">
         <b>Q2 (basic understanding): What is one cause of the repeating patterns in ice crystals?
         (There is more than one correct answer below!)</b>
-        <input type="checkbox" name="question" value="incorrect">
+        <input name="question" type="checkbox" value="incorrect"/>
         <div class="label">(a) The H+ sides of different H2O molecules attract each other.</div><br/>
-        <input type="checkbox" name="question" value="correct">
+        <input name="question" type="checkbox" value="correct"/>
         <div class="label">(b) The O- sides of different H2O molecules repel each other.</div><br/>
-        <input type="checkbox" name="question" value="correct">
+        <input name="question" type="checkbox" value="correct"/>
         <div class="label">(c) The H+ sides and O- sides of different H2O molecules attract each other.</div><br/>
-        <input type="checkbox" name="question" value="incorrect">
+        <input name="question" type="checkbox" value="incorrect"/>
         <div class="label">(d) The H+ sides and O- sides of different H2O molecules repel each other.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! Both attractive forces from oppositely-charged sides of the H2O molecules and repelling forces
           from same-charged sides of the molecules cause the ice crystal patterns. So, (b) and (c) are the correct responses.
@@ -247,11 +243,11 @@ Check your understanding...
 
     </div>
 
-    <div id="page6" class="page">
+<div class="page" id="page6">
 
 
 
-    <img class="img-centered" src="HeadsUpCone.png"  width="150">
+    <img class="img-centered" src="HeadsUpCone.png" width="150"/>
 
 <b> Common Misconceptions about Crystals </b><br/>
 
@@ -278,15 +274,20 @@ Check your understanding...
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
 
+
+            
 <div class="nav-toc-container">
   <h3>Table of Contents: Crystals unit</h3>
   <ul>
@@ -299,26 +300,32 @@ Check your understanding...
   </ul>
 </div>
 
+        </div>
 
-  </div>
+        
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-    The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by the
-    National Science Foundation, Grant SBE035442.
-    The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through
-    Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not represent
-    views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
 
-</body>
-
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>
-

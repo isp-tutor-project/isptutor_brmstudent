@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Surface Area</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Surface Area</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Surface Area</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Surface Area</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
 
       <p class="text-md">
         <b>What is Surface Area?</b> The surface area of an object is defined as the total area of the <i>surface</i> of the
@@ -60,7 +60,7 @@
 
 </div>
 
-  <div id="page2" class="page">
+<div class="page" id="page2">
 
       <p class="text-md">
         <b>Surface Area of Cubes</b>
@@ -73,8 +73,8 @@
 
           A cube has
 
-          <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
-            <option value="#ffffff" selected disabled>(Select one)</option>
+          <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
             <option value="#ed8587">2 sides.</option>
             <option value="#ed8587">4 sides.</option>
             <option value="#11bf7a">6 sides.</option>
@@ -86,7 +86,7 @@
 
 
 
-      <img class="img-centered" src="Cube_surfaceAreaUnitrevised.jpg" alt="Cubewith3cmside" />
+      <img alt="Cubewith3cmside" class="img-centered" src="Cube_surfaceAreaUnitrevised.jpg"/>
 
       <p>
         <span class="text-md">In general, the <b>surface area of a cube</b> of diameter, d, is equal to:
@@ -101,7 +101,7 @@
 
   </div>
 
-  <div id="page3" class="page">
+<div class="page" id="page3">
     <p>
       <b>Surface Area of Spheres</b>
     </p>
@@ -125,7 +125,7 @@
         We can substitute "d/2" for "r" in the
         formula above:
 
-        <ul><li>
+        </p><ul><li>
         4
         <span class="font-times text-xl">π</span>
         <span class="text-md">(d/2)</span><sup>2</sup> = 4
@@ -134,7 +134,7 @@
         <span class="font-times text-xl">π</span>
         <span class="text-md">d</span><sup>2</sup>
         </li></ul>
-      </p>
+      <p></p>
 
       <p>
         So...
@@ -151,7 +151,7 @@
 
   </div>
 
-  <div id="page4" class="page">
+<div class="page" id="page4">
 
         <b>Example of calculating surface area of sphere:</b> A sphere has a diameter of 4 cm. We can calculate the
         surface area of the sphere,
@@ -161,12 +161,12 @@
         <ul class="brm-list nested-list">
           <li>
             Surface area (of a sphere) =
-            <span class="text-xl font-times">&pi;</span>
+            <span class="text-xl font-times">π</span>
             <span class="text-md">d</span><sup>2</sup>
           </li>
           <li>
-            <span class="text-md">Surface area (sphere) = 3.14 &times; 4</span><sup>2</sup>
-            <span class="text-md"> = 3.14 &times; 16 = 50.27 cm</span><sup>2</sup>
+            <span class="text-md">Surface area (sphere) = 3.14 × 4</span><sup>2</sup>
+            <span class="text-md"> = 3.14 × 16 = 50.27 cm</span><sup>2</sup>
           </li>
         </ul>
 
@@ -177,21 +177,21 @@
 
 </div>
 
-  <div id="page5" class="page">
+<div class="page" id="page5">
 
 
       <form class="quiz_choice quiz">
         <b>Q1: Which would have a bigger surface area: a sphere with a diameter of 10 cm or a cube with a diameter of 10
           cm?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) the sphere</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">b) the cube</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) they would have the same surface areas</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) I have no idea.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Right! In general, if a cube and sphere have the same diameter, the cube has greater surface area.
           This is because the surface area of a sphere is pi (about 3) times the diameter squared. And the surface area of a cube is 6 times
@@ -207,32 +207,32 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q2: Sphere A has a diameter of D. Sphere B has a diameter of 2D (Sphere B's diameter is twice Sphere A's
           diameter).
           Which is true of the surface areas of the spheres?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) Sphere A and B have the same surface areas.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Sphere B has twice the surface area of Sphere A.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) Sphere B has three times the surface area of Sphere A.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">d) Sphere B has four times the surface area of Sphere A.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's right! Sphere B's surface area would be four times that of Sphere A. This is because the surface area
-          of a sphere is given by: &#120587;d<sup>2</sup>.
-          So, for Sphere A, the surface area is &#120587;D<sup>2</sup>
-          For Sphere B, the surface area is &#120587;(2D)<sup>2</sup> = 4&#120587;D<sup>2</sup>
+          of a sphere is given by: 𝜋d<sup>2</sup>.
+          So, for Sphere A, the surface area is 𝜋D<sup>2</sup>
+          For Sphere B, the surface area is 𝜋(2D)<sup>2</sup> = 4𝜋D<sup>2</sup>
         </div>
         <div class="feedback-incorrect feedback">
           Actually, Sphere B's surface area would be four times that of Sphere A. This is because the surface area of a
-          sphere is given by: &#120587;d<sup>2</sup>.
-          So, for Sphere A, the surface area is &#120587;D<sup>2</sup>
-          For Sphere B, the surface area is &#120587;(2D)<sup>2</sup> = 4&#120587;D<sup>2</sup>
+          sphere is given by: 𝜋d<sup>2</sup>.
+          So, for Sphere A, the surface area is 𝜋D<sup>2</sup>
+          For Sphere B, the surface area is 𝜋(2D)<sup>2</sup> = 4𝜋D<sup>2</sup>
         </div>
       </form>
 
@@ -240,7 +240,7 @@
 
 </div>
 
-  <div id="page6" class="page">
+<div class="page" id="page6">
 
       <p>
         <b>Surface area (for non-smooth surfaces)</b>
@@ -252,25 +252,22 @@
       </p>
 
      <br/>
-      <img class="img-centered"
-           src="https://sites.google.com/site/isptutorbrmstudent/_/rsrc/1560954664759/surface-area/SurfaceArea_Ball_BRM.jpg"
-           width="400" height="300"
-           alt="Smooth ball and golf ball with dimples" />
+      <img alt="Smooth ball and golf ball with dimples" class="img-centered" height="300" src="https://sites.google.com/site/isptutorbrmstudent/_/rsrc/1560954664759/surface-area/SurfaceArea_Ball_BRM.jpg" width="400"/>
      <br/>
 
       <form class="quiz_choice quiz">
         <b>Q3: Two spherical balls (A &amp; B) are made of the same bumpy material. Ball A has a diameter twice that of
           Ball B.
           Which is true of the number of bumps on each ball?</b>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">a) There are the same number of bumps on A and B.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Ball A has twice the number of bumps as Ball B.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) Ball A has three times the number of bumps as Ball B.</div><br/>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">d) Ball A has four times the number of bumps as Ball B.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           You're right! Because Ball A's diameter is twice that of Ball B, it will have FOUR times the surface area as
           Ball B.
@@ -283,11 +280,11 @@
         </div>
       </form>
 
-      <br />
+      <br/>
 
 </div>
 
-  <div id="page7" class="page">
+<div class="page" id="page7">
 
 
       <p>
@@ -325,15 +322,21 @@
 
   </div>
 
-  <!-- Nav Buttons -->
-  <div class="nav-btn-container">
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
     <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
     <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
     <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
     <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-  </div>
+</div>
 
-  <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
     <h3>Table of Contents: Surface Area unit</h3>
     <ul>
     <li><a href="#top" onclick="tocPageJump(1)">What is Surface Area?</a></li>
@@ -346,27 +349,32 @@
     </ul>
   </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>

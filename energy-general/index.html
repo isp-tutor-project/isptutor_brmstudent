@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Energy Can Change Forms But is Conserved</title>
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../main.css">
-  <!-- Google Search Bar -->
-  <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
-  <!-- Google Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Energy Can Change Forms But is Conserved</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
 
-  gtag('config', 'UA-18104655-6');
-</script>
+    <body>
+        <!-- Header -->
+        <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
+        <div id="research-question"></div>
+        <div id="header-bg-extension"></div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+        </div>
 
-</head>
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Energy Can Change Forms But is Conserved</h1>
 
-<body>
-  <!-- Header -->
-  <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg">
-  <div id="research-question"></div>
-  <div id="header-bg-extension"></div>
-  <div class="search-container">
-    <div class="gcse-search"></div>
-  </div>
-  <div class="header-btn-container">
-    <a href="../home"><button id="home-btn" class="header-btn">Home &amp; HELP</button></a>
-    <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
-    <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
-    <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
-    <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
-  </div>
-
-  <!-- Main Page -->
-  <div class="page-container">
-    <h1>Energy Can Change Forms But is Conserved</h1>
-
-    <div id="page1" class="page">
+<div class="page" id="page1">
       <p>
         <b>Forms of energy.</b> There are different sources of energy (e.g., radiation from the sun, thermal energy of
         objects, wind energy, energy from moving water). But really, the two main "types" of energy are kinetic energy
@@ -55,13 +55,13 @@
 
       <div class="img3Col imgClear">
         <div class="imgCol">
-          <img src="Solar_Panel.jpg" height="200" />
+          <img height="200" src="Solar_Panel.jpg"/>
         </div>
         <div class="imgCol">
-          <img src="WindTurbines.jpeg" height="200" />
+          <img height="200" src="WindTurbines.jpeg"/>
         </div>
         <div class="imgCol">
-          <img src="HydraulicEnergy.jpg" height="200" />
+          <img height="200" src="HydraulicEnergy.jpg"/>
         </div>
       </div>
 
@@ -78,7 +78,7 @@
       </p>
 
 
-      <img class="img-centered" src="electrictyuses_BRM.jpg" alt="image of things that use electricity" />
+      <img alt="image of things that use electricity" class="img-centered" src="electrictyuses_BRM.jpg"/>
      <br/>
 
       <p>
@@ -91,7 +91,7 @@
      <br/>
     </div>
 
-    <div id="page2" class="page">
+<div class="page" id="page2">
       <p>
         <b>Examples of energy changing forms:</b>
       </p>
@@ -99,7 +99,7 @@
       <ul class="brm-list">
         <li>
           Radiation from the sun (which is really the kinetic energy of photons) can be converted into thermal energy
-          (the total amount of kinetic energy of the particles &mdash; atoms and/or molecules &mdash; that make up the
+          (the total amount of kinetic energy of the particles — atoms and/or molecules — that make up the
           object) when it
           hits an object. 
           <ul class="brm-list nested-list">
@@ -110,18 +110,18 @@
               temperature of the ice will also increase. This is why the icicles melt.
             </li>
 
-            <img class="img-centered" src="SunMeltingIce_cropped.jpg">
+            <img class="img-centered" src="SunMeltingIce_cropped.jpg"/>
 
            <br/>
             <li>
               <b>Example 2:</b> Infrared radiation from the sun hits CO<sub>2</sub> molecules in the Earth's
               atmosphere. This radiation energy changes to vibrational motion of CO<sub>2</sub> molecules
-              (<a class="brm-link" target="_blank" href="../kinetic-and-potential-energy/">a form of Kinetic
+              (<a class="brm-link" href="../kinetic-and-potential-energy/" target="_blank">a form of Kinetic
                 Energy</a>). Soon, it converts back to infrared radiation, which may then be converted to thermal
               energy.
             </li>
 
-            <img class="img-centered" src="CO2_vibrational_infrared.png" width="600">
+            <img class="img-centered" src="CO2_vibrational_infrared.png" width="600"/>
 
           </ul>
         </li>
@@ -153,7 +153,7 @@
      <br/>
     </div>
 
-    <div id="page3" class="page">
+<div class="page" id="page3">
 
       <p>
         Check your understanding...
@@ -161,20 +161,20 @@
 
       <form class="quiz_choice quiz">
         <b>
-          Q1: Two objects (A &amp; B) are identical (they are the same material, size, shape, initial temperature (10&deg;C), etc.). 
-          They are placed on the ground outside on a hot (32&deg;C), sunny day.
+          Q1: Two objects (A &amp; B) are identical (they are the same material, size, shape, initial temperature (10°C), etc.). 
+          They are placed on the ground outside on a hot (32°C), sunny day.
           But Object A is placed in the sun and Object B is placed in the shade. After an hour, which of the following
           is most likely true?
         </b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) The thermal energy of Object A will be higher.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) The thermal energy of Object B will be higher.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) The thermal energies of both objects will be the same.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) It's impossible to know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           Exactly! Because Object A is sitting in full sunlight, it will absorb more light energy than Object B, which
           is in the shade. This light energy will be converted into the movement of the molecules making up Object A.
@@ -195,15 +195,15 @@
 
       <form class="quiz_choice quiz">
         <b>Q2: Which is likely true of the temperatures of the objects after one hour?</b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) Object A will have a higher temperature.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) Object B will have a higher temperature.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) The objects would have the same temperatures.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) It's impossible to know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           You're right! Object A (sitting in the sun) would absorb more sunlight than Object B (sitting in the shade).
           As a result, Object A will have a greater amount of thermal energy than Object B. So, on average, the
@@ -220,7 +220,7 @@
 
     </div>
 
-    <div id="page4" class="page">
+<div class="page" id="page4">
       <p>
         <b>Energy is conserved! (This is important!)</b> Anytime that energy changes forms, the total amount of energy
         before the conversion is equal to the total amount of energy afterward.
@@ -243,7 +243,7 @@
           When it reaches the very bottom of the hill (Time 2), it only has kinetic energy. It has no potential
           energy due to gravity because gravity does not have the potential to pull it down any farther.
 
-          <img class="img-centered" src="RollerCoaster_PE_KE_final.jpg" alt="roller coaster" />
+          <img alt="roller coaster" class="img-centered" src="RollerCoaster_PE_KE_final.jpg"/>
         </li>
         <li>
           The opposite happens between Time 2 and when the coaster climbs to the top of the next hill (Time 3). Because
@@ -268,15 +268,15 @@
 
     </div>
 
-    <div id="page5" class="page">
+<div class="page" id="page5">
 
-      <img class="img-centered" src="RollerCoaster_PE_KE_final.jpg" alt="roller coaster" />
+      <img alt="roller coaster" class="img-centered" src="RollerCoaster_PE_KE_final.jpg"/>
 
       <b>Fill in the blanks!</b>
-      <br>
+      <br/>
       
       <p>The potential energy of the roller coaster at Time 1 is 
-      <select id="FIB1" class="fib_select" onchange="fibUpdate('FIB1')">
+      <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
         <option value="#ffffff">(Select one)</option>
         <option value="#11bf7a">greater than</option>
         <option value="#ed8587">less than</option>
@@ -285,7 +285,7 @@
       
       its potential energy at Time 2.</p> <p>The potential energy of the roller coaster at Time 2 is 
       
-      <select id="FIB2" class="fib_select" onchange="fibUpdate('FIB2')">
+      <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
         <option value="#ffffff">(Select one)</option>
         <option value="#ed8587">greater than</option>
         <option value="#11bf7a">less than</option>
@@ -294,7 +294,7 @@
       
       its potential energy at Time 3. </p><p>And, the potential energy of the roller coaster at Time 3 is 
       
-      <select id="FIB3" class="fib_select" onchange="fibUpdate('FIB3')">
+      <select class="fib_select" id="FIB3" onchange="fibUpdate('FIB3')">
         <option value="#ffffff">(Select one)</option>
         <option value="#11bf7a">greater than</option>
         <option value="#ed8587">less than</option>
@@ -303,13 +303,13 @@
       
       its potential energy at Time 4.</p>
       
-      <br><br>
+      <br/><br/>
       
       <b>Now, let's do the same thing for the kinetic energy of the roller coaster...</b>
-      <br>
+      <br/>
       
       <p> The kinetic energy of the roller coaster at Time 1 is 
-      <select id="FIB4" class="fib_select" onchange="fibUpdate('FIB4')">
+      <select class="fib_select" id="FIB4" onchange="fibUpdate('FIB4')">
         <option value="#ffffff">(Select one)</option>
         <option value="#ed8587">greater than</option>
         <option value="#11bf7a">less than</option>
@@ -318,7 +318,7 @@
       
       its kinetic energy at Time 2. </p><p>The kinetic energy of the roller coaster at Time 2 is 
       
-      <select id="FIB5" class="fib_select" onchange="fibUpdate('FIB5')">
+      <select class="fib_select" id="FIB5" onchange="fibUpdate('FIB5')">
         <option value="#ffffff">(Select one)</option>
         <option value="#11bf7a">greater than</option>
         <option value="#ed8587">less than</option>
@@ -327,7 +327,7 @@
       
       its kinetic energy at Time 3.</p> <p>And, the kinetic energy of the roller coaster at Time 3 is 
       
-      <select id="FIB6" class="fib_select" onchange="fibUpdate('FIB6')">
+      <select class="fib_select" id="FIB6" onchange="fibUpdate('FIB6')">
         <option value="#ffffff">(Select one)</option>
         <option value="#ed8587">greater than</option>
         <option value="#11bf7a">less than</option>
@@ -336,12 +336,12 @@
       
       its potential energy at Time 4.</p>
 
-      <br><br>
+      <br/><br/>
       <b>Now, let's think about the *total* energy of the roller coaster...</b>
-      <br>
+      <br/>
       
       <p> The total energy of the roller coaster (kinetic + potential energy) at Time 1 is 
-      <select id="FIB7" class="fib_select" onchange="fibUpdate('FIB7')">
+      <select class="fib_select" id="FIB7" onchange="fibUpdate('FIB7')">
         <option value="#ffffff">(Select one)</option>
         <option value="#ed8587">greater than</option>
         <option value="#ed8587">less than</option>
@@ -350,7 +350,7 @@
       
       its kinetic energy at Time 2. </p><p>The total energy of the roller coaster (kinetic + potential energy) at Time 2 is 
       
-      <select id="FIB8" class="fib_select" onchange="fibUpdate('FIB8')">
+      <select class="fib_select" id="FIB8" onchange="fibUpdate('FIB8')">
         <option value="#ffffff">(Select one)</option>
         <option value="#ed8587">greater than</option>
         <option value="#ed8587">less than</option>
@@ -359,7 +359,7 @@
       
       its kinetic energy at Time 3.</p> <p>And, the total energy of the roller coaster (kinetic + potential energy) at Time 3 is 
       
-      <select id="FIB9" class="fib_select" onchange="fibUpdate('FIB9')">
+      <select class="fib_select" id="FIB9" onchange="fibUpdate('FIB9')">
         <option value="#ffffff">(Select one)</option>
         <option value="#ed8587">greater than</option>
         <option value="#ed8587">less than</option>
@@ -371,22 +371,19 @@
 
     </div>
 
-
-
-
-      <div id="page6" class="page">
+<div class="page" id="page6">
 
       <p>
         The Conservation of Energy principle is shown in the animation below. The total amount of energy, which is represented by the sum of the heights of the red bars,
         is always the same. Energy just converts from kinetic to potential energy and from potential to kinetic energy.
       </p>
 
-      <br />
-      <img class="img-centered" src="rollercoasteranimationFINAL.gif">
+      <br/>
+      <img class="img-centered" src="rollercoasteranimationFINAL.gif"/>
 
     </div>
 
-    <div id="page7" class="page">
+<div class="page" id="page7">
 
       <p>
         Check your understanding...
@@ -398,15 +395,15 @@
           The ball is dropped from a height of 1 meter in a vacuum (where there is no air, so there is no force due to
           air resistance). How high will the ball bounce back up?
         </b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) one meter. </div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) more than one meter.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) less than one meter.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) how should I know?</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           That's right! According to Conservation of energy: If the ball does not lose any energy while in the air or
           bouncing, it will have the same final energy as initial energy. The initial energy was all potential (due to
@@ -425,7 +422,7 @@
 
     </div>
 
-    <div id="page8" class="page">
+<div class="page" id="page8">
 
       <ul class="brm-list">
         <li>
@@ -442,7 +439,7 @@
               energy must go somewhere else. One way that this energy is released is in the form of light (or
               electromagnetic radiation). This process is represented in the picture below. </li>
 
-              <img src="ClosestOrbitalOxygen2_LargerText.png" alt="electromagnetic radiation example" class="img-centered" />
+              <img alt="electromagnetic radiation example" class="img-centered" src="ClosestOrbitalOxygen2_LargerText.png"/>
 
             <li>
               Burning materials like wood results in electrons moving from higher to lower energy circles and releasing
@@ -460,15 +457,15 @@
           the lower energy level and the energy of the <u>photon</u> that was released? (There are no other changes in
           energy of the atom/electron/photon system.)
         </b>
-        <input type="radio" name="question" value="correct">
+        <input name="question" type="radio" value="correct"/>
         <div class="label">a) They are the same.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">b) The photon has more energy.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">c) The photon has less energy.</div><br/>
-        <input type="radio" name="question" value="incorrect">
+        <input name="question" type="radio" value="incorrect"/>
         <div class="label">d) There is just no way to know.</div><br/>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
         <div class="feedback-correct feedback">
           This is correct! According to conservation of energy, total energy of the atom with electron before it moves
           to the lower energy level must be the same as the total energy afterward.
@@ -483,7 +480,7 @@
 
     </div>
 
-    <div id="page9" class="page">
+<div class="page" id="page9">
 
       <p>
         <b>We just saw how the energy of electrons can be converted into light energy. But the reverse process can also
@@ -496,8 +493,8 @@
         green light, doesn't have enough energy to allow electrons to escape from the metal.
       </p>
 
-      <img class="img-centered" width="600" src="radiationemittance2_BRM.jpg" alt="image showing radiation emittance of metal" />
-      <br />
+      <img alt="image showing radiation emittance of metal" class="img-centered" src="radiationemittance2_BRM.jpg" width="600"/>
+      <br/>
 
       <p>
         <b>
@@ -508,13 +505,12 @@
       </p>
     </div>
 
-
-    <div id="page10" class="page">
+<div class="page" id="page10">
       <ul class="brm-list">
         <li>
           <b>Conversion of kinetic energy of electrons into kinetic energy of molecules (ATP).</b> Another important
           way that energy may be conserved happens when electrons move to lower
-          <a class="brm-link" target="_blank" href="../energylevel/index.html">energy levels</a>
+          <a class="brm-link" href="../energylevel/index.html" target="_blank">energy levels</a>
           in molecules that break apart during chemical reactions. Because energy must be conserved,
           one or more of the resulting molecules may have a greater kinetic energy. This happens with a molecule called
           ATP, which is a very important molecule because it is a source of energy in animals and plant cells. ATP
@@ -523,7 +519,7 @@
         </li>
       </ul>
 
-      <img class="img-centered" src="ATP_Adenosine3Ps.GIF" alt="Adenosine Di-Phosphate" />
+      <img alt="Adenosine Di-Phosphate" class="img-centered" src="ATP_Adenosine3Ps.GIF"/>
 
       <ul class="brm-list">
         <li>
@@ -534,25 +530,31 @@
           to energy of motion (or kinetic energy) of the freed Phosphate molecule.
 
 
-          <img class="img-centered" src="ATP_Adenosine2Ps_1Freed.GIF" alt="Adenosine Di-Phosphate" />
+          <img alt="Adenosine Di-Phosphate" class="img-centered" src="ATP_Adenosine2Ps_1Freed.GIF"/>
 
         </li>
         <li>
-          (For more on ATP, click <a class="brm-link" target="_blank" href="../food/">here</a>.)
+          (For more on ATP, click <a class="brm-link" href="../food/" target="_blank">here</a>.)
         </li>
       </ul>
 
     </div>
 
+
+
+            
     <!-- Nav Buttons -->
     <div class="nav-btn-container">
-      <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
-      <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-      <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
-    </div>
+    <img id="back-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/buttonorange.png">
+    <img id="back-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/buttonyellow.png">
+</div>
 
-    <div class="nav-toc-container">
+
+
+            
+<div class="nav-toc-container">
       <h3>Table of Contents: Energy unit</h3>
       <ul>
         <li><a href="#top" onclick="tocPageJump(1)">Overview: Forms of Energy</a></li>
@@ -568,27 +570,32 @@
       </ul>
     </div>
 
-  </div>
+        </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <img src="../_assets/klahrLabFooter.png"><br/>
-    <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
-    <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
-      The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and in part by
-      the
-      National Science Foundation, Grant SBE035442.
-      The ISP Tutor project is funded by IES, Grant R305A170176.</p>
-    <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of Education,
-      through
-      Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
-      represent
-      views of the Institute or the U.S. Department of Education.</p>
-  </div>
+        
 
-  <!-- Enable header and nav button functionality -->
-  <script src="../brm.js"></script>
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png"><br/>
+            
+            <p>©2020 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in
+                part by
+                the
+                National Science Foundation, Grant SBE035442.
+                The ISP Tutor project is funded by IES, Grant R305A170176.</p>
+            <p>The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education,
+                through
+                Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of the authors and do not
+                represent
+                views of the Institute or the U.S. Department of Education.</p>
+        </div>
 
-</body>
 
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
 </html>
