@@ -350,12 +350,24 @@ a.brm-link {
   width: 600px;
 }
 
+.img-size_200 {
+  width: 200px;
+}
+
+.img-size_250 {
+  width: 250px;
+}
+
 .img-size_smaller {
   width: 300px;
 }
 
 .img-size_med {
   width: 450px;
+}
+
+.img-size_500 {
+  width: 500px;
 }
 
 .img-size_700 {
