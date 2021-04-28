@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reactions</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Reactions</h1>
+
+
+<div class="page" id="page1">
+     <style>
+#div1, #div3, #div4, #div5, #div7, #div8, #div10, #div11 {
+    float: left;
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+    
+  }
+  </style>
+
+
+  <style>
+#div2, #div6, #div9, #div12 {
+    float: left;
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 2px solid #aaaaaa;
+  }
+  </style>
+
+<p>Below you will move the underlined atoms from the molecules on the left (reactants) to the spaces on the right to make the final (product) molecules on the right.</p> 
+
+
+<br>
+<p>(1) Move O and Cl to make different molecules for the products.</p>
+
+<div class="text-xl text-centered" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="Na.png" draggable="false" ondragstart="drag(event)" id="drag1" width="50"> 
+</div>
+
+<div class="text-xl text-centered" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+<img src="O.png" draggable="true" ondragstart="drag(event)" id="drag2" width="50"> </div>
+
+<div class="text-xl text-centered" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="H.png" draggable="false" ondragstart="drag(event)" id="drag3" width="50"></div>
+
+<div class="text-xl text-centered" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+ + </div>
+
+<div class="text-xl text-centered" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="H.png" draggable="false" ondragstart="drag(event)" id="drag4" width="50"> </div>
+
+<div class="text-xl text-centered" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="Cl.png" draggable="true" ondragstart="drag(event)" id="drag5" width="50"> </div>
+
+<div class="text-xl text-centered" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">&#8594;</div>
+
+<div class="text-xl text-centered" id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="Na.png" draggable="true" ondragstart="drag(event)" id="drag6" width="50"> </div>
+
+<div class="text-xl text-centered" id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<div class="text-xl text-centered" id="div10" ondrop="drop(event)" ondragover="allowDrop(event)">+</div>
+
+<div class="text-xl text-centered" id="div11" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="H2.png" draggable="true" ondragstart="drag(event)" id="drag7" width="50"> </div>
+
+<div class="text-xl text-centered" id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+<br><br><br><br>
+
+<div id="demo" style="display: none">
+
+
+<b>Answer:</b> NaOH + HCl &#8594; NaCl + H<sub>2</sub>O
+<br>
+Sodium hydroxide and hydrochloric acid combine to form table salt and water in this chemical reaction.    
+
+</div>
+
+<br>
+
+<button onclick="toggleText('demo')" type="button"> <b>Click to Show/Hide Answer:</b></button>
+
+
+
+<br><br><br>
+    </div>
+
+
+
+
+    <div class="page" id="page2">
+
+<style>
+#div22, #div23, #div29, #div32, #div35, #div38 {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-bottom: 2px solid #aaaaaa;
+    
+  }
+  </style>
+
+
+  <style>
+#div21, #div24, #div25, #div26, #div27, #div28, #div30, #div31, #div33, #div34, #div36, #div37 {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    
+  }
+  </style>
+
+<style>
+#div22b {
+    float: left;
+    width: 10px;
+    height: 40px;
+    padding: 5px;
+    
+  }
+  </style>
+
+
+
+<p>Below you will move the underlined atoms from the molecules on the left (reactants) to the spaces on the right to make the final (product) molecules on the right.</p> 
+
+
+<br>
+<p>(2) Move O and C atoms to make different molecules for the products.</p>
+
+<div class="text-xl text-centered" id="div21" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="Si.png" draggable="false" ondragstart="drag(event)" id="drag8a" width="30"> 
+</div>
+
+<div class="text-xl text-centered" id="div22" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+<img src="O_second.png" draggable="true" ondragstart="drag(event)" id="drag9" width="30"> </div>
+
+<div class="text-xl text-centered" id="div22b" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+ </div>
+
+<div class="text-xl text-centered" id="div23" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="O_second.png" draggable="true" ondragstart="drag(event)" id="drag10" width="30"></div>
+
+<div class="text-xl text-centered" id="div24" ondrop="drop(event)" ondragover="allowDrop(event)">
+ + </div>
+
+<div class="text-xl text-centered" id="div25" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="C.png" draggable="false" ondragstart="drag(event)" id="drag11" width="30"> </div>
+
+<div class="text-xl text-centered" id="div26" ondrop="drop(event)" ondragover="allowDrop(event)">
+ + </div>
+
+<div class="text-xl text-centered" id="div27" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="C.png" draggable="false" ondragstart="drag(event)" id="drag12" width="30"> </div>
+
+ <div class="text-xl text-centered" id="div28" ondrop="drop(event)" ondragover="allowDrop(event)">
+ + </div>
+
+<div class="text-xl text-centered" id="div29" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="C.png" draggable="true" ondragstart="drag(event)" id="drag13" width="30"> </div>
+
+<div class="text-xl text-centered" id="div30" ondrop="drop(event)" ondragover="allowDrop(event)">&#8594;</div>
+
+<div class="text-xl text-centered" id="div31" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="Si.png" draggable="true" ondragstart="drag(event)" id="drag14" width="30"> </div>
+
+ <div class="text-xl text-centered" id="div32" ondrop="drop(event)" ondragover="allowDrop(event)">
+  </div>
+
+
+<div class="text-xl text-centered" id="div33" ondrop="drop(event)" ondragover="allowDrop(event)">+</div>
+
+<div class="text-xl text-centered" id="div34" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="C.png" draggable="true" ondragstart="drag(event)" id="drag16" width="30"> </div>
+
+ <div class="text-xl text-centered" id="div35" ondrop="drop(event)" ondragover="allowDrop(event)">
+  </div>
+
+<div class="text-xl text-centered" id="div36" ondrop="drop(event)" ondragover="allowDrop(event)">+</div>
+
+<div class="text-xl text-centered" id="div37" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img src="C.png" draggable="true" ondragstart="drag(event)" id="drag18" width="30"> </div>
+
+ <div class="text-xl text-centered" id="div38" ondrop="drop(event)" ondragover="allowDrop(event)">
+  </div>
+
+<br><br><br><br>
+
+<div id="demo2" style="display: none">
+
+
+<b>Answer:</b> SiO<sub>2</sub> + 3C &#8594; SiC + 2CO
+<br>
+Silicon oxide (SiO) and three carbon atoms react to form silicon carbide and two carbon monoxide molecules in this chemical reaction.    
+
+</div>
+
+<br>
+
+<button onclick="toggleText('demo2')" type="button"> <b>Click to Show/Hide Answer:</b></button>
+
+
+<br><br><br>
+
+
+
+    </div>
+
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>
