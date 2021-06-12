@@ -563,3 +563,17 @@ ol.brm-list.nested-list > li:last-of-type {
   left: 65%;
   transform: translate(-50%, -50%);
 }
+
+.centered4 {
+  position: absolute;
+  top: 70%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+
+.centered5 {
+  position: absolute;
+  top: 85%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
