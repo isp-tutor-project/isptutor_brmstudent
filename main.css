@@ -19,6 +19,8 @@ h1 {
 
 button {
   cursor: pointer;
+  background-color: #3b66bd;
+  color: white
 }
 
 .nav-toc-container {
@@ -171,7 +173,7 @@ button {
 }
 
 .demo {
-  
+  background-color: #244785;
 }
 
 
@@ -576,4 +578,9 @@ ol.brm-list.nested-list > li:last-of-type {
   top: 85%;
   left: 25%;
   transform: translate(-50%, -50%);
+}
+
+.fib_select {
+  background-color: rgb(223, 221, 118);
+  text-align: center;
 }
