@@ -19,8 +19,8 @@ h1 {
 
 button {
   cursor: pointer;
-  background-color: #3b66bd;
-  color: white
+  background-color: #95d5f5;
+  color: #1d2a31;
 }
 
 .nav-toc-container {
@@ -173,7 +173,7 @@ button {
 }
 
 .demo {
-  background-color: #244785;
+  background-color: #5681cc;
 }
 
 
